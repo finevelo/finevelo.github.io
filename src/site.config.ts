@@ -1,6 +1,6 @@
 export const SITE = {
   name: 'Finevelo',
-  url: 'https://finevelo.com',
+  url: 'https://www.finevelo.com',
   tagline: 'The top 10% of cycling. Daily.',
   description:
     'Finevelo curates the top 10% of cycling: launches, specs and data on high-end road, gravel, MTB and premium e-bikes.',

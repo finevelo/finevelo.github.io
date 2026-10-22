@@ -42,7 +42,7 @@ function basePathLinks() {
 }
 
 export default defineConfig({
-  site: 'https://finevelo.com',
+  site: 'https://www.finevelo.com',
   base,
   trailingSlash: 'always',
   vite: { define: { 'import.meta.env.STAGING': JSON.stringify(staging) } },

@@ -12,7 +12,7 @@ npm run build    # statische Seite in dist/
 
 ## Vorschau online
 
-Jeder Push auf `main` baut per GitHub Actions (`.github/workflows/pages.yml`) eine versteckte Vorschau unter https://finevelo.github.io/. Dort gilt `STAGING=1` (noindex auf allen Seiten, robots.txt sperrt alle Crawler); zum Launch entfernen. `BASE_PATH` wird nur gebraucht, wenn die Seite in einem Unterordner liegt (z. B. `/finevelo`).
+Jeder Push auf `main` baut per GitHub Actions (`.github/workflows/pages.yml`) eine versteckte Vorschau unter https://www.finevelo.com/ (Domain bei united-domains, DNS: 4× A auf GitHub Pages, www als CNAME auf finevelo.github.io; MX/SPF von united-domains für E-Mail nicht anfassen). Dort gilt `STAGING=1` (noindex auf allen Seiten, robots.txt sperrt alle Crawler); zum Launch entfernen. `BASE_PATH` wird nur gebraucht, wenn die Seite in einem Unterordner liegt (z. B. `/finevelo`).
 
 ## Struktur
 
