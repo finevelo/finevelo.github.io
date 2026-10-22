@@ -1,6 +1,7 @@
 // Finevelo backend: a small single-page app on top of the GitHub API.
 import { marked } from 'marked';
 import * as gh from './github.js';
+import * as auth from './auth.js';
 import {
   ARTICLES_DIR, SETTINGS_PATH, SOURCES_PATH, CATEGORIES, FORMATS, LICENSES,
   parseArticle, serializeArticle, slugify, isDraft, validate, nextRun,
@@ -50,30 +51,101 @@ async function loadSources(force = false) {
 }
 
 // ---------- login ----------
-function renderLogin(error = '') {
+// Modes: password (default), link (login link by mail), reset (request reset mail),
+// password-new (after the reset mail), token (emergency login with a GitHub token).
+function renderLogin(mode = auth.configured ? 'password' : 'token', { error = '', info = '', mail = '' } = {}) {
   root.className = '';
-  root.innerHTML = `
-    <div class="adm-login"><form class="adm-login-box" id="login">
-      <div class="adm-logo">Finevelo<small>Redaktion</small></div>
-      <p>Melde dich mit dem GitHub-Token des Kontos <strong>finevelo</strong> an. Er bleibt nur in diesem Browser.</p>
-      <label class="adm-field"><span>GitHub-Token</span>
-        <input id="tok" type="password" autocomplete="current-password" placeholder="github_pat_…" required /></label>
-      <label class="adm-check"><input id="remember" type="checkbox" /> Auf diesem Gerät angemeldet bleiben</label>
-      ${error ? `<p class="adm-err">${esc(error)}</p>` : ''}
+  const mailField = `<label class="adm-field"><span>E-Mail</span>
+    <input id="mail" type="email" autocomplete="username" value="${esc(mail)}" required /></label>`;
+  const forms = {
+    password: `
+      <p>Melde dich mit deiner E-Mail-Adresse an.</p>
+      ${mailField}
+      <label class="adm-field"><span>Passwort</span>
+        <input id="pw" type="password" autocomplete="current-password" required /></label>
       <button class="adm-btn" type="submit">Anmelden</button>
-    </form></div>`;
-  document.getElementById('login').addEventListener('submit', async (e) => {
+      <div class="adm-login-links">
+        <button type="button" data-mode="link">Stattdessen Login-Link per Mail</button>
+        <button type="button" data-mode="reset">Passwort vergessen?</button>
+      </div>`,
+    link: `
+      <p>Wir schicken dir einen Link. Ein Klick darauf meldet dich an, ganz ohne Passwort.</p>
+      ${mailField}
+      <button class="adm-btn" type="submit">Login-Link senden</button>
+      <div class="adm-login-links"><button type="button" data-mode="password">Mit Passwort anmelden</button></div>`,
+    reset: `
+      <p>Gib deine Adresse ein. Du bekommst einen Link, mit dem du ein neues Passwort setzt.</p>
+      ${mailField}
+      <button class="adm-btn" type="submit">Link zum Zurücksetzen senden</button>
+      <div class="adm-login-links"><button type="button" data-mode="password">Zurück zur Anmeldung</button></div>`,
+    'password-new': `
+      <p>Lege ein neues Passwort fest${auth.email() ? ` für <strong>${esc(auth.email())}</strong>` : ''}.</p>
+      <label class="adm-field"><span>Neues Passwort</span>
+        <input id="pw" type="password" autocomplete="new-password" minlength="10" required /></label>
+      <label class="adm-field"><span>Wiederholen</span>
+        <input id="pw2" type="password" autocomplete="new-password" minlength="10" required /></label>
+      <button class="adm-btn" type="submit">Passwort speichern</button>`,
+    token: `
+      <p>Notfall-Zugang mit dem GitHub-Token des Kontos <strong>finevelo</strong>. Er bleibt nur in diesem Browser.</p>
+      <label class="adm-field"><span>GitHub-Token</span>
+        <input id="tok" type="password" autocomplete="off" placeholder="github_pat_…" required /></label>
+      <label class="adm-check"><input id="remember" type="checkbox" /> Auf diesem Gerät angemeldet bleiben</label>
+      <button class="adm-btn" type="submit">Anmelden</button>
+      ${auth.configured ? '<div class="adm-login-links"><button type="button" data-mode="password">Mit E-Mail anmelden</button></div>' : ''}`,
+  };
+  root.innerHTML = `
+    <div class="adm-login"><form class="adm-login-box" id="login" novalidate>
+      <div class="adm-logo">Finevelo<small>Redaktion</small></div>
+      ${forms[mode]}
+      <p class="adm-login-msg" role="status">${error ? `<span class="adm-err">${esc(error)}</span>` : info ? `<span class="adm-ok">${esc(info)}</span>` : ''}</p>
+    </form>
+    ${auth.configured && mode !== 'token' && mode !== 'password-new' ? '<a class="adm-login-foot" href="#/token">Notfall-Zugang mit GitHub-Token</a>' : ''}
+    </div>`;
+  const form = document.getElementById('login');
+  const val = (id) => document.getElementById(id)?.value.trim() ?? '';
+  form.querySelector('input')?.focus();
+  form.querySelectorAll('[data-mode]').forEach((b) =>
+    b.addEventListener('click', () => renderLogin(b.dataset.mode, { mail: val('mail') })),
+  );
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    gh.setToken(document.getElementById('tok').value.trim(), document.getElementById('remember').checked);
+    if (!form.reportValidity()) return;
+    const btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    const mail = val('mail');
     try {
+      if (mode === 'password') {
+        await auth.signInWithPassword(mail, document.getElementById('pw').value);
+        await gh.checkAccess();
+        return home();
+      }
+      if (mode === 'link') {
+        await auth.sendLoginLink(mail);
+        return renderLogin('link', { mail, info: 'Link ist unterwegs. Schau in dein Postfach (auch im Spam-Ordner).' });
+      }
+      if (mode === 'reset') {
+        await auth.sendReset(mail);
+        return renderLogin('password', { mail, info: 'Falls die Adresse freigeschaltet ist, kommt gleich eine Mail mit dem Link.' });
+      }
+      if (mode === 'password-new') {
+        const pw = document.getElementById('pw').value;
+        if (pw.length < 10) throw new Error('Bitte mindestens 10 Zeichen.');
+        if (pw !== document.getElementById('pw2').value) throw new Error('Die beiden Passwörter sind nicht gleich.');
+        await auth.setPassword(pw);
+        toast('Neues Passwort gespeichert.');
+        return home();
+      }
+      gh.setToken(val('tok'), document.getElementById('remember').checked);
       await gh.checkAccess();
-      route();
+      home();
     } catch (err) {
-      gh.signOut();
-      renderLogin(err.message);
+      if (mode === 'password' || mode === 'token') gh.signOut();
+      renderLogin(mode, { mail, error: err.message });
     }
   });
 }
+
+const home = () => (location.hash && location.hash !== '#/' ? (location.hash = '#/') : route());
 
 // ---------- shell ----------
 const NAV = [
@@ -95,6 +167,7 @@ function shell(active, content, drafts = null) {
       </nav>
       <div class="adm-side-foot">
         <a href="/" target="_blank" rel="noopener">Website ansehen ↗</a>
+        ${auth.email() && !gh.hasToken() ? `<span class="adm-side-user" title="Angemeldet">${esc(auth.email())}</span>` : ''}
         <button id="signout" type="button">Abmelden</button>
       </div>
     </aside>
@@ -102,6 +175,7 @@ function shell(active, content, drafts = null) {
   document.getElementById('signout').addEventListener('click', () => {
     gh.signOut();
     Object.keys(cache).forEach((k) => (cache[k] = null));
+    location.hash = '#/';
     renderLogin();
   });
   return document.getElementById('view');
@@ -716,8 +790,10 @@ async function viewAgent() {
 
 // ---------- router ----------
 function route() {
-  if (!gh.hasToken()) return renderLogin();
   const [path, query = ''] = location.hash.replace(/^#/, '').split('?');
+  if (auth.recovering && auth.signedIn()) return renderLogin('password-new');
+  if (!gh.signedIn()) return renderLogin(path === '/token' ? 'token' : undefined);
+  if (path === '/token' || path === '/password') return (location.hash = '#/');
   const params = new URLSearchParams(query);
   window.scrollTo(0, 0);
   if (path.startsWith('/edit/')) return viewEditor(decodeURIComponent(path.slice(6)));
@@ -728,4 +804,4 @@ function route() {
   return viewDashboard();
 }
 window.addEventListener('hashchange', route);
-route();
+auth.init().then(route, () => route());

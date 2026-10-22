@@ -1,0 +1,24 @@
+# Supabase pauses free projects after about a week without traffic.
+# A daily request keeps the backend login awake.
+name: Supabase keep-alive
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ping Supabase
+        run: |
+          URL=$(sed -n "s/^export const SUPABASE_URL = '\(.*\)';/\1/p" src/admin/supabase.config.js)
+          KEY=$(sed -n "s/^export const SUPABASE_KEY = '\(.*\)';/\1/p" src/admin/supabase.config.js)
+          if [ -z "$URL" ]; then echo "Supabase not configured yet"; exit 0; fi
+          curl -fsS -o /dev/null -w "auth %{http_code}\n" -H "apikey: $KEY" "$URL/auth/v1/health"
+          curl -sS -o /dev/null -w "rest %{http_code}\n" -H "apikey: $KEY" "$URL/rest/v1/"

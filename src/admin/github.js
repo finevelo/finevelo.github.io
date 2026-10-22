@@ -1,5 +1,8 @@
-// Thin GitHub API client for the Finevelo backend. Everything is stored in the repo; the token never leaves the browser.
+// Thin GitHub API client for the Finevelo backend. Everything is stored in the repo.
+// Normal path: calls go through the Supabase function "github", which holds the token.
+// Emergency path: a personal GitHub token typed into the login page talks to GitHub directly.
 import sodium from 'libsodium-wrappers';
+import * as auth from './auth.js';
 
 export const REPO = 'finevelo/finevelo.github.io';
 export const BRANCH = 'main';
@@ -12,6 +15,7 @@ try {
 } catch {}
 
 export const hasToken = () => Boolean(token);
+export const signedIn = () => hasToken() || auth.signedIn();
 
 export function setToken(value, remember) {
   token = value;
@@ -24,6 +28,7 @@ export function setToken(value, remember) {
 
 export function signOut() {
   token = '';
+  auth.signOut();
   try {
     sessionStorage.removeItem(KEY);
     localStorage.removeItem(KEY);
@@ -37,25 +42,40 @@ export class GitHubError extends Error {
   }
 }
 
-async function request(path, { method = 'GET', body, raw = false } = {}) {
-  const res = await fetch(path.startsWith('http') ? path : `${API}${path}`, {
-    method,
-    headers: {
-      Accept: 'application/vnd.github+json',
-      Authorization: `Bearer ${token}`,
-      'X-GitHub-Api-Version': '2022-11-28',
-      ...(body ? { 'Content-Type': 'application/json' } : {}),
-    },
-    body: body ? JSON.stringify(body) : undefined,
+async function send(path, method, body) {
+  if (token || !auth.configured)
+    return fetch(`${API}${path}`, {
+      method,
+      headers: {
+        Accept: 'application/vnd.github+json',
+        Authorization: `Bearer ${token}`,
+        'X-GitHub-Api-Version': '2022-11-28',
+        ...(body ? { 'Content-Type': 'application/json' } : {}),
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+  return fetch(auth.FUNCTION_URL, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${await auth.accessToken()}`, apikey: auth.KEY, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ path, method, body }),
   });
+}
+
+async function request(path, { method = 'GET', body, raw = false } = {}) {
+  let res;
+  try {
+    res = await send(path, method, body);
+  } catch {
+    throw new GitHubError(0, 'Keine Verbindung zum Server. Bitte Internet prüfen und neu laden.');
+  }
   if (res.status === 404) return null;
   if (!res.ok) {
     let msg = `${res.status}`;
     try {
       msg = (await res.json()).message || msg;
     } catch {}
-    if (res.status === 401) msg = 'Token ungültig oder abgelaufen.';
-    if (res.status === 403) msg = `Keine Berechtigung (${msg}). Fehlt dem Token ein Recht?`;
+    if (res.status === 401) msg = token ? 'Token ungültig oder abgelaufen.' : 'Sitzung abgelaufen. Bitte neu anmelden.';
+    if (res.status === 403) msg = token ? `Keine Berechtigung (${msg}). Fehlt dem Token ein Recht?` : msg === 'Dieses Konto ist nicht freigeschaltet.' ? msg : `Keine Berechtigung (${msg}).`;
     if (res.status === 409) msg = 'Die Datei wurde inzwischen geändert. Bitte neu laden.';
     throw new GitHubError(res.status, msg);
   }
