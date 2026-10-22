@@ -42,6 +42,8 @@ const articles = defineCollection({
       .optional(),
     bike: reference('bikes').optional(),
     source: z.object({ name: z.string(), url: z.string().url() }).optional(),
+    // Where the agent first spotted the news (a magazine); the article itself is written from `source`
+    tip: z.object({ name: z.string(), url: z.string().url() }).optional(),
     tags: z.array(z.string()).default([]),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     featured: z.boolean().default(false),

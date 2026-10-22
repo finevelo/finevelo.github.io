@@ -38,7 +38,7 @@ const clean = (v) => {
 };
 
 // Fixed key order so diffs stay readable.
-const ORDER = ['title', 'seoTitle', 'description', 'dek', 'pubDate', 'updatedDate', 'category', 'format', 'author', 'draft', 'featured', 'bike', 'disclosure', 'hero', 'specs', 'source', 'tags', 'faq', 'sample'];
+const ORDER = ['title', 'seoTitle', 'description', 'dek', 'pubDate', 'updatedDate', 'category', 'format', 'author', 'draft', 'featured', 'bike', 'disclosure', 'hero', 'specs', 'source', 'tip', 'tags', 'faq', 'sample'];
 
 export function serializeArticle({ data, body }) {
   const d = clean({ ...data });

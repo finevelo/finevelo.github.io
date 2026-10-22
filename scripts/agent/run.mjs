@@ -1,11 +1,14 @@
-// Finevelo news agent: scout RSS feeds -> score -> write -> fact-check -> save articles (draft or published).
+// Finevelo news agent: magazine RSS feeds are only tips -> score -> find the manufacturer's primary source ->
+// write from that source -> fact-check -> copy check -> save as draft. Publishing is always done by a person in the backend.
 // Runs on GitHub Actions (hourly); config/agent.json decides whether this hour is a run slot.
 // FORCE=1 runs regardless of the schedule. DRY_RUN=1 scores only and writes nothing.
 import Anthropic from '@anthropic-ai/sdk';
 import { zodOutputFormat } from '@anthropic-ai/sdk/helpers/zod';
 import { z } from 'zod';
 import { existsSync, readdirSync, readFileSync, writeFileSync, appendFileSync } from 'node:fs';
-import { EDITORIAL, SCORE_TASK, WRITE_TASK, QA_TASK } from './prompts.mjs';
+import { EDITORIAL, SCORE_TASK, SEARCH_TASK, WRITE_TASK, QA_TASK, REWRITE_TASK } from './prompts.mjs';
+import { fetchText, robotsAllows, readAllowedPage, decode, tag } from './fetch.mjs';
+import { copyCheck } from './copycheck.mjs';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const read = (p) => JSON.parse(readFileSync(ROOT + p, 'utf8'));
@@ -34,35 +37,11 @@ function isRunSlot(now = new Date()) {
   return settings.days.includes(day) && settings.times.some((t) => t.slice(0, 2) === hour);
 }
 
-// ---------- feeds ----------
-const decode = (s = '') =>
-  s
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&#8217;|&rsquo;/g, "'")
-    .replace(/&#8211;|&ndash;/g, '–')
-    .replace(/&#8212;|&mdash;/g, '—')
-    .replace(/&#\d+;/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-const tag = (xml, name) => {
-  const m = xml.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)</${name}>`, 'i'));
-  return m ? m[1] : '';
-};
-const UA = 'Mozilla/5.0 (compatible; FineveloBot/1.0; +https://www.finevelo.com/about/)';
-
-async function fetchText(url, timeoutMs = 20000) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: '*/*' }, signal: AbortSignal.timeout(timeoutMs) });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return res.text();
-}
-
+// ---------- feeds (tips only) ----------
 async function readFeed(source) {
-  const xml = await fetchText(source.rss);
+  const check = await robotsAllows(source.rss);
+  if (!check.ok) throw new Error(`skipped: ${check.reason}`);
+  const { text: xml } = await fetchText(source.rss);
   const blocks = xml.match(/<item[\s>][\s\S]*?<\/item>/gi) || xml.match(/<entry[\s>][\s\S]*?<\/entry>/gi) || [];
   return blocks.map((b) => {
     const atomLink = b.match(/<link[^>]*href="([^"]+)"/i);
@@ -71,16 +50,9 @@ async function readFeed(source) {
       title: decode(tag(b, 'title')),
       url: decode(tag(b, 'link')) || (atomLink ? atomLink[1] : ''),
       date: new Date(decode(tag(b, 'pubDate')) || decode(tag(b, 'published')) || decode(tag(b, 'updated')) || 0),
-      summary: decode(tag(b, 'description') || tag(b, 'summary')).slice(0, 400),
+      summary: decode(tag(b, 'description') || tag(b, 'summary')).slice(0, 200),
     };
   });
-}
-
-// Readable text from an article page, without scripts, navigation and markup.
-async function readPage(url) {
-  const html = await fetchText(url, 30000);
-  const main = tag(html, 'article') || tag(html, 'main') || html;
-  return decode(main.replace(/<(script|style|nav|footer|header|aside|form)[\s\S]*?<\/\1>/gi, ' ')).slice(0, 60000);
 }
 
 // ---------- existing content ----------
@@ -92,7 +64,7 @@ function existingArticles() {
       return {
         slug: f.replace(/\.md$/, ''),
         title: (text.match(/^title:\s*"?(.*?)"?\s*$/m) || [])[1] || '',
-        sourceUrl: (text.match(/^\s+url:\s*"?(https?:[^"\s]+)"?/m) || [])[1] || '',
+        urls: [...text.matchAll(/^\s+url:\s*"?(https?:[^"\s]+)"?/gm)].map((m) => m[1]),
       };
     });
 }
@@ -147,9 +119,74 @@ const QaSchema = z.object({
     .nullable(),
 });
 
+// ---------- primary sources ----------
+// Domains that are never a primary source: every outlet in config/sources.json plus common media, retail and social sites.
+const NOT_PRIMARY = [
+  ...sources.filter((s) => s.type === 'outlet').map((s) => new URL(s.website).hostname.replace(/^www\./, '')),
+  'bikeradar.com', 'velonews.com', 'outsideonline.com', 'cyclingtips.com', 'bicycling.com', 'tour-magazin.de', 'roadbike.de',
+  'mtb-news.de', 'bike-magazin.de', 'gravel-bike.de', 'cyclist.co.uk', 'singletracks.com', 'vitalmtb.com', 'enduro-mtb.com',
+  'granfondo-cycling.com', 'youtube.com', 'instagram.com', 'facebook.com', 'reddit.com', 'x.com', 'strava.com',
+  'amazon.com', 'amazon.de', 'bike-discount.de', 'bike24.de', 'wiggle.com', 'competitivecyclist.com',
+];
+const hostOf = (url) => new URL(url).hostname.replace(/^www\./, '');
+const isNotPrimary = (url) => NOT_PRIMARY.some((d) => hostOf(url) === d || hostOf(url).endsWith(`.${d}`));
+const brandSites = sources.filter((s) => s.type === 'brand' && s.active && s.website).map((s) => `${s.name}: ${s.website}`).join('\n');
+
+const SearchSchema = z.object({
+  found: z.boolean(),
+  brand: z.string().nullable().optional(),
+  urls: z.array(z.object({ url: z.string().url(), publisher: z.string(), kind: z.string() })).default([]),
+  note: z.string().nullable().optional(),
+});
+
+// Claude searches the web for the manufacturer's own announcement; we only get URLs back and fetch them ourselves.
+async function findPrimary(item) {
+  const messages = [
+    {
+      role: 'user',
+      content: `TIP (from ${item.source}, ${item.date.toISOString().slice(0, 10)}): ${item.title}\n${item.summary}\n\nKnown brand websites:\n${brandSites}`,
+    },
+  ];
+  let response;
+  for (let i = 0; i < 4; i++) {
+    response = await client.messages.create({
+      model: MODEL,
+      max_tokens: 4000,
+      system: SEARCH_TASK,
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 5, blocked_domains: NOT_PRIMARY }],
+      messages,
+    });
+    if (response.stop_reason !== 'pause_turn') break;
+    messages.push({ role: 'assistant', content: response.content });
+  }
+  const text = response.content.filter((b) => b.type === 'text').map((b) => b.text).join('\n');
+  const json = (text.match(/```json\s*([\s\S]*?)```/) || text.match(/(\{[\s\S]*\})/) || [])[1];
+  if (!json) throw new Error('search gave no usable answer');
+  return SearchSchema.parse(JSON.parse(json));
+}
+
+// Fetch the candidate URLs ourselves, respecting robots.txt, TDM reservations and noai signals.
+async function readPrimary(found) {
+  const pages = [];
+  for (const u of found.urls.slice(0, 3)) {
+    if (isNotPrimary(u.url)) {
+      log(`    · ${u.url}: not a primary source, ignored`);
+      continue;
+    }
+    try {
+      const text = await readAllowedPage(u.url);
+      if (text.length < 400) throw new Error('page too short');
+      pages.push({ ...u, text });
+    } catch (e) {
+      log(`    · ${u.url}: not used (${e.message})`);
+    }
+  }
+  return pages;
+}
+
 // ---------- writing files ----------
 const q = (s) => JSON.stringify(String(s)); // JSON strings are valid YAML scalars
-function toMarkdown(a, item, draft) {
+function toMarkdown(a, item, primary) {
   const lines = [
     '---',
     `title: ${q(a.title)}`,
@@ -160,7 +197,8 @@ function toMarkdown(a, item, draft) {
     `category: ${a.category}`,
     `format: ${a.format}`,
     'author: editorial',
-    `draft: ${draft}`,
+    // Always a draft: a person reviews and publishes in the backend.
+    'draft: true',
     'hero:',
     `  alt: ${q(a.hero_alt)}`,
   ];
@@ -169,13 +207,22 @@ function toMarkdown(a, item, draft) {
     if (a.specs.groupset) lines.push(`  groupset: ${q(a.specs.groupset)}`);
     if (a.specs.availability) lines.push(`  availability: ${q(a.specs.availability)}`);
   }
-  lines.push('source:', `  name: ${q(item.source)}`, `  url: ${q(item.url)}`);
+  lines.push('source:', `  name: ${q(primary[0].publisher)}`, `  url: ${q(primary[0].url)}`);
+  lines.push('tip:', `  name: ${q(item.source)}`, `  url: ${q(item.url)}`);
   lines.push(`tags: [${a.tags.map(q).join(', ')}]`);
   if (a.faq.length) {
     lines.push('faq:');
     for (const f of a.faq) lines.push(`  - q: ${q(f.q)}`, `    a: ${q(f.a)}`);
   }
-  lines.push('---', '', a.body.trim(), '', `*Source: [${item.source}](${item.url}). Drafted with AI assistance and checked against the source.*`, '');
+  const links = primary.map((p) => `[${p.publisher}](${p.url})`).join(', ');
+  lines.push(
+    '---',
+    '',
+    a.body.trim(),
+    '',
+    `*Sources: ${links}. First spotted via [${item.source}](${item.url}). Drafted with AI assistance from the manufacturer's information and reviewed by the Finevelo editors.*`,
+    '',
+  );
   return lines.join('\n');
 }
 
@@ -196,7 +243,7 @@ async function main() {
 
   log(`## Finevelo agent run ${new Date().toISOString()} (model ${MODEL}${FORCE ? ', manual' : ''}${DRY_RUN ? ', dry run' : ''})`);
   const existing = existingArticles();
-  const knownUrls = new Set(existing.map((a) => a.sourceUrl).filter(Boolean));
+  const knownUrls = new Set(existing.flatMap((a) => a.urls));
   const since = Date.now() - settings.lookbackHours * 3600 * 1000;
 
   // 1. Scout
@@ -227,20 +274,48 @@ async function main() {
     .slice(0, settings.maxArticlesPerRun);
   log(`Scored ${scored.items.length} items, ${picks.length} at or above ${settings.minScore}.`);
   for (const p of picks) log(`  - ${p.score} · ${candidates[p.id].title} — ${p.reason}`);
-  if (DRY_RUN || !picks.length) return;
+  if (!picks.length) return;
+  // Dry run: also look for the primary sources, but write nothing.
+  if (DRY_RUN) {
+    for (const p of picks) {
+      const item = candidates[p.id];
+      try {
+        const found = await findPrimary(item);
+        const primary = found.found ? await readPrimary(found) : [];
+        log(`  ${primary.length ? '✓' : '✗'} ${item.title}: ${primary.length ? primary.map((pg) => pg.url).join(', ') : found.note || 'no readable primary source'}`);
+      } catch (e) {
+        log(`  ✗ ${item.title}: ${e.message}`);
+      }
+    }
+    return;
+  }
 
-  // 3. Write and 4. check
+  // 3. Primary source, 4. write, 5. fact check, 6. copy check
   const taken = new Set(existing.map((a) => a.slug));
   const created = [];
   for (const p of picks) {
     const item = candidates[p.id];
     try {
-      const source = await readPage(item.url);
-      if (source.length < 800) throw new Error('source page too short or blocked');
-      const brief = `Category: ${p.category}. Format: ${p.format}. Source outlet: ${item.source}. Source URL: ${item.url}\n\nSOURCE TEXT:\n${source}`;
+      const found = await findPrimary(item);
+      if (!found.found || !found.urls.length) {
+        log(`  ✗ no primary source, skipped: ${item.title}${found.note ? ` (${found.note})` : ''}`);
+        continue;
+      }
+      const primary = await readPrimary(found);
+      if (!primary.length) {
+        log(`  ✗ primary source not readable, skipped: ${item.title}`);
+        continue;
+      }
+      const sourceText = primary.map((pg, i) => `[${i + 1}] ${pg.publisher} (${pg.kind}) ${pg.url}\n${pg.text}`).join('\n\n');
+      const tip = `TIP: ${item.source} reported "${item.title}". Do not use the tip's wording or content.`;
+      const brief = `Category: ${p.category}. Format: ${p.format}.\n${tip}\n\nPRIMARY SOURCE TEXT:\n${sourceText}`;
       let article = await ask(ArticleSchema, `${EDITORIAL}\n\n${WRITE_TASK}`, brief, { effort: 'high' });
-      const qa = await ask(QaSchema, `${EDITORIAL}\n\n${QA_TASK}`, `SOURCE TEXT:\n${source}\n\nDRAFT (JSON):\n${JSON.stringify(article)}`, { effort: 'high' });
-      if (!qa.pass && qa.fixed_body) {
+      const qa = await ask(QaSchema, `${EDITORIAL}\n\n${QA_TASK}`, `PRIMARY SOURCE TEXT:\n${sourceText}\n\nDRAFT (JSON):\n${JSON.stringify(article)}`, { effort: 'high' });
+      if (!qa.pass && !qa.fixed_body) {
+        log(`  ✗ QA failed, skipped: ${item.title} — ${qa.issues.map((i) => i.problem).join('; ')}`);
+        continue;
+      }
+      if (!qa.pass) {
         const f = qa.fixed_fields || {};
         article = {
           ...article,
@@ -251,21 +326,34 @@ async function main() {
           specs: article.specs && { ...article.specs, price: f.price || article.specs.price, weight: f.weight || article.specs.weight },
         };
       }
-      if (!qa.pass && !qa.fixed_body) {
-        log(`  ✗ QA failed, skipped: ${item.title} — ${qa.issues.map((i) => i.problem).join('; ')}`);
+      // Compare against everything the model saw: primary pages and the tip's headline and teaser.
+      const compareWith = [...primary.map((pg) => pg.text), `${item.title}. ${item.summary}`];
+      const fullText = (a) => [a.title, a.dek, a.description, a.body, ...a.faq.map((f) => `${f.q} ${f.a}`)].join('\n\n');
+      let copy = copyCheck(fullText(article), compareWith);
+      if (!copy.ok) {
+        log(`    · copy check: longest run ${copy.longestRun} words, ${copy.share}% shared — rewriting`);
+        article = await ask(
+          ArticleSchema,
+          `${EDITORIAL}\n\n${REWRITE_TASK}`,
+          `COPIED PASSAGES:\n${copy.passages.map((x) => `- ${x}`).join('\n')}\n\nDRAFT (JSON):\n${JSON.stringify(article)}`,
+          { effort: 'medium' },
+        );
+        copy = copyCheck(fullText(article), compareWith);
+      }
+      if (!copy.ok) {
+        log(`  ✗ copy check failed twice, skipped: ${item.title} (longest run ${copy.longestRun} words)`);
         continue;
       }
-      const publish = settings.autoPublish && qa.pass;
       const slug = uniqueSlug(article.slug, taken);
-      writeFileSync(`${ARTICLES}${slug}.md`, toMarkdown(article, item, !publish));
-      created.push({ slug, publish });
-      log(`  ✓ ${publish ? 'published' : 'draft'}: ${slug}${qa.pass ? '' : ' (corrected by QA)'}`);
+      writeFileSync(`${ARTICLES}${slug}.md`, toMarkdown(article, item, primary));
+      created.push(slug);
+      log(`  ✓ draft: ${slug} — sources: ${primary.map((pg) => hostOf(pg.url)).join(', ')}${qa.pass ? '' : ' (corrected by QA)'}`);
     } catch (e) {
       log(`  ✗ ${item.title}: ${e.message}`);
     }
   }
   state.runs = [...(state.runs || []), { at: new Date().toISOString(), created: created.length }].slice(-30);
-  if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `published=${created.some((c) => c.publish)}\n`);
+  if (created.length) log(`${created.length} draft(s) waiting for review in the backend.`);
 }
 
 try {

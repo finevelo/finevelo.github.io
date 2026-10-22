@@ -15,7 +15,6 @@ on:
 
 permissions:
   contents: write
-  actions: write
 
 concurrency:
   group: agent
@@ -50,11 +49,7 @@ jobs:
           git config user.email "346217738+finevelo@users.noreply.github.com"
           git add src/content/articles config/agent-state.json
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
-          git commit -m "Agent: new drafts and articles"
+          git commit -m "Agent: new drafts for review"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
-      - name: Deploy site
-        if: steps.commit.outputs.changed == 'true'
-        run: gh workflow run pages.yml --ref main
-        env:
-          GH_TOKEN: ${{ github.token }}
+      # Drafts are not on the website, so no deploy here. Publishing in the backend triggers it.

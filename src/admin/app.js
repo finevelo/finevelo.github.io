@@ -682,13 +682,12 @@ async function viewAgent() {
   shell('#/agent', `
     <div class="adm-head"><div><h1>Agent</h1>
       <p>${s.enabled ? `Eingeschaltet · nächster Lauf ${next ? fmtDate(next) : 'nicht im Zeitplan'}` : 'Ausgeschaltet: läuft nur, wenn du ihn von Hand startest.'}</p></div>
-      <div class="adm-actions"><button class="adm-btn ghost" id="dry" type="button">Probelauf (nur bewerten)</button><button class="adm-btn" id="run" type="button">Jetzt ausführen</button></div></div>
+      <div class="adm-actions"><button class="adm-btn ghost" id="dry" type="button">Probelauf (speichert nichts)</button><button class="adm-btn" id="run" type="button">Jetzt ausführen</button></div></div>
 
     <section class="adm-panel"><h2>Zeitplan &amp; Regeln</h2>
-      <p class="lead">Der Agent liest die Feeds der aktiven <a href="#/sources">Quellen</a>, bewertet die Meldungen nach den High-End-Schwellen, schreibt Artikel aus der Originalquelle und lässt jede Zahl gegenprüfen.</p>
+      <p class="lead">Der Agent nimmt die Feeds der Magazine nur als Tipp, sucht dazu die Originalmeldung des Herstellers, schreibt daraus in eigenen Worten und lässt jede Zahl gegenprüfen. Seiten, die KI-Nutzung per robots.txt oder TDM-Vorbehalt ausschließen, liest er nicht. Jeder Artikel kommt als Entwurf zu dir.</p>
       <form id="settings" onsubmit="return false">
         <label class="adm-check"><input type="checkbox" name="enabled" ${s.enabled ? 'checked' : ''} /> <strong>Agent nach Zeitplan ausführen</strong></label>
-        <label class="adm-check"><input type="checkbox" name="autoPublish" ${s.autoPublish ? 'checked' : ''} /> Geprüfte Artikel direkt veröffentlichen <span style="color:var(--muted)">(aus: alles kommt als Entwurf zu dir)</span></label>
         <div class="adm-field"><span>Wochentage</span><div class="adm-tabs" id="days">
           ${Object.entries(DAYS).map(([k, l]) => `<button type="button" data-day="${k}" aria-pressed="${s.days.includes(k)}">${l}</button>`).join('')}
         </div></div>
@@ -731,10 +730,10 @@ async function viewAgent() {
     const f = new FormData(document.getElementById('settings'));
     const times = String(f.get('times')).split(',').map((x) => x.trim()).filter(Boolean);
     if (!times.every((x) => /^([01]\d|2[0-3]):00$/.test(x))) return toast('Uhrzeiten bitte als volle Stunden, z. B. 06:00, 14:00.', true);
+    const { autoPublish, ...rest } = s;
     const data = {
-      ...s,
+      ...rest,
       enabled: f.get('enabled') === 'on',
-      autoPublish: f.get('autoPublish') === 'on',
       days: [...document.querySelectorAll('#days [aria-pressed=true]')].map((b) => b.dataset.day),
       times,
       maxArticlesPerRun: +f.get('maxArticlesPerRun'),
@@ -744,7 +743,6 @@ async function viewAgent() {
       timezone: String(f.get('timezone')).trim() || 'Europe/Berlin',
       categories: [...document.querySelectorAll('#cats [aria-pressed=true]')].map((b) => b.dataset.cat),
     };
-    if (data.autoPublish && !s.autoPublish && !confirm('Direkt veröffentlichen einschalten? Geprüfte Artikel gehen dann ohne deine Freigabe online.')) return;
     e.target.disabled = true;
     try {
       await gh.writeJson(SETTINGS_PATH, data, st.sha, 'Update agent settings');

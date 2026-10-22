@@ -181,7 +181,6 @@ collections:
         file: config/agent.json
         fields:
           - { name: enabled, label: "Agent eingeschaltet", widget: boolean }
-          - { name: autoPublish, label: "Direkt veröffentlichen (sonst Entwurf zur Freigabe)", widget: boolean, default: false }
           - name: days
             label: Wochentage
             widget: select

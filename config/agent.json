@@ -1,13 +1,28 @@
 {
   "enabled": false,
-  "autoPublish": false,
-  "days": ["mon", "tue", "wed", "thu", "fri"],
-  "times": ["06:00", "14:00"],
+  "days": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri"
+  ],
+  "times": [
+    "06:00",
+    "14:00"
+  ],
   "timezone": "Europe/Berlin",
   "maxArticlesPerRun": 3,
   "minScore": 75,
   "lookbackHours": 36,
-  "categories": ["road", "gravel", "mtb", "e-bike", "components", "custom"],
+  "categories": [
+    "road",
+    "gravel",
+    "mtb",
+    "e-bike",
+    "components",
+    "custom"
+  ],
   "model": "claude-opus-5-5",
   "notes": "Editorial rules live in scripts/agent/prompts.mjs. Thresholds: road from $8,000, gravel from $6,500, MTB from $9,000, e-bike from $7,000, wheelsets from $2,500, groupsets from $3,500."
 }

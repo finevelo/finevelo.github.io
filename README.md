@@ -18,7 +18,14 @@ Jeder Push auf `main` baut per GitHub Actions (`.github/workflows/pages.yml`) ei
 
 - **https://www.finevelo.com/admin/**: eigenes Backend im Finevelo-Design (`src/pages/admin/index.astro`, Code in `src/admin/`). Anmeldung mit einem Fine-grained-Token des GitHub-Kontos `finevelo` (nur dieses Repo; Contents, Secrets, Actions: Read and write). Bereiche: Übersicht, Artikel (Liste, Editor mit Live-Vorschau, Bild-Upload mit Zuschnitt auf 1200×675 WebP, Entwurf/Veröffentlichen/Offline nehmen), Quellen & Firmen (`config/sources.json`), Agent (Zeitplan und Regeln in `config/agent.json`, Claude-API-Schlüssel als verschlüsseltes GitHub-Secret `ANTHROPIC_API_KEY`, Läufe, Jetzt ausführen, Probelauf). Speichern = Commit auf `main` = Neubau der Seite.
 - **/admin/cms/** (Sveltia CMS): Reserve für die großen Datentabellen (Bike-Datenbank, Guides).
-- **Agent** (`scripts/agent/`, Workflow `.github/workflows/agent.yml`): stündlicher Trigger, läuft nur zu den Zeiten aus `config/agent.json`. Liest die RSS-Feeds aktiver Quellen, bewertet mit Claude nach den High-End-Schwellen, schreibt aus der Originalquelle und lässt jeden Artikel von einem zweiten Durchgang gegen die Quelle prüfen. Standard: Entwurf (`draft: true`), freigeben im CMS. Mit `autoPublish` gehen geprüfte Artikel direkt online. Redaktionsregeln: `scripts/agent/prompts.mjs`. Bereits bewertete Meldungen: `config/agent-state.json`.
+- **Agent** (`scripts/agent/`, Workflow `.github/workflows/agent.yml`): stündlicher Trigger, läuft nur zu den Zeiten aus `config/agent.json`.
+  1. Liest die RSS-Feeds der Magazine nur als **Tipp** (Überschrift + kurzer Teaser). Artikelseiten der Magazine werden nie abgerufen.
+  2. Bewertet die Tipps mit Claude nach den High-End-Schwellen.
+  3. Sucht per Websuche die **Originalquelle** (Pressemitteilung oder Produktseite des Herstellers); Magazine, Händler und Social Media sind ausgeschlossen.
+  4. Ruft diese Seiten selbst ab, nur wenn robots.txt (auch für ClaudeBot/anthropic-ai), Content-Signal, Lizenzhinweise, TDMRep und `noai`-Tags es erlauben (`scripts/agent/fetch.mjs`).
+  5. Schreibt aus der Originalquelle in eigenen Worten, ein zweiter Durchgang prüft jede Zahl, ein mechanischer Kopier-Check (`scripts/agent/copycheck.mjs`) verwirft übernommene Wortfolgen.
+  6. Speichert **immer als Entwurf**. Veröffentlichen geht nur durch einen Menschen im Backend.
+  Redaktionsregeln: `scripts/agent/prompts.mjs`. Bereits bewertete Meldungen: `config/agent-state.json`.
 
 ## Struktur
 
