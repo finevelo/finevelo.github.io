@@ -1,0 +1,247 @@
+# Finevelo editorial backend (Sveltia CMS). Content is stored in the GitHub repo; saving commits to main,
+# and the site rebuilds automatically. Sign in with a fine-grained GitHub token of the finevelo account.
+backend:
+  name: github
+  repo: finevelo/finevelo.github.io
+  branch: main
+  commit_messages:
+    create: "CMS: create {{collection}} “{{slug}}”"
+    update: "CMS: update {{collection}} “{{slug}}”"
+    delete: "CMS: delete {{collection}} “{{slug}}”"
+    uploadMedia: "CMS: upload “{{path}}”"
+    deleteMedia: "CMS: delete “{{path}}”"
+
+site_url: https://www.finevelo.com
+display_url: https://www.finevelo.com
+locale: de
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: articles
+    label: Artikel
+    label_singular: Artikel
+    folder: src/content/articles
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{pubDate | date('YYYY-MM-DD')}}{{draft | ternary(' · ENTWURF', '')}}"
+    sortable_fields: [pubDate, title]
+    view_filters:
+      - { label: "Entwürfe", field: draft, pattern: true }
+      - { label: "Veröffentlicht", field: draft, pattern: false }
+    view_groups:
+      - { label: "Rubrik", field: category }
+    preview_path: "news/{{slug}}/"
+    fields:
+      - { name: title, label: "Titel", widget: string }
+      - { name: seoTitle, label: "SEO-Titel (max. 60 Zeichen)", widget: string, required: false, pattern: ['^.{0,60}$', "Höchstens 60 Zeichen"] }
+      - { name: description, label: "Meta-Beschreibung (mit Preis, max. 170 Zeichen)", widget: text, pattern: ['^[\s\S]{0,170}$', "Höchstens 170 Zeichen"] }
+      - { name: dek, label: "Unterzeile", widget: text, required: false }
+      - { name: draft, label: "Entwurf (nicht veröffentlicht)", widget: boolean, default: true }
+      - { name: pubDate, label: "Veröffentlicht am", widget: datetime }
+      - { name: updatedDate, label: "Aktualisiert am", widget: datetime, required: false }
+      - name: category
+        label: Rubrik
+        widget: select
+        options:
+          - { label: Road, value: road }
+          - { label: Gravel, value: gravel }
+          - { label: MTB, value: mtb }
+          - { label: E-Bike, value: e-bike }
+          - { label: Components, value: components }
+          - { label: "Custom & Craft", value: custom }
+      - name: format
+        label: Format
+        widget: select
+        options:
+          - { label: "Launch Brief", value: launch-brief }
+          - { label: "The Edit", value: the-edit }
+          - { label: "Deep Dive", value: deep-dive }
+          - { label: "Pro Bike Check", value: pro-bike-check }
+      - { name: author, label: "Autor (ID)", widget: hidden, default: editorial }
+      - { name: featured, label: "Aufmacher auf der Startseite", widget: boolean, default: false, required: false }
+      - { name: bike, label: "Rad in der Datenbank (ID, z. B. pinarello/dogma-f)", widget: string, required: false }
+      - { name: disclosure, label: "Offenlegung (z. B. bei NonPlus-Produkten)", widget: text, required: false }
+      - name: hero
+        label: Titelbild
+        widget: object
+        fields:
+          - { name: src, label: "Bild (WebP, 1200×675; leer = Illustration)", widget: image, required: false }
+          - { name: alt, label: "Alt-Text (was ist zu sehen)", widget: string }
+          - { name: caption, label: "Bildunterschrift", widget: string, required: false }
+          - { name: credit, label: "Credit (z. B. Photo: Name / Wikimedia Commons)", widget: string, required: false }
+          - { name: sourceUrl, label: "Link zur Bildquelle", widget: string, required: false }
+          - name: license
+            label: Lizenz
+            widget: object
+            required: false
+            fields:
+              - { name: name, label: "Name (z. B. CC BY-SA 4.0)", widget: string }
+              - { name: url, label: "Lizenz-URL", widget: string }
+          - { name: changes, label: "Bearbeitung (z. B. cropped)", widget: string, required: false }
+      - name: specs
+        label: "Specs-Box"
+        widget: object
+        required: false
+        fields:
+          - { name: price, label: "Preis (TBC, wenn unbestätigt)", widget: string }
+          - { name: weight, label: "Gewicht (mit Größe)", widget: string }
+          - { name: groupset, label: "Gruppe", widget: string, required: false }
+          - { name: availability, label: "Verfügbarkeit", widget: string, required: false }
+          - { name: url, label: "Herstellerlink", widget: string, required: false }
+      - name: source
+        label: "Hauptquelle"
+        widget: object
+        required: false
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: url, label: URL, widget: string }
+      - { name: tags, label: Tags, widget: list, required: false, default: [] }
+      - name: faq
+        label: FAQ
+        widget: list
+        required: false
+        fields:
+          - { name: q, label: Frage, widget: string }
+          - { name: a, label: Antwort, widget: text }
+      - { name: sample, label: "Platzhalter (Sample)", widget: hidden, default: false }
+      - { name: body, label: Text, widget: markdown }
+
+  - name: guides
+    label: Guides
+    folder: src/content/guides
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    preview_path: "guides/{{slug}}/"
+    fields:
+      - { name: title, label: Titel, widget: string }
+      - { name: seoTitle, label: "SEO-Titel (max. 60)", widget: string, required: false }
+      - { name: description, label: Beschreibung, widget: text }
+      - { name: updatedDate, label: "Aktualisiert am", widget: datetime, format: "YYYY-MM-DD" }
+      - { name: disclosure, label: "Offenlegung", widget: text, required: false }
+      - name: dataset
+        label: Datenquelle
+        widget: select
+        default: bikes
+        options: [bikes, hubs, wheels]
+      - name: filter
+        label: Filter
+        widget: object
+        required: false
+        fields:
+          - { name: category, label: Rubrik, widget: select, required: false, options: [road, gravel, mtb, e-bike, components, custom] }
+          - { name: minPriceUSD, label: "Mindestpreis USD", widget: number, value_type: int, required: false }
+          - { name: maxWeightKg, label: "Höchstgewicht kg", widget: number, value_type: float, required: false }
+          - { name: sort, label: Sortierung, widget: select, default: price-desc, options: [price-desc, price-asc, weight-asc] }
+      - { name: body, label: Einleitung, widget: markdown }
+
+  - name: data
+    label: "Datenbank & Einstellungen"
+    files:
+      - name: sources
+        label: "Quellen & Firmen"
+        file: config/sources.json
+        fields:
+          - name: sources
+            label: Quellen
+            widget: list
+            root: true
+            summary: "{{name}} · {{type}} · {{registration}}{{active | ternary('', ' · inaktiv')}}"
+            fields:
+              - { name: id, label: "ID (klein, ohne Leerzeichen)", widget: string }
+              - { name: name, label: Name, widget: string }
+              - name: type
+                label: Typ
+                widget: select
+                options:
+                  - { label: "Marke / Hersteller", value: brand }
+                  - { label: "Fachmedium", value: outlet }
+                  - { label: "Presseportal / Agentur", value: press }
+              - { name: active, label: "Vom Agenten auswerten", widget: boolean, default: true }
+              - { name: website, label: Website, widget: string }
+              - { name: rss, label: "RSS-Feed (leer, wenn keiner)", widget: string, required: false }
+              - { name: pressPortal, label: "Presseportal-URL", widget: string, required: false }
+              - name: registration
+                label: "Registrierung beim Presseportal"
+                widget: select
+                default: open
+                options:
+                  - { label: "Noch offen", value: open }
+                  - { label: "Beantragt", value: applied }
+                  - { label: "Registriert", value: registered }
+                  - { label: "Nicht nötig", value: not-needed }
+              - { name: contact, label: "Pressekontakt (Firmen-E-Mail, keine Passwörter)", widget: string, required: false }
+              - { name: notes, label: Notizen, widget: text, required: false }
+      - name: agent
+        label: "Agent: Zeitplan & Regeln"
+        file: config/agent.json
+        fields:
+          - { name: enabled, label: "Agent eingeschaltet", widget: boolean }
+          - { name: autoPublish, label: "Direkt veröffentlichen (sonst Entwurf zur Freigabe)", widget: boolean, default: false }
+          - name: days
+            label: Wochentage
+            widget: select
+            multiple: true
+            options:
+              - { label: Mo, value: mon }
+              - { label: Di, value: tue }
+              - { label: Mi, value: wed }
+              - { label: Do, value: thu }
+              - { label: Fr, value: fri }
+              - { label: Sa, value: sat }
+              - { label: So, value: sun }
+          - { name: times, label: "Uhrzeiten (HH:MM, volle Stunde)", widget: list, default: ["06:00"] }
+          - { name: timezone, label: Zeitzone, widget: string, default: Europe/Berlin }
+          - { name: maxArticlesPerRun, label: "Max. Artikel pro Lauf", widget: number, value_type: int, min: 1, max: 10 }
+          - { name: minScore, label: "Mindest-Relevanz (0–100)", widget: number, value_type: int, min: 0, max: 100 }
+          - { name: lookbackHours, label: "Meldungen der letzten … Stunden", widget: number, value_type: int, min: 6, max: 168 }
+          - name: categories
+            label: Rubriken
+            widget: select
+            multiple: true
+            options: [road, gravel, mtb, e-bike, components, custom]
+          - name: model
+            label: Claude-Modell
+            widget: select
+            options:
+              - { label: "Claude Opus 5.5 (Standard, beste Qualität)", value: claude-opus-5-5 }
+              - { label: "Claude Sonnet 5.5 (günstiger)", value: claude-sonnet-5-5 }
+          - { name: notes, label: Notizen, widget: text, required: false }
+      - name: bikes
+        label: "Bike-Datenbank"
+        file: src/data/bikes.json
+        fields:
+          - name: bikes
+            label: Räder
+            widget: list
+            root: true
+            summary: "{{brand}} {{model}} · {{category}}{{verified | ternary('', ' · unbestätigt')}}"
+            fields:
+              - { name: id, label: "ID (marke/modell)", widget: string }
+              - { name: brand, label: Marke, widget: string }
+              - { name: model, label: Modell, widget: string }
+              - { name: year, label: Modelljahr, widget: number, value_type: int }
+              - { name: category, label: Rubrik, widget: select, options: [road, gravel, mtb, e-bike] }
+              - { name: build, label: "Top-Ausstattung", widget: string }
+              - { name: priceUSD, label: "Preis USD", widget: number, value_type: float, required: false }
+              - { name: priceEUR, label: "Preis EUR", widget: number, value_type: float, required: false }
+              - { name: weightKg, label: "Gewicht kg", widget: number, value_type: float, required: false }
+              - { name: weightNote, label: "Gewicht: Basis (claimed/measured, Größe)", widget: string, required: false }
+              - { name: groupset, label: Gruppe, widget: string }
+              - { name: frame, label: Rahmen, widget: string }
+              - { name: launchDate, label: "Launch (YYYY-MM-DD, YYYY-MM oder YYYY)", widget: string }
+              - { name: url, label: Herstellerseite, widget: string, required: false }
+              - { name: predecessor, label: "Vorgänger (ID)", widget: string, required: false }
+              - { name: verified, label: "Preis und Gewicht belegt", widget: boolean, default: false }
+              - { name: discontinued, label: "Ausgelaufen (nicht in Ranglisten)", widget: boolean, default: false }
+              - name: sources
+                label: Quellen
+                widget: list
+                required: false
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: url, label: URL, widget: string }

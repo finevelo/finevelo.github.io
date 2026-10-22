@@ -1,0 +1,60 @@
+name: News agent
+
+# Runs every hour; config/agent.json decides whether this hour is a run slot.
+on:
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run now, ignoring the schedule'
+        default: 'true'
+      dry_run:
+        description: 'Score only, write nothing'
+        default: 'false'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: agent
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: agent
+        run: node scripts/agent/run.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || 'false' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true' && '1' || '0' }}
+      - name: Build check
+        if: hashFiles('src/content/articles/*.md') != ''
+        run: npm run build
+        env:
+          STAGING: '1'
+      - name: Commit new articles
+        id: commit
+        run: |
+          git config user.name "Finevelo Agent"
+          git config user.email "346217738+finevelo@users.noreply.github.com"
+          git add src/content/articles config/agent-state.json
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "Agent: new drafts and articles"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Deploy site
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
