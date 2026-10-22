@@ -46,5 +46,5 @@ export default defineConfig({
   base,
   trailingSlash: 'always',
   vite: { define: { 'import.meta.env.STAGING': JSON.stringify(staging) } },
-  integrations: [sitemap({ filter: (page) => !/\/(impressum|privacy)\/$/.test(page) }), basePathLinks()],
+  integrations: [sitemap({ filter: (page) => !/\/(impressum|privacy)\/$|\/admin\//.test(page) }), basePathLinks()],
 });

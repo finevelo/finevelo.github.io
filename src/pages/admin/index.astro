@@ -1,0 +1,28 @@
+---
+// Finevelo editorial backend (client-side app on top of the GitHub API). Not indexed, not in the sitemap.
+import '../../styles/global.css';
+import '../../admin/admin.css';
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Finevelo · Redaktion</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script is:inline>
+      try {
+        const t = localStorage.getItem('theme');
+        if (t) document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="admin"><p style="padding:40px;color:var(--muted)">Lade …</p></div>
+    <script>
+      import '../../admin/app.js';
+    </script>
+  </body>
+</html>
