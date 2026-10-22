@@ -1,6 +1,5 @@
 ---
 import { CATEGORIES, CATEGORY_KEYS, SITE } from '../site.config';
-import NewsletterForm from './NewsletterForm.astro';
 const year = new Date().getFullYear();
 ---
 
@@ -9,8 +8,6 @@ const year = new Date().getFullYear();
     <div class="footer__brand">
       <a href="/" class="footer__logo">Finevelo</a>
       <p>{SITE.tagline}</p>
-      <p class="footer__nl-label">The Edit, our daily newsletter, starts soon</p>
-      <NewsletterForm />
     </div>
     <nav aria-label="Sections">
       <h2>Sections</h2>
@@ -69,11 +66,6 @@ const year = new Date().getFullYear();
   .footer__brand p {
     color: var(--muted);
     margin: 6px 0 0;
-  }
-  .footer__brand .footer__nl-label {
-    margin: 22px 0 8px;
-    color: var(--ink);
-    font-weight: 600;
   }
   .footer__brand {
     max-width: 420px;

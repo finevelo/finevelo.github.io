@@ -1,5 +1,4 @@
 ---
-import NewsletterForm from './NewsletterForm.astro';
 import { articleUrl, type Article } from '../lib/content';
 
 interface Props {
@@ -9,9 +8,9 @@ const { items } = Astro.props;
 ---
 
 <aside class="edit" aria-labelledby="edit-title">
-  <p class="kicker">Daily newsletter</p>
+  <p class="kicker">Daily briefing</p>
   <h2 id="edit-title">The Edit</h2>
-  <p class="edit__lede">Five things that mattered in high-end cycling today. One email, every morning, no noise.</p>
+  <p class="edit__lede">What mattered in high-end cycling, in five minutes.</p>
   <ol>
     {
       items.map((a) => (
@@ -21,7 +20,6 @@ const { items } = Astro.props;
       ))
     }
   </ol>
-  <NewsletterForm compact />
 </aside>
 
 <style>
