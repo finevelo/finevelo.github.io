@@ -1,0 +1,65 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getArticles } from '../../lib/content';
+import { SITE } from '../../site.config';
+
+export async function getStaticPaths() {
+  const authors = await getCollection('authors');
+  return authors.map((author) => ({ params: { id: author.id }, props: { author } }));
+}
+
+const { author } = Astro.props as { author: CollectionEntry<'authors'> };
+const articles = (await getArticles()).filter((a) => a.data.author.id === author.id).slice(0, 12);
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: author.data.name,
+  description: author.data.bio,
+  url: `${SITE.url}/authors/${author.id}/`,
+  parentOrganization: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+};
+---
+
+<BaseLayout title={author.data.name} description={author.data.bio.slice(0, 155)} schema={schema}>
+  <div class="wrap head">
+    <p class="kicker">{author.data.role}</p>
+    <h1>{author.data.name}</h1>
+    <p class="bio">{author.data.bio}</p>
+    <p class="meta">How we work: <a href="/about/">editorial standards</a></p>
+  </div>
+  <div class="wrap">
+    <div class="section-head"><h2>Recent stories</h2></div>
+    <div class="grid">{articles.map((a) => <ArticleCard article={a} variant="secondary" />)}</div>
+  </div>
+</BaseLayout>
+
+<style>
+  .head {
+    max-width: 820px;
+    padding-top: 44px;
+    padding-bottom: 40px;
+    margin-left: 0;
+  }
+  h1 {
+    font-size: clamp(38px, 5.5vw, 58px);
+    margin: 6px 0 16px;
+  }
+  .bio {
+    font-size: 18px;
+    color: var(--ink-2);
+  }
+  .meta a {
+    text-decoration: underline;
+  }
+  .grid {
+    display: grid;
+    gap: 28px;
+  }
+  @media (min-width: 720px) {
+    .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

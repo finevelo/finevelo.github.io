@@ -1,0 +1,37 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { CATEGORIES, CATEGORY_KEYS } from '../site.config';
+---
+
+<PageLayout title="About Finevelo" kicker="Editorial standards" description="What Finevelo covers, what counts as high-end, and how our stories are made and checked.">
+  <p>
+    <strong>Finevelo covers the top 10% of cycling.</strong> Flagship road bikes, race gravel, high-end mountain bikes,
+    premium e-bikes, the components that go on them and the craftspeople who build them by hand. Everything else
+    is covered well elsewhere.
+  </p>
+
+  <h2>What counts as high-end</h2>
+  <p>A story only runs if the product clears our threshold:</p>
+  <table>
+    <thead><tr><th>Section</th><th>Threshold</th></tr></thead>
+    <tbody>
+      {CATEGORY_KEYS.map((k) => <tr><td>{CATEGORIES[k].label}</td><td>{CATEGORIES[k].threshold}</td></tr>)}
+    </tbody>
+  </table>
+  <p>Below the price line, a bike needs another reason to be here: a WorldTour race win, a weight record, or a genuinely new idea.</p>
+
+  <h2>How we work</h2>
+  <ul>
+    <li><strong>Price and weight first.</strong> Every launch story states both in the first half, with a specs box at the top.</li>
+    <li><strong>Numbers come from the manufacturer.</strong> If a figure is not confirmed, we write “TBC”, never an estimate presented as fact.</li>
+    <li><strong>Software helps, an editor decides.</strong> We use automated tools to monitor sources and draft stories. Every story is checked against its source before publication.</li>
+    <li><strong>No hype vocabulary.</strong> You will not read “game-changer” here.</li>
+    <li><strong>Images are credited.</strong> We use official press images from manufacturer newsrooms and always name the source.</li>
+  </ul>
+
+  <h2>Corrections</h2>
+  <p>If we get something wrong, we fix it and note the change with an updated date. Contact details are in the <a href="/impressum/">Impressum</a>.</p>
+
+  <h2>Independence</h2>
+  <p>Finevelo has no paid placements at launch. If that changes, sponsored content will be labelled clearly, and affiliate links will be disclosed.</p>
+</PageLayout>

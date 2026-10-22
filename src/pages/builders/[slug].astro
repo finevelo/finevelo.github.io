@@ -1,0 +1,275 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuilderMap from '../../components/BuilderMap.astro';
+import {
+  getBuilders,
+  builderUrl,
+  nearby,
+  specialities,
+  kindOf,
+  KIND_LABELS,
+  MATERIAL_LABELS,
+  DISCIPLINE_LABELS,
+  SERVICE_LABELS,
+  type Builder,
+} from '../../lib/builders';
+import { formatDate } from '../../lib/content';
+import { SITE } from '../../site.config';
+
+export async function getStaticPaths() {
+  const all = await getBuilders('DE');
+  return all.map((entry) => ({ params: { slug: entry.id }, props: { entry, all } }));
+}
+
+const { entry, all } = Astro.props as { entry: Builder; all: Builder[] };
+const d = entry.data;
+const close = nearby(entry, all);
+const url = `${SITE.url}${builderUrl(entry)}`;
+const tbc = 'TBC';
+const host = d.website ? new URL(d.website).hostname.replace(/^www\./, '') : null;
+
+// Geo only when it marks the actual address; city-centre points would mislead search engines.
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': d.type === 'shop' ? 'BikeStore' : 'LocalBusiness',
+  name: d.name,
+  ...(d.website && { url: d.website, sameAs: [d.website] }),
+  description: d.summary,
+  ...(d.founded && { foundingDate: String(d.founded) }),
+  address: {
+    '@type': 'PostalAddress',
+    ...(d.address.street && { streetAddress: d.address.street }),
+    ...(d.address.postalCode && { postalCode: d.address.postalCode }),
+    addressLocality: d.city,
+    addressRegion: d.region,
+    addressCountry: d.countryCode,
+  },
+  ...(d.geo.precision === 'address' && {
+    geo: { '@type': 'GeoCoordinates', latitude: d.geo.lat, longitude: d.geo.lon },
+  }),
+  ...(d.brands.length && { brand: d.brands.map((name) => ({ '@type': 'Brand', name })) }),
+  mainEntityOfPage: url,
+};
+
+const rows: [string, string][] = [
+  ['Type', KIND_LABELS[kindOf(d)]],
+  ['City', d.city],
+  ['Federal state', d.region],
+  ['Address', d.address.street ? `${d.address.street}, ${d.address.postalCode ?? ''} ${d.city}`.replace(/\s+/g, ' ') : tbc],
+  ['Founded', d.founded ? String(d.founded) : tbc],
+  ['Materials', d.materials.map((m) => MATERIAL_LABELS[m]).join(', ') || tbc],
+  ['Disciplines', d.disciplines.map((x) => DISCIPLINE_LABELS[x]).join(', ') || tbc],
+  ['Prices', d.priceNote ?? tbc],
+  ...(d.type === 'shop' || d.brands.length ? ([['Brands', d.brands.join(', ') || tbc]] as [string, string][]) : []),
+  ...(d.fittingSystems.length ? ([['Fitting', d.fittingSystems.join(', ')]] as [string, string][]) : []),
+  ['Services', d.services.map((s) => SERVICE_LABELS[s]).join(', ') || tbc],
+];
+---
+
+<BaseLayout
+  title={`${d.name}, ${d.city}: ${d.type === 'shop' ? 'custom bike shop' : 'frame builder'}`}
+  description={d.summary.slice(0, 165)}
+  schema={schema}
+>
+  <div class="wrap profile">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/custom/">Custom &amp; Craft</a> / <a href="/builders/">Builders map</a> / {d.region}
+    </nav>
+    <div class="profile__grid">
+      <div>
+        <p class="kicker">{KIND_LABELS[kindOf(d)]} · {d.city}</p>
+        <h1>{d.name}</h1>
+        <p class="lede">{d.summary}</p>
+        <dl class="sheet">
+          {
+            rows.map(([k, v]) => (
+              <div>
+                <dt>{k}</dt>
+                <dd class:list={[v === tbc && 'tbc']}>{v}</dd>
+              </div>
+            ))
+          }
+          <div>
+            <dt>Website</dt>
+            {d.website ? (
+              <dd><a href={d.website} rel="noopener" target="_blank">{host}</a></dd>
+            ) : (
+              <dd class="tbc">{tbc}</dd>
+            )}
+          </div>
+        </dl>
+        {
+          d.uncertain && (
+            <p class="uncertain">
+              <span class="sample-flag">Unverified</span> {d.uncertain}
+            </p>
+          )
+        }
+        {d.website && <a class="btn" href={d.website} rel="noopener" target="_blank">Visit {host} ↗</a>}
+      </div>
+      <aside class="locator" aria-label="Location">
+        <BuilderMap entries={all} focus={entry.id} label={`Location of ${d.name} in ${d.city}, Germany`} />
+        <p class="locator__note">
+          {d.geo.note ??
+            (d.geo.precision === 'city' ? `Marker shows the centre of ${d.city}, not the exact address.` : 'Marker shows the published address.')}
+        </p>
+      </aside>
+    </div>
+
+    <section class="block" aria-labelledby="sources">
+      <div class="section-head"><h2 id="sources">Sources</h2></div>
+      <ol class="sources">
+        {
+          d.sources.map((s) => (
+            <li>
+              <a href={s.url} rel="noopener" target="_blank">{s.name}</a>
+              <span>{new URL(s.url).hostname.replace(/^www\./, '')}</span>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="checked">Last checked {formatDate(d.checked)}. Addresses are shown only as published on the business's own website.</p>
+    </section>
+
+    {
+      close.length > 0 && (
+        <section class="block" aria-labelledby="nearby">
+          <div class="section-head">
+            <h2 id="nearby">Nearby</h2>
+            <a href="/builders/">Full map →</a>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr><th>Name</th><th class="hide-sm">Type</th><th>City</th><th class="num">Distance</th></tr>
+              </thead>
+              <tbody>
+                {close.map(({ b, km }) => (
+                  <tr>
+                    <td>
+                      <a href={builderUrl(b)}><strong>{b.data.name}</strong></a>
+                      <span class="row__sub">{specialities(b.data).slice(0, 4).join(', ')}</span>
+                    </td>
+                    <td class="hide-sm">{KIND_LABELS[kindOf(b.data)]}</td>
+                    <td>{b.data.city}</td>
+                    <td class="num">{km < 5 ? 'same city' : `${Math.round(km)} km`}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .profile {
+    padding-top: 32px;
+  }
+  .crumbs {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .crumbs a:hover {
+    color: var(--ink);
+  }
+  .profile__grid {
+    display: grid;
+    gap: 36px;
+  }
+  @media (min-width: 960px) {
+    .profile__grid {
+      grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
+      gap: 56px;
+      align-items: start;
+    }
+  }
+  h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    margin: 4px 0 14px;
+    overflow-wrap: anywhere;
+  }
+  .lede {
+    font-size: 18px;
+    color: var(--ink-2);
+    margin: 0 0 24px;
+    max-width: 60ch;
+  }
+  .sheet {
+    margin: 0 0 24px;
+    border-top: 2px solid var(--ink);
+  }
+  .sheet div {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 12px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 15px;
+  }
+  dt {
+    color: var(--muted);
+  }
+  dd {
+    margin: 0;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+  }
+  dd a {
+    text-decoration: underline;
+  }
+  dd.tbc {
+    color: var(--muted);
+    font-weight: 400;
+  }
+  .uncertain {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .locator {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .locator__note {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  .block {
+    margin-top: 64px;
+  }
+  .sources {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 15px;
+    display: grid;
+    gap: 8px;
+  }
+  .sources a {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+  }
+  .sources span {
+    color: var(--muted);
+    font-size: 13px;
+    margin-left: 8px;
+  }
+  .checked {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 16px 0 0;
+  }
+  .row__sub {
+    display: block;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+</style>

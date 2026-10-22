@@ -1,0 +1,323 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroArt from '../../components/HeroArt.astro';
+import SpecsBox from '../../components/SpecsBox.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import EditModule from '../../components/EditModule.astro';
+import {
+  getArticles,
+  related,
+  readingTime,
+  formatDate,
+  articleUrl,
+  type Article,
+} from '../../lib/content';
+import { CATEGORIES, FORMATS, SITE } from '../../site.config';
+
+export async function getStaticPaths() {
+  const articles = await getArticles();
+  return articles.map((article) => ({ params: { slug: article.id }, props: { article } }));
+}
+
+const { article } = Astro.props as { article: Article };
+const d = article.data;
+const { Content } = await render(article);
+const all = await getArticles();
+const author = await getEntry(d.author);
+const bike = d.bike ? await getEntry(d.bike) : undefined;
+const cat = CATEGORIES[d.category];
+const rel = related(article, all, 3);
+const minutes = readingTime(article.body);
+const url = new URL(articleUrl(article), SITE.url).toString();
+const image = d.hero.src ? new URL(d.hero.src, SITE.url).toString() : `${SITE.url}/og-default.png`;
+
+const schema: object[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: d.title,
+    description: d.description,
+    image: [image],
+    datePublished: d.pubDate.toISOString(),
+    dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
+    mainEntityOfPage: url,
+    articleSection: cat.label,
+    author: { '@type': 'Organization', name: author.data.name, url: `${SITE.url}/authors/${author.id}/` },
+    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/favicon.svg` } },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: cat.label, item: SITE.url + cat.path },
+      { '@type': 'ListItem', position: 3, name: d.title, item: url },
+    ],
+  },
+];
+if (d.faq.length) {
+  schema.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  });
+}
+---
+
+<BaseLayout
+  title={d.seoTitle ?? d.title}
+  description={d.description}
+  image={d.hero.src}
+  type="article"
+  schema={schema}
+  publishedTime={d.pubDate}
+  modifiedTime={d.updatedDate}
+  noindex={d.sample}
+>
+  <article class="article">
+    <header class="wrap article__head">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <a href={cat.path}>{cat.label}</a>
+      </nav>
+      <p class="kicker">{FORMATS[d.format]}</p>
+      <h1>{d.title}</h1>
+      {d.dek && <p class="dek">{d.dek}</p>}
+      <p class="byline">
+        By <a href={`/authors/${author.id}/`}>{author.data.name}</a>
+        <span>·</span>
+        <time datetime={d.pubDate.toISOString()}>{formatDate(d.pubDate)}</time>
+        {
+          d.updatedDate && (
+            <>
+              <span>·</span> Updated <time datetime={d.updatedDate.toISOString()}>{formatDate(d.updatedDate)}</time>
+            </>
+          )
+        }
+        <span>·</span>
+        {minutes} min read
+      </p>
+    </header>
+
+    <div class="wrap article__hero">
+      <HeroArt category={d.category} {...d.hero} eager priority showCredit />
+    </div>
+
+    <div class="wrap article__layout">
+      <div class="article__main">
+        {
+          d.sample && (
+            <p class="sample-note">
+              <span class="sample-flag">Sample</span> This is placeholder content to show the layout. Prices and weights are
+              illustrative and have not been verified. The page is set to noindex.
+            </p>
+          )
+        }
+        {d.specs && <SpecsBox specs={d.specs} bike={bike} />}
+        <div class="prose">
+          <Content />
+        </div>
+
+        {
+          d.faq.length > 0 && (
+            <section class="faq" aria-labelledby="faq">
+              <h2 id="faq">Quick answers</h2>
+              {d.faq.map((f) => (
+                <details>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </section>
+          )
+        }
+
+        <footer class="article__foot">
+          {
+            d.source && (
+              <p>
+                Source: <a href={d.source.url} rel="noopener" target="_blank">{d.source.name}</a>
+              </p>
+            )
+          }
+          <p>
+            More in <a href={cat.path}>{cat.label}</a>
+            {bike && (
+              <>
+                {' '}· <a href={`/bikes/${bike.id}/`}>{bike.data.brand} {bike.data.model} data sheet</a>
+              </>
+            )}
+          </p>
+          {
+            d.tags.length > 0 && (
+              <ul class="tags">
+                {d.tags.map((t) => (
+                  <li>{t}</li>
+                ))}
+              </ul>
+            )
+          }
+        </footer>
+      </div>
+      <div class="article__side">
+        <EditModule items={all.slice(0, 5)} />
+      </div>
+    </div>
+  </article>
+
+  {
+    rel.length > 0 && (
+      <section class="wrap rel" aria-labelledby="rel">
+        <div class="section-head">
+          <h2 id="rel">Read next</h2>
+        </div>
+        <div class="rel__grid">
+          {rel.map((a) => (
+            <ArticleCard article={a} variant="secondary" />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .article__head {
+    max-width: 920px;
+    padding-top: 36px;
+    padding-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .crumbs {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .crumbs a:hover {
+    color: var(--ink);
+  }
+  h1 {
+    font-size: clamp(34px, 5.4vw, 62px);
+    line-height: 1.04;
+    margin: 10px 0 16px;
+  }
+  .dek {
+    font-family: var(--serif);
+    font-size: clamp(19px, 2.2vw, 23px);
+    line-height: 1.4;
+    color: var(--ink-2);
+    margin: 0 auto 18px;
+    max-width: 44ch;
+  }
+  .byline {
+    font-size: 14px;
+    color: var(--muted);
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .byline a {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .article__hero {
+    max-width: 1100px;
+  }
+  .article__layout {
+    display: grid;
+    gap: 48px;
+    margin-top: 40px;
+  }
+  .article__main {
+    max-width: 700px;
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    display: grid;
+    /* minmax(0) stops wide tables from stretching the column under the sidebar */
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    align-content: start;
+  }
+  @media (min-width: 1100px) {
+    .article__layout {
+      grid-template-columns: minmax(0, 1fr) 320px;
+      max-width: 1100px;
+    }
+    .article__main {
+      margin: 0;
+    }
+    .article__side {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+    }
+  }
+  .sample-note {
+    margin: 0;
+    font-size: 14px;
+    background: var(--chip);
+    padding: 12px 14px;
+    color: var(--ink-2);
+  }
+  .faq h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  details {
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 0;
+  }
+  summary {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  details p {
+    margin: 10px 0 0;
+    color: var(--ink-2);
+  }
+  .article__foot {
+    border-top: 1px solid var(--rule);
+    padding-top: 18px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .article__foot p {
+    margin: 0 0 8px;
+  }
+  .article__foot a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .tags {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tags li {
+    background: var(--chip);
+    padding: 5px 10px;
+    font-size: 12.5px;
+    color: var(--ink-2);
+  }
+  .rel {
+    margin-top: 72px;
+  }
+  .rel__grid {
+    display: grid;
+    gap: 28px;
+  }
+  @media (min-width: 720px) {
+    .rel__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

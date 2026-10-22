@@ -1,0 +1,178 @@
+---
+import { formatMoney } from '../lib/content';
+import { formatGrams, type Hub } from '../lib/hubs';
+
+interface Props {
+  hubs: Hub[];
+}
+const { hubs } = Astro.props;
+const lightest = hubs[0]?.data.weightG ?? 0;
+const price = (h: Hub) =>
+  [h.data.priceEUR && formatMoney(h.data.priceEUR, 'EUR'), h.data.priceUSD && formatMoney(h.data.priceUSD, 'USD')]
+    .filter(Boolean)
+    .join(' / ') || 'TBC';
+---
+
+<ol class="hubs">
+  {
+    hubs.map((h, i) => (
+      <li id={h.id.replace('/', '-')}>
+        <span class="rank">{String(i + 1).padStart(2, '0')}</span>
+        <div class="hubs__body">
+          <p class="kicker">{h.data.brand}</p>
+          <h2>
+            <a href={h.data.url} rel="noopener" target="_blank">
+              {h.data.model}
+            </a>
+          </h2>
+          <div class="bar" aria-hidden="true">
+            <span style={`width:${Math.max(18, (lightest / h.data.weightG) * 100).toFixed(1)}%`} />
+          </div>
+          <p class="hubs__meta">
+            {h.data.frontG != null && h.data.rearG != null && (
+              <>
+                Front {formatGrams(h.data.frontG)} · Rear {formatGrams(h.data.rearG)} ·{' '}
+              </>
+            )}
+            {h.data.freehub === 'not stated' ? 'Freehub not stated' : h.data.freehub} · {h.data.holes === 'not stated' ? 'holes not stated' : `${h.data.holes} holes`} · {h.data.spoke}
+            {h.data.madeIn && <> · Made in {h.data.madeIn}</>}
+          </p>
+          {h.data.note && <p class="hubs__note">{h.data.note}</p>}
+          <p class="hubs__src">
+            {h.data.measured ? 'Measured' : 'Claimed'} weight. Sources:{' '}
+            {h.data.sources.map((s, j) => (
+              <>
+                {j > 0 && ', '}
+                <a href={s.url} rel="noopener" target="_blank">
+                  {s.name}
+                </a>
+              </>
+            ))}
+          </p>
+        </div>
+        <dl>
+          <div>
+            <dt>Set weight</dt>
+            <dd>{formatGrams(h.data.weightG)}</dd>
+          </div>
+          <div>
+            <dt>Price (set)</dt>
+            <dd class="price">{price(h)}</dd>
+          </div>
+          {i > 0 && (
+            <div class="delta">
+              <dt>vs. lightest</dt>
+              <dd>+{Math.round(h.data.weightG - lightest)} g</dd>
+            </div>
+          )}
+        </dl>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .hubs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid var(--ink);
+  }
+  li {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 4px 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 760px) {
+    li {
+      grid-template-columns: 72px minmax(0, 1fr) 230px;
+      align-items: start;
+    }
+  }
+  .rank {
+    font-family: var(--serif);
+    font-size: 40px;
+    line-height: 1;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 25px;
+    margin: 2px 0 10px;
+  }
+  h2 a:hover {
+    color: var(--accent);
+  }
+  .bar {
+    height: 6px;
+    background: var(--chip);
+    margin-bottom: 12px;
+    max-width: 420px;
+  }
+  .bar span {
+    display: block;
+    height: 100%;
+    background: var(--ink);
+  }
+  li:first-child .bar span {
+    background: var(--accent);
+  }
+  .hubs__meta {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  .hubs__note {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .hubs__src {
+    margin: 8px 0 0;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .hubs__src a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  dl {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 14px 0 0;
+  }
+  @media (min-width: 760px) {
+    dl {
+      grid-column: 3;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+    }
+    .delta {
+      grid-column: 1 / -1;
+    }
+  }
+  dt {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  dd {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 21px;
+    font-variant-numeric: tabular-nums;
+  }
+  dd.price {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+  .delta dd {
+    font-size: 15px;
+    color: var(--muted);
+  }
+</style>

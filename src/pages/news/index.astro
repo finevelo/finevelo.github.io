@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import EditModule from '../../components/EditModule.astro';
+import { getArticles } from '../../lib/content';
+
+const articles = await getArticles();
+---
+
+<BaseLayout title="News" description="Every launch, update and recall in the top segment of cycling, newest first.">
+  <div class="wrap page-head">
+    <p class="kicker">Newest first</p>
+    <h1>News</h1>
+    <p class="intro">Launches, updates, recalls and pro tech from the top 10% of cycling. Three to six stories a day, filtered hard.</p>
+  </div>
+  <div class="wrap layout">
+    <div class="feed">
+      {articles.map((a, i) => <ArticleCard article={a} variant="feed" eager={i === 0} />)}
+    </div>
+    <div class="sidebar"><EditModule items={articles.slice(0, 5)} /></div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    max-width: 820px;
+    margin-left: 0;
+  }
+  .page-head h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    margin: 6px 0 12px;
+  }
+  .intro {
+    font-size: 18px;
+    color: var(--ink-2);
+    margin: 0;
+  }
+  .layout {
+    display: grid;
+    gap: 48px;
+  }
+  .feed {
+    display: grid;
+    gap: 40px;
+    border-top: 2px solid var(--ink);
+    padding-top: 28px;
+  }
+  @media (min-width: 1000px) {
+    .layout {
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 56px;
+    }
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+    }
+  }
+</style>

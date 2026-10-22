@@ -1,0 +1,172 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatMoney, formatWeight, formatLaunch, launchTime, bikeUrl } from '../../lib/content';
+import { CATEGORIES, CATEGORY_KEYS } from '../../site.config';
+
+const bikes = (await getCollection('bikes')).sort((a, b) => (b.data.priceUSD ?? 0) - (a.data.priceUSD ?? 0));
+const usedCats = CATEGORY_KEYS.filter((k) => bikes.some((b) => b.data.category === k));
+---
+
+<BaseLayout
+  title="High-end bike database: prices, weights, groupsets"
+  description="Every flagship bike we track, with price in USD and EUR, claimed weight, groupset and launch date. Sortable and filterable."
+>
+  <div class="wrap page-head">
+    <p class="kicker">Data</p>
+    <h1>The database</h1>
+    <p class="intro">
+      Every bike we cover, in one table. Prices are manufacturer list prices for the flagship build, weights are as
+      claimed. Click a column to sort.
+    </p>
+  </div>
+
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="Filter by category">
+      <button type="button" class="chip" aria-pressed="true" data-filter="all">All</button>
+      {
+        usedCats.map((k) => (
+          <button type="button" class="chip" aria-pressed="false" data-filter={k}>
+            {CATEGORIES[k].label}
+          </button>
+        ))
+      }
+    </div>
+    <div class="table-scroll">
+      <table class="data-table" id="bike-table">
+        <thead>
+          <tr>
+            <th><button type="button" data-sort="name">Bike</button></th>
+            <th class="hide-sm">Category</th>
+            <th>Groupset</th>
+            <th class="num"><button type="button" data-sort="price">Price (USD)</button></th>
+            <th class="num hide-sm"><button type="button" data-sort="eur">Price (EUR)</button></th>
+            <th class="num"><button type="button" data-sort="weight">Weight</button></th>
+            <th class="num"><button type="button" data-sort="date">Launched</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            bikes.map((b) => (
+              <tr
+                data-cat={b.data.category}
+                data-name={`${b.data.brand} ${b.data.model}`}
+                data-price={b.data.priceUSD ?? 0}
+                data-eur={b.data.priceEUR ?? 0}
+                data-weight={b.data.weightKg ?? 99}
+                data-date={launchTime(b.data.launchDate)}
+              >
+                <td>
+                  <a href={bikeUrl(b)}>
+                    <strong>{b.data.brand}</strong> {b.data.model}
+                  </a>
+                </td>
+                <td class="hide-sm">{CATEGORIES[b.data.category].label}</td>
+                <td>{b.data.groupset}</td>
+                <td class="num">{formatMoney(b.data.priceUSD, 'USD')}</td>
+                <td class="num hide-sm">{formatMoney(b.data.priceEUR, 'EUR')}</td>
+                <td class="num">{formatWeight(b.data.weightKg)}</td>
+                <td class="num">{formatLaunch(b.data.launchDate, 'short')}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="note">
+      Figures marked unverified on a bike's data sheet have not yet been checked against the manufacturer. Spotted an
+      error? Tell us via the address in the <a href="/impressum/">Impressum</a>.
+    </p>
+  </div>
+</BaseLayout>
+
+<script>
+  const table = document.getElementById('bike-table') as HTMLTableElement;
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.rows);
+
+  document.querySelectorAll<HTMLButtonElement>('[data-filter]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      document.querySelectorAll('[data-filter]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      rows.forEach((r) => (r.hidden = f !== 'all' && r.dataset.cat !== f));
+    });
+  });
+
+  let lastKey = 'price';
+  let asc = false;
+  document.querySelectorAll<HTMLButtonElement>('[data-sort]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.sort!;
+      asc = key === lastKey ? !asc : key === 'name' || key === 'weight';
+      lastKey = key;
+      const sorted = [...rows].sort((a, b) => {
+        const x = a.dataset[key]!;
+        const y = b.dataset[key]!;
+        const c = key === 'name' ? x.localeCompare(y) : Number(x) - Number(y);
+        return asc ? c : -c;
+      });
+      sorted.forEach((r) => tbody.appendChild(r));
+      document.querySelectorAll('[data-sort]').forEach((b) => b.closest('th')!.removeAttribute('aria-sort'));
+      btn.closest('th')!.setAttribute('aria-sort', asc ? 'ascending' : 'descending');
+    });
+  });
+</script>
+
+<style>
+  .page-head {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+  .page-head h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    margin: 6px 0 12px;
+  }
+  .intro {
+    font-size: 18px;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 64ch;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .chip {
+    font: 600 13px var(--sans);
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .chip[aria-pressed='true'] {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  th button {
+    all: unset;
+    cursor: pointer;
+  }
+  th button:hover {
+    color: var(--ink);
+  }
+  th[aria-sort='ascending'] button::after {
+    content: ' ↑';
+  }
+  th[aria-sort='descending'] button::after {
+    content: ' ↓';
+  }
+  .note {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-top: 20px;
+  }
+  .note a {
+    text-decoration: underline;
+  }
+</style>

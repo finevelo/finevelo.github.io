@@ -1,0 +1,4178 @@
+[
+  {
+    "id": "norwid",
+    "name": "Norwid Fahrradbau",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Raa-Besenbek",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 53.754,
+      "lon": 9.652,
+      "precision": "city",
+      "note": "Marker at Elmshorn, the nearest town."
+    },
+    "website": null,
+    "founded": 1992,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "services": [
+      "custom-geometry"
+    ],
+    "summary": "Small workshop near Elmshorn, north of Hamburg, that builds steel and stainless-steel frames by hand, including custom sizes, for road, gravel, touring, randonneur and mountain bikes. A lower-priced Lofoten line is welded to Norwid specifications by the Czech maker Fort.",
+    "uncertain": "Official website and street address not yet confirmed. Founding year from a dealer directory.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Pedali dealer listing",
+        "url": "https://www.pedali.de/haendler/norwid-fahrradbau-raa-besenbek-25335-raa-besenbek"
+      },
+      {
+        "name": "BIKE: Norwid Kattegat Randonneur test (Jan 2026)",
+        "url": "https://www.bike-magazin.de/fahrraeder/gravelbikes/norwid-kattegat-randonneur-im-test-gravel-bike-fur-reiselustige/"
+      },
+      {
+        "name": "BIKE/MYBIKE: Norwid Maribo Urban test",
+        "url": "https://www.bike-magazin.de/fahrraeder/gravelbikes/urbaner-traditionalist-das-norwid-maribo-urban-im-mybike-test/"
+      },
+      {
+        "name": "BIKE: Diese MTB-Rahmen werden in Europa gebaut",
+        "url": "https://www.bike-magazin.de/magazin/hintergruende/update-fahrradrahmen-diese-mtb-rahmen-werden-in-europa-gebaut/"
+      },
+      {
+        "name": "BIKE: Frames built in Europe list",
+        "url": "https://www.bike-magazin.de/en/about-us/magazine/backgrounds/update-bike-frames-these-mtb-frames-are-built-in-europe/"
+      },
+      {
+        "name": "RadFahren: Norwid Kattegat test",
+        "url": "https://www.radfahren.de/test-technik/norwid-kattegat-test/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "nicolai",
+    "name": "Nicolai",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Elze",
+    "address": {
+      "street": "Altenbekener Str. 2a",
+      "postalCode": "31008",
+      "source": "https://www.nicolai-bicycles.com/Imprint"
+    },
+    "geo": {
+      "lat": 52.107419,
+      "lon": 9.691057,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://www.nicolai-bicycles.com",
+    "founded": 1995,
+    "materials": [
+      "aluminium"
+    ],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "services": [
+      "custom-geometry"
+    ],
+    "summary": "Aluminium mountain bike and e-bike manufacturer that mills, welds and coats its frames in-house at its factory in Mehle (Elze), Lower Saxony. Frames are welded to order, with a tailor-made frame option.",
+    "uncertain": "Which models the tailor-made geometry programme covers, and at what cost, is not published in our sources.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Nicolai Impressum",
+        "url": "https://www.nicolai-bicycles.com/Imprint"
+      },
+      {
+        "name": "Nicolai Open House 2026",
+        "url": "https://www.nicolai-bicycles.com/Open-House-2026"
+      },
+      {
+        "name": "Nicolai tailor-made frames",
+        "url": "https://www.nicolai-bicycles.com/Tailor-Made-en"
+      },
+      {
+        "name": "Dirt: Nicolai brand page (founded 1995)",
+        "url": "https://dirtmountainbike.com/brands/nicolai"
+      },
+      {
+        "name": "BIKE: 30 years of Nicolai",
+        "url": "https://www.bike-magazin.de/en/camps/30-years-of-nicolai-welding-bead-fetish-nicolai-celebrates-with-in-house-exhibition/"
+      },
+      {
+        "name": "Velomotion: Nicolai house fair 2025",
+        "url": "https://velomotion.net/2025/08/nicolai-hausmesse/"
+      },
+      {
+        "name": "ENDURO: Nicolai factory visit",
+        "url": "https://enduro-mtb.com/en/nicolai-factory-visit/"
+      },
+      {
+        "name": "ENDURO: Nicolai ION G13 test",
+        "url": "https://enduro-mtb.com/nicolai-ion-g13-qlfline-test/"
+      },
+      {
+        "name": "bike-x: Kalle Nicolai interview (June 2026)",
+        "url": "https://www.bike-x.de/mtb/news/kalle-nicolai-im-interview/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "alutech-cycles",
+    "name": "Alutech Cycles",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Ascheffel",
+    "address": {
+      "street": "Straßberg 5",
+      "postalCode": "24358",
+      "source": "https://alutech-cycles.com/Imprint"
+    },
+    "geo": {
+      "lat": 54.427375,
+      "lon": 9.700103,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://alutech-cycles.com",
+    "founded": null,
+    "materials": [
+      "aluminium"
+    ],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": "Fanes 29 Custom listed at €3,999.95",
+    "brands": [],
+    "services": [
+      "custom-build"
+    ],
+    "summary": "Aluminium enduro, downhill and e-MTB maker near the Baltic coast that moved frame production back from Taiwan to Germany in 2021; frames are welded in-house in Ascheffel.",
+    "uncertain": "Founding year not confirmed. Whether the listed price is for a frame or a complete bike is not confirmed. Some carbon rear triangles were reported as sourced from Asia (BIKE, 2023).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Alutech Impressum",
+        "url": "https://alutech-cycles.com/Imprint"
+      },
+      {
+        "name": "Alutech Fanes 29 Custom product page",
+        "url": "https://alutech-cycles.com/Fanes-29-custom_1"
+      },
+      {
+        "name": "BIKE: Alutech bikes now made in Germany",
+        "url": "https://www.bike-magazin.de/en/enduro-bikes/alutech-bikes-now-made-in-germany/"
+      },
+      {
+        "name": "BIKE Project Europe: Alutech frame welding",
+        "url": "https://www.bike-magazin.de/special-projekt-europe/echte-handarbeit-beim-rahmenschweisser-alutech/"
+      },
+      {
+        "name": "The Radavist: Bespoked Dresden 2026 picks (Alutech)",
+        "url": "https://theradavist.com/2026-bespoked-dresden-04"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "ax-lightness",
+    "name": "ax-lightness",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Duderstadt",
+    "address": {
+      "street": "Breiter Anger 1",
+      "postalCode": "37115",
+      "source": "https://ax-lightness.de/impressum/?lang=en"
+    },
+    "geo": {
+      "lat": 51.515339,
+      "lon": 10.229136,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://ax-lightness.de",
+    "founded": 1999,
+    "materials": [
+      "carbon"
+    ],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "services": [],
+    "summary": "Carbon composites manufacturer that makes lightweight road frames such as the Vial Evo, plus components, in its own plant in Duderstadt rather than sourcing from Asia. The company also builds bikes under its Benotti brand.",
+    "uncertain": "The brand dates from 1999; the current company was re-formed in 2015 and moved to Duderstadt in 2018. Current frame prices not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "ax-lightness Impressum",
+        "url": "https://ax-lightness.de/impressum/?lang=en"
+      },
+      {
+        "name": "ax-lightness company page",
+        "url": "https://ax-lightness.de/company/?lang=en"
+      },
+      {
+        "name": "Fair Wheel Bikes: ax-lightness brand page",
+        "url": "https://www.fairwheelbikes.com/brands/ax-lightness"
+      },
+      {
+        "name": "RennRad: ax-lightness composites portrait",
+        "url": "https://www.radsport-rennrad.de/allgemein/ax-lightness-composites-portrait/"
+      },
+      {
+        "name": "Radsport-News: Benotti made in Duderstadt",
+        "url": "https://www.radsport-news.com/markt/marktnews_138186.htm"
+      },
+      {
+        "name": "bike-x: Vial Evo in three versions",
+        "url": "https://www.bike-x.de/rennrad/news/ax-lightness-vial-evo-das-deutsche-leichtbauwunder-kommt-in-drei-varianten/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "starcycles-hamburg",
+    "name": "Starcycles",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 53.551,
+      "lon": 9.994,
+      "precision": "city"
+    },
+    "website": "https://www.starcycles.de",
+    "founded": 2010,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": "Bike fitting worth €99–199 included with every bike purchase",
+    "brands": [
+      "Colnago",
+      "Pinarello",
+      "Wilier",
+      "Bianchi",
+      "Orbea",
+      "Basso"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Road and gravel bike shop in the Sprinkenhof in Hamburg's Altstadt, listed as a Colnago Premium Store and Pinarello Pro-Shop. A bike fitting is included with every bike purchase.",
+    "uncertain": "Street address, founding year and Colnago/Pinarello store status come from a dealer directory, not the shop's own Impressum.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Starcycles – bikes page",
+        "url": "https://www.starcycles.de/Fahrraeder_2"
+      },
+      {
+        "name": "Starcycles – about",
+        "url": "https://starcycles.de/Starcycles"
+      },
+      {
+        "name": "Starcycles – holiday notice 2025/26 (fitting included)",
+        "url": "https://starcycles.de/Betriebsurlaub-Starcycles-Weihnachten-/-Silvester-2025"
+      },
+      {
+        "name": "pedali.de dealer listing",
+        "url": "https://www.pedali.de/haendler/starcycles-hamburg-hamburg-altstadt-20095-hamburg"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "picocycles-kiel",
+    "name": "Picocycles",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Kiel",
+    "address": {
+      "street": "Rathausstraße 6",
+      "postalCode": null,
+      "source": "https://www.picocycles.de/kontakt.php"
+    },
+    "geo": {
+      "lat": 54.322849,
+      "lon": 10.131295,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://www.picocycles.de/",
+    "founded": 2004,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Pinarello",
+      "Look",
+      "Kocmo",
+      "Tommasini"
+    ],
+    "services": [
+      "custom-build",
+      "custom-paint",
+      "repair"
+    ],
+    "summary": "High-performance bike shop and workshop in Kiel, serving the area since 2004. It offers custom builds on framesets such as the Colnago C68, V4RS and Y1RS and the Pinarello Dogma F, with repaints arranged through specialist partners.",
+    "uncertain": "Postal code not confirmed. No in-house bike-fitting service confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Picocycles Kiel – home",
+        "url": "https://www.picocycles.de/"
+      },
+      {
+        "name": "Picocycles – Custom Bikes Kiel",
+        "url": "https://www.picocycles.de/custom-bikes-kiel/"
+      },
+      {
+        "name": "Picocycles – Colnago",
+        "url": "https://www.picocycles.de/marken/colnago/"
+      },
+      {
+        "name": "Picocycles – contact",
+        "url": "https://www.picocycles.de/kontakt.php"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "picocycles-hamburg",
+    "name": "Picocycles Hamburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Stadtbahnstraße 46",
+      "postalCode": "22393",
+      "source": "https://picocycles-hh.de/"
+    },
+    "geo": {
+      "lat": 53.653281,
+      "lon": 10.102943,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://picocycles-hh.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Pinarello",
+      "Specialized",
+      "Scott"
+    ],
+    "services": [
+      "custom-build"
+    ],
+    "summary": "Hamburg showroom of Picocycles, a high-performance shop from Kiel, partnering with Colnago, Pinarello, Specialized and Scott. It offers consultation through to high-end custom builds.",
+    "uncertain": "Opening date not confirmed. Whether Specialized here includes S-Works models is not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Picocycles Hamburg – home",
+        "url": "https://picocycles-hh.de/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "storck-store-hamburg",
+    "name": "Storck Store Hamburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Am Sandtorpark 2",
+      "postalCode": "20457",
+      "source": "https://storck-bikes.com/en/Services/"
+    },
+    "geo": {
+      "lat": 53.542718,
+      "lon": 9.995257,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://storck-bikes.com/en",
+    "founded": 2024,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Storck"
+    ],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Storck's own flagship concept store in Hamburg's HafenCity, opened in July 2024. It offers consultation, individual builds via Storck's configurator, test rides and workshop service.",
+    "uncertain": "Brand-owned store rather than a multi-brand dealer. Bike fitting is listed for Storck stores in general. Founded = store opening.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Storck – Services",
+        "url": "https://storck-bikes.com/en/Services/"
+      },
+      {
+        "name": "Storck – Workshop service",
+        "url": "https://storck-bikes.com/en/Services/Workshop-service/"
+      },
+      {
+        "name": "Velomotion – Storck concept store Hamburg",
+        "url": "https://www.velomotion.net/2024/07/storck-concept-store-hamburg/"
+      },
+      {
+        "name": "pedelec-elektro-fahrrad.de – flagship store opening",
+        "url": "https://pedelec-elektro-fahrrad.de/news/storck-bicycle-eroeffnet-neuen-flagship-concept-store-in-hamburg/637008/"
+      },
+      {
+        "name": "TOUR – Storck online configurator",
+        "url": "https://www.tour-magazin.de/kaufberatung/ratgeber/storck-neuer-online-konfigurator-fur-individuelle-fahrrader/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "cycles-steil",
+    "name": "Cycles Steil",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Holländische Reihe 13a",
+      "postalCode": "22765",
+      "source": "http://cycles-steil.com/impressum.html"
+    },
+    "geo": {
+      "lat": 53.54753,
+      "lon": 9.93044,
+      "precision": "address"
+    },
+    "website": "http://cycles-steil.com",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "touring",
+      "road",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "bike-fitting",
+      "custom-paint"
+    ],
+    "summary": "One-person workshop in Hamburg-Altona that brazes made-to-measure steel frames and bikes, mainly randonneuses in the French tradition, plus porteurs with large front racks and road bikes. There are no stock models: geometry and tubing are worked out on an adjustable fit rig in the workshop, and each frame is painted by a specialist painter in the customer's chosen colour. Visits by appointment.",
+    "uncertain": "Founding year and prices are not published. The site does not load over HTTPS (TLS error), only over HTTP.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cycles Steil – home",
+        "url": "http://cycles-steil.com/"
+      },
+      {
+        "name": "Cycles Steil – process (fit rig, design, paint)",
+        "url": "http://cycles-steil.com/prozess.html"
+      },
+      {
+        "name": "Cycles Steil – models",
+        "url": "http://cycles-steil.com/modelle.html"
+      },
+      {
+        "name": "Cycles Steil – contact/Impressum",
+        "url": "http://cycles-steil.com/impressum.html"
+      },
+      {
+        "name": "BESPOKED Dresden 2026 exhibitor list",
+        "url": "https://bespoked.cc/shows/dresden"
+      },
+      {
+        "name": "The Framebuilders – Germany",
+        "url": "https://theframebuilders.com/countries/germany/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "piratecyclex",
+    "name": "Fahrradmanufaktur Gebrüder Höing (Piratecyclex)",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Hannover",
+    "address": {
+      "street": "Fössestraße 103",
+      "postalCode": "30453",
+      "source": "https://www.piratecyclex.de/impressum"
+    },
+    "geo": {
+      "lat": 52.36757,
+      "lon": 9.69704,
+      "precision": "address"
+    },
+    "website": "https://www.piratecyclex.de",
+    "founded": 2006,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "urban"
+    ],
+    "priceNote": "Unsere Preise beginnen bei 900€ für einen pulverbeschichteten Standartrahmen. Kompletträder beginnen bei 1300€. Ein Lastenrad bekommst du bereits ab 2500€.",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "repair"
+    ],
+    "summary": "Small workshop in four former shipping containers at the Platzprojekt in Hannover-Linden. It brazes made-to-measure steel frames for single speeds, cargo bikes, cruisers, recumbents and other special builds, and repairs cracked, broken or bent steel frames.",
+    "uncertain": "The website footer dates from 2019 and the frame-building course page still says 'coming soon' (planned from 2020), so courses are not listed as a service; current activity was not confirmed beyond the live site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Piratecyclex – home (since 2006, steel, brazed)",
+        "url": "https://www.piratecyclex.de/"
+      },
+      {
+        "name": "Piratecyclex – Fahrräder nach Maß (process, prices)",
+        "url": "https://www.piratecyclex.de/fahrraeder-nach-mass"
+      },
+      {
+        "name": "Piratecyclex – Rahmenreparatur",
+        "url": "https://www.piratecyclex.de/rahmenreparatur"
+      },
+      {
+        "name": "Piratecyclex – Impressum",
+        "url": "https://www.piratecyclex.de/impressum"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "suicycle-hamburg",
+    "name": "Suicycle Store",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Wohlwillstraße 12",
+      "postalCode": "20359",
+      "source": "https://suicycle-store.com/impressum/"
+    },
+    "geo": {
+      "lat": 53.55313,
+      "lon": 9.96138,
+      "precision": "address"
+    },
+    "website": "https://suicycle-store.com",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "track",
+      "road",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Open",
+      "Ridley",
+      "Orbea",
+      "Cinelli",
+      "Surly",
+      "Brother Cycles",
+      "Omnium",
+      "Muli"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "repair"
+    ],
+    "summary": "Bike shop and workshop in St. Pauli with an in-house frame builder who has built frames professionally since 1982, including custom, track, tandem and cyclocross frames; frame commissions are booked by appointment. The shop also sells complete bikes, cargo bikes and parts.",
+    "uncertain": "The frame-building page does not state current frame materials, prices or where the frames are built today. Founding year not published (a 2025 city guide says the shop has existed for over 20 years). Brand list taken from the online shop; Ridley's dealer locator lists the shop; Open dealer status not checked against Open's locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Suicycle – Frame Building",
+        "url": "https://suicycle-store.com/frame-building/"
+      },
+      {
+        "name": "Suicycle – Impressum",
+        "url": "https://suicycle-store.com/impressum/"
+      },
+      {
+        "name": "Suicycle – brands",
+        "url": "https://suicycle-store.com/all_brands/"
+      },
+      {
+        "name": "SZENE Hamburg: Die besten Fahrradläden in Hamburg (2025)",
+        "url": "https://szene-hamburg.com/fahrradlaeden-hamburg/"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de_DE/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "schoof-jensen",
+    "name": "Schoof & Jensen",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Flensburg",
+    "address": {
+      "street": "Kielseng 7",
+      "postalCode": "24937",
+      "source": "https://www.schoof-jensen.de/impressum"
+    },
+    "geo": {
+      "lat": 54.80252,
+      "lon": 9.44319,
+      "precision": "address"
+    },
+    "website": "https://www.schoof-jensen.de",
+    "founded": 2021,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Cargo bike maker founded in 2021 that designs and builds the compact, modular Doubledekker in its Flensburg workshop, with or without e-assist. Frames are welded by hand from CrMo steel in small series. The workshop also welds steel gravel frames for the Kiel brand Dankward.",
+    "uncertain": "Hand welding, CrMo steel and the Dankward frames are reported by a third-party magazine visit (Weites.Land, Aug 2026), not on the maker's own site, which states 'Designt & produziert in Norddeutschland'. Prices not checked.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Schoof & Jensen – home (made in Flensburg, founded 2021)",
+        "url": "https://www.schoof-jensen.de/"
+      },
+      {
+        "name": "Schoof & Jensen – Impressum",
+        "url": "https://www.schoof-jensen.de/impressum"
+      },
+      {
+        "name": "Weites.Land: Schoof & Jensen in Flensburg (Aug 2026)",
+        "url": "https://weites.land/schoof-jensen-in-flensburg/"
+      },
+      {
+        "name": "Lastenrad Marburg – Hersteller",
+        "url": "https://lastenrad-marburg.de/hersteller/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "dankward-bikes",
+    "name": "Dankward Bikes",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Kiel",
+    "address": {
+      "street": "Flintkampsredder 10",
+      "postalCode": "24106",
+      "source": "https://ridedankward.de/impressum"
+    },
+    "geo": {
+      "lat": 54.36274,
+      "lon": 10.12886,
+      "precision": "address"
+    },
+    "website": "https://ridedankward.de",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "gravel",
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "custom-paint",
+      "bike-fitting"
+    ],
+    "summary": "Small Kiel brand for road and gravel bikes, each hand-painted, specced and built up in its Kiel workshop. Its steel Fango gravel frame uses Italian tubing that is laser-cut and welded by a partner in Schleswig-Holstein, with final brazing and thread-cutting done in Kiel. Fitting is offered through Bikefitting Kiel.",
+    "uncertain": "Only the steel Fango is documented as made in Germany; the origin of the carbon framesets (e.g. Fulmar) is not stated, so carbon is not listed. Founding year not verified (company register entry appears recent).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Dankward – home (built and painted in Kiel)",
+        "url": "https://ridedankward.de/en"
+      },
+      {
+        "name": "Dankward – Fango (welded in Schleswig-Holstein)",
+        "url": "https://ridedankward.de/fango1"
+      },
+      {
+        "name": "Dankward – Kiel workshop, fitting, workshops",
+        "url": "https://ridedankward.de/en/kiel"
+      },
+      {
+        "name": "Dankward – Impressum",
+        "url": "https://ridedankward.de/impressum"
+      },
+      {
+        "name": "Weites.Land: Schoof & Jensen builds Dankward gravel frames",
+        "url": "https://weites.land/schoof-jensen-in-flensburg/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "trek-bicycle-hamburg-eppendorf",
+    "name": "Trek Bicycle Hamburg Eppendorf",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Eppendorfer Landstraße 97-101",
+      "postalCode": "20251",
+      "source": "https://www.trekbikes.com/de/de_DE/retail/hamburg_eppendorf/"
+    },
+    "geo": {
+      "lat": 53.59404,
+      "lon": 9.98833,
+      "precision": "address"
+    },
+    "website": "https://www.trekbikes.com/de/de_DE/retail/hamburg_eppendorf/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Diamant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Trek's own store in Eppendorf, described by Trek as its second store in Germany. It sells Trek, Diamant and Bontrager products, offers workshop service and promotes Trek's Project One custom programme (custom paint and component choice).",
+    "uncertain": "Brand-owned store rather than an independent dealer. Fitting services are not described on the store page.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek – Hamburg Eppendorf store page",
+        "url": "https://www.trekbikes.com/de/de_DE/retail/hamburg_eppendorf/"
+      },
+      {
+        "name": "Trek Germany retailer list",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/retailer/DE/"
+      },
+      {
+        "name": "Trek store finder – Project One retailers",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "kingcycles-hamburg",
+    "name": "Kingcycles",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Osterstraße 179-181",
+      "postalCode": "20255",
+      "source": "https://www.kingcycles.de/impressum.php"
+    },
+    "geo": {
+      "lat": 53.57648,
+      "lon": 9.94934,
+      "precision": "address"
+    },
+    "website": "https://www.kingcycles.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Diamant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Trek and Diamant dealer on Osterstraße in Eimsbüttel selling road, gravel, e-bikes and city bikes, with a workshop. It offers Trek's Project One custom-bike programme.",
+    "uncertain": "Trek's store finder lists Kingcycles as a Trek retailer but not under the Project One filter; Project One offer is from the shop's own page.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Kingcycles – home",
+        "url": "https://www.kingcycles.de/"
+      },
+      {
+        "name": "Kingcycles – Project One",
+        "url": "https://www.kingcycles.de/Projekt_One"
+      },
+      {
+        "name": "Trek Germany retailer list",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/retailer/DE/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikefactory-hamburg",
+    "name": "Bikefactory Schanze",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Schulterblatt 120 / Amandastr. 74",
+      "postalCode": "20357",
+      "source": "https://bikefactory-hamburg.de/impressum/"
+    },
+    "geo": {
+      "lat": 53.56285,
+      "lon": 9.96099,
+      "precision": "address",
+      "note": "Geocoded to Schulterblatt street level."
+    },
+    "website": "https://bikefactory-hamburg.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Specialized S-Works",
+      "Colnago",
+      "Cannondale",
+      "Orbea",
+      "Aurum"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road, gravel and triathlon shop in the Schanzenviertel with a Colnago shop-in-shop, listed by Cervélo as a dealer and by Specialized as an S-Works store, and also selling Cannondale, Orbea and Aurum. Frame sizing is included when buying a bike; the shop states it does not do full biomechanical fitting.",
+    "uncertain": "The bikefitting.com dealer locator lists Bikefactory's Osdorfer Landstr. 186 site (22549) for static fitting, but the shop's own sizing page says it offers no in-depth fitting; fitting system therefore not listed. Older pages also showed BMC. Colnago shop-in-shop shown on the shop's own site; the shop does not appear in Colnago's store locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikefactory – home (brands)",
+        "url": "https://bikefactory-hamburg.de/"
+      },
+      {
+        "name": "Bikefactory – Colnago",
+        "url": "https://bikefactory-hamburg.de/marke/colnago/"
+      },
+      {
+        "name": "Bikefactory – Bike-Sizing",
+        "url": "https://bikefactory-hamburg.de/bike-sizing/"
+      },
+      {
+        "name": "bikefitting.com dealer locator",
+        "url": "https://www.bikefitting.com/en/find-us"
+      },
+      {
+        "name": "Cervélo store locator",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Specialized store finder (S-Works store flag)",
+        "url": "https://www.specialized.com/de/de/store-finder"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "harrys-rad-station-hamburg",
+    "name": "Harrys Rad Station",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Bargteheider Straße 87",
+      "postalCode": "22143",
+      "source": "https://harrysradstation.de/impressum/"
+    },
+    "geo": {
+      "lat": 53.60386,
+      "lon": 10.14621,
+      "precision": "address"
+    },
+    "website": "https://harrysradstation.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Santa Cruz",
+      "Stevens"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Family-run bike shop in Rahlstedt, in its second generation, selling Cervélo road, gravel and triathlon bikes and Santa Cruz mountain bikes alongside Stevens, with a workshop.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Harrys Rad Station – home (brands)",
+        "url": "https://harrysradstation.de/"
+      },
+      {
+        "name": "Cervélo store locator",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "hp-bikes-rosengarten",
+    "name": "HP-Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Rosengarten",
+    "address": {
+      "street": "An der Thomaskirche 21",
+      "postalCode": "21224",
+      "source": "https://hp-bikes.de/impressum/"
+    },
+    "geo": {
+      "lat": 53.36636,
+      "lon": 9.93823,
+      "precision": "address"
+    },
+    "website": "https://hp-bikes.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Look",
+      "Focus"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Road and triathlon bike store in Rosengarten, south of Hamburg near the A7 Hittfeld exit. It sells Cervélo, Look and Focus, builds bikes to customer specification and also offers used, test and demo road bikes.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "HP-Bikes – home",
+        "url": "https://hp-bikes.de/"
+      },
+      {
+        "name": "HP-Bikes – Impressum",
+        "url": "https://hp-bikes.de/impressum/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "veloskop-elmshorn",
+    "name": "Veloskop",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Elmshorn",
+    "address": {
+      "street": "Friedensallee 42",
+      "postalCode": "25335",
+      "source": "https://www.veloskop.info/about/"
+    },
+    "geo": {
+      "lat": 53.76187,
+      "lon": 9.66338,
+      "precision": "address"
+    },
+    "website": "https://www.veloskop.info",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Factor",
+      "Ridley",
+      "Open",
+      "Time",
+      "Orbea",
+      "Kú Cycle"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build"
+    ],
+    "summary": "Road, triathlon and gravel bike studio in Elmshorn, north-west of Hamburg, that combines bike sales with its own fitting process ('Veloskopie'), offered for over 20 years. Bikes from Factor, Ridley, Open, Time, Orbea and Kú Cycle are sold in combination with a fitting; Kú frames are made to measure after the fit.",
+    "uncertain": "Visits are by appointment. The fitting is certified by the independent International Bike Fitting Institute (second-highest level, per the shop), not one of the named commercial systems. Ridley's dealer locator lists the shop; dealer status for Factor, Open and Time not confirmed by those brands' locators.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Veloskop – home",
+        "url": "https://www.veloskop.info/"
+      },
+      {
+        "name": "Veloskop – Tolle Räder (brands)",
+        "url": "https://www.veloskop.info/rennr%C3%A4der-bikefitting-f%C3%BCr-hamburg-und-umgebung/tolle-r%C3%A4der/"
+      },
+      {
+        "name": "Veloskop – Impressum",
+        "url": "https://www.veloskop.info/about/"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de_DE/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "radsport-cyclefactory-hamburg",
+    "name": "Radsport Cyclefactory",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Max-Brauer-Allee 36",
+      "postalCode": "22765",
+      "source": "https://www.cyclefactory.de/impressum/"
+    },
+    "geo": {
+      "lat": 53.54955,
+      "lon": 9.9365,
+      "precision": "address"
+    },
+    "website": "https://www.cyclefactory.de",
+    "founded": 2001,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "De Rosa",
+      "Wilier",
+      "Ridley",
+      "Bianchi",
+      "Basso",
+      "Bottecchia",
+      "Axiom"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "repair"
+    ],
+    "summary": "Road and gravel specialist in Altona founded in 2001, with a second racing-focused 'Performance Zentrum' at Kollaustraße 4. Brands include Colnago, De Rosa, Wilier, Ridley, Bianchi and Basso; Axiom frames, hand-made in Italy, are also offered made to measure.",
+    "uncertain": "The Kollaustraße 4 address is taken from the shop's homepage; the Performance site's Impressum page could not be read.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport Cyclefactory – home",
+        "url": "https://www.cyclefactory.de/"
+      },
+      {
+        "name": "Cyclefactory – Axiom Bikes (made to measure)",
+        "url": "https://www.cyclefactory.de/axiom-bikes/"
+      },
+      {
+        "name": "Cyclefactory Performance – brands",
+        "url": "https://cyclefactory-performance.de/marken/"
+      },
+      {
+        "name": "Cyclefactory Performance – about",
+        "url": "https://cyclefactory-performance.de/about/"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de_DE/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "pirate-bikes-hamburg",
+    "name": "Pirate-Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Valentinskamp 47",
+      "postalCode": "20355",
+      "source": "http://www.p-bikes.biz/impressum.html"
+    },
+    "geo": {
+      "lat": 53.55548,
+      "lon": 9.98227,
+      "precision": "address"
+    },
+    "website": "http://www.p-bikes.biz",
+    "founded": 2003,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb",
+      "track"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Storck"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Small road and mountain bike shop in the Neustadt, independent since 2003, run by a former pro-team mechanic. Its brand page lists Cervélo and Storck, plus its own Pirate-branded bikes and clothing.",
+    "uncertain": "The brand page is undated and appears old (it also lists Felt); Cervélo's store locator lists the shop; current Storck dealer status not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Pirate-Bikes – home",
+        "url": "http://www.p-bikes.biz/"
+      },
+      {
+        "name": "Pirate-Bikes – brands",
+        "url": "http://www.p-bikes.biz/marken.html"
+      },
+      {
+        "name": "fahrradhaendler.de – Cervélo dealers Hamburg",
+        "url": "https://fahrradhaendler.de/marke/cervelo/hamburg"
+      },
+      {
+        "name": "Cervélo store locator",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "das-radhaus-stade",
+    "name": "Das Radhaus",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Stade",
+    "address": {
+      "street": "Bremervörder Str. 78",
+      "postalCode": "21680",
+      "source": "https://www.radhaus-stade.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 53.59976,
+      "lon": 9.44766,
+      "precision": "address"
+    },
+    "website": "https://www.radhaus-stade.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Scott",
+      "Bianchi"
+    ],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Stade, west of Hamburg, covering road and gravel bikes as well as e-bikes, with a workshop. It is listed as a fitting location in the bikefitting.com dealer locator.",
+    "uncertain": "Fitting is listed in the bikefitting.com locator as a static fit; the shop's own site mentions ergonomics advice but does not name the system.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "bikefitting.com dealer locator",
+        "url": "https://www.bikefitting.com/en/find-us"
+      },
+      {
+        "name": "Das Radhaus – home",
+        "url": "https://www.radhaus-stade.de/"
+      },
+      {
+        "name": "Kreiszeitung Wochenblatt – Radhaus Stade offers bikefitting",
+        "url": "https://www.kreiszeitung-wochenblatt.de/stade/c-wirtschaft/das-radhaus-stade-bietet-jetzt-bikefitting-an_a57702"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "oxbike-hamburg",
+    "name": "Oxbike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Hamburg",
+    "regionCode": "DE-HH",
+    "city": "Hamburg",
+    "address": {
+      "street": "Ochsenweberstraße 17a",
+      "postalCode": "22419",
+      "source": "https://oxbike.de/impressum/"
+    },
+    "geo": {
+      "lat": 53.67127,
+      "lon": 10.01146,
+      "precision": "address"
+    },
+    "website": "https://oxbike.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Langenhorn, north Hamburg, selling road, gravel, time-trial, city and cargo bikes, recently appointed as a Trek dealer. As a Smartfit partner it uses Smartfit measurement to set frame size and riding position.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Oxbike – home (Trek, Smartfit)",
+        "url": "https://oxbike.de/"
+      },
+      {
+        "name": "Trek Germany retailer list",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/retailer/DE/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radwelt-harsefeld",
+    "name": "Radwelt Harsefeld",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Harsefeld",
+    "address": {
+      "street": "Rümelswiese 2",
+      "postalCode": "21698",
+      "source": "https://www.radwelt-harsefeld.de/impressum"
+    },
+    "geo": {
+      "lat": 53.44376,
+      "lon": 9.51023,
+      "precision": "address"
+    },
+    "website": "https://www.radwelt-harsefeld.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Bulls",
+      "KTM",
+      "Kalkhoff"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Large bike and e-bike shop in Harsefeld near Buxtehude and Stade, listed in Cervélo's store locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cervélo store locator",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Radwelt Harsefeld – home",
+        "url": "https://www.radwelt-harsefeld.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "elbe-raederei-agathenburg",
+    "name": "Elbe Räderei",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Agathenburg",
+    "address": {
+      "street": "Lieth 2",
+      "postalCode": "21684",
+      "source": "https://elbe-raederei.de/impressum/"
+    },
+    "geo": {
+      "lat": 53.55754,
+      "lon": 9.53537,
+      "precision": "address"
+    },
+    "website": "https://elbe-raederei.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop with showroom and workshop in Agathenburg, between Stade and Buxtehude, listed as a Ridley dealer.",
+    "uncertain": "Brands other than Ridley could not be read from the shop's website (logos only).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de_DE/dealers"
+      },
+      {
+        "name": "Elbe Räderei – home",
+        "url": "https://elbe-raederei.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "pct-shop-raible-handeloh",
+    "name": "PCT Shop Raible",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Handeloh",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 53.247,
+      "lon": 9.844,
+      "precision": "city"
+    },
+    "website": null,
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Small bike shop in Wörme, part of Handeloh south of Buchholz in der Nordheide, listed as a Ridley dealer.",
+    "uncertain": "The shop's website returned 403, so address, website, range and services could not be verified on its own pages; entry rests on the Ridley locator only.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de_DE/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "riha-bikes",
+    "name": "Riha Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bremen",
+    "regionCode": "DE-HB",
+    "city": "Bremen",
+    "address": {
+      "street": "Buntentorsteinweg 201",
+      "postalCode": "28201",
+      "source": "https://rihabikes.de/policies/legal-notice"
+    },
+    "geo": {
+      "lat": 53.06238,
+      "lon": 8.80991,
+      "precision": "address"
+    },
+    "website": "https://rihabikes.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized",
+      "Colnago",
+      "BMC",
+      "Cervélo",
+      "Factor",
+      "Ridley",
+      "Felt",
+      "Lightweight"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road, gravel and triathlon shop in Bremen's Neustadt carrying Specialized (including S-Works framesets), Colnago, BMC, Cervélo, Factor and Ridley. Listed by Colnago, Cervélo and Lightweight as a dealer; also offers repairs, upgrades and riding-position optimisation.",
+    "uncertain": "Whether the position optimisation uses a certified fitting system is not stated.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-de/store-locator"
+      },
+      {
+        "name": "Cervélo store locator (Germany)",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Lightweight dealer list",
+        "url": "https://lightweight.info/en/dealers"
+      },
+      {
+        "name": "Riha Bikes – home page and brand menu",
+        "url": "https://rihabikes.de/"
+      },
+      {
+        "name": "Riha Bikes – about us",
+        "url": "https://rihabikes.de/pages/uber-uns"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "trek-bicycle-bremen",
+    "name": "Trek Bicycle Bremen",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bremen",
+    "regionCode": "DE-HB",
+    "city": "Bremen",
+    "address": {
+      "street": "Admiralstrasse 96",
+      "postalCode": "28215",
+      "source": "https://www.trekbikes.com/de/de_DE/retail/bremen/"
+    },
+    "geo": {
+      "lat": 53.09012,
+      "lon": 8.80598,
+      "precision": "address"
+    },
+    "website": "https://www.trekbikes.com/de/de_DE/retail/bremen/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Electra",
+      "Diamant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-paint",
+      "repair"
+    ],
+    "summary": "Trek-run store in Bremen-Findorff selling Trek road, gravel and mountain bikes plus Electra and Diamant. The store takes orders for Trek's Project One custom-paint programme and services bikes of all brands.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek Bicycle Bremen – store page (Project One)",
+        "url": "https://www.trekbikes.com/de/de_DE/retail/bremen/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radschlag-bremen",
+    "name": "Radschlag Fahrradhandel",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bremen",
+    "regionCode": "DE-HB",
+    "city": "Bremen",
+    "address": {
+      "street": "Humboldtstraße 16",
+      "postalCode": "28203",
+      "source": "https://www.radschlag-bremen.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 53.07533,
+      "lon": 8.82404,
+      "precision": "address"
+    },
+    "website": "https://www.radschlag-bremen.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Giant",
+      "Riese & Müller",
+      "VSF Fahrradmanufaktur"
+    ],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Bremen's Viertel, trading for more than 40 years, with a separate fitting studio (Radschlag Bikefitting) offering road, gravel, triathlon and MTB fits with 3D video analysis and pressure mapping. Listed in the Bikefitting.com (Smartfit) dealer finder.",
+    "uncertain": "The fitting studio's own site does not name the measuring system; the Bikefitting.com link rests on the finder listing.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikefitting.com (Smartfit) dealer finder",
+        "url": "https://www.bikefitting.com/de/find-us"
+      },
+      {
+        "name": "Radschlag Bikefitting",
+        "url": "https://radschlag-bikefitting.de/"
+      },
+      {
+        "name": "Radschlag – brands",
+        "url": "https://www.radschlag-bremen.de/brands.asp"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "havenbike",
+    "name": "havenBike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bremen",
+    "regionCode": "DE-HB",
+    "city": "Bremerhaven",
+    "address": {
+      "street": "Schiffdorfer Chaussee 192",
+      "postalCode": "27574",
+      "source": "https://www.havenbike.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 53.52962,
+      "lon": 8.62799,
+      "precision": "address"
+    },
+    "website": "https://www.havenbike.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Cervélo",
+      "Wilier",
+      "Lightweight",
+      "Simplon",
+      "Riese & Müller",
+      "Tout Terrain"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bremerhaven bike shop whose range includes Colnago, Cervélo and Wilier road bikes and Lightweight wheels alongside touring and e-bike brands. Offers Smartfit bike fitting and sizing with sit-bone measurement. Listed by Colnago and Lightweight as a dealer.",
+    "uncertain": "Cervélo and Wilier are listed on the shop's brand page but the shop does not appear in the Cervélo locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-de/store-locator"
+      },
+      {
+        "name": "Lightweight dealer list",
+        "url": "https://lightweight.info/en/dealers"
+      },
+      {
+        "name": "havenBike – brands",
+        "url": "https://www.havenbike.de/brands.asp"
+      },
+      {
+        "name": "havenBike – services (Smartfit)",
+        "url": "https://www.havenbike.de/serviceleistungen.asp"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "wiegetritt",
+    "name": "Wiegetritt",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Lilienthal",
+    "address": {
+      "street": "Moorhauser Landstraße 33",
+      "postalCode": "28865",
+      "source": "https://wiegetritt.com/pages/contact"
+    },
+    "geo": {
+      "lat": 53.15384,
+      "lon": 8.91248,
+      "precision": "address"
+    },
+    "website": "https://wiegetritt.com",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Lightweight",
+      "Giant",
+      "Cadex",
+      "Trek",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road and gravel shop in Lilienthal on Bremen's north-eastern edge. Listed by Lightweight as a dealer; the bike range centres on Giant, Liv and Cadex, with Trek and Cannondale also in stock, and a workshop that services bikes bought elsewhere.",
+    "uncertain": "The Lightweight list gives Hauptstraße 86, Lilienthal; the shop's own contact page and Impressum give Moorhauser Landstraße 33, used here.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Lightweight dealer list",
+        "url": "https://lightweight.info/en/dealers"
+      },
+      {
+        "name": "Wiegetritt – shop",
+        "url": "https://wiegetritt.com/"
+      },
+      {
+        "name": "Wiegetritt – about",
+        "url": "https://wiegetritt.com/pages/wir-sind-wiegetritt"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "zweirad-boesche",
+    "name": "Zweirad Bösche",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Weyhe",
+    "address": {
+      "street": "Kirchweyher Straße 7",
+      "postalCode": "28844",
+      "source": "https://www.zweirad-boesche.de/index.php/impressum"
+    },
+    "geo": {
+      "lat": 52.98556,
+      "lon": 8.86934,
+      "precision": "address"
+    },
+    "website": "https://www.zweirad-boesche.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Look",
+      "idworx",
+      "Tout Terrain",
+      "Manufaktur 83",
+      "Riese & Müller"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Shop in Kirchweyhe, south of Bremen, with a curated range that includes Look road bikes, idworx and Tout Terrain touring bikes and steel gravel frames from Manufaktur 83. Listed as a Cervélo dealer; Rohloff service partner.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cervélo store locator (Germany)",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Zweirad Bösche – bikes",
+        "url": "https://www.zweirad-boesche.de/index.php/bikes"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "fahrradprofi-scheessel",
+    "name": "Fahrradprofi Scheeßel",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Scheeßel",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 53.17,
+      "lon": 9.483,
+      "precision": "city"
+    },
+    "website": null,
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Bike shop in Scheeßel (district of Rotenburg/Wümme) listed in Cervélo's German store locator as an authorised dealer.",
+    "uncertain": "Only the Cervélo locator was found; no website, Impressum or further detail on range and services could be verified. The locator gives Große Str. 12, 27383 Scheeßel.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cervélo store locator (Germany)",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikeone-oldenburg",
+    "name": "BikeOne Oldenburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Oldenburg",
+    "address": {
+      "street": "Rheinstrasse 16",
+      "postalCode": "26135",
+      "source": "https://bike-one.org/impressum/"
+    },
+    "geo": {
+      "lat": 53.13903,
+      "lon": 8.22985,
+      "precision": "address"
+    },
+    "website": "https://bike-one.org",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Factor",
+      "Cervélo",
+      "Pinarello",
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Road, gravel and triathlon specialist in Oldenburg offering bike fitting by appointment and individually configured bikes (wheels, gearing, paint) through partner brands. Listed as a Cervélo dealer and Factor test centre; Pinarello and Trek bikes are sold in its shop.",
+    "uncertain": "The fitting system used is not named.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cervélo store locator (Germany)",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Factor retailer finder",
+        "url": "https://factorbikes.com/find-a-retailer"
+      },
+      {
+        "name": "BikeOne – home page (fitting, custom configuration, brands)",
+        "url": "https://bike-one.org/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bikeone-osnabrueck",
+    "name": "BikeOne Osnabrück",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Osnabrück",
+    "address": {
+      "street": "Lengericher Landstr. 30",
+      "postalCode": "49078",
+      "source": "https://bike-one.org/ueber-uns/"
+    },
+    "geo": {
+      "lat": 52.25632,
+      "lon": 7.99289,
+      "precision": "address"
+    },
+    "website": "https://bike-one.org",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Factor",
+      "Cervélo",
+      "Pinarello",
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Osnabrück branch of the Oldenburg road and triathlon specialist BikeOne, with the same consultation, fitting and custom-configuration services and the Factor, Cervélo and Pinarello range.",
+    "uncertain": "Brand locators list only the Oldenburg store; that the full range and fitting are offered in Osnabrück is inferred from the shared website.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "BikeOne – locations and contact",
+        "url": "https://bike-one.org/ueber-uns/"
+      },
+      {
+        "name": "BikeOne – home page",
+        "url": "https://bike-one.org/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "radel-bluschke",
+    "name": "Radel Bluschke",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Osnabrück",
+    "address": {
+      "street": "Iburger Str. 74a",
+      "postalCode": "49082",
+      "source": "https://bluschke.com/impressum/"
+    },
+    "geo": {
+      "lat": 52.25911,
+      "lon": 8.05623,
+      "precision": "address"
+    },
+    "website": "https://bluschke.com",
+    "founded": 1983,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Lightweight",
+      "Orbea",
+      "Trek",
+      "Cannondale"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Osnabrück shop founded in 1983 with a road-bike focus, selling Colnago (up to the V5Rs), Orbea, Trek and Cannondale, and listed by Colnago and Lightweight as a dealer. Smartfit bike sizing and fitting is offered as part of a new-bike consultation.",
+    "uncertain": "The shop says Smartfit fitting is currently offered only with a new-bike purchase.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-de/store-locator"
+      },
+      {
+        "name": "Lightweight dealer list",
+        "url": "https://lightweight.info/en/dealers"
+      },
+      {
+        "name": "Radel Bluschke – road bikes",
+        "url": "https://bluschke.com/rennrad/"
+      },
+      {
+        "name": "Radel Bluschke – Smartfit",
+        "url": "https://bluschke.com/smartfit-bikesizing-bikefitting/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "lt-osnabrueck-fahrrad-pagels",
+    "name": "L&T Sporthaus Osnabrück with Fahrrad Pagels",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Osnabrück",
+    "address": {
+      "street": "Herrenteichsstraße 28",
+      "postalCode": "49074",
+      "source": "https://www.fahrrad-pagels.de/general-5"
+    },
+    "geo": {
+      "lat": 52.27503,
+      "lon": 8.04776,
+      "precision": "address"
+    },
+    "website": "https://www.l-t.de/pages/ridley-bikes",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "The L&T sports store in central Osnabrück sells Ridley bikes with the Ridley configurator. Since April 2026 the Hamburg shop Fahrrad Pagels runs the bike workshop, fitting (saddle-pressure and video analysis) and made-to-measure builds inside the store.",
+    "uncertain": "Not in a Ridley locator; whether Ridley is sold by L&T or by Fahrrad Pagels is unclear. Fitting system not named. Address is Fahrrad Pagels' published location at L&T.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "L&T – Ridley bikes",
+        "url": "https://www.l-t.de/pages/ridley-bikes"
+      },
+      {
+        "name": "L&T – bike fitting with Fahrrad Pagels",
+        "url": "https://www.l-t.de/pages/bikefitting-mit-pagels"
+      },
+      {
+        "name": "Fahrrad Pagels – home page",
+        "url": "https://www.fahrrad-pagels.de/"
+      },
+      {
+        "name": "Fahrrad Pagels – fitting packages",
+        "url": "https://www.fahrrad-pagels.de/bikefitting"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "zweirad-beilken",
+    "name": "Zweirad Beilken",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Oldenburg",
+    "address": {
+      "street": "Weißenmoorstr. 249",
+      "postalCode": "26125",
+      "source": "https://www.zweirad-beilken.de/impressum/"
+    },
+    "geo": {
+      "lat": 53.18294,
+      "lon": 8.20546,
+      "precision": "address"
+    },
+    "website": "https://www.zweirad-beilken.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley",
+      "Cube",
+      "Stevens",
+      "Riese & Müller"
+    ],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Large shop in Oldenburg-Ofenerdiek that also runs a Cube store. Its brands include Ridley road and gravel bikes, and it is listed in the Bikefitting.com (Smartfit) dealer finder.",
+    "uncertain": "The shop's own pages do not describe its fitting service; the Bikefitting.com link rests on the finder listing.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikefitting.com (Smartfit) dealer finder",
+        "url": "https://www.bikefitting.com/de/find-us"
+      },
+      {
+        "name": "Zweirad Beilken – Ridley",
+        "url": "https://www.zweirad-beilken.de/marken/ridley/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "buhl-bikes-oldenburg",
+    "name": "Buhl Bikes & Sports",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Oldenburg",
+    "address": {
+      "street": "Lambertistrasse 39",
+      "postalCode": "26121",
+      "source": "https://www.buhl-bikes.de/impressum.html"
+    },
+    "geo": {
+      "lat": 53.15541,
+      "lon": 8.21515,
+      "precision": "address"
+    },
+    "website": "https://www.buhl-bikes.de",
+    "founded": 1994,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Orbea",
+      "Bianchi",
+      "Surly",
+      "Salsa"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Oldenburg shop founded in 1994 for mountain, road and gravel bikes. Its brand list includes Santa Cruz alongside Orbea, Bianchi, Surly and Salsa, and it has its own workshop.",
+    "uncertain": "Santa Cruz appears as a brand logo on the shop's site; not confirmed in a Santa Cruz locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Buhl Bikes & Sports – home page and brands",
+        "url": "https://www.buhl-bikes.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "zweiradladen-aurich",
+    "name": "Zweiradladen Aurich",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Aurich",
+    "address": {
+      "street": "Hoheberger Weg 5",
+      "postalCode": "26603",
+      "source": "https://zweiradladen-aurich.de/impressum-agb-und-widerrufsbelehrung/"
+    },
+    "geo": {
+      "lat": 53.47534,
+      "lon": 7.49658,
+      "precision": "address"
+    },
+    "website": "https://zweiradladen-aurich.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley",
+      "Look",
+      "Basso",
+      "Eddy Merckx",
+      "Van Nicholas",
+      "Define",
+      "Orbea",
+      "Cannondale"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "East Frisian shop trading for more than 40 years with a road range including Ridley, Look, Basso and Eddy Merckx plus Van Nicholas titanium and Define steel bikes. Offers Smartfit bike fitting with sit-bone measurement and builds ergonomically tailored bikes.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikefitting.com (Smartfit) dealer finder",
+        "url": "https://www.bikefitting.com/de/find-us"
+      },
+      {
+        "name": "Zweiradladen Aurich – ergonomics / Smartfit",
+        "url": "https://zweiradladen-aurich.de/fahrrad-ergonomieberatung-bikefitting/"
+      },
+      {
+        "name": "Zweiradladen Aurich – Ridley",
+        "url": "https://zweiradladen-aurich.de/brand/ridley/"
+      },
+      {
+        "name": "Zweiradladen Aurich – Look",
+        "url": "https://zweiradladen-aurich.de/brand/look-rennraeder-gravelbikes/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "zweirad-elferink",
+    "name": "Zweirad Elferink",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Uelsen",
+    "address": {
+      "street": "Ziegeleistr. 1",
+      "postalCode": "49843",
+      "source": "https://www.zweirad-elferink.de/impressum/"
+    },
+    "geo": {
+      "lat": 52.50041,
+      "lon": 6.87742,
+      "precision": "address"
+    },
+    "website": "https://www.zweirad-elferink.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Scott",
+      "Giant",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Shop in Uelsen (Grafschaft Bentheim, near Nordhorn) listed as an authorised Cervélo dealer; its brand list also includes Scott, Giant and Cannondale alongside Dutch and e-bike brands.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cervélo store locator (Germany)",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Zweirad Elferink – brands",
+        "url": "https://www.zweirad-elferink.de/marken/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "zweirad-nieberding",
+    "name": "Zweirad Nieberding",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Lohne (Oldenburg)",
+    "address": {
+      "street": "Brinkstraße 44",
+      "postalCode": "49393",
+      "source": "https://www.zweirad-nieberding.de/fahrraeder"
+    },
+    "geo": {
+      "lat": 52.66166,
+      "lon": 8.23998,
+      "precision": "address"
+    },
+    "website": "https://www.zweirad-nieberding.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Factor",
+      "Pinarello",
+      "Cervélo",
+      "Orbea",
+      "Riese & Müller"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Shop in Lohne (district of Vechta) with a road range that includes Factor, Pinarello and Cervélo alongside Orbea and Riese & Müller e-bikes. Listed by Factor as a retailer; the business has been run by the current owner family since 1997.",
+    "uncertain": "Pinarello and Cervélo appear as brand logos on the shop's site; not confirmed in those brands' locators.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Factor retailer finder",
+        "url": "https://factorbikes.com/find-a-retailer"
+      },
+      {
+        "name": "Zweirad Nieberding – bikes and brands",
+        "url": "https://www.zweirad-nieberding.de/fahrraeder"
+      },
+      {
+        "name": "Zweirad Nieberding – about",
+        "url": "https://www.zweirad-nieberding.de/ueber-uns"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "biketime-hannover",
+    "name": "Biketime",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Hannover",
+    "address": {
+      "street": "Alter Flughafen 7a",
+      "postalCode": "30179",
+      "source": "https://www.biketime.de/impressum"
+    },
+    "geo": {
+      "lat": 52.41693,
+      "lon": 9.74222,
+      "precision": "address"
+    },
+    "website": "https://www.biketime.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": "64 € pro 30 Minuten",
+    "brands": [
+      "Cervélo",
+      "Pinarello",
+      "Wilier",
+      "Santa Cruz",
+      "Scott",
+      "Cadex",
+      "Giant",
+      "Orbea",
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Multi-brand bike shop in Hannover with a road, gravel and MTB range that includes Cervélo, Pinarello, Wilier and Santa Cruz. Its in-house Fitting Center offers fittings on the customer's own bike or on a digital fitting bike, with a more extensive performance-oriented FITpro option.",
+    "uncertain": "The fitting page does not name the fitting system used (it mentions a 'digital fitting bike'). Whether the shop is a Scott premium dealer is not stated.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Biketime – brands",
+        "url": "https://www.biketime.de/marken.html"
+      },
+      {
+        "name": "Biketime – Cervélo",
+        "url": "https://www.biketime.de/marken/cervelo.html"
+      },
+      {
+        "name": "Biketime – Pinarello",
+        "url": "https://www.biketime.de/marken/pinarello.html"
+      },
+      {
+        "name": "Biketime – Wilier",
+        "url": "https://www.biketime.de/marken/wilier.html"
+      },
+      {
+        "name": "Biketime – Santa Cruz",
+        "url": "https://www.biketime.de/marken/santa-cruz.html"
+      },
+      {
+        "name": "Biketime – Fitting Center",
+        "url": "https://www.biketime.de/service/biketimefittingcenter"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "enjoyyourbike-hannover",
+    "name": "Enjoyyourbike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Hannover",
+    "address": {
+      "street": "Eleonorenstraße 20",
+      "postalCode": "30449",
+      "source": "https://www.enjoyyourbike.com/impressum"
+    },
+    "geo": {
+      "lat": 52.36842,
+      "lon": 9.71578,
+      "precision": "address"
+    },
+    "website": "https://www.enjoyyourbike.com",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Open",
+      "Time",
+      "ENVE",
+      "Allied",
+      "Curve",
+      "Jaegher"
+    ],
+    "fittingSystems": [
+      "Retül"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Online retailer with a showroom and workshop in Hannover-Linden, focused on road and gravel bikes. Brands include OPEN and TIME. The showroom offers bike fitting by appointment and is listed in the Retül fitter finder with a Level 1 fitter and the Retül 3D motion capture system and Müve fit bike.",
+    "uncertain": "The street address is the company address in the Impressum; the site does not state separately that the showroom is at the same address (the Retül listing gives the same street). Authorised-dealer status for OPEN and TIME is inferred from the shop's own brand pages.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Retül – find a fitter (Hannover)",
+        "url": "https://scheduler.retul.com/search/?country=DE&city=Hannover"
+      },
+      {
+        "name": "Enjoyyourbike – bike brands",
+        "url": "https://www.enjoyyourbike.com/bikes-teile/fahrradmarken/"
+      },
+      {
+        "name": "Enjoyyourbike – OPEN",
+        "url": "https://www.enjoyyourbike.com/open-cycle/"
+      },
+      {
+        "name": "Enjoyyourbike – TIME",
+        "url": "https://www.enjoyyourbike.com/time/"
+      },
+      {
+        "name": "Enjoyyourbike – Hannover store",
+        "url": "https://www.enjoyyourbike.com/hannover-store/"
+      },
+      {
+        "name": "Enjoyyourbike – book a bike fitting",
+        "url": "https://www.enjoyyourbike.com/hannover-store/termine-online-buchen/bikefitting-termin-buchen/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "velobunch-braunschweig",
+    "name": "Velobunch",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Braunschweig",
+    "address": {
+      "street": "Kurt-Schumacher-Str. 14",
+      "postalCode": "38102",
+      "source": "https://velobunch.de/impressum/"
+    },
+    "geo": {
+      "lat": 52.25486,
+      "lon": 10.53557,
+      "precision": "address"
+    },
+    "website": "https://velobunch.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Factor",
+      "Colnago",
+      "Cervélo",
+      "Orbea",
+      "Stevens",
+      "Cube"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road and gravel bike shop with a workshop in Braunschweig's Atrium centre, run by Velocity Braunschweig GmbH. Listed in the Colnago store locator; the shop's own range also lists Factor and Cervélo.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en/store-locator"
+      },
+      {
+        "name": "Velobunch – home page (brands)",
+        "url": "https://velobunch.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radkombinat-lueneburg",
+    "name": "Radkombinat",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Lüneburg",
+    "address": {
+      "street": "Obere Schrangenstraße 4",
+      "postalCode": "21335",
+      "source": "https://radkombinat.com/impressum/"
+    },
+    "geo": {
+      "lat": 53.24812,
+      "lon": 10.40571,
+      "precision": "address"
+    },
+    "website": "https://radkombinat.com",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Factor",
+      "Look",
+      "Time",
+      "Ridley",
+      "Cannondale",
+      "Omnium"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop in Lüneburg's old town focused on road, gravel and cargo bikes. Its 'Dream Builds' service plans and assembles individual bikes with the customer; documented builds include Factor, TIME, Look and Ridley. Listed in the Colnago store locator.",
+    "uncertain": "Factor and Ridley appear as completed custom builds; authorised-dealer status for those two brands is not stated explicitly on the shop's site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en/store-locator"
+      },
+      {
+        "name": "Radkombinat – Dream Builds",
+        "url": "https://radkombinat.com/bikes/dream-builds/"
+      },
+      {
+        "name": "Radkombinat – road bikes",
+        "url": "https://radkombinat.com/bikes/road-bikes/"
+      },
+      {
+        "name": "Radkombinat – gravel bikes",
+        "url": "https://radkombinat.com/bikes/gravel-bikes/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "fahrradkontor-hannover",
+    "name": "Fahrradkontor Hannover",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Hannover",
+    "address": {
+      "street": "Spichernstraße 7",
+      "postalCode": "30161",
+      "source": "https://fahrradkontor.de/impressum"
+    },
+    "geo": {
+      "lat": 52.38758,
+      "lon": 9.74098,
+      "precision": "address"
+    },
+    "website": "https://fahrradkontor.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Ridley",
+      "Simplon",
+      "Stevens"
+    ],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Hannover-List selling city, trekking, road and gravel bikes. Listed in the Colnago store locator and presents itself as a Ridley and Simplon premium dealer. Offers bike fitting and ergonomics consultations with professional measurement.",
+    "uncertain": "Fahrradkontor appears in bikefitting.com dealer data (static fit service) seen during research, but the finder page could not be loaded directly to confirm; the shop's own page does not name the fitting system.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en/store-locator"
+      },
+      {
+        "name": "Fahrradkontor – sales, brands and bike fitting",
+        "url": "https://fahrradkontor.de/verkauf"
+      },
+      {
+        "name": "bikefitting.com – find us",
+        "url": "https://www.bikefitting.com/de/find-us"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "hackerott-bike-store-hannover",
+    "name": "Hackerott Bike Store",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Hannover",
+    "address": {
+      "street": "Schulenburger Landstraße 73",
+      "postalCode": "30165",
+      "source": "https://www.hackerott.bike/impressum/"
+    },
+    "geo": {
+      "lat": 52.40154,
+      "lon": 9.71179,
+      "precision": "address"
+    },
+    "website": "https://www.hackerott.bike",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Look",
+      "Focus",
+      "Urwahn",
+      "Moustache",
+      "Velo de Ville"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike and e-bike store in Hannover-Hainholz operated by the Autopark Hackerott car dealership group. Its range includes a selection of LOOK road and gravel bikes.",
+    "uncertain": "Authorised LOOK dealer status inferred from the shop's own brand list and offers; no LOOK locator entry checked.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Hackerott Bike Store – home page (brands, LOOK models)",
+        "url": "https://www.hackerott.bike/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "fahrrad-schiwy-burgdorf",
+    "name": "Fahrrad Schiwy",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Burgdorf",
+    "address": {
+      "street": "Schmiedestr. 48/49",
+      "postalCode": "31303",
+      "source": "http://www.fahrrad-schiwy.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 52.44758,
+      "lon": 10.00846,
+      "precision": "address"
+    },
+    "website": "http://www.fahrrad-schiwy.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Look",
+      "Ridley",
+      "Scott",
+      "Stevens",
+      "BH Bikes",
+      "Mondraker"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop and certified master workshop in Burgdorf (Region Hannover). Brands shown include LOOK, Ridley and Scott. Services listed include body scanning, ergonomics advice, bike fitting and bikes built to customer specification.",
+    "uncertain": "LOOK and Ridley appear as brand logos/links on the home page; authorised-dealer status and the fitting system used are not stated.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Fahrrad Schiwy – home page (brands)",
+        "url": "http://www.fahrrad-schiwy.de/"
+      },
+      {
+        "name": "Fahrrad Schiwy – services",
+        "url": "http://www.fahrrad-schiwy.de/serviceleistungen.asp"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bunnyhop-hameln",
+    "name": "bunnyhop",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Hameln",
+    "address": {
+      "street": "Carl-Wilhelm-Niemeyer-Straße 20",
+      "postalCode": "31789",
+      "source": "https://www.bunnyhop.de/INSPEKTIONEN-SERVICE/BIKEFITTING.htm?a=catalog&p=1029"
+    },
+    "geo": {
+      "lat": 52.11867,
+      "lon": 9.4207,
+      "precision": "address"
+    },
+    "website": "https://www.bunnyhop.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized",
+      "Santa Cruz",
+      "Cervélo",
+      "Cannondale",
+      "Bianchi",
+      "Focus",
+      "Giant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Large bike shop and online store in Hameln with a separate S-Works section, Santa Cruz and Cervélo in its range, a bike-fitting service and ORBEA MyO custom configurations.",
+    "uncertain": "The fitting page does not name a system or describe the method. Cervélo appears via listed models rather than a brand page. Whether the shop is a Specialized S-Works/flagship dealer is inferred from its S-Works menu section.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "bunnyhop – Specialized",
+        "url": "https://www.bunnyhop.de/Marken-Specialized.htm?a=marke&Hersteller=22196"
+      },
+      {
+        "name": "bunnyhop – Santa Cruz",
+        "url": "https://www.bunnyhop.de/Marken-Santa-Cruz.htm?a=marke&Hersteller=15015"
+      },
+      {
+        "name": "bunnyhop – bike fitting",
+        "url": "https://www.bunnyhop.de/INSPEKTIONEN-SERVICE/BIKEFITTING.htm?a=catalog&p=1029"
+      },
+      {
+        "name": "bunnyhop – home page",
+        "url": "https://www.bunnyhop.de/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "pedalritter-goettingen",
+    "name": "Pedalritter",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Göttingen",
+    "address": {
+      "street": "Groner Tor Straße 23",
+      "postalCode": "37073",
+      "source": "https://pedalritter.de/impressum"
+    },
+    "geo": {
+      "lat": 51.53231,
+      "lon": 9.93002,
+      "precision": "address"
+    },
+    "website": "https://pedalritter.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Wilier",
+      "Basso",
+      "Tommasini",
+      "KTM",
+      "Böttcher"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Göttingen shop, in business for more than 20 years, that builds bikes to customer specification under its own Pedalritter brand, from size (optionally based on body measurement) to colour and components. Also sells Wilier, Basso and Tommasini road and gravel bikes.",
+    "uncertain": "Brands are shown as logos only (Wilier, Basso, Tommasini, KTM, Böttcher, Intec, Campus); authorised Wilier dealer status not confirmed via a Wilier locator. Not a registered master workshop per its Impressum.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Pedalritter – home page (custom builds, brands)",
+        "url": "https://pedalritter.de/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "atelier-velo-braunschweig",
+    "name": "Atelier VELO Radsport",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Braunschweig",
+    "address": {
+      "street": "Mühlenpfordtstraße 2",
+      "postalCode": "38106",
+      "source": "http://www.atelier-velo.de/"
+    },
+    "geo": {
+      "lat": 52.27334,
+      "lon": 10.52445,
+      "precision": "address"
+    },
+    "website": "http://www.atelier-velo.de",
+    "founded": 1990,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Wilier",
+      "Bianchi",
+      "Basso",
+      "Olmo",
+      "Gusto",
+      "Marin",
+      "Fuji"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road-cycling shop in Braunschweig's university quarter, open since 1990, now trading with reduced hours (Thursday to Saturday) and concentrating on road, gravel, cyclocross, triathlon and MTB. Brands include Wilier, Bianchi and Basso.",
+    "uncertain": "The owner states the shop continues in reduced form while a successor is sought. Bike fitting is announced as a future service. Wilier dealer status taken from the shop's own brand list.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Atelier VELO – home page (brands, hours)",
+        "url": "http://www.atelier-velo.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "gifhorner-radhaus",
+    "name": "Das Gifhorner Radhaus",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Gifhorn",
+    "address": {
+      "street": "Steinweg 11",
+      "postalCode": "38518",
+      "source": "https://www.gifhorner-radhaus.de/CMS/"
+    },
+    "geo": {
+      "lat": 52.48737,
+      "lon": 10.54688,
+      "precision": "address"
+    },
+    "website": "https://www.gifhorner-radhaus.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "urban",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley",
+      "Kalkhoff",
+      "Victoria",
+      "Conway"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike and e-bike shop in central Gifhorn with its own workshop and Bosch service centre. Its brand list includes Ridley alongside Kalkhoff, Victoria and Conway.",
+    "uncertain": "Range is mainly e-bikes and everyday bikes; which Ridley models are stocked is not stated.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Das Gifhorner Radhaus – home page (brands)",
+        "url": "https://www.gifhorner-radhaus.de/CMS/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "e-bike-kasten-wolfsburg",
+    "name": "E-Bike Kasten Brand Store Wolfsburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Wolfsburg",
+    "address": {
+      "street": "Berliner Ring 12-14",
+      "postalCode": "38440",
+      "source": "https://www.ebike-kasten.de/brand-store-wolfsburg"
+    },
+    "geo": {
+      "lat": 52.42531,
+      "lon": 10.79682,
+      "precision": "address"
+    },
+    "website": "https://www.ebike-kasten.de/brand-store-wolfsburg",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Large e-bike-focused store in Wolfsburg, part of the regional E-Bike Kasten group. The store page offers Trek Project One configuration appointments and bike-fitting appointments.",
+    "uncertain": "The store does not appear in the Trek Project One retailer filter of the Trek store finder; Project One availability is taken from the store's own appointment options. Fitting system not named.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "E-Bike Kasten – Brand Store Wolfsburg",
+        "url": "https://www.ebike-kasten.de/brand-store-wolfsburg"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "trek-bicycle-goettingen",
+    "name": "Trek Bicycle Göttingen",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Göttingen",
+    "address": {
+      "street": "Weender Landstrasse 98",
+      "postalCode": "37075",
+      "source": "https://www.trekbikes.com/de/de_DE/retail/goettingen/"
+    },
+    "geo": {
+      "lat": 51.54768,
+      "lon": 9.9315,
+      "precision": "address"
+    },
+    "website": "https://www.trekbikes.com/de/de_DE/retail/goettingen/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Diamant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Trek-operated store in Göttingen selling Trek road, gravel, MTB and city bikes plus Diamant. Listed as a Trek Project One retailer in the Trek store finder.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder – Project One retailers",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Trek Bicycle Göttingen – store page",
+        "url": "https://www.trekbikes.com/de/de_DE/retail/goettingen/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "trek-bicycle-hameln",
+    "name": "Trek Bicycle Hameln",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Hameln",
+    "address": {
+      "street": "Marienthaler Strasse 4a",
+      "postalCode": "31789",
+      "source": "https://www.trekbikes.com/de/de_DE/retail/hameln/"
+    },
+    "geo": {
+      "lat": 52.10272,
+      "lon": 9.38869,
+      "precision": "address"
+    },
+    "website": "https://www.trekbikes.com/de/de_DE/retail/hameln/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Diamant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Trek-operated store in Hameln selling Trek bikes plus Diamant. Listed as a Trek Project One retailer in the Trek store finder.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder – Project One retailers",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Trek Bicycle Hameln – store page",
+        "url": "https://www.trekbikes.com/de/de_DE/retail/hameln/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "rad-spezi-mesmer-wolfsburg",
+    "name": "Rad Spezi Mesmer Wolfsburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Wolfsburg",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 52.423,
+      "lon": 10.787,
+      "precision": "city"
+    },
+    "website": "https://www.rad-spezi.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "urban",
+      "touring",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Cannondale",
+      "HNF-Nicolai",
+      "Diamant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Wolfsburg branch of the Rad Spezi Mesmer e-bike and bike shops (also Braunschweig and Vechelde). Listed as a Trek Project One retailer in the Trek store finder; Trek is among the brands on the shop's site.",
+    "uncertain": "The shop's own pages did not show the Wolfsburg street address (the Trek finder gives Schulzen Hof 12, 38442 Wolfsburg). Range is mainly e-bikes; road-bike focus unclear.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder – Project One retailers",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Rad Spezi Mesmer – home page (brands)",
+        "url": "https://www.rad-spezi.de/"
+      },
+      {
+        "name": "Rad Spezi Mesmer – Wolfsburg branch",
+        "url": "https://www.rad-spezi.de/filiale-wolfsburg/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "hornburg-bikes-sehnde",
+    "name": "Hornburg Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Sehnde",
+    "address": {
+      "street": "Peiner Straße 17",
+      "postalCode": "31319",
+      "source": "https://hornburg.bike/"
+    },
+    "geo": {
+      "lat": 52.31587,
+      "lon": 9.96548,
+      "precision": "address"
+    },
+    "website": "https://hornburg.bike",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "urban",
+      "touring",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike, e-bike and cargo-bike shop with stores in Sehnde (Region Hannover) and Hildesheim, run by Hornburg Automobile GmbH. The Sehnde store is listed as a Trek Project One retailer in the Trek store finder.",
+    "uncertain": "The shop's own pages did not name Trek or Project One in the text checked; the claim rests on the Trek store finder. Second store: Kennedydamm 33, 31141 Hildesheim (Impressum address).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder – Project One retailers",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Hornburg Bikes – home page (locations)",
+        "url": "https://hornburg.bike/"
+      },
+      {
+        "name": "Hornburg Bikes – Impressum",
+        "url": "https://hornburg.bike/impressum/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "zweirad-jung-northeim",
+    "name": "Zweirad Jung Northeim",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Niedersachsen",
+    "regionCode": "DE-NI",
+    "city": "Northeim",
+    "address": {
+      "street": "Über dem Hellewege 6",
+      "postalCode": "37154",
+      "source": "http://www.2rad-jung.de/impressum"
+    },
+    "geo": {
+      "lat": 51.68981,
+      "lon": 9.98652,
+      "precision": "address"
+    },
+    "website": "http://www.2rad-jung.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "urban",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Riese & Müller",
+      "Pegasus",
+      "Bulls",
+      "KTM"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Northeim branch of Zweirad Jung GmbH (headquartered in Köln), a large bike and e-bike retailer. Santa Cruz is one of the brand worlds on the company's site.",
+    "uncertain": "Santa Cruz is shown company-wide; whether the Northeim store stocks Santa Cruz bikes is not stated. Mainly e-bike and everyday range.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Zweirad Jung – Santa Cruz",
+        "url": "http://www.2rad-jung.de/kategorie/markenwelten/santa-cruz"
+      },
+      {
+        "name": "Zweirad Jung – Impressum (locations)",
+        "url": "http://www.2rad-jung.de/impressum"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "rademacher-schwerin",
+    "name": "Rademacher Bicycles",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "regionCode": "DE-MV",
+    "city": "Schwerin",
+    "address": {
+      "street": "Am Ziegenmarkt 9",
+      "postalCode": "19055",
+      "source": "https://rademacher.world/impressum/"
+    },
+    "geo": {
+      "lat": 53.63203,
+      "lon": 11.42044,
+      "precision": "address"
+    },
+    "website": "https://rademacher.world",
+    "founded": 1988,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Pinarello",
+      "Cervélo",
+      "Santa Cruz",
+      "Look",
+      "Trek",
+      "Rocky Mountain",
+      "Van Nicholas",
+      "Brompton"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop in Schwerin's Schelfstadt, open since 1988, listed by Colnago, Cervélo and Pinarello as a dealer. It offers bike fitting with Smartfit analysis tools and builds custom bikes from frame upwards, alongside a wide range of e-bikes, touring and city bikes.",
+    "uncertain": "Look, Santa Cruz and Trek are named on the shop's brand page but were not checked against those brands' locators.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en/store-locator"
+      },
+      {
+        "name": "Cervélo store locator",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Rademacher – services (bike fitting, custom builds)",
+        "url": "https://rademacher.world/services/"
+      },
+      {
+        "name": "Rademacher – brands",
+        "url": "https://rademacher.world/marken/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "fahrrad-station-flensburg",
+    "name": "Fahrrad-Station",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Flensburg",
+    "address": {
+      "street": "Westerallee 162",
+      "postalCode": "24941",
+      "source": "http://www.fahrrad-station.de/impressum.html"
+    },
+    "geo": {
+      "lat": 54.77716,
+      "lon": 9.39353,
+      "precision": "address"
+    },
+    "website": "https://www.fahrrad-station.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Cervélo",
+      "Trek",
+      "Wilier",
+      "Ridley",
+      "Cannondale",
+      "Focus",
+      "Giant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Large bike shop in Flensburg with a separate outlet, listed as a Pinarello, Cervélo, Ridley and Trek Project One dealer. Wilier also appears among its partner brands.",
+    "uncertain": "Wilier dealership is based only on the shop's brand logos.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder (Project One retailer filter)",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Trek store page – Fahrrad Station Arnold",
+        "url": "https://www.trekbikes.com/de/de_DE/store/47272/"
+      },
+      {
+        "name": "Cervélo store locator",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de_DE/dealers"
+      },
+      {
+        "name": "Fahrrad-Station – brands",
+        "url": "http://www.fahrrad-station.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "jonito-bikes-luebeck",
+    "name": "Jonito Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Lübeck",
+    "address": {
+      "street": "Taschenmacherstraße 12",
+      "postalCode": "23556",
+      "source": "https://jonito.com/impressum"
+    },
+    "geo": {
+      "lat": 53.86716,
+      "lon": 10.60515,
+      "precision": "address"
+    },
+    "website": "https://jonito.com",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Ridley",
+      "Trek",
+      "Orbea",
+      "Bianchi",
+      "Simplon"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Online bike retailer with a showroom and workshop in Lübeck, listed as a Pinarello, Ridley and Trek Project One dealer. Bikes ordered online are assembled in its own workshop.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder (Project One retailer filter)",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Trek store page – Jonito Bikes",
+        "url": "https://www.trekbikes.com/de/de_DE/store/47930/"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de_DE/dealers"
+      },
+      {
+        "name": "Jonito – Pinarello",
+        "url": "https://jonito.com/marken/pinarello"
+      },
+      {
+        "name": "Jonito – Ridley",
+        "url": "https://jonito.com/marken/ridley"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "laufrad-luebeck",
+    "name": "Laufrad Lübeck",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Lübeck",
+    "address": {
+      "street": "Beckergrube 29",
+      "postalCode": "23552",
+      "source": "https://www.laufrad1.de/rechtliches/about-us"
+    },
+    "geo": {
+      "lat": 53.8694,
+      "lon": 10.68502,
+      "precision": "address"
+    },
+    "website": "https://www.laufrad1.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Cannondale",
+      "Diamant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop and master workshop in Lübeck's old town with a second branch at Im Gleisdreieck 12. Both locations are listed as Trek Project One retailers.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder (Project One retailer filter)",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Trek store page – Laufrad Lübeck",
+        "url": "https://www.trekbikes.com/de/de_DE/store/27249/"
+      },
+      {
+        "name": "Laufrad – brands",
+        "url": "https://www.laufrad1.de/Marken"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "at-fahrraeder-luebeck",
+    "name": "at Fahrräder",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Lübeck",
+    "address": {
+      "street": "Beckergrube 63",
+      "postalCode": "23552",
+      "source": "https://at-fahrraeder.de/ueber-uns/impressum/"
+    },
+    "geo": {
+      "lat": 53.86954,
+      "lon": 10.68271,
+      "precision": "address"
+    },
+    "website": "https://at-fahrraeder.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Basso",
+      "Tommasini",
+      "Scott",
+      "Böttcher",
+      "Kona"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Small road, gravel and touring bike shop with workshop in Lübeck's Beckergrube. It lists Colnago, Basso and Tommasini among its brands and builds up bikes in individual configurations.",
+    "uncertain": "Colnago dealership is shown on the shop's website only; the shop does not appear in Colnago's store locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "at Fahrräder – Colnago",
+        "url": "https://at-fahrraeder.de/die-fahrrader/colnago/"
+      },
+      {
+        "name": "at Fahrräder – home (brands, builds)",
+        "url": "https://at-fahrraeder.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "fahrradhandlung-willert-gross-groenau",
+    "name": "Fahrradhandlung Willert 2.0",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Groß Grönau",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 53.805,
+      "lon": 10.751,
+      "precision": "city"
+    },
+    "website": "https://www.fahrradhandlung-willert-2punkt0.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Bike shop in Groß Grönau, just south of Lübeck, listed in Colnago's store locator.",
+    "uncertain": "The shop's website blocked our requests, so street address, range and services could not be verified on its own pages.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "ihr-fahrradprofi-ahrensboek",
+    "name": "Ihr Fahrradprofi",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Ahrensbök",
+    "address": {
+      "street": "Dieksbarg 4",
+      "postalCode": "23623",
+      "source": "https://www.ihrfahrradprofi.de/pages/kontakt"
+    },
+    "geo": {
+      "lat": 54.02012,
+      "lon": 10.5768,
+      "precision": "address"
+    },
+    "website": "https://www.ihrfahrradprofi.de",
+    "founded": 1994,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in business since 1994 with a 2,000 m² store in Ahrensbök, between Lübeck and the Holstein lakes. Specialized lists it as an S-Works store.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Specialized store finder (S-Works store flag)",
+        "url": "https://www.specialized.com/de/de/store-finder"
+      },
+      {
+        "name": "Ihr Fahrradprofi – about",
+        "url": "https://www.ihrfahrradprofi.de/pages/uber-uns"
+      },
+      {
+        "name": "Ihr Fahrradprofi – contact",
+        "url": "https://www.ihrfahrradprofi.de/pages/kontakt"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "ihr-fahrradprofi-bad-segeberg",
+    "name": "Ihr Fahrradprofi Bad Segeberg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Bad Segeberg",
+    "address": {
+      "street": "Gieschenhagen 2b",
+      "postalCode": "23795",
+      "source": "https://www.ihrfahrradprofi.de/pages/kontakt"
+    },
+    "geo": {
+      "lat": 53.93237,
+      "lon": 10.31115,
+      "precision": "address"
+    },
+    "website": "https://www.ihrfahrradprofi.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bad Segeberg branch of Ihr Fahrradprofi, listed by Specialized as an S-Works store.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Specialized store finder (S-Works store flag)",
+        "url": "https://www.specialized.com/de/de/store-finder"
+      },
+      {
+        "name": "Ihr Fahrradprofi – contact",
+        "url": "https://www.ihrfahrradprofi.de/pages/kontakt"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "gefu-zweiraeder-henstedt-ulzburg",
+    "name": "GEFU Zweiräder",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Schleswig-Holstein",
+    "regionCode": "DE-SH",
+    "city": "Henstedt-Ulzburg",
+    "address": {
+      "street": "Hamburger Str. 33",
+      "postalCode": "24558",
+      "source": "https://www.gefu-zweiraeder.de/impressum"
+    },
+    "geo": {
+      "lat": 53.79835,
+      "lon": 9.98376,
+      "precision": "address"
+    },
+    "website": "https://www.gefu-zweiraeder.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Focus"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Henstedt-Ulzburg, north of Hamburg, listed as a Trek Project One retailer.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder (Project One retailer filter)",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Trek store page – Gefu-Zweiräder",
+        "url": "https://www.trekbikes.com/de/de_DE/store/27038/"
+      },
+      {
+        "name": "GEFU Zweiräder – home",
+        "url": "https://www.gefu-zweiraeder.de/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radhaus-rostock",
+    "name": "radhaus Rostock",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "regionCode": "DE-MV",
+    "city": "Rostock",
+    "address": {
+      "street": "Friedhofsweg 3",
+      "postalCode": "18057",
+      "source": "https://radhaus-rostock.de/impressum-datenschutz/"
+    },
+    "geo": {
+      "lat": 54.08681,
+      "lon": 12.12374,
+      "precision": "address"
+    },
+    "website": "https://radhaus-rostock.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Rennstahl",
+      "Kona",
+      "Stevens"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop near Rostock's Kröpeliner-Tor-Vorstadt with a workshop of up to five mechanics, listed as a Trek Project One retailer. It also lists custom bikes and individual saddle-position adjustment among its services.",
+    "uncertain": "No details published on the custom-bike or position-adjustment services.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek store finder (Project One retailer filter)",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/"
+      },
+      {
+        "name": "Trek store page – Radhaus Rostock",
+        "url": "https://www.trekbikes.com/de/de_DE/store/27882/"
+      },
+      {
+        "name": "radhaus Rostock – products and services",
+        "url": "https://radhaus-rostock.de/produkte-service/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "rad-shop-tietz-neubrandenburg",
+    "name": "Rad Shop Tietz",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "regionCode": "DE-MV",
+    "city": "Neubrandenburg",
+    "address": {
+      "street": "Demminer Str. 27",
+      "postalCode": "17034",
+      "source": "https://www.promo-radshoptietz.de/kontakt/"
+    },
+    "geo": {
+      "lat": 53.56594,
+      "lon": 13.26988,
+      "precision": "address"
+    },
+    "website": "https://www.promo-radshoptietz.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Basso",
+      "Bianchi",
+      "Giant",
+      "Stevens",
+      "Cube"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Large bike shop in Neubrandenburg with more than 800 bikes in stock, listed in Cervélo's store locator. Its road range includes Cervélo and Basso.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cervélo store locator",
+        "url": "https://www.cervelo.com/de-DE/store-locator"
+      },
+      {
+        "name": "Rad Shop Tietz – Cervélo",
+        "url": "https://www.promo-radshoptietz.de/fahrr%C3%A4der/rennrad/cervelo/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "specialized-store-schwerin",
+    "name": "Specialized Store Schwerin (Fahrrad Rachow)",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "regionCode": "DE-MV",
+    "city": "Schwerin",
+    "address": {
+      "street": "Mecklenburgstraße 59",
+      "postalCode": "19053",
+      "source": "https://fahrradrachow.de/pages/specialized-store-schwerin"
+    },
+    "geo": {
+      "lat": 53.62674,
+      "lon": 11.41176,
+      "precision": "address"
+    },
+    "website": "https://fahrradrachow.de/pages/specialized-store-schwerin",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Specialized brand store in Schwerin run by the regional retailer Fahrrad Rachow, listed by Specialized as an S-Works store, with workshop and test rides.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Specialized store finder (S-Works store flag)",
+        "url": "https://www.specialized.com/de/de/store-finder"
+      },
+      {
+        "name": "Fahrrad Rachow – Specialized Store Schwerin",
+        "url": "https://fahrradrachow.de/pages/specialized-store-schwerin"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "fahrrad-rachow-gaegelow",
+    "name": "Fahrrad Rachow",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "regionCode": "DE-MV",
+    "city": "Gägelow",
+    "address": {
+      "street": "Obere Straße 1",
+      "postalCode": "23968",
+      "source": "https://fahrradrachow.de/pages/kontakt"
+    },
+    "geo": {
+      "lat": 53.9024,
+      "lon": 11.38121,
+      "precision": "address"
+    },
+    "website": "https://fahrradrachow.de",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Main store of the Mecklenburg retailer Fahrrad Rachow in Gägelow, just west of Wismar, listed by Specialized as an S-Works store. The company has further branches in Schwerin and Wittenburg.",
+    "uncertain": "Street address taken from the site footer and contact page; the formal Impressum page did not load.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Specialized store finder (S-Works store flag)",
+        "url": "https://www.specialized.com/de/de/store-finder"
+      },
+      {
+        "name": "Fahrrad Rachow – contact",
+        "url": "https://fahrradrachow.de/pages/kontakt"
+      }
+    ],
+    "tier": "dealer"
+  }
+]

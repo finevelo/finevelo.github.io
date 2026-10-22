@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import EditModule from '../components/EditModule.astro';
+import { getArticles, getArticlesByCategory, formatMoney, formatWeight, bikeUrl } from '../lib/content';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, SITE } from '../site.config';
+
+const articles = await getArticles();
+const lead = articles.find((a) => a.data.featured) ?? articles[0];
+const rest = articles.filter((a) => a.id !== lead.id);
+const secondary = rest.slice(0, 4);
+const feed = rest.slice(4, 14);
+const edit = articles.slice(0, 5);
+const custom = (await getArticlesByCategory('custom')).slice(0, 3);
+const bikes = (await getCollection('bikes')).sort((a, b) => (b.data.priceUSD ?? 0) - (a.data.priceUSD ?? 0)).slice(0, 5);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.name,
+  url: SITE.url,
+  description: SITE.description,
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+};
+---
+
+<BaseLayout title={SITE.name} schema={schema}>
+  <section class="wrap hero" aria-label="Top stories">
+    <div class="hero__lead">
+      <ArticleCard article={lead} variant="lead" eager />
+    </div>
+    <div class="hero__secondary">
+      {secondary.map((a) => <ArticleCard article={a} variant="secondary" eager />)}
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <section aria-labelledby="latest">
+      <div class="section-head">
+        <h2 id="latest">Latest</h2>
+        <a href="/news/">All news →</a>
+      </div>
+      <div class="feed">
+        {feed.map((a) => <ArticleCard article={a} variant="feed" />)}
+      </div>
+    </section>
+
+    <div class="sidebar">
+      <EditModule items={edit} />
+
+      <section class="mini-data" aria-labelledby="priciest">
+        <div class="section-head">
+          <h2 id="priciest">The priciest right now</h2>
+          <a href="/bikes/">Data →</a>
+        </div>
+        <ol>
+          {
+            bikes.map((b) => (
+              <li>
+                <a href={bikeUrl(b)}>
+                  <span class="mini-data__name">
+                    {b.data.brand} {b.data.model}
+                  </span>
+                  <span class="mini-data__val">
+                    {formatMoney(b.data.priceUSD, 'USD')} · {formatWeight(b.data.weightKg)}
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+    </div>
+  </div>
+
+  {
+    custom.length > 0 && (
+      <section class="craft" aria-labelledby="craft">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="craft">{CATEGORIES.custom.label}</h2>
+            <a href={CATEGORIES.custom.path}>More →</a>
+          </div>
+          <div class="craft__grid">
+            {custom.map((a) => <ArticleCard article={a} variant="secondary" />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .hero {
+    display: grid;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  .hero__secondary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+  @media (min-width: 1000px) {
+    .hero {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: 40px;
+    }
+    .hero__secondary {
+      gap: 28px 24px;
+      align-content: start;
+    }
+  }
+  @media (max-width: 520px) {
+    .hero__secondary {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .layout {
+    display: grid;
+    gap: 48px;
+  }
+  @media (min-width: 1000px) {
+    .layout {
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 56px;
+    }
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+    }
+  }
+  .feed {
+    display: grid;
+    gap: 40px;
+  }
+  .sidebar {
+    display: grid;
+    gap: 40px;
+  }
+  .mini-data ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mini-data li a {
+    display: grid;
+    gap: 2px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mini-data__name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .mini-data__val {
+    font-size: 13px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .mini-data li a:hover .mini-data__name {
+    color: var(--accent);
+  }
+  .craft {
+    margin-top: 80px;
+    padding: 48px 0 56px;
+    background: var(--surface);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .craft__grid {
+    display: grid;
+    gap: 28px;
+  }
+  @media (min-width: 720px) {
+    .craft__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

@@ -1,0 +1,70 @@
+---
+import NewsletterForm from './NewsletterForm.astro';
+import { articleUrl, type Article } from '../lib/content';
+
+interface Props {
+  items: Article[];
+}
+const { items } = Astro.props;
+---
+
+<aside class="edit" aria-labelledby="edit-title">
+  <p class="kicker">Daily newsletter</p>
+  <h2 id="edit-title">The Edit</h2>
+  <p class="edit__lede">Five things that mattered in high-end cycling today. One email, every morning, no noise.</p>
+  <ol>
+    {
+      items.map((a) => (
+        <li>
+          <a href={articleUrl(a)}>{a.data.title}</a>
+        </li>
+      ))
+    }
+  </ol>
+  <NewsletterForm compact />
+</aside>
+
+<style>
+  .edit {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
+    padding: 24px;
+  }
+  .edit h2 {
+    font-size: 30px;
+    font-style: italic;
+    margin: 4px 0 8px;
+  }
+  .edit__lede {
+    margin: 0 0 16px;
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  ol {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    counter-reset: edit;
+  }
+  li {
+    counter-increment: edit;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    padding: 11px 0;
+    border-top: 1px solid var(--rule);
+    font-size: 15px;
+    line-height: 1.35;
+    font-weight: 500;
+  }
+  li::before {
+    content: counter(edit);
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--accent);
+    line-height: 1;
+  }
+  li a:hover {
+    color: var(--accent);
+  }
+</style>

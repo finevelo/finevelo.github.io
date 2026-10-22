@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getArticlesByCategory, formatMoney, formatWeight, bikeUrl } from '../../lib/content';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, CATEGORY_KEYS, type CategoryKey } from '../../site.config';
+import { getHubsByWeight, formatGrams } from '../../lib/hubs';
+
+export function getStaticPaths() {
+  return CATEGORY_KEYS.map((category) => ({ params: { category } }));
+}
+
+const category = Astro.params.category as CategoryKey;
+const cat = CATEGORIES[category];
+const articles = await getArticlesByCategory(category);
+const [lead, ...rest] = articles;
+const bikes = (await getCollection('bikes', (b) => b.data.category === category)).sort(
+  (a, b) => (b.data.priceUSD ?? 0) - (a.data.priceUSD ?? 0),
+);
+const hubs = category === 'components' ? (await getHubsByWeight()).slice(0, 5) : [];
+const title = `High-end ${cat.label} news, launches and data`;
+---
+
+<BaseLayout title={title} description={`${cat.intro.slice(0, 150)}`}>
+  <header class="wrap hub-head" style={`--tone:${cat.tone}`}>
+    <p class="kicker">{cat.threshold}</p>
+    <h1>{cat.label}</h1>
+    <p class="intro">{cat.intro}</p>
+  </header>
+
+  {
+    category === 'custom' && (
+      <aside class="wrap hub-promo" aria-labelledby="hub-builders">
+        <div>
+          <p class="kicker">Builders map · Germany</p>
+          <h2 id="hub-builders">Where to get a frame made</h2>
+          <p>Frame builders and custom shops with fitting and top-tier brands, on one map. Curated and sourced.</p>
+        </div>
+        <a class="btn" href="/builders/">Open the map →</a>
+      </aside>
+    )
+  }
+
+  {
+    lead ? (
+      <div class="wrap">
+        <div class="hub-lead">
+          <ArticleCard article={lead} variant="lead" eager />
+        </div>
+        {rest.length > 0 && (
+          <div class="hub-grid">
+            {rest.map((a) => (
+              <ArticleCard article={a} variant="secondary" />
+            ))}
+          </div>
+        )}
+      </div>
+    ) : (
+      <p class="wrap empty">No stories in this section yet.</p>
+    )
+  }
+
+  {
+    bikes.length > 0 && (
+      <section class="wrap hub-data" aria-labelledby="hub-data">
+        <div class="section-head">
+          <h2 id="hub-data">{cat.label} in the database</h2>
+          <a href="/bikes/">Full database →</a>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Bike</th>
+                <th>Groupset</th>
+                <th class="num">Price</th>
+                <th class="num">Weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              {bikes.map((b) => (
+                <tr>
+                  <td>
+                    <a href={bikeUrl(b)}>
+                      <strong>{b.data.brand}</strong> {b.data.model}
+                    </a>
+                  </td>
+                  <td>{b.data.groupset}</td>
+                  <td class="num">{formatMoney(b.data.priceUSD, 'USD')}</td>
+                  <td class="num">{formatWeight(b.data.weightKg)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+  {
+    hubs.length > 0 && (
+      <section class="wrap hub-data" aria-labelledby="hub-hubs">
+        <div class="section-head">
+          <h2 id="hub-hubs">Lightest Centerlock hub sets</h2>
+          <a href="/guides/lightest-centerlock-hub-sets/">Full ranking →</a>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Hub set</th>
+                <th class="hide-sm">Freehub</th>
+                <th class="num">Set weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              {hubs.map((h) => (
+                <tr>
+                  <td>
+                    <a href={`/guides/lightest-centerlock-hub-sets/#${h.id.replace('/', '-')}`}>
+                      <strong>{h.data.brand}</strong> {h.data.model}
+                    </a>
+                  </td>
+                  <td class="hide-sm">{h.data.freehub}</td>
+                  <td class="num">{formatGrams(h.data.weightG)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .hub-head {
+    padding-top: 44px;
+    padding-bottom: 36px;
+    border-left: 6px solid var(--tone);
+    padding-left: calc(var(--gutter) + 6px);
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+  .hub-head h1 {
+    font-size: clamp(44px, 7vw, 76px);
+    margin: 6px 0 14px;
+  }
+  .intro {
+    font-size: 19px;
+    color: var(--ink-2);
+    max-width: 64ch;
+    margin: 0;
+  }
+  .hub-lead {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 36px;
+  }
+  @media (min-width: 1000px) {
+    .hub-lead :global(.card--lead) {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: 40px;
+      align-items: center;
+    }
+  }
+  .hub-grid {
+    display: grid;
+    gap: 32px 24px;
+  }
+  @media (min-width: 720px) {
+    .hub-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .hub-data {
+    margin-top: 72px;
+  }
+  .hub-promo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 32px;
+    margin-bottom: 40px;
+  }
+  .hub-promo > div {
+    border-top: 2px solid var(--ink);
+    padding-top: 12px;
+    flex: 1 1 320px;
+  }
+  .hub-promo h2 {
+    font-size: 26px;
+    margin: 4px 0 6px;
+  }
+  .hub-promo p:not(.kicker) {
+    margin: 0;
+    color: var(--ink-2);
+  }
+  .empty {
+    color: var(--muted);
+  }
+</style>

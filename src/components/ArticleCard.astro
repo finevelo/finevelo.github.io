@@ -1,0 +1,152 @@
+---
+import HeroArt from './HeroArt.astro';
+import { CATEGORIES, FORMATS } from '../site.config';
+import { articleUrl, formatDate, type Article } from '../lib/content';
+
+interface Props {
+  article: Article;
+  variant?: 'lead' | 'secondary' | 'feed' | 'compact';
+  eager?: boolean;
+}
+
+const { article, variant = 'feed', eager = false } = Astro.props;
+const d = article.data;
+const href = articleUrl(article);
+const cat = CATEGORIES[d.category];
+const HeadingTag = variant === 'lead' ? 'h2' : 'h3';
+---
+
+<article class={`card card--${variant}`}>
+  {
+    variant !== 'compact' && (
+      <a href={href} class="card__media" tabindex="-1" aria-hidden="true">
+        <HeroArt category={d.category} alt={d.hero.alt} src={d.hero.src} eager={eager} priority={eager && variant === 'lead'} />
+      </a>
+    )
+  }
+  <div class="card__body">
+    <p class="kicker">
+      <a href={cat.path}>{cat.label}</a>
+      <span class="dot">·</span>
+      <span>{FORMATS[d.format]}</span>
+      {d.sample && <span class="sample-flag">Sample</span>}
+    </p>
+    <HeadingTag class="card__title"><a href={href}>{d.title}</a></HeadingTag>
+    {(variant === 'lead' || variant === 'feed') && d.dek && <p class="card__dek">{d.dek}</p>}
+    {
+      d.specs && (variant === 'lead' || variant === 'feed') && (
+        <p class="card__specs">
+          <span>{d.specs.price}</span>
+          <span>{d.specs.weight}</span>
+        </p>
+      )
+    }
+    <p class="meta">
+      <time datetime={d.pubDate.toISOString()}>{formatDate(d.pubDate)}</time>
+    </p>
+  </div>
+</article>
+
+<style>
+  .card {
+    display: grid;
+    gap: 14px;
+    align-content: start;
+  }
+  .card__media {
+    display: block;
+    overflow: hidden;
+  }
+  .card__media :global(svg),
+  .card__media :global(img) {
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .card:hover .card__media :global(svg),
+  .card:hover .card__media :global(img) {
+    transform: scale(1.025);
+  }
+  .card__body {
+    display: grid;
+    gap: 8px;
+  }
+  .kicker {
+    margin: 0;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .kicker a:hover {
+    text-decoration: underline;
+  }
+  .dot {
+    color: var(--muted);
+  }
+  .card__title {
+    font-size: 21px;
+  }
+  .card__title a:hover {
+    color: var(--accent);
+  }
+  .card__dek {
+    margin: 0;
+    color: var(--ink-2);
+    font-size: 16px;
+  }
+  .card__specs {
+    margin: 0;
+    display: flex;
+    gap: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .card__specs span + span::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--muted);
+    margin-right: 14px;
+    vertical-align: middle;
+  }
+  .meta {
+    margin: 0;
+  }
+
+  .card--lead .card__title {
+    font-size: clamp(30px, 4.2vw, 50px);
+    line-height: 1.04;
+  }
+  .card--lead .card__dek {
+    font-size: 18px;
+    max-width: 60ch;
+  }
+  .card--secondary .card__title {
+    font-size: 19px;
+  }
+
+  .card--feed {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 720px) {
+    .card--feed {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .card--feed .card__title {
+      font-size: 26px;
+    }
+  }
+
+  .card--compact {
+    padding: 14px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .card--compact .card__title {
+    font-size: 17px;
+    line-height: 1.25;
+  }
+</style>

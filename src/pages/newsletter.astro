@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<BaseLayout title="The Edit – daily newsletter" description="Five things that mattered in high-end cycling today. One email every morning.">
+  <section class="wrap nl">
+    <p class="kicker">Daily newsletter</p>
+    <h1>The Edit</h1>
+    <p class="lede">Five things that mattered in high-end cycling today, with prices, weights and why it matters. One email, every morning at 7.</p>
+    <NewsletterForm />
+    <p class="meta" id="nl-status">Free. Unsubscribe with one click. See our <a href="/privacy/">privacy notice</a>.</p>
+  </section>
+</BaseLayout>
+
+<script>
+  // Until the newsletter provider is connected, confirm the address locally.
+  const email = new URLSearchParams(location.search).get('email');
+  const status = document.getElementById('nl-status');
+  if (email && status) status.textContent = 'Thanks. Sign-up goes live with our launch, we will confirm by email.';
+</script>
+
+<style>
+  .nl {
+    max-width: 620px;
+    padding-top: 72px;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(54px, 9vw, 96px);
+    font-style: italic;
+    margin: 8px 0 16px;
+  }
+  .lede {
+    font-family: var(--serif);
+    font-size: 21px;
+    color: var(--ink-2);
+    margin: 0 0 28px;
+  }
+  .meta {
+    margin-top: 14px;
+  }
+  .meta a {
+    text-decoration: underline;
+  }
+</style>

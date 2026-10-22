@@ -1,0 +1,392 @@
+---
+import { builderUrl, germanyMap, kindOf, KIND_LABELS, type Builder } from '../lib/builders';
+
+interface Props {
+  entries: Builder[];
+  /** Locator mode: zoomed in on one entry, no interaction */
+  focus?: string;
+  label?: string;
+}
+const { entries, focus, label = 'Map of Germany with builders and custom shops' } = Astro.props;
+const { width, height, states, markers, cities, towns } = germanyMap(entries);
+// Dealers first so Selection markers are drawn on top; focused marker last
+const rank = (m: (typeof markers)[number]) => (m.entry.id === focus ? 2 : m.entry.data.tier === 'dealer' ? 0 : 1);
+const ordered = [...markers].sort((a, b) => rank(a) - rank(b));
+const hasDealers = entries.some((e) => e.data.tier === 'dealer');
+
+// Locator: start zoomed in around the focused entry
+const LOCATOR_ZOOM = 5;
+const target = focus ? markers.find((m) => m.entry.id === focus) : undefined;
+const k = target ? LOCATOR_ZOOM : 1;
+const vw = width / k;
+const vh = height / k;
+const vx = target ? Math.min(Math.max(target.x - vw / 2, 0), width - vw) : 0;
+const vy = target ? Math.min(Math.max(target.y - vh / 2, 0), height - vh) : 0;
+const viewBox = `${vx.toFixed(1)} ${vy.toFixed(1)} ${vw.toFixed(1)} ${vh.toFixed(1)}`;
+---
+
+<figure class:list={['bmap', focus && 'bmap--locator']}>
+  <div class="bmap__frame">
+    <svg
+      viewBox={viewBox}
+      role="img"
+      aria-label={label}
+      data-bmap={focus ? undefined : ''}
+      data-width={width}
+      data-height={height}
+      data-zoom={k >= 2.5 ? 'near' : 'far'}
+      style={`--k:${k}`}
+    >
+      <g class="bmap__states">
+        {states.map((s) => <path d={s.d} data-region={s.code}><title>{s.name}</title></path>)}
+      </g>
+      <g class="bmap__towns" aria-hidden="true">
+        {
+          towns.map((t) => (
+            <g transform={`translate(${t.x} ${t.y})`}>
+              <g class="sc">
+                <circle r="1.4" />
+                <text x="4" y="-3">{t.name}</text>
+              </g>
+            </g>
+          ))
+        }
+      </g>
+      <g class="bmap__cities" aria-hidden="true">
+        {
+          cities.map((c) => (
+            <g transform={`translate(${c.x} ${c.y})`}>
+              <g class="sc">
+                <circle r="1.6" />
+                <text x="5" y="-4">{c.name}</text>
+              </g>
+            </g>
+          ))
+        }
+      </g>
+      <g class="bmap__markers">
+        {
+          ordered.map(({ entry, x, y }) => {
+            const isFocus = entry.id === focus;
+            const kind = kindOf(entry.data);
+            const r = focus ? (isFocus ? 9 : 4.5) : kind === 'dealer' ? 4.5 : 7;
+            const title = `${entry.data.name}, ${entry.data.city} (${KIND_LABELS[kind]})`;
+            return (
+              <a
+                href={builderUrl(entry)}
+                class:list={['bmap__marker', `is-${kind}`, focus && !isFocus && 'is-faint', isFocus && 'is-focus']}
+                data-id={entry.id}
+                aria-label={title}
+              >
+                <title>{title}</title>
+                <g transform={`translate(${x} ${y})`}>
+                  <g class="sc">
+                    {!focus && <circle class="bmap__hit" r="11" />}
+                    {kind === 'shop' ? (
+                      <rect class="dot" x={-r * 0.85} y={-r * 0.85} width={r * 1.7} height={r * 1.7} />
+                    ) : (
+                      <circle class="dot" r={r} />
+                    )}
+                  </g>
+                </g>
+              </a>
+            );
+          })
+        }
+      </g>
+    </svg>
+    {
+      !focus && (
+        <div class="bmap__controls">
+          <button type="button" data-zoom-in aria-label="Zoom in">+</button>
+          <button type="button" data-zoom-out aria-label="Zoom out">−</button>
+          <button type="button" data-zoom-reset aria-label="Show all of Germany" hidden>⤢</button>
+        </div>
+      )
+    }
+  </div>
+  <figcaption class="bmap__legend">
+    <span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" class="lg-builder" /></svg>Builder</span>
+    <span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.5" y="1.5" width="9" height="9" class="lg-shop" /></svg>Custom shop</span>
+    {hasDealers && <span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="3.5" class="lg-dealer" /></svg>High-end dealer</span>}
+    <span class="bmap__note">Zoom with + / −, double-click, pinch or Ctrl + scroll; drag to move. Positions are address-level unless the profile says otherwise.</span>
+  </figcaption>
+</figure>
+
+<script>
+  // --u grows with map units per screen pixel, so markers and labels stay legible on narrow screens
+  // (damped by ^0.6 so a phone-sized map does not fill up with oversized markers)
+  for (const svg of document.querySelectorAll<SVGSVGElement>('.bmap__frame svg')) {
+    const W = Number(svg.dataset.width);
+    const update = () => svg.clientWidth && svg.style.setProperty('--u', ((W / svg.clientWidth) ** 0.6).toFixed(3));
+    new ResizeObserver(update).observe(svg);
+    update();
+  }
+
+  // Zoom and pan by changing the viewBox. Markers and labels are counter-scaled via --k so they keep their size on screen.
+  const MAX_ZOOM = 24;
+  for (const svg of document.querySelectorAll<SVGSVGElement>('svg[data-bmap]')) {
+    const W = Number(svg.dataset.width);
+    const H = Number(svg.dataset.height);
+    const frame = svg.parentElement!;
+    const reset = frame.querySelector<HTMLButtonElement>('[data-zoom-reset]')!;
+    let view = { x: 0, y: 0, k: 1 };
+
+    const clamp = (v: typeof view) => {
+      const k = Math.min(Math.max(v.k, 1), MAX_ZOOM);
+      return { k, x: Math.min(Math.max(v.x, 0), W - W / k), y: Math.min(Math.max(v.y, 0), H - H / k) };
+    };
+    const apply = (v: typeof view) => {
+      view = clamp(v);
+      svg.setAttribute('viewBox', `${view.x} ${view.y} ${W / view.k} ${H / view.k}`);
+      svg.style.setProperty('--k', String(view.k));
+      svg.dataset.zoom = view.k >= 2.5 ? 'near' : 'far';
+      svg.style.touchAction = view.k > 1 ? 'none' : 'pan-y';
+      reset.hidden = view.k === 1;
+    };
+    // Keep the map point under the screen point (cx, cy) fixed while zooming to k
+    const zoomTo = (cx: number, cy: number, k: number, from = view, ax = cx, ay = cy) => {
+      const r = svg.getBoundingClientRect();
+      const px = from.x + ((ax - r.left) / r.width) * (W / from.k);
+      const py = from.y + ((ay - r.top) / r.height) * (H / from.k);
+      const nk = Math.min(Math.max(k, 1), MAX_ZOOM);
+      apply({ k: nk, x: px - ((cx - r.left) / r.width) * (W / nk), y: py - ((cy - r.top) / r.height) * (H / nk) });
+    };
+    const zoomCenter = (factor: number) => {
+      const r = svg.getBoundingClientRect();
+      zoomTo(r.left + r.width / 2, r.top + r.height / 2, view.k * factor);
+    };
+
+    frame.querySelector('[data-zoom-in]')!.addEventListener('click', () => zoomCenter(2));
+    frame.querySelector('[data-zoom-out]')!.addEventListener('click', () => zoomCenter(0.5));
+    reset.addEventListener('click', () => apply({ x: 0, y: 0, k: 1 }));
+    svg.addEventListener('dblclick', (ev) => {
+      ev.preventDefault();
+      zoomTo(ev.clientX, ev.clientY, view.k * (ev.shiftKey ? 0.5 : 2));
+    });
+    // Trackpad pinch arrives as ctrl + wheel; plain wheel zooms only once zoomed in, so the page still scrolls
+    svg.addEventListener(
+      'wheel',
+      (ev) => {
+        if (!ev.ctrlKey && view.k === 1) return;
+        ev.preventDefault();
+        zoomTo(ev.clientX, ev.clientY, view.k * Math.exp(-ev.deltaY * (ev.ctrlKey ? 0.01 : 0.002)));
+      },
+      { passive: false },
+    );
+
+    // One pointer drags (when zoomed in), two pointers pinch
+    const pts = new Map<number, { x: number; y: number }>();
+    let start: { view: typeof view; mx: number; my: number; dist: number } | null = null;
+    let moved = false;
+    const snapshot = () => {
+      const [a, b] = [...pts.values()];
+      start = {
+        view: { ...view },
+        mx: b ? (a.x + b.x) / 2 : a.x,
+        my: b ? (a.y + b.y) / 2 : a.y,
+        dist: b ? Math.hypot(a.x - b.x, a.y - b.y) : 0,
+      };
+    };
+    svg.addEventListener('pointerdown', (ev) => {
+      if (ev.pointerType === 'mouse' && ev.button !== 0) return;
+      pts.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+      moved = false;
+      snapshot();
+    });
+    svg.addEventListener('pointermove', (ev) => {
+      if (!pts.has(ev.pointerId) || !start) return;
+      pts.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+      const [a, b] = [...pts.values()];
+      if (b && start.dist) {
+        const mx = (a.x + b.x) / 2;
+        const my = (a.y + b.y) / 2;
+        zoomTo(mx, my, (start.view.k * Math.hypot(a.x - b.x, a.y - b.y)) / start.dist, start.view, start.mx, start.my);
+        moved = true;
+      } else if (start.view.k > 1) {
+        if (!moved && Math.hypot(a.x - start.mx, a.y - start.my) < 4) return;
+        if (!moved) svg.setPointerCapture(ev.pointerId);
+        moved = true;
+        const r = svg.getBoundingClientRect();
+        const s = W / start.view.k / r.width;
+        apply({ k: start.view.k, x: start.view.x - (a.x - start.mx) * s, y: start.view.y - (a.y - start.my) * s });
+      }
+    });
+    const end = (ev: PointerEvent) => {
+      pts.delete(ev.pointerId);
+      if (pts.size) snapshot();
+      else start = null;
+    };
+    svg.addEventListener('pointerup', end);
+    svg.addEventListener('pointercancel', end);
+    // A drag must not count as a click on a marker
+    svg.addEventListener(
+      'click',
+      (ev) => {
+        if (!moved) return;
+        ev.preventDefault();
+        ev.stopImmediatePropagation();
+        moved = false;
+      },
+      true,
+    );
+    apply(view);
+  }
+</script>
+
+<style>
+  .bmap {
+    margin: 0;
+  }
+  .bmap__frame {
+    position: relative;
+  }
+  .bmap__frame svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    touch-action: pan-y;
+  }
+  svg[data-bmap] {
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  svg[data-bmap]:active {
+    cursor: grabbing;
+  }
+  /* Keep markers and labels the same size on screen at any zoom */
+  .sc {
+    transform: scale(calc(var(--u, 1) / var(--k, 1)));
+  }
+  .bmap__states path {
+    fill: var(--chip);
+    stroke: var(--bg);
+    stroke-width: 1.2;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+  .bmap__cities circle,
+  .bmap__towns circle {
+    fill: var(--muted);
+  }
+  .bmap__cities text,
+  .bmap__towns text {
+    font: 500 11px var(--sans);
+    fill: var(--muted);
+    paint-order: stroke;
+    stroke: var(--chip);
+    stroke-width: 3px;
+    pointer-events: none;
+  }
+  .bmap__towns text {
+    font-size: 10px;
+  }
+  svg[data-zoom='far'] .bmap__towns {
+    display: none;
+  }
+  .bmap__marker .bmap__hit {
+    fill: transparent;
+    stroke: none;
+  }
+  .bmap__marker .dot {
+    stroke: var(--bg);
+    stroke-width: 2;
+    transition: transform 0.15s ease;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .bmap__marker.is-builder .dot,
+  .lg-builder {
+    fill: var(--accent);
+  }
+  .bmap__marker.is-shop .dot,
+  .lg-shop {
+    fill: var(--ink);
+  }
+  .bmap__marker.is-dealer .dot,
+  .lg-dealer {
+    fill: var(--muted);
+  }
+  .bmap__marker.is-dealer .dot {
+    stroke-width: 1.2;
+  }
+  .bmap__marker:hover .dot,
+  .bmap__marker:focus-visible .dot,
+  .bmap__marker.is-hover .dot,
+  .bmap__marker[aria-current='true'] .dot {
+    transform: scale(1.45);
+  }
+  .bmap__marker[aria-current='true'] .dot {
+    stroke: var(--ink);
+    stroke-width: 1.5;
+  }
+  .bmap__marker.is-shop[aria-current='true'] .dot {
+    stroke: var(--accent);
+  }
+  .bmap__marker[hidden] {
+    display: none;
+  }
+  .bmap__marker:focus-visible {
+    outline: none;
+  }
+  .is-faint .dot {
+    opacity: 0.35;
+    stroke-width: 1;
+  }
+  .is-focus .dot {
+    stroke: var(--ink);
+    stroke-width: 2;
+  }
+  .bmap__controls {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: grid;
+    gap: 6px;
+  }
+  .bmap__controls button {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    font: 600 18px/1 var(--sans);
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    cursor: pointer;
+  }
+  .bmap__controls button:hover {
+    border-color: var(--ink);
+  }
+  .bmap__controls button[hidden] {
+    display: none;
+  }
+  .bmap__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  .bmap__legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .bmap__legend .bmap__note {
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+  .lg-builder,
+  .lg-shop,
+  .lg-dealer {
+    stroke: none;
+  }
+  .bmap--locator .bmap__legend {
+    display: none;
+  }
+</style>

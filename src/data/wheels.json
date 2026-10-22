@@ -1,0 +1,434 @@
+[
+  {
+    "id": "zipp/353-nsw",
+    "brand": "Zipp",
+    "model": "353 NSW (2025)",
+    "depth": "35/40",
+    "internalWidthMm": 25,
+    "rim": "hookless",
+    "spokes": "Sapim CX-Ray steel, 20 front (rear count not stated)",
+    "hub": "Zipp",
+    "weightG": 1310,
+    "priceUSD": 4300,
+    "priceEUR": null,
+    "launchYear": 2025,
+    "url": "https://shop.sram.com/products/353-nsw",
+    "note": "2025 NSW collection (May 2025) replaced the previous 45 mm 353 NSW. Undulating 35/40 mm rim. 1,310 g claimed with tape and valves (and AXS sensor), XDR, 12 mm axles. Hookless, tubeless only, max 73 psi / 5 bar. US price is SRAM's per-wheel price summed: $1,950 front + $2,350 rear. EUR price TBC.",
+    "sources": [
+      {
+        "name": "SRAM/Zipp shop",
+        "url": "https://shop.sram.com/products/353-nsw"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "zipp/454-nsw",
+    "brand": "Zipp",
+    "model": "454 NSW (2025)",
+    "depth": "58",
+    "internalWidthMm": 23,
+    "rim": "hookless",
+    "spokes": "Sapim CX-Ray steel, 24",
+    "hub": "Zipp",
+    "weightG": 1428,
+    "priceUSD": 4200,
+    "priceEUR": null,
+    "launchYear": 2025,
+    "url": "https://shop.sram.com/products/454-nsw",
+    "note": "2025 NSW collection (May 2025). 58 mm Sawtooth rim. 1,428 g in SRAM's spec table without tape and valves (XDR, 12 mm axles); SRAM's feature list says 1,400 g and other sources say 1,440 g. Hookless. US price is SRAM's per-wheel price summed: $1,900 front + $2,300 rear. EUR price TBC.",
+    "sources": [
+      {
+        "name": "SRAM/Zipp shop",
+        "url": "https://shop.sram.com/products/454-nsw"
+      },
+      {
+        "name": "Zipp support",
+        "url": "https://support.zipp.com/hc/en-us/sections/36311457397403-454-NSW"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "enve/ses-4-5-pro",
+    "brand": "Enve",
+    "model": "SES 4.5 Pro",
+    "depth": "49/55",
+    "internalWidthMm": 23.5,
+    "rim": "hookless",
+    "spokes": "Alpina Ultralite Aero steel, 24/24",
+    "hub": "Enve Innerdrive Pro, ceramic bearings",
+    "weightG": 1295,
+    "priceUSD": 3750,
+    "priceEUR": 4598,
+    "launchYear": null,
+    "url": "https://enve.com/products/ses-4-5-pro",
+    "note": "Weight includes tape and valves (Shimano HG). Enve calls it a wide hookless bead design with a 0.5 mm mini hook, rated to 100 psi (6.8 bar). US: $1,700 front + $2,050 rear = $3,750. EUR price is from Enve EU / retailer listing.",
+    "sources": [
+      {
+        "name": "Enve",
+        "url": "https://enve.com/products/ses-4-5-pro"
+      },
+      {
+        "name": "Enve EU",
+        "url": "https://eu.enve.com/products/ses-4-5-pro"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "enve/ses-6-7-pro",
+    "brand": "Enve",
+    "model": "SES 6.7 Pro",
+    "depth": "59/65",
+    "internalWidthMm": 22.5,
+    "rim": "hooked",
+    "spokes": "Alpina steel, 24/24",
+    "hub": "Enve, ceramic bearings",
+    "weightG": 1495,
+    "priceUSD": 3750,
+    "priceEUR": 4600,
+    "launchYear": 2026,
+    "url": "https://enve.com",
+    "note": "Rear rim cut from 66 to 65 mm to meet the UCI's 2026 depth limit. Weight includes tape and valves.",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/enve-ses-6-7-pro-wheels-tadej-pogacar"
+      },
+      {
+        "name": "Cyclingnews",
+        "url": "https://www.cyclingnews.com/cycling-tech-components/enve-officially-releases-tadej-pogacars-monument-winning-wheelset/"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "roval/alpinist-clx-iii",
+    "brand": "Roval",
+    "model": "Alpinist CLX III",
+    "depth": "33",
+    "internalWidthMm": 21,
+    "rim": "hooked",
+    "spokes": "carbon, 21/24",
+    "hub": "Roval, DT Swiss Ratchet EXP 36T",
+    "weightG": 1131,
+    "priceUSD": 2650,
+    "priceEUR": null,
+    "launchYear": null,
+    "url": "https://www.specialized.com/za/en/roval-alpinist-clx-iii/p/1000256320",
+    "note": "Weight includes tape and valves. 134 g lighter than the CLX II.",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://bikeradar.com/news/roval-alpinist-clx-iii-wheelset"
+      },
+      {
+        "name": "Specialized",
+        "url": "https://www.specialized.com/za/en/roval-alpinist-clx-iii/p/1000256320"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "roval/rapide-clx-iii",
+    "brand": "Roval",
+    "model": "Rapide CLX III",
+    "depth": "51/48",
+    "internalWidthMm": 21,
+    "rim": "hooked",
+    "spokes": "thermoplastic carbon",
+    "hub": "Roval, DT Swiss 180 EXP internals",
+    "weightG": 1305,
+    "priceUSD": 3400,
+    "priceEUR": 3498,
+    "launchYear": null,
+    "url": "https://www.specialized.com/za/en/roval-rapide-clx-iii/p/1000256237",
+    "note": "Weight includes tape and valves. Cyclingnews weighed 1,338 g.",
+    "sources": [
+      {
+        "name": "Cyclingnews",
+        "url": "https://www.cyclingnews.com/cycling-tech-components/wheels-tyres/roval-rapide-clx-iii-review/"
+      },
+      {
+        "name": "Specialized",
+        "url": "https://www.specialized.com/za/en/roval-rapide-clx-iii/p/1000256237"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "princeton/peak-4550-evo-ii",
+    "brand": "Princeton CarbonWorks",
+    "model": "Peak 4550 EVO II",
+    "depth": "45–50",
+    "internalWidthMm": 22,
+    "rim": "hooked",
+    "spokes": "not stated",
+    "hub": "Tactic TR01 V2",
+    "weightG": 1200,
+    "priceUSD": 4100,
+    "priceEUR": null,
+    "launchYear": null,
+    "url": "https://princetoncw.com",
+    "note": "1,200 g with Tactic TR01 V2 hubs; 1,270 g with DT Swiss 180 EXP hubs. No spoke holes in the rim bed. US price about $4,100 (retailer, Tactic build); about $4,100–4,500 for the DT 180 build (retailer).",
+    "sources": [
+      {
+        "name": "R&A Cycles (retailer)",
+        "url": "https://racycles.com/collections/princeton-carbonworks/products/princeton-peak-4550-evo-ii-disc-brake-wheelset-wtactic-tr01-v2-hubs"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "lightweight/meilenstein-evo",
+    "brand": "Lightweight",
+    "model": "Meilenstein EVO Disc",
+    "depth": "48",
+    "internalWidthMm": 24,
+    "rim": "not stated",
+    "spokes": "carbon, 20/20",
+    "hub": "DT Swiss internals, CeramicSpeed bearings",
+    "weightG": 1380,
+    "priceUSD": 7590,
+    "priceEUR": null,
+    "launchYear": null,
+    "url": "https://www.lightweight.info",
+    "note": "Tubeless version. 650 g front + 730 g rear = 1,380 g (tape basis not stated). US price $7,590 (retailer, R&A Cycles). £4,899 in the UK. Rated for 23–32 mm tyres.",
+    "sources": [
+      {
+        "name": "R&A Cycles (retailer)",
+        "url": "https://racycles.com/products/lightweight-meilenstein-evo-disc-black-tubeless-wheelset"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/lightweight-tubeless-road-wheels/"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "cadex/max-40",
+    "brand": "Cadex",
+    "model": "Max 40",
+    "depth": "40",
+    "internalWidthMm": 22.4,
+    "rim": "hookless",
+    "spokes": "carbon, bonded to hub flange, 16/24",
+    "hub": "Cadex, 48T ratchet",
+    "weightG": 1249,
+    "priceUSD": 4000,
+    "priceEUR": 3950,
+    "launchYear": null,
+    "url": "https://www.cadex-cycling.com",
+    "note": "Launch price; a later review lists $4,500. Independent scales show about 1,310–1,318 g with tape and valves.",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/cadex-max-40-wheelsystem-aero-race-integrated-handlebars"
+      },
+      {
+        "name": "BikeRadar review",
+        "url": "https://www.bikeradar.com/reviews/components/wheels/wheel-sets/cadex-max-40-wheelset-review"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "cadex/max-50",
+    "brand": "Cadex",
+    "model": "Max 50",
+    "depth": "50",
+    "internalWidthMm": 22.4,
+    "rim": "hookless",
+    "spokes": "carbon, 16/24",
+    "hub": "Cadex, 48T ratchet",
+    "weightG": 1250,
+    "priceUSD": 3999,
+    "priceEUR": 3999,
+    "launchYear": 2026,
+    "url": "https://www.cadex-cycling.com",
+    "note": "1,250 g claimed without tape; 1,290 g with tape and valves.",
+    "sources": [
+      {
+        "name": "Escape Collective",
+        "url": "https://escapecollective.com/cadex-introduces-new-max-50-wheelset-and-aero-tire/"
+      },
+      {
+        "name": "Bikerumor",
+        "url": "https://bikerumor.com/the-new-cadex-max-50-is-a-1290g-aero-wheelset-that-climbs-like-it-shouldnt/"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "dt-swiss/arc-1100-dicut-55",
+    "brand": "DT Swiss",
+    "model": "ARC 1100 Dicut 55 (2025)",
+    "depth": "55",
+    "internalWidthMm": 22,
+    "rim": "hooked",
+    "spokes": "steel, count not stated",
+    "hub": "DT Swiss 180",
+    "weightG": 1471,
+    "priceUSD": 3218,
+    "priceEUR": 2499,
+    "launchYear": 2025,
+    "url": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-disc",
+    "note": "Third-generation ARC, offered in 55, 65 and 85 mm. DT Swiss lists 'from €2,499 / from $3,218'; retailers around €2,700 (retailer). Granfondo weighed 1,483 g with tape.",
+    "sources": [
+      {
+        "name": "DT Swiss",
+        "url": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-disc"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/third-generation-dt-swiss-arc-wheelsets"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "shimano/dura-ace-c50",
+    "brand": "Shimano",
+    "model": "Dura-Ace WH-R9370-C50-TL",
+    "depth": "50",
+    "internalWidthMm": 23,
+    "rim": "hooked",
+    "spokes": "carbon (Vonoa-made, bladed), count not confirmed",
+    "hub": "Dura-Ace, Shimano HG L2 freehub (12-speed, 11T minimum)",
+    "weightG": 1302,
+    "priceUSD": 2970,
+    "priceEUR": null,
+    "launchYear": 2026,
+    "url": "https://bike.shimano.com",
+    "note": "Launched late July 2026, replacing the steel-spoked R9270 (1,461 g). Claimed 1,302 g (basis not stated); BikeRadar weighed 1,320 g with tape, no valves. £2,299.98 / $2,970. 13-speed compatibility unconfirmed.",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/features/first-look-friday/shimano-dura-ace-wh-r9370-c50-wheels"
+      },
+      {
+        "name": "TOUR",
+        "url": "https://www.tour-magazin.de/en/buying-advice/components/impellers/shimano-unveils-the-dura-ace-wh-r9370-wheelsets/"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "campagnolo/bora-ultra-wto-45",
+    "brand": "Campagnolo",
+    "model": "Bora Ultra WTO 45 (C23)",
+    "depth": "45",
+    "internalWidthMm": 23,
+    "rim": "hooked",
+    "spokes": "aero straight-pull steel, 21/21, G3 lacing",
+    "hub": "Campagnolo Bora Ultra, carbon front / alloy rear, CULT ceramic bearings",
+    "weightG": 1325,
+    "priceUSD": 4725,
+    "priceEUR": null,
+    "launchYear": 2024,
+    "url": "https://www.campagnolo.com",
+    "note": "C23 2-Way Fit rim, tubeless without rim tape. 1,325 g claimed (tape not needed). £3,293.99 (N3W) at launch. US price $4,725 (retailer, R&A Cycles). EU list price unclear: retailer shows €3,299.95 and €3,699.",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/campagnolo-bora-ultra-wto-wheelset-range"
+      },
+      {
+        "name": "R&A Cycles (retailer)",
+        "url": "https://racycles.com/collections/campagnolo/products/campagnolo-bora-ultra-wto-45-2wf-c23-disc-wheelset-black-chrome"
+      },
+      {
+        "name": "Matériel-vélo (retailer)",
+        "url": "https://www.materiel-velo.com/gb/1879151-campagnolo-bora-ultra-wto-c23-45mm-carbon-road-bike-wheels.html"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "campagnolo/hyperon-ultra",
+    "brand": "Campagnolo",
+    "model": "Hyperon Ultra",
+    "depth": "37",
+    "internalWidthMm": 21,
+    "rim": "hooked",
+    "spokes": "steel, 21/24",
+    "hub": "Campagnolo, CULT ceramic bearings",
+    "weightG": 1240,
+    "priceUSD": null,
+    "priceEUR": 3650,
+    "launchYear": 2023,
+    "url": "https://www.campagnolo.com",
+    "note": "2-Way Fit, sealed rim bed needs no tape. £3,200 / €3,650 at launch (March 2023). Tubular version 1,160 g.",
+    "sources": [
+      {
+        "name": "road.cc",
+        "url": "https://road.cc/content/tech-news/campagnolo-launches-1240g-hyperon-ultra-road-wheelset-299947"
+      },
+      {
+        "name": "road.cc review",
+        "url": "https://road.cc/review/campagnolo-hyperon-ultra-wheelset-302411"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "scope/artech-4",
+    "brand": "Scope",
+    "model": "Artech 4",
+    "depth": "45",
+    "internalWidthMm": 23,
+    "rim": "hooked",
+    "spokes": "not stated",
+    "hub": "not stated",
+    "weightG": 1120,
+    "priceUSD": null,
+    "priceEUR": 3998,
+    "launchYear": null,
+    "url": "https://www.scopecycling.com/artech-4",
+    "note": "r2-bike weighed 1,176 g. US retail about $5,900.",
+    "sources": [
+      {
+        "name": "Scope",
+        "url": "https://www.scopecycling.com/artech-4"
+      },
+      {
+        "name": "r2-bike (retailer)",
+        "url": "https://r2-bike.com/SCOPE-Wheelset-28-Road-Artech-4"
+      },
+      {
+        "name": "Racer Sportif (retailer)",
+        "url": "https://www.racersportif.com/products/scope-artech-4-disc-carbon-wheelset"
+      }
+    ],
+    "measured": false
+  },
+  {
+    "id": "black-inc/48-58",
+    "brand": "Black Inc",
+    "model": "48|58",
+    "depth": "48/58",
+    "internalWidthMm": 23,
+    "rim": "hooked",
+    "spokes": "Black Inc straight-pull aero carbon, 20",
+    "hub": "Black Inc, CeramicSpeed bearings",
+    "weightG": 1290,
+    "priceUSD": 3199,
+    "priceEUR": null,
+    "launchYear": null,
+    "url": "https://blackinc.cc/products/4858-forty-eight-fifty-eight-carbon-aero-wheelset",
+    "note": "Mini-bead hook rim for tubeless or clincher tyres. 1,290 g claimed (tape basis not stated). $3,199 on Black Inc's US store; 220 Triathlon reviewed it at £2,899 in 2024.",
+    "sources": [
+      {
+        "name": "Black Inc",
+        "url": "https://blackinc.cc/products/4858-forty-eight-fifty-eight-carbon-aero-wheelset"
+      },
+      {
+        "name": "220 Triathlon",
+        "url": "https://www.220triathlon.com/gear/bike/components/wheels/black-inc-4858-wheelset-review"
+      }
+    ],
+    "measured": false
+  }
+]

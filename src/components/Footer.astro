@@ -1,0 +1,110 @@
+---
+import { CATEGORIES, CATEGORY_KEYS, SITE } from '../site.config';
+import NewsletterForm from './NewsletterForm.astro';
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a href="/" class="footer__logo">Finevelo</a>
+      <p>{SITE.tagline}</p>
+      <p class="footer__nl-label">Get The Edit every morning</p>
+      <NewsletterForm />
+    </div>
+    <nav aria-label="Sections">
+      <h2>Sections</h2>
+      <ul>
+        <li><a href="/news/">News</a></li>
+        {CATEGORY_KEYS.map((k) => <li><a href={CATEGORIES[k].path}>{CATEGORIES[k].label}</a></li>)}
+      </ul>
+    </nav>
+    <nav aria-label="Data and guides">
+      <h2>Data</h2>
+      <ul>
+        <li><a href="/bikes/">Bike database</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/rss.xml">RSS feed</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="About">
+      <h2>Finevelo</h2>
+      <ul>
+        <li><a href="/about/">About &amp; standards</a></li>
+        <li><a href="/authors/editorial/">Editorial team</a></li>
+        <li><a href="/impressum/">Impressum</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer__base">
+    <p>© {year} Finevelo. Press images remain the property of their respective owners.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    margin-top: 96px;
+    border-top: 2px solid var(--ink);
+    padding: 48px 0 32px;
+    font-size: 14px;
+  }
+  .footer__grid {
+    display: grid;
+    gap: 36px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 860px) {
+    .footer__grid {
+      grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
+    }
+  }
+  .footer__logo {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: -0.03em;
+  }
+  .footer__brand p {
+    color: var(--muted);
+    margin: 6px 0 0;
+  }
+  .footer__brand .footer__nl-label {
+    margin: 22px 0 8px;
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .footer__brand {
+    max-width: 420px;
+  }
+  h2 {
+    font-family: var(--sans);
+    font-size: 11.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  a:hover {
+    color: var(--accent);
+  }
+  .footer__base {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+  .footer__base p {
+    margin: 0;
+  }
+</style>

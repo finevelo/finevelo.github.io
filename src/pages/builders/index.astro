@@ -1,0 +1,475 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuilderMap from '../../components/BuilderMap.astro';
+import {
+  getBuilders,
+  builderUrl,
+  specialities,
+  kindOf,
+  KIND_LABELS,
+  KIND_PLURAL,
+  MATERIAL_LABELS,
+  DISCIPLINE_LABELS,
+  SERVICE_LABELS,
+} from '../../lib/builders';
+import { formatDate } from '../../lib/content';
+import { SITE } from '../../site.config';
+
+const entries = await getBuilders('DE');
+const count = (k: string) => entries.filter((e) => kindOf(e.data) === k).length;
+const regions = new Set(entries.map((e) => e.data.region)).size;
+const lastChecked = new Date(Math.max(...entries.map((e) => e.data.checked.valueOf())));
+const materials = Object.keys(MATERIAL_LABELS).filter((m) => entries.some((e) => e.data.materials.includes(m as never)));
+const disciplines = Object.keys(DISCIPLINE_LABELS).filter((x) =>
+  entries.some((e) => e.data.disciplines.includes(x as never)),
+);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'High-end frame builders and custom bike shops in Germany',
+  numberOfItems: entries.length,
+  itemListElement: entries.map((e, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${SITE.url}${builderUrl(e)}`,
+    name: e.data.name,
+  })),
+};
+---
+
+<BaseLayout
+  title="Builders map: custom frame builders and high-end bike shops in Germany"
+  description={`${count('builder')} German frame builders, ${count('shop')} custom bike shops${count('dealer') ? ` and ${count('dealer')} high-end dealers` : ''} with fitting and top-tier brands, on one map. Every fact sourced.`}
+  schema={schema}
+>
+  <div class="wrap page-head">
+    <p class="kicker">Custom &amp; Craft · Germany</p>
+    <h1>The builders map</h1>
+    <p class="intro">
+      Where to go in Germany for a handmade frame or a properly built, properly fitted high-end bike.
+      {count('builder')} builders and {count('shop')} custom shops in the Finevelo Selection{count('dealer') > 0 && <>, plus {count('dealer')} high-end dealers</>}, across {regions} federal states. Not a ranking: everything here meets the criteria below, and every fact links to its source.
+    </p>
+  </div>
+
+  <div class="wrap">
+    <aside class="criteria" aria-labelledby="criteria-h">
+      <h2 id="criteria-h" class="kicker">Inclusion criteria</h2>
+      <div class="criteria__grid">
+        <div>
+          <h3>Builders</h3>
+          <p>
+            Design and make frames or complete bikes in Germany: custom geometry or small-batch production, in steel,
+            titanium, carbon or aluminium. Component-only makers are not listed.
+          </p>
+        </div>
+        <div>
+          <h3>Custom shops</h3>
+          <p>
+            A physical store in Germany with a documented custom-build or professional bike-fitting service, and an
+            authorised dealer of at least one top-tier brand (for example Pinarello Dogma, Colnago, Factor, Moots,
+            Mosaic, Firefly, Trek Project One, S-Works).
+          </p>
+        </div>
+        <div>
+          <h3>High-end dealers</h3>
+          <p>
+            Shown as small grey markers. A physical store in Germany that is an authorised dealer of at least one top-tier
+            brand (such as Pinarello, Colnago, Factor, Cervélo, Specialized S-Works, Trek Project One) or offers fitting
+            with a certified system (such as Retül, GURU or IDmatch), documented on its own website or the brand's dealer
+            locator. Large multi-brand superstore chains are not listed.
+          </p>
+        </div>
+        <div>
+          <h3>All entries</h3>
+          <p>
+            Physical location in Germany and documented activity in 2025 or 2026 (website, trade show or press). Business data only as published by the
+            business itself; no ratings or reviews. Unknown facts are marked TBC. Last checked {formatDate(lastChecked)}.
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="filters" role="group" aria-label="Filter the map">
+      <div class="chips" role="group" aria-label="Type">
+        <button type="button" class="chip" aria-pressed="true" data-type="all">All</button>
+        <button type="button" class="chip" aria-pressed="false" data-type="builder">{KIND_PLURAL.builder}</button>
+        <button type="button" class="chip" aria-pressed="false" data-type="shop">{KIND_PLURAL.shop}</button>
+        {count('dealer') > 0 && <button type="button" class="chip" aria-pressed="false" data-type="dealer">{KIND_PLURAL.dealer}</button>}
+      </div>
+      <label>
+        <span class="visually-hidden">Discipline</span>
+        <select class="select" data-filter="discipline">
+          <option value="">All disciplines</option>
+          {disciplines.map((x) => <option value={x}>{DISCIPLINE_LABELS[x as keyof typeof DISCIPLINE_LABELS]}</option>)}
+        </select>
+      </label>
+      <label>
+        <span class="visually-hidden">Material</span>
+        <select class="select" data-filter="material">
+          <option value="">All materials</option>
+          {materials.map((m) => <option value={m}>{MATERIAL_LABELS[m as keyof typeof MATERIAL_LABELS]}</option>)}
+        </select>
+      </label>
+      <p class="count" aria-live="polite" data-count>{entries.length} entries</p>
+    </div>
+
+    <div class="atlas">
+      <div class="atlas__map">
+        <BuilderMap entries={entries} />
+      </div>
+      <div class="atlas__panel" data-panel>
+        <p class="panel__empty" data-empty>
+          Select a marker to see the entry here. Builders are red circles, custom shops squares, high-end dealers small grey dots.
+        </p>
+        {
+          entries.map((e) => (
+            <article class="card" data-card={e.id} hidden>
+              <p class="kicker">
+                {KIND_LABELS[kindOf(e.data)]} · {e.data.region}
+              </p>
+              <h2>
+                <a href={builderUrl(e)}>{e.data.name}</a>
+              </h2>
+              <p class="card__city">{e.data.city}</p>
+              <p class="card__summary">{e.data.summary}</p>
+              {specialities(e.data).length > 0 && <p class="card__tags">{specialities(e.data).join(' · ')}</p>}
+              {e.data.services.length > 0 && (
+                <p class="card__tags">{e.data.services.map((s) => SERVICE_LABELS[s]).join(' · ')}</p>
+              )}
+              <p class="card__links">
+                <a class="btn" href={builderUrl(e)}>
+                  Full profile
+                </a>
+                {e.data.website && (
+                  <a href={e.data.website} rel="noopener" target="_blank">
+                    Website ↗
+                  </a>
+                )}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+
+    <section class="list" aria-labelledby="list-h">
+      <div class="section-head">
+        <h2 id="list-h">All entries</h2>
+        <span class="section-head__note">A–Z</span>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th class="hide-sm">Type</th>
+              <th>City</th>
+              <th class="hide-sm">Specialities</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              entries.map((e) => (
+                <tr
+                  data-row={e.id}
+                  data-type={kindOf(e.data)}
+                  data-discipline={e.data.disciplines.join(' ')}
+                  data-material={e.data.materials.join(' ')}
+                >
+                  <td>
+                    <a href={builderUrl(e)}>
+                      <strong>{e.data.name}</strong>
+                    </a>
+                    <span class="row__type">{KIND_LABELS[kindOf(e.data)]}</span>
+                  </td>
+                  <td class="hide-sm">{KIND_LABELS[kindOf(e.data)]}</td>
+                  <td>
+                    {e.data.city}
+                    <span class="row__region">{e.data.region}</span>
+                  </td>
+                  <td class="hide-sm">{specialities(e.data).join(', ') || 'TBC'}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        Missing a builder or shop that meets the criteria, or spotted an error? Tell us via the address in the
+        <a href="/impressum/">Impressum</a>. Listings are editorial and free; nobody pays to be on this map.
+      </p>
+    </section>
+
+    <footer class="credits">
+      <p>
+        Map data: <a href="https://www.naturalearthdata.com/" rel="noopener" target="_blank">Natural Earth</a> 1:10m
+        admin-1 boundaries (public domain), via the
+        <a href="https://github.com/rapomon/geojson-places" rel="noopener" target="_blank">geojson-places</a> package
+        (ISC licence). Projected and drawn at build time with
+        <a href="https://github.com/d3/d3-geo" rel="noopener" target="_blank">d3-geo</a> (ISC licence). The map is a
+        static image on this server: no map tiles, no third-party requests.
+      </p>
+    </footer>
+  </div>
+</BaseLayout>
+
+<script>
+  const markers = Array.from(document.querySelectorAll<SVGAElement>('.bmap__marker'));
+  const rows = Array.from(document.querySelectorAll<HTMLTableRowElement>('[data-row]'));
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-card]'));
+  const empty = document.querySelector<HTMLElement>('[data-empty]')!;
+  const panel = document.querySelector<HTMLElement>('[data-panel]')!;
+  const countEl = document.querySelector<HTMLElement>('[data-count]')!;
+  const state = { type: 'all', discipline: '', material: '' };
+  let selected: string | null = null;
+
+  function select(id: string | null, scroll = false) {
+    selected = id;
+    markers.forEach((m) => m.setAttribute('aria-current', String(m.dataset.id === id)));
+    rows.forEach((r) => r.classList.toggle('is-selected', r.dataset.row === id));
+    cards.forEach((c) => (c.hidden = c.dataset.card !== id));
+    empty.hidden = id !== null;
+    if (scroll && id && panel.getBoundingClientRect().top > innerHeight - 120) {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  markers.forEach((m) =>
+    m.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      select(m.dataset.id === selected ? null : m.dataset.id!, true);
+    }),
+  );
+
+  rows.forEach((r) => {
+    const marker = markers.find((m) => m.dataset.id === r.dataset.row);
+    r.addEventListener('mouseenter', () => marker?.classList.add('is-hover'));
+    r.addEventListener('mouseleave', () => marker?.classList.remove('is-hover'));
+  });
+
+  function apply() {
+    let shown = 0;
+    rows.forEach((r) => {
+      const ok =
+        (state.type === 'all' || r.dataset.type === state.type) &&
+        (!state.discipline || r.dataset.discipline!.split(' ').includes(state.discipline)) &&
+        (!state.material || r.dataset.material!.split(' ').includes(state.material));
+      r.hidden = !ok;
+      markers.find((m) => m.dataset.id === r.dataset.row)?.toggleAttribute('hidden', !ok);
+      if (ok) shown++;
+    });
+    countEl.textContent = shown === rows.length ? `${shown} entries` : `${shown} of ${rows.length} entries`;
+    if (selected && rows.find((r) => r.dataset.row === selected)?.hidden) select(null);
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('[data-type]').forEach((btn) =>
+    btn.addEventListener('click', () => {
+      state.type = btn.dataset.type!;
+      document.querySelectorAll('[data-type]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      apply();
+    }),
+  );
+  document.querySelectorAll<HTMLSelectElement>('select[data-filter]').forEach((sel) =>
+    sel.addEventListener('change', () => {
+      state[sel.dataset.filter as 'discipline' | 'material'] = sel.value;
+      apply();
+    }),
+  );
+</script>
+
+<style>
+  .page-head {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+  .page-head h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    margin: 6px 0 12px;
+  }
+  .intro {
+    font-size: 18px;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 64ch;
+  }
+  .criteria {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 0 20px;
+    margin-bottom: 32px;
+  }
+  .criteria h2 {
+    margin: 0 0 10px;
+  }
+  .criteria__grid {
+    display: grid;
+    gap: 14px 32px;
+  }
+  @media (min-width: 860px) {
+    .criteria__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .criteria h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .criteria p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--ink-2);
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 12px;
+    margin-bottom: 20px;
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    font: 600 13px var(--sans);
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .chip[aria-pressed='true'] {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .select {
+    font: 600 13px var(--sans);
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink);
+    padding: 8px 10px;
+    border-radius: var(--radius);
+    max-width: 100%;
+  }
+  .count {
+    margin: 0 0 0 auto;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .atlas {
+    display: grid;
+    gap: 24px;
+  }
+  @media (min-width: 900px) {
+    .atlas {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+      gap: 40px;
+      align-items: start;
+    }
+    .atlas__panel {
+      position: sticky;
+      top: 24px;
+    }
+  }
+  .atlas__map {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .atlas__panel {
+    border-top: 2px solid var(--ink);
+    padding-top: 14px;
+    min-height: 120px;
+    scroll-margin-bottom: 24px;
+  }
+  .panel__empty {
+    color: var(--muted);
+    font-size: 14.5px;
+    margin: 0;
+  }
+  .card h2 {
+    font-size: 28px;
+    margin: 4px 0 2px;
+  }
+  .card h2 a:hover {
+    color: var(--accent);
+  }
+  .card .kicker {
+    margin: 0;
+  }
+  .card__city {
+    margin: 0 0 10px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .card__summary {
+    margin: 0 0 10px;
+    font-size: 15.5px;
+    color: var(--ink-2);
+  }
+  .card__tags {
+    margin: 0 0 6px;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  .card__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .card__links a:not(.btn):hover {
+    color: var(--accent);
+  }
+  .list {
+    margin-top: 64px;
+  }
+  .section-head__note {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .row__type,
+  .row__region {
+    display: block;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  @media (min-width: 721px) {
+    .row__type {
+      display: none;
+    }
+  }
+  tr.is-selected td {
+    background: var(--chip);
+  }
+  :global(.bmap__marker.is-hover .dot) {
+    transform: scale(1.45);
+  }
+  .note {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-top: 20px;
+  }
+  .note a,
+  .credits a {
+    text-decoration: underline;
+  }
+  .credits {
+    margin-top: 48px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .credits p {
+    margin: 0;
+    max-width: 90ch;
+  }
+</style>

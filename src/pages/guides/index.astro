@@ -1,0 +1,92 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { filterBikes, formatDate } from '../../lib/content';
+const hubCount = (await getCollection('hubs')).length;
+const wheelCount = (await getCollection('wheels')).length;
+
+const bikes = await getCollection('bikes');
+const guides = (await getCollection('guides')).sort((a, b) => b.data.updatedDate.valueOf() - a.data.updatedDate.valueOf());
+---
+
+<BaseLayout title="Guides" description="Data-driven guides to the most expensive, lightest and best flagship bikes, updated monthly from our database.">
+  <div class="wrap page-head">
+    <p class="kicker">Updated monthly</p>
+    <h1>Guides</h1>
+    <p class="intro">Rankings built straight from the database. When a bike launches, the guides update with it.</p>
+  </div>
+  <div class="wrap grid">
+    {
+      guides.map((g) => (
+        <a class="guide" href={`/guides/${g.id}/`}>
+          <span class="guide__count">
+            {g.data.dataset === 'hubs' ? hubCount : g.data.dataset === 'wheels' ? wheelCount : filterBikes(bikes, g.data.filter).length}
+          </span>
+          <span class="guide__label">{g.data.dataset === 'hubs' ? 'hub sets' : g.data.dataset === 'wheels' ? 'wheelsets' : 'bikes'}</span>
+          <h2>{g.data.title}</h2>
+          <p>{g.data.description}</p>
+          <span class="meta">Updated {formatDate(g.data.updatedDate)}</span>
+        </a>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .page-head h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    margin: 6px 0 12px;
+  }
+  .intro {
+    font-size: 18px;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 60ch;
+  }
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  @media (min-width: 760px) {
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .guide {
+    display: grid;
+    align-content: start;
+    gap: 6px;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--ink);
+    transition: border-color 0.2s;
+  }
+  .guide:hover {
+    border-top-color: var(--accent);
+  }
+  .guide__count {
+    font-family: var(--serif);
+    font-size: 54px;
+    line-height: 1;
+  }
+  .guide__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .guide h2 {
+    font-size: 25px;
+  }
+  .guide p {
+    margin: 0 0 6px;
+    color: var(--ink-2);
+    font-size: 15.5px;
+  }
+</style>

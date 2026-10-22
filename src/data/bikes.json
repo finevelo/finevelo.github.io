@@ -1,0 +1,1043 @@
+[
+  {
+    "id": "pinarello/dogma-f",
+    "brand": "Pinarello",
+    "model": "Dogma F",
+    "year": 2026,
+    "category": "road",
+    "build": "Dura-Ace Di2, Princeton Peak 4550",
+    "priceUSD": 15750,
+    "priceEUR": 14500,
+    "weightKg": 6.77,
+    "weightNote": "claimed, size 53, no pedals or bottles (Pinarello via BikeRadar; also on Contender retailer page)",
+    "groupset": "Shimano Dura-Ace Di2",
+    "frame": "Toray M40X carbon",
+    "launchDate": "2024-06-20",
+    "url": "https://pinarello.com/usa/en/new-dogma-f",
+    "verified": true,
+    "sources": [
+      {
+        "name": "Contender Bicycles (retailer)",
+        "url": "https://contenderbicycles.com/products/pinarello-dogma-f-dura-ace-di2-2026"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/new-2025-pinarello-dogma-f"
+      },
+      {
+        "name": "Pinarello",
+        "url": "https://pinarello.com/usa/en/new-dogma-f"
+      }
+    ]
+  },
+  {
+    "id": "cervelo/r5",
+    "brand": "Cervélo",
+    "model": "R5",
+    "year": 2026,
+    "category": "road",
+    "build": "SRAM Red AXS (R5 Red)",
+    "priceUSD": 14400,
+    "priceEUR": 13000,
+    "weightKg": 5.97,
+    "weightNote": "claimed, size 56, no pedals (Cervélo: a 56 'builds up to' 5.97 kg; its build table gives 5.78 kg for Red AXS with no size)",
+    "groupset": "SRAM Red AXS",
+    "frame": "Carbon, 651 g (56)",
+    "launchDate": "2025-09-05",
+    "url": "https://www.cervelo.com/en-US/bikes/r5",
+    "verified": true,
+    "sources": [
+      {
+        "name": "Cervélo",
+        "url": "https://www.cervelo.com/en-US/bikes/r5"
+      },
+      {
+        "name": "Escape Collective",
+        "url": "https://escapecollective.com/cervelos-new-r5-road-bike-is-now-official/"
+      },
+      {
+        "name": "Revolution Bike Shop (retailer)",
+        "url": "https://revolutionbikeshop.com/2026-cervelo-r5-red-axs-five-black-bronze/"
+      }
+    ]
+  },
+  {
+    "id": "specialized/s-works-crux",
+    "brand": "Specialized",
+    "model": "S-Works Crux 5",
+    "year": 2026,
+    "category": "gravel",
+    "build": "S-Works Crux 5 - SRAM RED XPLR, Roval Terra Aero CLX",
+    "priceUSD": 13999.99,
+    "priceEUR": 13999,
+    "weightKg": 7.1,
+    "weightNote": "claimed, size 56 (Specialized spec); BikeRadar quotes stock builds 'from 7.2 kg'",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "FACT 12r carbon, 789 g (56)",
+    "launchDate": "2026-05-28",
+    "url": "https://www.specialized.com/us/en/s-works-crux-5-sram-red-xplr/p/4294828",
+    "verified": true,
+    "sources": [
+      {
+        "name": "Specialized (S-Works Crux 5 - SRAM RED XPLR)",
+        "url": "https://www.specialized.com/us/en/s-works-crux-5-sram-red-xplr/p/4294828"
+      },
+      {
+        "name": "Specialized (Crux range)",
+        "url": "https://www.specialized.com/us/en/shop/bikes/gravel-bikes/crux"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2026-specialized-crux-5"
+      }
+    ]
+  },
+  {
+    "id": "ridley/falcn-rs-2",
+    "brand": "Ridley",
+    "model": "Falcn RS 2.0",
+    "year": 2027,
+    "category": "road",
+    "build": "SRAM Red AXS",
+    "priceUSD": 14999,
+    "priceEUR": 12499,
+    "weightKg": 6.2,
+    "weightNote": "claimed, size M",
+    "groupset": "SRAM Red AXS",
+    "frame": "Carbon, 705 g (M)",
+    "launchDate": "2026-10-08",
+    "verified": true,
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2027-ridley-falcn-rs-2"
+      }
+    ]
+  },
+  {
+    "id": "colnago/g5-x",
+    "brand": "Colnago",
+    "model": "G5-X",
+    "year": 2027,
+    "category": "gravel",
+    "build": "SRAM Red XPLR AXS, Zipp 303 XPLR SW",
+    "priceUSD": 10500,
+    "priceEUR": 9200,
+    "weightKg": 7.2,
+    "weightNote": "claimed, size 48, 50 mm tyres",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "Carbon, 950 g (M)",
+    "launchDate": "2026-10-07",
+    "verified": true,
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2027-colnago-g5-x"
+      },
+      {
+        "name": "Velo",
+        "url": "https://velo.outsideonline.com/gravel/gravel-gear/colnago-g5-x-gravel-bike-launch/"
+      },
+      {
+        "name": "Road Bike Action",
+        "url": "https://roadbikeaction.com/colnago-introduces-all-new-g5-x-gravel-race-bike/"
+      }
+    ]
+  },
+  {
+    "id": "specialized/s-works-tarmac-sl9",
+    "brand": "Specialized",
+    "model": "S-Works Tarmac SL9",
+    "year": 2027,
+    "category": "road",
+    "build": "SRAM Red AXS, Roval Rapide CLX III",
+    "priceUSD": 13999.99,
+    "priceEUR": 13999,
+    "weightKg": 6.6,
+    "weightNote": "claimed, size 56, production paint; TOUR measured a Dura-Ace Di2 bike at 6.49 kg",
+    "groupset": "SRAM Red AXS",
+    "frame": "FACT 12r carbon, 687 g (56)",
+    "launchDate": "2026-06-30",
+    "url": "https://www.specialized.com/us/en/s-works-tarmac-sl9-sram-red-axs/p/4293533",
+    "predecessor": "specialized/s-works-tarmac-sl8",
+    "sources": [
+      {
+        "name": "Specialized (SRAM Red AXS)",
+        "url": "https://www.specialized.com/us/en/s-works-tarmac-sl9-sram-red-axs/p/4293533"
+      },
+      {
+        "name": "Specialized DE (SRAM Red AXS)",
+        "url": "https://www.specialized.com/de/de/s-works-tarmac-sl9-sram-red-axs/p/4293533"
+      },
+      {
+        "name": "Specialized (Dura-Ace Di2)",
+        "url": "https://www.specialized.com/us/en/s-works-tarmac-sl9-shimano-dura-ace-di2/p/4293532"
+      },
+      {
+        "name": "road.cc",
+        "url": "https://road.cc/tech-news/the-fastest-road-bike-ever-made-specialized-unveils-the-s-works-tarmac-sl9"
+      },
+      {
+        "name": "TOUR",
+        "url": "https://www.tour-magazin.de/en/aero-road-bike/top-of-the-class-the-specialized-s-works-tarmac-sl9-put-to-the-test/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "specialized/s-works-tarmac-sl8",
+    "brand": "Specialized",
+    "model": "S-Works Tarmac SL8",
+    "year": 2024,
+    "category": "road",
+    "build": "Dura-Ace Di2 (2023 launch spec; replaced by the SL9 in June 2026)",
+    "priceUSD": 14000,
+    "priceEUR": 14000,
+    "weightKg": null,
+    "weightNote": "no complete-bike claim confirmed; frame 685 g claimed, 723 g measured by TOUR",
+    "groupset": "Shimano Dura-Ace Di2",
+    "frame": "FACT 12r carbon, 685 g (56)",
+    "launchDate": "2023-08-06",
+    "url": "https://www.specialized.com/us/en/s-works-tarmac-sl8",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/specialized-tarmac-sl8-launches"
+      },
+      {
+        "name": "TOUR (SL9 test, SL8 frame figure)",
+        "url": "https://www.tour-magazin.de/en/aero-road-bike/top-of-the-class-the-specialized-s-works-tarmac-sl9-put-to-the-test/"
+      }
+    ],
+    "verified": false,
+    "discontinued": true
+  },
+  {
+    "id": "trek/madone-slr-9-axs",
+    "brand": "Trek",
+    "model": "Madone SLR 9 AXS (Gen 8)",
+    "year": 2025,
+    "category": "road",
+    "build": "SRAM Red AXS 2x, Aeolus RSL 51",
+    "priceUSD": 13499.99,
+    "priceEUR": 14000,
+    "weightKg": 7.0,
+    "weightNote": "claimed, size ML, without tubes, bottles or cages; Escape Collective measured a size M Project One sample at 7.13 kg with sealant, cages and computer mount, no pedals",
+    "groupset": "SRAM Red AXS",
+    "frame": "900 Series OCLV carbon, 796 g (M/L)",
+    "launchDate": "2024-06-27",
+    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-axs-gen-8/p/5330026/",
+    "sources": [
+      {
+        "name": "Trek",
+        "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-axs-gen-8/p/5330026/"
+      },
+      {
+        "name": "Escape Collective",
+        "url": "https://escapecollective.com/goodbye-emonda-trek-goes-all-in-with-the-new-madone-gen-8/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "colnago/v5rs",
+    "brand": "Colnago",
+    "model": "V5Rs",
+    "year": 2026,
+    "category": "road",
+    "build": "Dura-Ace Di2, Enve SES 4.5",
+    "priceUSD": 14750,
+    "priceEUR": 15900,
+    "weightKg": null,
+    "weightNote": "no complete-bike claim published",
+    "groupset": "Shimano Dura-Ace Di2",
+    "frame": "Carbon, 685 g unpainted (48.5)",
+    "launchDate": "2025-04-16",
+    "url": "https://www.colnago.com",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://bikeradar.com/news/colnago-v5rs"
+      },
+      {
+        "name": "BIKE",
+        "url": "https://www.bike-magazin.de/en/road-racing-bikes/colnago-v5rs-this-is-pogacar-s-lightweight-race-all-rounder/"
+      },
+      {
+        "name": "road.cc",
+        "url": "https://road.cc/content/tech-news/colnago-unveils-v5rs-lighter-faster-and-pogacar-approved-313533"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "colnago/y1rs",
+    "brand": "Colnago",
+    "model": "Y1Rs",
+    "year": 2026,
+    "category": "road",
+    "build": "Campagnolo Super Record Wireless (top EUR build)",
+    "priceUSD": null,
+    "priceEUR": 16500,
+    "weightKg": null,
+    "weightNote": "no official claim for this build; Colnago's developer said about 7.5 kg for Dura-Ace/Enve SES 4.5; TOUR measured 7.44 kg (size M, SRAM Red AXS, Vision SC 45)",
+    "groupset": "Campagnolo Super Record Wireless",
+    "frame": "Carbon, 965 g unpainted",
+    "launchDate": "2024-12-09",
+    "url": "https://www.colnago.com",
+    "sources": [
+      {
+        "name": "TOUR (launch)",
+        "url": "https://www.tour-magazin.de/en/aero-road-bike/new-aero-bike-for-pogacar-colnago-presents-spectacular-y1rs/"
+      },
+      {
+        "name": "TOUR (test)",
+        "url": "https://www.tour-magazin.de/en/aero-road-bike/colnago-y1rs-on-test-the-wonder-bike-from-tadej-pogacar/"
+      },
+      {
+        "name": "Cyclingnews",
+        "url": "https://www.cyclingnews.com/reviews/colnago-y1rs-review/"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "cannondale/supersix-evo-lab71",
+    "brand": "Cannondale",
+    "model": "SuperSix Evo LAB71 (Gen 5)",
+    "year": 2026,
+    "category": "road",
+    "build": "LAB71 SL: SRAM Red AXS with power meter, DT Swiss ARC 1100 Dicut 38",
+    "priceUSD": 13499,
+    "priceEUR": 12799,
+    "weightKg": 6.35,
+    "weightNote": "claimed for LAB71 SL, size not stated (BIKE); Dura-Ace LAB71 aero build claimed 6.96 kg, TOUR measured 6.89 kg (Reserve 57/64, size 56 per spec list)",
+    "groupset": "SRAM Red AXS",
+    "frame": "Series 0 carbon, 755 g painted (56)",
+    "launchDate": "2026-02-17",
+    "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-lab71-sl",
+    "sources": [
+      {
+        "name": "Cannondale (LAB71 SL)",
+        "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-lab71-sl"
+      },
+      {
+        "name": "Cannondale (LAB71)",
+        "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-lab71"
+      },
+      {
+        "name": "BIKE",
+        "url": "https://www.bike-magazin.de/en/bicycles/racing-bikes/aero-road-bike/fifth-generation-supersix-evo-new-all-rounder-road-bike-from-cannondale/"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2026-cannondale-supersix-evo"
+      },
+      {
+        "name": "TOUR (test)",
+        "url": "https://www.tour-magazin.de/en/aero-road-bike/cannondale-supersix-evo-test-one-of-the-best-road-bikes-in-the-world/"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "scott/addict-rc-ultimate",
+    "brand": "Scott",
+    "model": "Addict RC Ultimate",
+    "year": 2026,
+    "category": "road",
+    "build": "SRAM Red AXS, Syncros Capital SL",
+    "priceUSD": 12999.99,
+    "priceEUR": 12999,
+    "weightKg": 5.9,
+    "weightNote": "claimed, unpainted frame, without pedals (Scott 5.9 kg; basis per Escape Collective); size not stated",
+    "groupset": "SRAM Red AXS",
+    "frame": "HMX SL carbon",
+    "launchDate": "2024-11-26",
+    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-ultimate-bike",
+    "sources": [
+      {
+        "name": "Scott (global spec)",
+        "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-ultimate-bike"
+      },
+      {
+        "name": "Scott US",
+        "url": "https://www.scott-sports.com/us/en/product/scott-addict-rc-ultimate-bike"
+      },
+      {
+        "name": "TOUR",
+        "url": "https://www.tour-magazin.de/en/aero-road-bike/5-9-kilograms-scott-presents-the-new-addict-rc/"
+      },
+      {
+        "name": "Escape Collective",
+        "url": "https://escapecollective.com/scott-addict-rc-road-bike-review-super-light-and-almost-perfect/"
+      },
+      {
+        "name": "Brújula Bike",
+        "url": "https://en.brujulabike.com/at-the-limit-of-6-kg-and-launching-a-new-range-scott-addict-rc-2026/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "factor/ostro-vam",
+    "brand": "Factor",
+    "model": "Ostro VAM",
+    "year": 2024,
+    "category": "road",
+    "build": "SRAM Red AXS with power meter",
+    "priceUSD": 12599,
+    "priceEUR": 13699,
+    "weightKg": null,
+    "weightNote": "Factor says sub-6.8 kg is possible (54)",
+    "groupset": "SRAM Red AXS",
+    "frame": "Carbon, 820 g (54)",
+    "launchDate": "2024-02-14",
+    "url": "https://factorbikes.com/bikes/ostro-vam",
+    "sources": [
+      {
+        "name": "Factor US",
+        "url": "https://factorbikes.com/bikes/ostro-vam"
+      },
+      {
+        "name": "Factor EU",
+        "url": "https://eu.factorbikes.com/bikes/ostro-vam"
+      },
+      {
+        "name": "Factor (press release)",
+        "url": "https://media.factorbikes.com/255829-factor-unveils-new-ostro-vam-engineered-for-riders-that-demand-the-best/"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/factor-ostro-vam-2024"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "cervelo/aspero-5",
+    "brand": "Cervélo",
+    "model": "Áspero-5",
+    "year": 2026,
+    "category": "gravel",
+    "build": "Red AXS 1 (SRAM Red AXS / XX SL mullet), Reserve 48/53 GR, DT Swiss 240",
+    "priceUSD": 12650,
+    "priceEUR": 11499,
+    "weightKg": 8.27,
+    "weightNote": "claimed (Cervélo spec via BikeRadar), size not stated",
+    "groupset": "SRAM Red AXS / XX SL",
+    "frame": "Carbon, 1,023 g incl. storage",
+    "launchDate": "2025-06-17",
+    "url": "https://www.cervelo.com/en-US/bikes/aspero-5",
+    "sources": [
+      {
+        "name": "Cervélo",
+        "url": "https://www.cervelo.com/en-US/bikes/aspero-5"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/cervelo-aspero-5-2025"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "trek/checkmate-slr-9-axs",
+    "brand": "Trek",
+    "model": "Checkmate SLR 9 AXS",
+    "year": 2025,
+    "category": "gravel",
+    "build": "SRAM Red XPLR AXS 1x13, Aeolus RSL 37V",
+    "priceUSD": 11999.99,
+    "priceEUR": 10999,
+    "weightKg": 7.55,
+    "weightNote": "claimed, size ML, tubeless with sealant (Trek AU via Flow); BIKE/TOUR round it to 7.6 kg",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "OCLV carbon, 1,223 g (ML)",
+    "launchDate": "2024-08-15",
+    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/drop-bar-gravel-bikes/checkmate/checkmate-slr-9-axs/p/46152/",
+    "sources": [
+      {
+        "name": "Trek (US search listing)",
+        "url": "https://www.trekbikes.com/us/en_US/search/?text=checkmate%20slr%209"
+      },
+      {
+        "name": "Flow Mountain Bike",
+        "url": "https://flowmountainbike.com/post-all/first-look-trek-checkmate-slr-and-checkpoint-sl-gen-3/"
+      },
+      {
+        "name": "TOUR",
+        "url": "https://www.tour-magazin.de/en/gravel-bike/fast-light-exclusive-checkmate-slr-is-the-first-race-gravel-bike-from-trek/"
+      },
+      {
+        "name": "BIKE",
+        "url": "https://www.bike-magazin.de/en/bicycles/gravel-bikes/trek-checkmate-slr-the-1st-race-gravel-bike-from-trek-fast-light-and-exclusive/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "canyon/grail-cfr-axs",
+    "brand": "Canyon",
+    "model": "Grail CFR AXS (Gen 3)",
+    "year": 2027,
+    "category": "gravel",
+    "build": "SRAM Red XPLR AXS, DT Swiss GRC 1100 50",
+    "priceUSD": 8999,
+    "priceEUR": 8000,
+    "weightKg": 7.98,
+    "weightNote": "claimed, size M standard spec (Canyon: 17.6 lb); BikeRadar quotes 7.9 kg",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "Carbon, 989 g raw (M)",
+    "launchDate": "2026-09-17",
+    "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
+    "sources": [
+      {
+        "name": "Canyon (US product page)",
+        "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html"
+      },
+      {
+        "name": "Canyon (US range)",
+        "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/"
+      },
+      {
+        "name": "Canyon (DE range)",
+        "url": "https://www.canyon.com/de-de/gravel-bikes/race/grail/"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2027-canyon-grail"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "scott/addict-gravel-premium",
+    "brand": "Scott",
+    "model": "Addict Gravel Premium",
+    "year": 2027,
+    "category": "gravel",
+    "build": "SRAM Red XPLR AXS, Fulcrum Sharq GR Cult Carbon",
+    "priceUSD": null,
+    "priceEUR": 8999,
+    "weightKg": 7.8,
+    "weightNote": "claimed, size M",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "HMX carbon, 794 g",
+    "launchDate": "2026-09-03",
+    "url": "https://www.scott-sports.com",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2027-scott-addict-gravel"
+      },
+      {
+        "name": "Radsport-Rennrad",
+        "url": "https://www.radsport-rennrad.de/test-teile/scott-addict-gravel-2027-test/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "bmc/kaius-01-one",
+    "brand": "BMC",
+    "model": "Kaius 01 ONE (Gen 2)",
+    "year": 2027,
+    "category": "gravel",
+    "build": "SRAM Red XPLR AXS with power meter, BMC CG 39 SL",
+    "priceUSD": 12999,
+    "priceEUR": 10999,
+    "weightKg": 7.1,
+    "weightNote": "claimed, size 54, without pedals; BikeRadar measured 7.97 kg (test bike)",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "Carbon, 998 g (54); frameset 1,469 g",
+    "launchDate": "2026-04-30",
+    "url": "https://www.bmc-switzerland.com",
+    "sources": [
+      {
+        "name": "TOUR",
+        "url": "https://www.tour-magazin.de/en/gravel-bike/bmc-kaius-01-the-ultimate-competition-gravel-bike-enters-the-second-round/"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/reviews/bikes/gravel-bikes/2027-bmc-kaius-01-one"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "factor/elara",
+    "brand": "Factor",
+    "model": "Elara",
+    "year": 2027,
+    "category": "gravel",
+    "build": "SRAM Red XPLR AXS (power meter), Black Inc Sixty Four",
+    "priceUSD": 11399,
+    "priceEUR": 13599,
+    "weightKg": null,
+    "weightNote": "complete weight not published; Cyclingnews measured 8.76 kg for the Force XPLR build (size 56)",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "Carbon, sub-1,110 g raw (M)",
+    "launchDate": "2026-09-04",
+    "url": "https://factorbikes.com/bikes/elara",
+    "sources": [
+      {
+        "name": "Cyclingnews",
+        "url": "https://www.cyclingnews.com/bikes/gravel/new-factor-elara/"
+      },
+      {
+        "name": "Bikeroom (retailer)",
+        "url": "https://bike-room.com/blogs/news/factor-elara-aero-gravel-race-bike"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2027-factor-elara"
+      },
+      {
+        "name": "Factor",
+        "url": "https://factorbikes.com/bikes/elara"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "pinarello/grevil-f9",
+    "brand": "Pinarello",
+    "model": "Grevil F9",
+    "year": 2026,
+    "category": "gravel",
+    "build": "SRAM Red XPLR AXS 1x13, DT Swiss GRC 1400",
+    "priceUSD": 11000,
+    "priceEUR": 11000,
+    "weightKg": null,
+    "weightNote": "not published; Cicli Corsa (retailer) lists one size-470 build at 8.225 kg",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "Toray T900 carbon, 1,030 g (530)",
+    "launchDate": "2025-07-11",
+    "url": "https://pinarello.com",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2025-pinarello-grevil-f-gravel-race-bike"
+      },
+      {
+        "name": "RA Cycles (retailer)",
+        "url": "https://racycles.com/products/pinarello-grevil-f9-red-axs-bike"
+      },
+      {
+        "name": "Cicli Corsa (retailer)",
+        "url": "https://ciclicorsa.com/blogs/latest-builds/pinarello-grevil-f9-size-470-atlas-sun-8-225-kg"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "look/g85-cezal-rs",
+    "brand": "Look",
+    "model": "G85 Cezal RS",
+    "year": 2027,
+    "category": "gravel",
+    "build": "SRAM Red XPLR 1x13, Fulcrum Sharq C25",
+    "priceUSD": null,
+    "priceEUR": 8990,
+    "weightKg": 7.9,
+    "weightNote": "claimed, size M",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "HM carbon, 1,000 g painted (M)",
+    "launchDate": "2026-10-06",
+    "url": "https://www.lookcycle.com/us-en/g85-cezal-rs",
+    "sources": [
+      {
+        "name": "Look",
+        "url": "https://www.lookcycle.com/us-en/g85-cezal-rs"
+      },
+      {
+        "name": "Bike Café",
+        "url": "https://bike-cafe.fr/?p=145235"
+      },
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/2027-look-g85-cezal-rs"
+      },
+      {
+        "name": "Escape Collective",
+        "url": "https://escapecollective.com/look-adds-race-focused-rs-to-g85-cezal-gravel-lineup/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "3t/racemax2-italia",
+    "brand": "3T",
+    "model": "Racemax² Italia",
+    "year": 2026,
+    "category": "gravel",
+    "build": "Campagnolo Super Record 2x13 Gravel, 3T Discus 45|40",
+    "priceUSD": 14599,
+    "priceEUR": 10736,
+    "weightKg": null,
+    "weightNote": "not published for this build; 3T claims 'as low as 7.9 kg' for the SRAM Red XPLR / Zipp 303 XPLR build",
+    "groupset": "Campagnolo Super Record 13",
+    "frame": "Carbon, 990 g",
+    "launchDate": "2025-10-10",
+    "url": "https://www.3t.bike",
+    "sources": [
+      {
+        "name": "BikeRadar",
+        "url": "https://www.bikeradar.com/news/3t-racemax2-italia"
+      },
+      {
+        "name": "bici.PRO",
+        "url": "https://en.bici.pro/tecnica/zoom/gravel-gara-3t-rinnova-arriva-racemax2-italia/"
+      },
+      {
+        "name": "RA Cycles (retailer)",
+        "url": "https://racycles.com/products/3t-racemax-2-italia-super-record-wrl-13-speed-bike"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "specialized/s-works-epic-9",
+    "brand": "Specialized",
+    "model": "S-Works Epic 9",
+    "year": 2027,
+    "category": "mtb",
+    "build": "SRAM XX SL Eagle Transmission, RockShox Flight Attendant, Roval Control World Cup",
+    "priceUSD": 15249.99,
+    "priceEUR": 14499,
+    "weightKg": 10.1,
+    "weightNote": "measured by Pinkbike, size XL, without pedals",
+    "groupset": "SRAM XX SL Eagle Transmission",
+    "frame": "FACT 12m carbon, 1,589 g (M) incl. shock and hardware",
+    "launchDate": "2026-04-28",
+    "url": "https://www.specialized.com/us/en/s-works-epic-9/p/4274030",
+    "predecessor": "specialized/s-works-epic-8",
+    "sources": [
+      {
+        "name": "Specialized",
+        "url": "https://www.specialized.com/us/en/s-works-epic-9/p/4274030"
+      },
+      {
+        "name": "Pinkbike (first ride)",
+        "url": "https://www.pinkbike.com/news/first-ride-specialized-epic-9-unapologetically-race-focused.html"
+      },
+      {
+        "name": "Pinkbike (Spark RC first ride, confirms XL Epic 9 at 10.1 kg sans pedals)",
+        "url": "https://www.pinkbike.com/news/first-ride-scott-spark-rc-not-your-grandads-xc-bike.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "specialized/s-works-epic-8",
+    "brand": "Specialized",
+    "model": "S-Works Epic 8",
+    "year": 2024,
+    "category": "mtb",
+    "build": "SRAM XX SL Eagle AXS Transmission, RockShox SID Ultimate / SIDLuxe Ultimate Flight Attendant, Roval Control SL (2024 launch spec)",
+    "priceUSD": 14500,
+    "priceEUR": 14500,
+    "weightKg": 10.4,
+    "weightNote": "measured by BIKE magazin, without pedals; test bikes were L and XL, size of weighed bike not stated (Vital MTB spec lists 10.24 kg, size not stated)",
+    "groupset": "SRAM XX SL Eagle Transmission",
+    "frame": "FACT 12m carbon",
+    "launchDate": "2024-03-12",
+    "url": "https://www.vitalmtb.com/product/guide/bikes/specialized/epic-48476",
+    "sources": [
+      {
+        "name": "Vital MTB (2024 S-Works Epic 8 spec, $14,500)",
+        "url": "https://vitalmtb.com/product/guide/bikes/specialized/epic-48476"
+      },
+      {
+        "name": "BIKE magazin test (EUR 14,500, 10.40 kg)",
+        "url": "https://www.bike-magazin.de/fahrraeder/mountainbike/cross-country-bikes/specialized-s-works-epic-8-im-test-so-fahrt-sich-das-teuerste-mtb-der-welt/"
+      },
+      {
+        "name": "MBR (launch, GBP 12,000)",
+        "url": "https://www.mbr.co.uk/news/specialized-launches-the-epic-8-an-xc-bike-with-rockshox-flight-attendant-and-an-theres-an-evo-version-with-down-country-aspirations-too-436796"
+      },
+      {
+        "name": "Performance Bike (retailer; 2026 model $13,999.99, 22 lb 0.7 oz size M, discontinued)",
+        "url": "https://www.performancebike.com/specialized-sworks-epic-8-cyan-pearl-white-silver-s-90326-0002/p1795124"
+      }
+    ],
+    "verified": false,
+    "discontinued": true
+  },
+  {
+    "id": "scott/spark-rc-sl",
+    "brand": "Scott",
+    "model": "Spark RC SL",
+    "year": 2027,
+    "category": "mtb",
+    "build": "SRAM XX SL Eagle AXS Transmission, RockShox SID Ultimate / SIDLuxe Ultimate Flight Attendant, SRAM Motive Ultimate",
+    "priceUSD": 14999.99,
+    "priceEUR": 12999,
+    "weightKg": 9.9,
+    "weightNote": "claimed by Scott for the Spark RC SL build, size not stated",
+    "groupset": "SRAM XX SL Eagle AXS Transmission",
+    "frame": "HMX-SL carbon, 1,427 g claimed (M, without shock, incl. hardware)",
+    "launchDate": "2026-06",
+    "url": "https://www.scott-sports.com/us/en/product/scott-spark-rc-sl-bike",
+    "sources": [
+      {
+        "name": "Scott (US, $14,999.99)",
+        "url": "https://www.scott-sports.com/us/en/product/scott-spark-rc-sl-bike"
+      },
+      {
+        "name": "Pinkbike first ride (2026-06-10)",
+        "url": "https://www.pinkbike.com/news/first-ride-scott-spark-rc-not-your-grandads-xc-bike.html"
+      },
+      {
+        "name": "BIKE magazin (2026-06-15)",
+        "url": "https://www.bike-magazin.de/en/bicycles/mountain-bike/cross-country-bikes/8-new-cross-country-bikes-an-overview-of-all-the-scott-spark-rc-2026-models/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "santa-cruz/blur-5",
+    "brand": "Santa Cruz",
+    "model": "Blur 5 XX AXS Race FA RSV",
+    "year": 2027,
+    "category": "mtb",
+    "build": "SRAM XX SL AXS Transmission, RockShox SID Ultimate / SIDLuxe Ultimate Flight Attendant, Reserve 28|XC SL",
+    "priceUSD": 13399,
+    "priceEUR": null,
+    "weightKg": 11.44,
+    "weightNote": "claimed by Santa Cruz (product page), size not stated",
+    "groupset": "SRAM XX SL Eagle AXS Transmission",
+    "frame": "Carbon CC",
+    "launchDate": "2026-08",
+    "url": "https://www.santacruzbicycles.com/collections/blur/products/blur-xx-axs-fa-race-rsv-2027",
+    "sources": [
+      {
+        "name": "Santa Cruz (product page, $13,399, 11.44 kg)",
+        "url": "https://www.santacruzbicycles.com/collections/blur/products/blur-xx-axs-fa-race-rsv-2027"
+      },
+      {
+        "name": "Santa Cruz (Blur range, $13,399 top build)",
+        "url": "https://www.santacruzbicycles.com/en-US/bikes/blur"
+      },
+      {
+        "name": "Flow Mountain Bike review (2026-08-04)",
+        "url": "https://flowmountainbike.com/post-all/santa-cruz-blur-cc-5-2027-on-review/"
+      },
+      {
+        "name": "Blister",
+        "url": "https://blisterreview.com/gear-reviews/santa-cruz-blur-5"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "yeti/asr-t5",
+    "brand": "Yeti",
+    "model": "ASR T5 ULT XX SL Transmission",
+    "year": 2026,
+    "category": "mtb",
+    "build": "SRAM XX SL Eagle AXS Transmission, RockShox SID Flight Attendant, DT Swiss XRC 1200",
+    "priceUSD": 14300,
+    "priceEUR": null,
+    "weightKg": 10.48,
+    "weightNote": "Vital MTB spec for 2026 model (23 lb 1.6 oz / 10,478 g), size and claimed/measured not stated",
+    "groupset": "SRAM XX SL Eagle Transmission",
+    "frame": "TURQ carbon, 1,448 g claimed without shock (1,813 g with shock)",
+    "launchDate": "2024-03",
+    "url": "https://www.vitalmtb.com/product/guide/bikes/yeti/asr-70471",
+    "sources": [
+      {
+        "name": "Vital MTB (2026 ASR T5 ULT XX SL Transmission, $14,300)",
+        "url": "https://www.vitalmtb.com/product/guide/bikes/yeti/asr-70471"
+      },
+      {
+        "name": "GearJunkie review (launch March 2024, $13,900 at launch)",
+        "url": "https://gearjunkie.com/biking/mountain-bike/yeti-asr-t5-ultimate-xx-sl-transmission-review"
+      },
+      {
+        "name": "Yeti (ASR overview)",
+        "url": "https://yeticycles.com/bikes/asr"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "orbea/oiz-m-ltd",
+    "brand": "Orbea",
+    "model": "Oiz M-LTD",
+    "year": 2026,
+    "category": "mtb",
+    "build": "SRAM XX SL Eagle AXS Transmission, Fox 34 SL Factory / Float SL Factory, OQUO MP30LTD",
+    "priceUSD": 12127,
+    "priceEUR": 10999,
+    "weightKg": null,
+    "weightNote": "not confirmed: Cyclonline weighed it 'right around 10 kg' (size not stated); BIKE says top models from 9.6 kg",
+    "groupset": "SRAM XX SL Eagle Transmission",
+    "frame": "OMX carbon (BIKE: new frame about 1,700 g incl. shock, frame tier not stated)",
+    "launchDate": "2026-06",
+    "url": "https://www.orbea.com/us-en/bicycles/mountain/oiz/cat/oiz-m-ltd",
+    "sources": [
+      {
+        "name": "Orbea (US, $12,127)",
+        "url": "https://www.orbea.com/us-en/bicycles/mountain/oiz/cat/oiz-m-ltd"
+      },
+      {
+        "name": "BIKE magazin (launch 2026-06-05, EUR 10,999)",
+        "url": "https://www.bike-magazin.de/en/bicycles/mountain-bike/cross-country-bikes/oiz-2026-this-is-the-new-race-bike-from-orbea/"
+      },
+      {
+        "name": "Cyclonline review",
+        "url": "https://www.cyclonline.com/37-orbea-bicycles-news-review-test/4807-orbea-oiz-m-ltd-sram-xx-axs-2026-review"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "specialized/s-works-turbo-creo-2",
+    "brand": "Specialized",
+    "model": "S-Works Turbo Creo 2",
+    "year": 2026,
+    "category": "e-bike",
+    "build": "SRAM Red / XX1 Eagle AXS, Roval Terra CLX II",
+    "priceUSD": 14399.99,
+    "priceEUR": 12999,
+    "weightKg": 12.87,
+    "weightNote": "claimed, size 56 (2026 model, Specialized)",
+    "groupset": "SRAM Red / XX1 Eagle AXS",
+    "frame": "FACT carbon, Specialized SL 1.2 motor, 320 Wh",
+    "launchDate": "2023-09-26",
+    "url": "https://www.specialized.com/us/en/s-works-turbo-creo-2/p/4221805",
+    "sources": [
+      {
+        "name": "Specialized (US)",
+        "url": "https://www.specialized.com/us/en/s-works-turbo-creo-2/p/4221805"
+      },
+      {
+        "name": "Specialized (DE, EUR 12,999)",
+        "url": "https://www.specialized.com/de/de/s-works-turbo-creo-2/p/4221805"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "specialized/s-works-turbo-levo-sl-2",
+    "brand": "Specialized",
+    "model": "S-Works Turbo Levo SL 2 Di2",
+    "year": 2026,
+    "category": "e-bike",
+    "build": "Shimano XTR Di2 12-speed, Fox Float 36 Factory GRIP X2",
+    "priceUSD": 13899.99,
+    "priceEUR": null,
+    "weightKg": 18.0,
+    "weightNote": "claimed, size S4 (Specialized)",
+    "groupset": "Shimano XTR Di2",
+    "frame": "FACT 11m carbon, SL 1.2 motor, 320 Wh",
+    "launchDate": "2023",
+    "url": "https://www.specialized.com/us/en/s-works-turbo-levo-sl-2-di2/p/4221349",
+    "sources": [
+      {
+        "name": "Specialized (S-Works Turbo Levo SL 2 Di2, list $13,899.99, 18.0 kg S4)",
+        "url": "https://www.specialized.com/us/en/s-works-turbo-levo-sl-2-di2/p/4221349"
+      },
+      {
+        "name": "Specialized (S-Works Turbo Levo SL 2, $12,999.99, 18.15 kg S4)",
+        "url": "https://www.specialized.com/us/en/s-works-turbo-levo-sl-2/p/4277410"
+      },
+      {
+        "name": "Specialized (S-Works Levo SL 2 LTD Fox Live Valve Neo, $13,499.99, 18.56 kg S4)",
+        "url": "https://www.specialized.com/us/en/s-works-turbo-levo-sl-2-ltd-fox-dhx-live-valve-neo/p/4278254"
+      },
+      {
+        "name": "BIKE magazin test 2023 (EUR 14,000, 17.7 kg measured S4)",
+        "url": "https://www.bike-magazin.de/en/trail-bikes/light-e-mtb-trail-2023-specialised-s-works-levo-sl-on-test/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "pinarello/nytro-road-e9",
+    "brand": "Pinarello",
+    "model": "Nytro Road E9",
+    "year": 2024,
+    "category": "e-bike",
+    "build": "Shimano Dura-Ace Di2, TQ HPR50, Princeton Grit 4540 (launch spec)",
+    "priceUSD": 13000,
+    "priceEUR": 13500,
+    "weightKg": 11.4,
+    "weightNote": "claimed, size 53",
+    "groupset": "Shimano Dura-Ace Di2",
+    "frame": "Toray T900 carbon, TQ HPR50 motor, 360 Wh",
+    "launchDate": "2023-03-16",
+    "url": "https://www.bikeradar.com/news/pinarello-nytro-2023/",
+    "sources": [
+      {
+        "name": "BikeRadar (launch 2023-03-16, $13,000 / EUR 13,500, 11.4 kg size 53)",
+        "url": "https://www.bikeradar.com/news/pinarello-nytro-2023/"
+      },
+      {
+        "name": "TOUR (360 Wh, 1,130 g frame)",
+        "url": "https://www.tour-magazin.de/en/e-road-bike/new-pinarello-nytro-exclusive-e-platform-for-road-and-off-road-use/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "cervelo/rouvida",
+    "brand": "Cervélo",
+    "model": "Rouvida Red XPLR AXS 1",
+    "year": 2024,
+    "category": "e-bike",
+    "build": "SRAM Red XPLR AXS, Fazua Ride 60",
+    "priceUSD": 12150,
+    "priceEUR": null,
+    "weightKg": 12.38,
+    "weightNote": "claimed, road build, size not stated",
+    "groupset": "SRAM Red XPLR AXS",
+    "frame": "Carbon, Fazua Ride 60 motor, 430 Wh (Cervélo; launch specs gave 432 Wh)",
+    "launchDate": "2023-12-05",
+    "url": "https://www.cervelo.com/en-US/bikes/rouvida",
+    "sources": [
+      {
+        "name": "Cervélo (Red XPLR AXS 1 Road $12,150, 430 Wh)",
+        "url": "https://www.cervelo.com/en-US/bikes/rouvida"
+      },
+      {
+        "name": "Mike's Bikes (retailer, $12,149.99, 2027 model)",
+        "url": "https://mikesbikes.com/products/cervelo-rouvida-red-xplr-axs-1-road-2027"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "stromer/st7",
+    "brand": "Stromer",
+    "model": "ST7",
+    "year": 2026,
+    "category": "e-bike",
+    "build": "Pinion Smart.Shift, Stromer hub motor",
+    "priceUSD": null,
+    "priceEUR": 12990,
+    "weightKg": 34.0,
+    "weightNote": "unladen weight from a French retailer listing (retailer), size not stated",
+    "groupset": "Pinion Smart.Shift",
+    "frame": "Aluminium, Stromer SYNO Sport II hub motor (52 Nm), 1,440 Wh battery",
+    "launchDate": "2022-07",
+    "url": "https://www.stromerbike.com/en/st7",
+    "sources": [
+      {
+        "name": "Stromer (from EUR 12,990, currently EUR 11,490)",
+        "url": "https://www.stromerbike.com/en/st7"
+      },
+      {
+        "name": "Roulez Jeunesse (retailer, 34.0 kg, EUR 12,990 RRP)",
+        "url": "https://shop.roulezjeunesse.com/products/stromer-st7"
+      },
+      {
+        "name": "radfahren.de (Eurobike July 2022 reveal)",
+        "url": "https://www.radfahren.de/allgemein/pinion-smart-shift-getriebeschaltung/"
+      }
+    ],
+    "verified": false
+  }
+]

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+dist/
+.astro/
+.cache/
+.vercel/
+.netlify/
+.wrangler/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+credentials*.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

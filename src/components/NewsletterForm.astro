@@ -1,0 +1,32 @@
+---
+// Placeholder form: connect to Beehiiv/Buttondown by setting `action` to their embed endpoint.
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<form class:list={['nl', { 'nl--compact': compact }]} action="/newsletter/" method="get">
+  <label class="visually-hidden" for={compact ? 'nl-email-c' : 'nl-email'}>Email address</label>
+  <input
+    class="input"
+    id={compact ? 'nl-email-c' : 'nl-email'}
+    type="email"
+    name="email"
+    placeholder="you@example.com"
+    autocomplete="email"
+    required
+  />
+  <button class="btn" type="submit">Subscribe</button>
+</form>
+
+<style>
+  .nl {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+  .nl--compact {
+    grid-template-columns: minmax(0, 1fr);
+  }
+</style>

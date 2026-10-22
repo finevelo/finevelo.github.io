@@ -1,0 +1,86 @@
+---
+import { bikeUrl, type Bike } from '../lib/content';
+
+interface Props {
+  specs: { price: string; weight: string; groupset?: string; availability?: string; url?: string };
+  bike?: Bike;
+}
+const { specs, bike } = Astro.props;
+---
+
+<aside class="specs" aria-label="Key specifications">
+  <dl>
+    <div>
+      <dt>Price</dt>
+      <dd>{specs.price}</dd>
+    </div>
+    <div>
+      <dt>Weight</dt>
+      <dd>{specs.weight}</dd>
+    </div>
+    {
+      specs.groupset && (
+        <div>
+          <dt>Groupset</dt>
+          <dd>{specs.groupset}</dd>
+        </div>
+      )
+    }
+    {
+      specs.availability && (
+        <div>
+          <dt>Availability</dt>
+          <dd>{specs.availability}</dd>
+        </div>
+      )
+    }
+  </dl>
+  <div class="specs__links">
+    {bike && <a href={bikeUrl(bike)}>Full data sheet →</a>}
+    {specs.url && <a href={specs.url} rel="noopener" target="_blank">Manufacturer ↗</a>}
+  </div>
+</aside>
+
+<style>
+  .specs {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 16px 0;
+  }
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+  }
+  @media (min-width: 720px) {
+    dl {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  dt {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  dd {
+    margin: 2px 0 0;
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.25;
+    font-variant-numeric: tabular-nums;
+  }
+  .specs__links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .specs__links a:hover {
+    color: var(--accent);
+  }
+</style>

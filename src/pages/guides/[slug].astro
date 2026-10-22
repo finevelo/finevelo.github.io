@@ -1,0 +1,212 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { filterBikes, formatMoney, formatWeight, formatDate, bikeUrl } from '../../lib/content';
+import { CATEGORIES, SITE } from '../../site.config';
+import HubRanking from '../../components/HubRanking.astro';
+import { getHubsByWeight } from '../../lib/hubs';
+import WheelRanking from '../../components/WheelRanking.astro';
+import { getWheelsByWeight } from '../../lib/wheels';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((guide) => ({ params: { slug: guide.id }, props: { guide } }));
+}
+
+const { guide } = Astro.props as { guide: CollectionEntry<'guides'> };
+const { Content } = await render(guide);
+const isHubs = guide.data.dataset === 'hubs';
+const isWheels = guide.data.dataset === 'wheels';
+const isBikes = guide.data.dataset === 'bikes';
+const list = isBikes ? filterBikes(await getCollection('bikes'), guide.data.filter) : [];
+const hubs = isHubs ? await getHubsByWeight() : [];
+const wheels = isWheels ? await getWheelsByWeight() : [];
+const components = isHubs ? hubs : wheels;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: guide.data.title,
+  itemListElement: !isBikes
+    ? components.map((h, i) => ({ '@type': 'ListItem', position: i + 1, url: h.data.url, name: `${h.data.brand} ${h.data.model}` }))
+    : list.map((b, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `${SITE.url}${bikeUrl(b)}`,
+        name: `${b.data.brand} ${b.data.model}`,
+      })),
+};
+---
+
+<BaseLayout title={guide.data.seoTitle ?? guide.data.title} description={guide.data.description} schema={schema} noindex={guide.data.sample}>
+  <div class="wrap guide">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/guides/">Guides</a></nav>
+    <p class="kicker">Updated {formatDate(guide.data.updatedDate)}</p>
+    <h1>{guide.data.title}</h1>
+    {
+      guide.data.sample && (
+        <p class="sample-note">
+          <span class="sample-flag">Unverified</span> The figures in this guide come from sources we have not yet checked on the original
+          pages. This page is not indexed until they are.
+        </p>
+      )
+    }
+    <div class="prose intro"><Content /></div>
+
+    {isHubs && <HubRanking hubs={hubs} />}
+    {isWheels && <WheelRanking wheels={wheels} />}
+    {isBikes && <ol class="ranking">
+      {
+        list.map((b, i) => (
+          <li>
+            <span class="rank">{String(i + 1).padStart(2, '0')}</span>
+            <div class="ranking__body">
+              <p class="kicker">{CATEGORIES[b.data.category].label}</p>
+              <h2>
+                <a href={bikeUrl(b)}>
+                  {b.data.brand} {b.data.model}
+                </a>
+              </h2>
+              <p class="ranking__build">{b.data.build}</p>
+              {!b.data.verified && (
+                <p class="ranking__flag">
+                  <span class="sample-flag">Partly confirmed</span> Price or weight not yet confirmed by the maker; see the data sheet.
+                </p>
+              )}
+            </div>
+            <dl>
+              <div>
+                <dt>Price</dt>
+                <dd>{formatMoney(b.data.priceUSD, 'USD')}</dd>
+              </div>
+              <div>
+                <dt>Weight</dt>
+                <dd>{formatWeight(b.data.weightKg)}</dd>
+              </div>
+            </dl>
+          </li>
+        ))
+      }
+    </ol>}
+    {isBikes && list.length === 0 && <p class="meta">No bikes in the database match this guide yet.</p>}
+    {
+      isHubs ? (
+        <p class="note">
+          Weights are manufacturer claims for the complete set (front + rear) unless marked as measured. Prices are for the set; where a brand
+          only sells single hubs, front and rear are added up. “TBC” means we could not confirm a current retail price. Spotted a newer
+          figure? Tell us via the <a href="/impressum/">Impressum</a>.
+        </p>
+      ) : isWheels ? (
+        <p class="note">
+          Weights are manufacturer claims for the complete wheelset (front + rear) unless marked as measured; most brands quote them without
+          tubeless tape and valves. Prices are for the set. “TBC” means we could not confirm a current retail price. Spotted a newer figure?
+          Tell us via the <a href="/impressum/">Impressum</a>.
+        </p>
+      ) : (
+        <p class="note">
+          Prices are US list prices for the top build (where only a retailer price exists, the data sheet says so); weights as claimed unless the data sheet says measured. Generated from the <a href="/bikes/">Finevelo database</a>.
+        </p>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .guide {
+    max-width: 900px;
+    padding-top: 36px;
+  }
+  .crumbs {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(36px, 5.5vw, 60px);
+    margin: 6px 0 20px;
+  }
+  .intro {
+    margin-bottom: 40px;
+  }
+  .ranking__flag {
+    margin: 6px 0 0;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .sample-note {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 24px;
+  }
+  .ranking {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid var(--ink);
+  }
+  .ranking li {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 4px 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 720px) {
+    .ranking li {
+      grid-template-columns: 72px minmax(0, 1fr) 260px;
+      align-items: center;
+    }
+  }
+  .rank {
+    font-family: var(--serif);
+    font-size: 40px;
+    line-height: 1;
+    color: var(--accent);
+  }
+  .ranking h2 {
+    font-size: 25px;
+    margin: 2px 0 4px;
+  }
+  .ranking h2 a:hover {
+    color: var(--accent);
+  }
+  .ranking__build {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  dl {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 10px 0 0;
+  }
+  @media (min-width: 720px) {
+    dl {
+      grid-column: 3;
+      margin: 0;
+    }
+  }
+  dt {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  dd {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 20px;
+    font-variant-numeric: tabular-nums;
+  }
+  .note {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-top: 24px;
+  }
+  .note a {
+    text-decoration: underline;
+  }
+</style>

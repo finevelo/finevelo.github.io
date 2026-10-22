@@ -1,0 +1,147 @@
+[
+  {
+    "id": "nonplus/primaro-ultra-sp",
+    "brand": "NonPlus Components",
+    "model": "Primaro Ultra SP",
+    "frontG": 59.7, "rearG": 127.5, "weightG": 187,
+    "freehub": "SRAM XDR", "holes": "24", "spoke": "straight-pull",
+    "priceEUR": 1695, "priceUSD": null,
+    "madeIn": "Germany", "launchYear": 2025,
+    "url": "https://nonpluscomponents.com/PRIMARO-ULTRA-SP-Naben-Set/NON-03-01-0013",
+    "note": "Formerly sold as NonPlus Ultra. Enduro ceramic bearing options.",
+    "sources": [
+      { "name": "NonPlus", "url": "https://nonpluscomponents.com/PRIMARO-ULTRA-SP-Naben-Set/NON-03-01-0013" },
+      { "name": "BIKE Magazin", "url": "https://www.bike-magazin.de/komponenten/laufraeder/nonplus-components-ultra-super-leichte-naben/" }
+    ]
+  },
+  {
+    "id": "extralite/cyber-spc-3-plus",
+    "brand": "Extralite",
+    "model": "CyberFront/Rear SPC-3+",
+    "frontG": null, "rearG": null, "weightG": 196,
+    "freehub": "SRAM XDR", "holes": "24", "spoke": "straight-pull",
+    "priceEUR": null, "priceUSD": 815,
+    "madeIn": "Italy", "launchYear": null,
+    "url": "https://www.extralite.com/products/894/cyberfront-rear-spc-3-hubset",
+    "note": "196 g with the HyperCeramic bearing option. A US retailer quotes about 214 g for the pair.",
+    "sources": [
+      { "name": "Extralite", "url": "https://www.extralite.com/products/894/cyberfront-rear-spc-3-hubset" },
+      { "name": "Fairwheel Bikes", "url": "https://www.fairwheelbikes.com/extralite-cyber-front-rear-spc-3-road-disc-hubset.html" }
+    ]
+  },
+  {
+    "id": "nonplus/primaro-sp-gen2",
+    "brand": "NonPlus Components",
+    "model": "Primaro SP Gen2",
+    "frontG": 63, "rearG": 141, "weightG": 204,
+    "freehub": "not stated", "holes": "24 / 28", "spoke": "straight-pull",
+    "priceEUR": 990, "priceUSD": null,
+    "madeIn": "Germany", "launchYear": null,
+    "url": "https://nonpluscomponents.com/PRIMARO-SP-Naben-Set-GEN2/NON-03-01-0008.41",
+    "note": "€990 in matte black or grey; Special Editions €1,090.",
+    "sources": [
+      { "name": "NonPlus", "url": "https://nonpluscomponents.com/PRIMARO-SP-Naben-Set-GEN2/NON-03-01-0008.41" }
+    ]
+  },
+  {
+    "id": "tune/yokto-cl",
+    "brand": "Tune",
+    "model": "Yokto CL",
+    "frontG": null, "rearG": null, "weightG": 225,
+    "freehub": "SRAM XDR", "holes": "not stated", "spoke": "straight-pull",
+    "priceEUR": null, "priceUSD": null,
+    "madeIn": "Germany", "launchYear": 2026,
+    "url": "https://tune.de/products/yokto-hubset",
+    "note": "Road only. POEtry40 freehub with two pawls.",
+    "sources": [
+      { "name": "Tune", "url": "https://tune.de/products/yokto-hubset" }
+    ]
+  },
+  {
+    "id": "dt-swiss/180-exp-cl",
+    "brand": "DT Swiss",
+    "model": "180 EXP Centerlock",
+    "frontG": 92, "rearG": 180, "weightG": 272,
+    "freehub": "SRAM XDR", "holes": "24", "spoke": "straight-pull",
+    "priceEUR": null, "priceUSD": 1198,
+    "madeIn": null, "launchYear": null,
+    "url": "https://www.dtswiss.com/en/components/hubs-and-rws/hubs-road/180",
+    "note": "Ratchet EXP 36. With Shimano HG 11 freehub the set weighs 279 g. US price is front and rear hub summed.",
+    "sources": [
+      { "name": "DT Swiss", "url": "https://www.dtswiss.com/en/components/hubs-and-rws/hubs-road/180" },
+      { "name": "Tree Fort Bikes", "url": "https://www.treefortbikes.com/DT-Swiss-180-Front-Hub-12x100mm-Center-Lock-Disc" }
+    ]
+  },
+  {
+    "id": "carbon-ti/x-hub-sp-cl",
+    "brand": "Carbon-Ti",
+    "model": "X-Hub SP Disc Centerlock",
+    "frontG": 89, "rearG": 183, "weightG": 272,
+    "freehub": "not stated", "holes": "24", "spoke": "straight-pull",
+    "priceEUR": 695, "priceUSD": 750,
+    "madeIn": "Italy", "launchYear": 2019,
+    "url": "https://www.carbon-ti.com/products/hubs/x-hub-sp-disc",
+    "note": "Weights given as approximate (~). A US retailer lists 92/189 g. EUR price is front and rear hub summed from the official shop.",
+    "sources": [
+      { "name": "Carbon-Ti", "url": "https://www.carbon-ti.com/products/hubs/x-hub-sp-disc" },
+      { "name": "Fairwheel Bikes", "url": "https://www.fairwheelbikes.com/carbon-ti-x-hub-centerlock-hubset.html" }
+    ]
+  },
+  {
+    "id": "tune/nano-cs-cl",
+    "brand": "Tune",
+    "model": "Nano CS CL",
+    "frontG": null, "rearG": null, "weightG": 285,
+    "freehub": "SRAM XDR", "holes": "24", "spoke": "straight-pull (carbon spokes)",
+    "priceEUR": null, "priceUSD": null,
+    "madeIn": "Germany", "launchYear": null,
+    "url": "https://tune.de/products/nano-cs-20holes-rear-hub",
+    "note": "Built for carbon spokes. 275 g in the 20-hole version.",
+    "sources": [
+      { "name": "Tune", "url": "https://tune.de/products/nano-cs-20holes-rear-hub" }
+    ]
+  },
+  {
+    "id": "tune/nano-cl",
+    "brand": "Tune",
+    "model": "Nano CL",
+    "frontG": 93, "rearG": 197, "weightG": 290,
+    "freehub": "SRAM XDR", "holes": "24", "spoke": "straight-pull",
+    "priceEUR": null, "priceUSD": null,
+    "madeIn": "Germany", "launchYear": null,
+    "url": "https://tune.de/products/nano-cl-rear-hub",
+    "note": "Weights from (±3%). Rear hub €480 at bike24.",
+    "sources": [
+      { "name": "Tune", "url": "https://tune.de/products/nano-cl-rear-hub" },
+      { "name": "bike24", "url": "https://www.bike24.de/p1960390.html" }
+    ]
+  },
+  {
+    "id": "dt-swiss/240-exp-cl",
+    "brand": "DT Swiss",
+    "model": "240 EXP Centerlock",
+    "frontG": 104, "rearG": 192, "weightG": 296,
+    "freehub": "SRAM XDR", "holes": "24", "spoke": "straight-pull",
+    "priceEUR": null, "priceUSD": null,
+    "madeIn": null, "launchYear": null,
+    "url": "https://www.dtswiss.com/en/components/hubs-and-rws/hubs-road/240",
+    "note": "The benchmark most premium wheelsets are built on. Included for reference.",
+    "sources": [
+      { "name": "DT Swiss", "url": "https://www.dtswiss.com/en/components/hubs-and-rws/hubs-road/240" }
+    ]
+  },
+  {
+    "id": "tune/micro-cl",
+    "brand": "Tune",
+    "model": "Micro CL",
+    "frontG": 123, "rearG": 226, "weightG": 349,
+    "freehub": "not stated", "holes": "24 / 28", "spoke": "J-bend",
+    "priceEUR": null, "priceUSD": null,
+    "madeIn": "Germany", "launchYear": null,
+    "url": "https://tune.de/products/micro-cl-rear-hub",
+    "note": "Weights from (±3%). The lightest J-bend option here.",
+    "sources": [
+      { "name": "Tune", "url": "https://tune.de/products/micro-cl-rear-hub" }
+    ]
+  }
+]

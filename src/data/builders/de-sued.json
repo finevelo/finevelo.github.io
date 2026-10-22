@@ -1,0 +1,6564 @@
+[
+  {
+    "id": "bike-ahead-composites",
+    "name": "Bike Ahead Composites",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Veitshöchheim",
+    "address": {
+      "street": "Oberdürrbacher Straße 3",
+      "postalCode": "97209",
+      "source": "https://bike-ahead-composites.de/impressum.html"
+    },
+    "geo": {
+      "lat": 49.82967,
+      "lon": 9.90514,
+      "precision": "address"
+    },
+    "website": "https://bike-ahead-composites.de",
+    "founded": 2010,
+    "materials": [
+      "carbon"
+    ],
+    "disciplines": [
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Carbon specialist near Würzburg making wheels, cockpits, saddles and one-piece monocoque frames (The Superfast gravel bike, The Frame hardtail); it also produces carbon frames for other brands such as Last and Stoll.",
+    "uncertain": "Lamination of The Frame hardtail is done by a partner in Portugal with finishing in Veitshöchheim; The Superfast is marketed as made in Germany.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bike Ahead Impressum",
+        "url": "https://bike-ahead-composites.de/impressum.html"
+      },
+      {
+        "name": "Bike Ahead about us",
+        "url": "https://bike-ahead-composites.de/company/about-us.html?config=391"
+      },
+      {
+        "name": "Bike Ahead The Superfast press kit (Cyclingworld)",
+        "url": "https://cyclingworld.de/wp-content/uploads/ws-form/8/dropzonejs/95/BikeAhead_TheSuperfast-1.pdf"
+      },
+      {
+        "name": "BIKE: Bike Ahead The Frame test",
+        "url": "https://www.bike-magazin.de/en/bicycles/mountain-bike/hardtail-bikes/test-victory-for-bike-ahead-the-frame-this-is-why-the-superlight-bike-beats-the-competition/"
+      },
+      {
+        "name": "bike24: The Superfast listing",
+        "url": "https://www.bike24.de/p11017166.html"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bikelounge-muenchen",
+    "name": "Bikelounge München",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 48.137,
+      "lon": 11.576,
+      "precision": "city"
+    },
+    "website": "https://bikelounge-muc.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Pinarello",
+      "Basso",
+      "Wilier",
+      "BMC",
+      "OPEN",
+      "Titici",
+      "De Rosa",
+      "Argon 18"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build"
+    ],
+    "summary": "Road and gravel shop in Munich-Haidhausen, formerly the Bikedress Lounge and independent since October 2023. It describes itself as a Colnago Elite Partner, offers custom builds and includes a bike fitting with every Colnago purchase.",
+    "uncertain": "Street address only in a dealer directory.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikelounge: Colnago in München",
+        "url": "https://bikelounge-muc.de/colnago-in-muenchen/"
+      },
+      {
+        "name": "Bikelounge home page",
+        "url": "https://bikelounge-muc.de/"
+      },
+      {
+        "name": "pedali.de dealer listing (address, brands, Bikedress split)",
+        "url": "https://www.pedali.de/haendler/bikedress-lounge-muenchen-au-haidhausen-81667-muenchen"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "3mills-muenchen",
+    "name": "3MILLS",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 48.137,
+      "lon": 11.576,
+      "precision": "city"
+    },
+    "website": "https://www.3mills.cc/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Factor",
+      "Time",
+      "Cinelli",
+      "Fara",
+      "BlackHeart"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Cycling shop and café in Munich's Dreimühlenviertel (3 Mills Cycling & Coffee GmbH) that sells Factor, Time and Cinelli. Its custom builds set frame size, bar width, stem length and crank length from the rider's measurements and riding style.",
+    "uncertain": "Street address only in a city guide.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "3MILLS website",
+        "url": "https://www.3mills.cc/"
+      },
+      {
+        "name": "in-muenchen.de: Pedal Power, where Munich's road cyclists shop",
+        "url": "https://www.in-muenchen.de/shopping/pedal-power-wo-munchens-rennradfans-shoppen.html"
+      },
+      {
+        "name": "rennrad-news.de forum: shop recommendations in Munich",
+        "url": "https://www.rennrad-news.de/forum/threads/empfehlung-f%C3%BCr-ein-rennrad-gesch%C3%A4ft-in-m%C3%BCnchen.195094/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "endurance-shop-nuernberg",
+    "name": "Endurance Shop",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Nürnberg",
+    "address": {
+      "street": "Steinstraße 20",
+      "postalCode": null,
+      "source": "https://www.endurance-shop.de/"
+    },
+    "geo": {
+      "lat": 49.458022,
+      "lon": 11.054723,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://www.endurance-shop.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Colnago",
+      "Cervélo",
+      "Basso"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Nuremberg road-bike shop that sells Pinarello, Colnago and Cervélo and can order frame kits from Pinarello, Colnago and Basso. It offers bike fitting and body measurement, including SQlab sit-bone measurement.",
+    "uncertain": "Postal code not confirmed. Custom builds refers to frame kits built to order.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Endurance Shop website",
+        "url": "https://www.endurance-shop.de/"
+      },
+      {
+        "name": "Endurance Shop: Rennrad",
+        "url": "https://www.endurance-shop.de/rennrad/"
+      },
+      {
+        "name": "Endurance Shop on Kleinanzeigen",
+        "url": "https://www.kleinanzeigen.de/pro/endurance-shop-Rennrad"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "yaadcycles",
+    "name": "yaadcycles",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Stuttgart",
+    "address": {
+      "street": "Elisabethenstr. 42",
+      "postalCode": "70197",
+      "source": "https://www.yaadcycles.com/imprint"
+    },
+    "geo": {
+      "lat": 48.7745,
+      "lon": 9.15452,
+      "precision": "address"
+    },
+    "website": "https://www.yaadcycles.com",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "road",
+      "gravel",
+      "track",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "custom-build"
+    ],
+    "summary": "Small frame workshop in Stuttgart, registered with the Stuttgart chamber of crafts, building one-off steel frames and forks, mostly fillet-brazed, and complete bikes. Documented builds include a road bike for a rider over 2 m, a lugged cyclocross frame, a track frame and a step-through, using Columbus tubing.",
+    "uncertain": "Founding year not published; no prices on the site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "yaadcycles imprint",
+        "url": "https://www.yaadcycles.com/imprint"
+      },
+      {
+        "name": "yaadcycles manufacturing",
+        "url": "https://www.yaadcycles.com/manufacturing-2"
+      },
+      {
+        "name": "Stahlrahmen-Bikes: yaadcycles feature (2021)",
+        "url": "https://stahlrahmen-bikes.de/bikes/staehlerner-leichtbau-aus-stuttgart-von-yaad"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bluecraft-bikes",
+    "name": "Bluecraft Bikes",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Waldenbuch",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 48.638,
+      "lon": 9.132,
+      "precision": "city"
+    },
+    "website": "https://www.bluecraftbikes.de",
+    "founded": 2014,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "mtb",
+      "gravel",
+      "touring",
+      "urban"
+    ],
+    "priceNote": "Hardtail: ab € 1600 (Rahmen mit Custom-Geometrie)",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "One-person frame building business founded in 2014, making CrMo steel frames to the rider's measurements in its own workshop between Stuttgart and Tübingen: hardtails, full-suspension MTB frames, gravel and touring bikes and cargo bikes. Also repairs and modifies existing steel frames.",
+    "uncertain": "Impressum gives the business address in Waldenbuch and notes the workshop is in Dettenhausen (appointments only). Street address left out: the published address appears to be a private residence.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bluecraft Bikes Impressum",
+        "url": "https://www.bluecraftbikes.de/about/"
+      },
+      {
+        "name": "Bluecraft Bikes about",
+        "url": "https://www.bluecraftbikes.de/%C3%BCber-bluecraft/"
+      },
+      {
+        "name": "Bluecraft Bikes prices",
+        "url": "https://www.bluecraftbikes.de/preise/preise/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "portus-cycles",
+    "name": "portus cycles",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Efringen-Kirchen",
+    "address": {
+      "street": "Beim Breitenstein 26 / 2",
+      "postalCode": "79588",
+      "source": "https://portus-cycles.de/ueber-uns/"
+    },
+    "geo": {
+      "lat": 47.65476,
+      "lon": 7.56736,
+      "precision": "address"
+    },
+    "website": "https://portus-cycles.de",
+    "founded": 2015,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": "Kander – Rahmenset 1.250,00 €",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "custom-build"
+    ],
+    "summary": "Small steel-frame workshop in southern Baden (a brand of ekone GmbH) that welds, brazes, machines and powder-coats frames in-house. Offers steel gravel bikes (Kander, Oder), compact e-cargo bikes and full custom frames with individual geometry; also builds prototypes and small series for the bike industry since 2015.",
+    "uncertain": "Company seat per Impressum is ekone GmbH, Reibmattenstr. 3, 79591 Eimeldingen; address used is the workshop address published on the site. Older press places its development lab in Pforzheim.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "portus cycles about / address",
+        "url": "https://portus-cycles.de/ueber-uns/"
+      },
+      {
+        "name": "portus cycles Impressum",
+        "url": "https://portus-cycles.de/impressum"
+      },
+      {
+        "name": "portus cycles custom frames",
+        "url": "https://portus-cycles.de/individualanfertigung/"
+      },
+      {
+        "name": "portus cycles bikes and framesets",
+        "url": "https://portus-cycles.de/bikes/"
+      },
+      {
+        "name": "BIKE: MTB frames built in Europe",
+        "url": "https://www.bike-magazin.de/magazin/hintergruende/update-fahrradrahmen-diese-mtb-rahmen-werden-in-europa-gebaut/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bendixen-rahmenbau",
+    "name": "Bendixen Rahmenbau",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Freiburg im Breisgau",
+    "address": {
+      "street": "Reutebachgasse 11a",
+      "postalCode": "79108",
+      "source": "https://www.bendixen-bikes.de/index.php%EF%B9%96id=14.html"
+    },
+    "geo": {
+      "lat": 48.02302,
+      "lon": 7.86013,
+      "precision": "address"
+    },
+    "website": "https://www.bendixen-bikes.de",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel",
+      "touring",
+      "urban"
+    ],
+    "priceNote": "AB 1100,- (Maßrahmen aus Columbus Zona Rohr)",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "repair"
+    ],
+    "summary": "Freiburg frame builder making one-off steel frames and bikes to customer measurements, TIG-welded or fillet-brazed: MTB, road, cyclocross, commuter and touring frames, including Rohloff and S&S coupler options. Trained in the Wiesmann workshop; also does repairs, prototypes and small series for other brands. Workshop is in the Tout Terrain building in Gundelfingen.",
+    "uncertain": "Website news last updated December 2020 (stating frame building continues); current activity in 2025/2026 not independently confirmed. Price example may be dated.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bendixen Impressum",
+        "url": "https://www.bendixen-bikes.de/index.php%EF%B9%96id=14.html"
+      },
+      {
+        "name": "Bendixen contact / workshop address",
+        "url": "https://www.bendixen-bikes.de/index.php%EF%B9%96id=15.html"
+      },
+      {
+        "name": "Bendixen about",
+        "url": "https://www.bendixen-bikes.de/ueber-mich.html"
+      },
+      {
+        "name": "Bendixen products and prices",
+        "url": "https://www.bendixen-bikes.de/produkte.html"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "velotraum",
+    "name": "velotraum",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Weil der Stadt",
+    "address": {
+      "street": "Daimlerstraße 8",
+      "postalCode": "71263",
+      "source": "https://velotraum.de/impressum"
+    },
+    "geo": {
+      "lat": 48.7573,
+      "lon": 8.87216,
+      "precision": "address"
+    },
+    "website": "https://velotraum.de",
+    "founded": 1996,
+    "materials": [
+      "aluminium",
+      "steel"
+    ],
+    "disciplines": [
+      "touring",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": "ab 3.120 EUR",
+    "brands": [],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "custom-build",
+      "bike-fitting",
+      "wheel-building"
+    ],
+    "summary": "Touring, gravel, city and e-bike maker west of Stuttgart (30 years in 2026). Each bike is built to order: frames are prepared and finished in Weil der Stadt, coated in a chosen colour and assembled by one mechanic; wheels are built in-house. Sizing and ergonomics consultation with Smartfit body scanning; the Speedster Cr.30 is a 30-piece CrMo steel edition.",
+    "uncertain": "Frames are machined, finished and assembled in Weil der Stadt, but where the frames are welded is not stated on the site. Aluminium for the main models is not confirmed on the site; steel is confirmed for the Speedster Cr. Price 'ab 3.120 EUR' is from the Finder model page.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "velotraum Impressum",
+        "url": "https://velotraum.de/impressum"
+      },
+      {
+        "name": "velotraum about",
+        "url": "https://velotraum.de/ueber-uns"
+      },
+      {
+        "name": "velotraum 30 years / Speedster Cr.30",
+        "url": "https://velotraum.de/30-jahre-sonderseite"
+      },
+      {
+        "name": "velotraum Finder",
+        "url": "https://velotraum.de/modelle/abenteuer/finder"
+      },
+      {
+        "name": "velotraum bike fitting (Smartfit)",
+        "url": "https://velotraum.de/magazin/detail/bike-fitting-bike-sizing-passt-das-rad-an-dich-an-nicht-umgekehrt"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "cheetah-bikes",
+    "name": "Cheetah Bikes",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Gingen an der Fils",
+    "address": {
+      "street": "Hindenburgstr. 174",
+      "postalCode": "73333",
+      "source": "https://www.cheetah.de/impressum"
+    },
+    "geo": {
+      "lat": 48.65368,
+      "lon": 9.78176,
+      "precision": "address"
+    },
+    "website": "https://www.cheetah.de",
+    "founded": 1998,
+    "materials": [
+      "aluminium"
+    ],
+    "disciplines": [
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-paint",
+      "custom-build"
+    ],
+    "summary": "Small mountain bike maker in the Fils valley, active since 1998, designing its own aluminium hardtail and full-suspension frames (enduro hardtail, all-mountain and touring fullies, Pinion and Rohloff options). Frames are welded by a German contract welder, powder-coated in over 150 RAL colours and finish-machined in-house.",
+    "uncertain": "Welding is done by a contracted specialist firm, not in-house; its location is described only as Germany.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cheetah Impressum",
+        "url": "https://www.cheetah.de/impressum"
+      },
+      {
+        "name": "Cheetah home",
+        "url": "https://www.cheetah.de/"
+      },
+      {
+        "name": "Cheetah: how a Cheetah is made",
+        "url": "https://www.cheetah.de/so-entsteht-ein-cheetah"
+      },
+      {
+        "name": "BIKE: MTB frames built in Europe",
+        "url": "https://www.bike-magazin.de/magazin/hintergruende/update-fahrradrahmen-diese-mtb-rahmen-werden-in-europa-gebaut/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bernds",
+    "name": "Bernds",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Überlingen",
+    "address": {
+      "street": "Askaniaweg 8",
+      "postalCode": "88662",
+      "source": "https://bernds.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.75834,
+      "lon": 9.18251,
+      "precision": "address"
+    },
+    "website": "https://bernds.de",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "urban",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-build"
+    ],
+    "summary": "Lake Constance maker of compact and folding bikes, folding tandems and cargo variants, with steel frames handmade in its own workshop. Bikes are built to order for riders from 1.40 m to 2.10 m using different seat and stem post lengths.",
+    "uncertain": "Founding year not stated on the site; niche (folding/compact) rather than road or MTB.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bernds Impressum",
+        "url": "https://bernds.de/impressum/"
+      },
+      {
+        "name": "Bernds home",
+        "url": "https://bernds.de"
+      },
+      {
+        "name": "Bernds: buying from home",
+        "url": "https://bernds.de/bernds-einfach-von-zu-hause-aus-kaufen/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "maferro",
+    "name": "Maferro",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": "Johann-Clanze-Str. 64",
+      "postalCode": "81369",
+      "source": "https://www.maferro.de/impressum"
+    },
+    "geo": {
+      "lat": 48.11306,
+      "lon": 11.52778,
+      "precision": "address"
+    },
+    "website": "https://www.maferro.de",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "road",
+      "urban",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry"
+    ],
+    "summary": "One-person workshop in Munich building made-to-measure steel bicycle frames. The site offers an online frame configurator and shows customer projects such as a steel road frame with carbon parts and a commuter/tourer; the builder is registered as a metalworker with the Munich chamber of crafts.",
+    "uncertain": "Founding year not published; parts of the site are marked as still under construction and the footer shows 2024, so current order intake was not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Maferro",
+        "url": "https://www.maferro.de"
+      },
+      {
+        "name": "Maferro Impressum",
+        "url": "https://www.maferro.de/impressum"
+      },
+      {
+        "name": "Maferro customer projects",
+        "url": "https://www.maferro.de/projekte"
+      },
+      {
+        "name": "bike-x.de: Rahmenbau guide (Maferro listed)",
+        "url": "https://www.bike-x.de/rennrad/ratgeber/rahmenbau/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bluethner-rahmenbau",
+    "name": "Blüthner Fahrradrahmenbau",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Fürth",
+    "address": {
+      "street": "Wacholderweg 2",
+      "postalCode": "90768",
+      "source": "https://www.bluethner-rahmenbau.de/kontakt/"
+    },
+    "geo": {
+      "lat": 49.52326,
+      "lon": 10.9617,
+      "precision": "address"
+    },
+    "website": "https://www.bluethner-rahmenbau.de",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "touring",
+      "road",
+      "urban",
+      "mtb"
+    ],
+    "priceNote": "beginnen die Preise für einen Rahmen mit Gabel bei etwa 1800 Euro",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "repair"
+    ],
+    "summary": "Small frame-building workshop in the Nuremberg/Erlangen area making custom steel frames, mostly brazed with or without lugs and largely with hand tools, one bike at a time. Focus on touring bikes and randonneurs, road, trekking, city and hardtail frames, plus frame repairs. Registered with the Mittelfranken chamber of crafts as a frame builder.",
+    "uncertain": "The contact page says the order book is currently full and new orders are accepted only to a very limited extent; the workshop has no fixed opening hours (appointments only).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Blüthner Fahrradrahmenbau",
+        "url": "https://www.bluethner-rahmenbau.de"
+      },
+      {
+        "name": "Blüthner contact/Impressum",
+        "url": "https://www.bluethner-rahmenbau.de/kontakt/"
+      },
+      {
+        "name": "Blüthner Rahmenbau",
+        "url": "https://www.bluethner-rahmenbau.de/rahmenbau/"
+      },
+      {
+        "name": "Blüthner about",
+        "url": "https://www.bluethner-rahmenbau.de/ueber-mich/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "rabbit-cycles",
+    "name": "Rabbit Cycles",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Wielenbach",
+    "address": {
+      "street": "Nelkenstr. 17",
+      "postalCode": "82407",
+      "source": "https://www.rabbit.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.873934,
+      "lon": 11.162075,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (street level)."
+    },
+    "website": "https://www.rabbit.de",
+    "founded": null,
+    "materials": [
+      "titanium"
+    ],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry"
+    ],
+    "summary": "Titanium specialist in Upper Bavaria that has built titanium frames and parts for over 30 years, from conventional welded frames to 3D-printed titanium frames and components. Range covers road (disc and rim), gravel/all-road, a 29er MTB/gravel cruiser and commuters, some with Rohloff or Pinion; custom geometries on request. Also makes titanium stems, seatposts and bottle cages.",
+    "uncertain": "The site says 'Designed in Bayern' but does not state where frames are welded; founding year not given (only 'over 30 years').",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Rabbit Cycles",
+        "url": "https://www.rabbit.de"
+      },
+      {
+        "name": "Rabbit Cycles Impressum",
+        "url": "https://www.rabbit.de/impressum/"
+      },
+      {
+        "name": "Rabbit Cycles products",
+        "url": "https://www.rabbit.de/unsere-produkte/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "einhorn-bikes",
+    "name": "einhorn bikes",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Samerberg",
+    "address": {
+      "street": "Samerstraße 11",
+      "postalCode": "83122",
+      "source": "https://einhorn-bikes.de/contact/"
+    },
+    "geo": {
+      "lat": 47.78182,
+      "lon": 12.21425,
+      "precision": "address"
+    },
+    "website": "https://einhorn-bikes.de",
+    "founded": 2009,
+    "materials": [
+      "steel",
+      "titanium",
+      "carbon",
+      "aluminium"
+    ],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry",
+      "custom-build"
+    ],
+    "summary": "Custom bike maker from the Rosenheim area (company seat Samerberg) that designs made-to-measure road, gravel, Pinion and 29er MTB bikes in steel, stainless steel, titanium, aluminium and carbon. Frames are hand-made to its specifications by partner builders in Germany and Italy; bikes are built up and fitted in its own workshop. Over 300 bikes built since 2009.",
+    "uncertain": "einhorn does not weld frames itself; frames come from partner builders in Germany and Italy (only the build-up is done in-house). The site mentions both Rosenheim and a Munich workshop; the Impressum address is in Samerberg.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "einhorn bikes",
+        "url": "https://einhorn-bikes.de"
+      },
+      {
+        "name": "einhorn bikes contact/Impressum",
+        "url": "https://einhorn-bikes.de/contact/"
+      },
+      {
+        "name": "einhorn bikes about",
+        "url": "https://einhorn-bikes.de/about/"
+      },
+      {
+        "name": "bike-x.de: Rahmenbau guide (einhorn listed)",
+        "url": "https://www.bike-x.de/rennrad/ratgeber/rahmenbau/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "alonukis-frameworks",
+    "name": "Alonukis Frameworks",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Murnau am Staffelsee",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 47.68,
+      "lon": 11.2,
+      "precision": "city"
+    },
+    "website": "https://www.alonukisframework.com",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "mtb",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry"
+    ],
+    "summary": "Small frame-building atelier in Murnau am Staffelsee in the Bavarian Alps making custom steel frames, mainly mountain and gravel/bikepacking bikes, plus matching bags. Shown at Bespoked Dresden (2024, 2026) and Bespoked UK; its ERT endurance race frames use custom geometry per rider.",
+    "uncertain": "The website has no Impressum or address; location (Murnau am Staffelsee) is taken from The Radavist and the Murnau shop Velo Welt. Whether titanium is also offered was not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Alonukis Frameworks",
+        "url": "https://www.alonukisframework.com"
+      },
+      {
+        "name": "The Radavist: 2026 Bespoked Dresden 04",
+        "url": "https://theradavist.com/2026-bespoked-dresden-04"
+      },
+      {
+        "name": "The Radavist: 2024 Bespoked Dresden part 02",
+        "url": "https://theradavist.com/2024-bespoked-dresden-part-02-alonukis-don-sebastiano-dyed-in-the-wool-huhn-meerglas-memento-milli-monopole-purple-dog-stolen-garage-true-love-tune"
+      },
+      {
+        "name": "Velo Welt Murnau",
+        "url": "https://velo-gap.de/"
+      },
+      {
+        "name": "BIKEPACKING.com: Alonukis sponsored riders",
+        "url": "https://bikepacking.com/news/alonukis-sponsored-riders/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bam-original",
+    "name": "BAM Original",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": "Brudermühlstr. 18",
+      "postalCode": "81371",
+      "source": "https://bam-original.com/home/impressum/"
+    },
+    "geo": {
+      "lat": 48.11261,
+      "lon": 11.55121,
+      "precision": "address"
+    },
+    "website": "https://bam-original.com",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "urban",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "frame-building-course",
+      "custom-geometry",
+      "custom-build"
+    ],
+    "summary": "Weekend workshops in Munich (also Ingolstadt and Cologne) in which participants build their own bamboo bicycle frame, with carbon-reinforced joints and aluminium inserts, to geometry set from their measurements beforehand. Road, city and mountain bike frames; on request the frame is completed into a rideable bike. Started at an LMU Munich start-up competition.",
+    "uncertain": "Bamboo is not in the materials list, so materials is left empty. Workshop prices and current dates are not shown on the site without the booking system; founding year not published.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "BAM Original",
+        "url": "https://bam-original.com/"
+      },
+      {
+        "name": "BAM Original Impressum",
+        "url": "https://bam-original.com/home/impressum/"
+      },
+      {
+        "name": "BAM Original booking",
+        "url": "https://bam-original.com/home/der-workshop/anmeldung/"
+      },
+      {
+        "name": "BAM Original about",
+        "url": "https://bam-original.com/home/ueber-bam/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "liny-bikes",
+    "name": "LINY",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Bayreuth",
+    "address": {
+      "street": "Rupprechtstraße 30",
+      "postalCode": "95444",
+      "source": "https://liny-bikes.de/impressum/"
+    },
+    "geo": {
+      "lat": 49.94149,
+      "lon": 11.56449,
+      "precision": "address"
+    },
+    "website": "https://liny-bikes.de",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "urban",
+      "gravel",
+      "touring"
+    ],
+    "priceNote": "LINY One Gravel Edition ab 4.700,00 €",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "custom-paint",
+      "repair"
+    ],
+    "summary": "Small Bayreuth brand making long-life steel bikes with Pinion gearboxes for everyday use and gravel touring, with a 7-year warranty and a take-back programme. Frames are hand-welded in Germany from Italian tubing and powder-coated in Bayreuth in any RAL colour; bikes are also configured individually and serviced in its own workshop.",
+    "uncertain": "Frames are welded by a partner in Düsseldorf, not in Bavaria; design, coating and assembly are in Bayreuth. Founding year not stated on the site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "LINY",
+        "url": "https://liny-bikes.de"
+      },
+      {
+        "name": "LINY Impressum",
+        "url": "https://liny-bikes.de/impressum/"
+      },
+      {
+        "name": "LINY One Gravel Edition",
+        "url": "https://liny-bikes.de/produkt/liny-one-gravel-edition/"
+      },
+      {
+        "name": "BIKE: These MTB frames are built in Europe",
+        "url": "https://www.bike-magazin.de/magazin/hintergruende/update-fahrradrahmen-diese-mtb-rahmen-werden-in-europa-gebaut/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "huhn-cycles",
+    "name": "HUHN cycles",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Bischofsgrün",
+    "address": {
+      "street": "Hedlerreuth 83",
+      "postalCode": "95493",
+      "source": "https://huhncycles.com/policies/legal-notice"
+    },
+    "geo": {
+      "lat": 50.06031,
+      "lon": 11.79641,
+      "precision": "address"
+    },
+    "website": "https://huhncycles.com",
+    "founded": 2011,
+    "materials": [
+      "steel",
+      "titanium"
+    ],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": "CHABO Steel Full-Suspension Trail Frame €3.200,00",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Steel specialist in the Fichtelgebirge building mountain bike frames by hand since 2011, known for 3D-printed metal lugs (Moorhuhn, La Fleche) and the Chabo steel full-suspension trail frame (Reynolds 853), which won best MTB at Bespoked Dresden 2024. Also offers design and engineering work for other bike brands (HUHN WORKS).",
+    "uncertain": "The Chabo was shown as sold out; one media report says Chabo series frames are produced by a partner workshop in Berlin. Custom geometry is not offered explicitly on the site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "HUHN cycles",
+        "url": "https://huhncycles.com/"
+      },
+      {
+        "name": "HUHN cycles legal notice",
+        "url": "https://huhncycles.com/policies/legal-notice"
+      },
+      {
+        "name": "HUHN cycles about",
+        "url": "https://huhncycles.com/pages/about"
+      },
+      {
+        "name": "BIKE: Hausbesuch bei Huhn Cycle (2025)",
+        "url": "https://www.bike-magazin.de/fahrraeder/mountainbike/trail-bikes/hausbesuch-bei-huhn-cycle-was-kann-ralfs-trailbike-aus-stahl/"
+      },
+      {
+        "name": "BIKEPACKING.com: Huhn Chabo preorders",
+        "url": "https://bikepacking.com/news/made-in-germany-huhn-chabo/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "maxx-bikes",
+    "name": "MAXX Bikes",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Rosenheim",
+    "address": {
+      "street": "Theodor-Gietl-Str. 1",
+      "postalCode": "83026",
+      "source": "https://www.maxx.de/de/impressum.php"
+    },
+    "geo": {
+      "lat": 47.84626,
+      "lon": 12.13671,
+      "precision": "address"
+    },
+    "website": "https://www.maxx.de",
+    "founded": 1993,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "gravel",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "custom-paint",
+      "wheel-building"
+    ],
+    "summary": "Rosenheim bike maker building every bike to order since 1993 through an online configurator: MTB, gravel, trekking, fat and cargo bikes and e-bikes, also frame kits. Each frame is powder-coated in the customer's colour in its own Rosenheim plant, wheels are built in-house and bikes are assembled there.",
+    "uncertain": "The site does not say where frames are welded (likely not in Germany); included as a small-batch build-to-order maker, not a frame builder. Large share of the range is e-bikes. Frame materials not verified.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "MAXX Bikes",
+        "url": "https://www.maxx.de/"
+      },
+      {
+        "name": "MAXX about us",
+        "url": "https://www.maxx.de/de/ueber_uns/index.php"
+      },
+      {
+        "name": "MAXX Impressum",
+        "url": "https://www.maxx.de/de/impressum.php"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "anthrotech",
+    "name": "AnthroTech",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Eckental",
+    "address": {
+      "street": "Rothenbergstr. 7",
+      "postalCode": "90542",
+      "source": "https://www.anthrotech.de/impressum/impressum.html"
+    },
+    "geo": {
+      "lat": 49.59857,
+      "lon": 11.22286,
+      "precision": "address"
+    },
+    "website": "https://www.anthrotech.de",
+    "founded": 1993,
+    "materials": [],
+    "disciplines": [
+      "touring",
+      "urban"
+    ],
+    "priceNote": "Trike (Nexus 8-Gang, hydraulische Scheibenbremse, 42Z., Schutzbleche, breiter Gepäckträger, Beleuchtung) 3780,- €",
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-paint"
+    ],
+    "summary": "Maker of recumbent trikes near Nuremberg since 1993. Metalworking, welding, wheel building and final assembly are done in-house in Eckental, laser cutting and powder coating by firms in the region. Options include tandem, XXL and XS frames, raised seat, Rohloff or enviolo hubs, e-assist and custom colours.",
+    "uncertain": "Recumbent trikes only; frame materials are not stated on the site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "AnthroTech",
+        "url": "https://www.anthrotech.de/"
+      },
+      {
+        "name": "AnthroTech Fertigung",
+        "url": "https://www.anthrotech.de/fertigung/fertigung.html"
+      },
+      {
+        "name": "AnthroTech Preise",
+        "url": "https://www.anthrotech.de/preise/preise.html"
+      },
+      {
+        "name": "AnthroTech Impressum",
+        "url": "https://www.anthrotech.de/impressum/impressum.html"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "selemma-cycles",
+    "name": "Selemma Cycles",
+    "type": "builder",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Oberstdorf",
+    "address": {
+      "street": "Weststrasse 23a",
+      "postalCode": "87561",
+      "source": "https://selemma.cc/contact.html"
+    },
+    "geo": {
+      "lat": 47.40894,
+      "lon": 10.27408,
+      "precision": "address"
+    },
+    "website": "https://selemma.cc",
+    "founded": null,
+    "materials": [
+      "steel"
+    ],
+    "disciplines": [
+      "road",
+      "mtb",
+      "touring",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [],
+    "services": [
+      "custom-geometry"
+    ],
+    "summary": "One-off steel frames hand-made in the Allgäu (Oberstdorf). Each frame concept, geometry and tube selection is worked out with the rider for road, MTB, touring, gravel or e-bike use, using thin-walled, individually shaped tubes.",
+    "uncertain": "The Impressum gives Weststrasse 23 while the contact page gives Weststrasse 23a. The site shows no dates, so activity in 2025/2026 could not be confirmed beyond the site being online.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Selemma Cycles",
+        "url": "https://selemma.cc"
+      },
+      {
+        "name": "Selemma contact",
+        "url": "https://selemma.cc/contact.html"
+      },
+      {
+        "name": "Selemma Impressum",
+        "url": "https://selemma.cc/imprint.html"
+      },
+      {
+        "name": "The Framebuilders list",
+        "url": "https://theframebuilders.com/list/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "specialized-stuttgart-herrenberg",
+    "name": "Specialized Stuttgart",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Herrenberg",
+    "address": {
+      "street": "Grünewaldstraße 6",
+      "postalCode": "71083",
+      "source": "https://specialized-stuttgart.de/specialized-impressum/"
+    },
+    "geo": {
+      "lat": 48.57616,
+      "lon": 8.88068,
+      "precision": "address"
+    },
+    "website": "https://specialized-stuttgart.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized"
+    ],
+    "fittingSystems": [
+      "Retül"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Specialized store in Herrenberg-Gültstein, south-west of Stuttgart, run by H-S-M Holczer Radsport-Marketing GmbH. It offers bike fitting with the Retül system, including Retül Vantage 3D motion capture, plus a workshop. The company is listed in the Retül fitter directory.",
+    "uncertain": "The Retül directory lists the company as H-S-M Holczer Radsport with an older Herrenberg address (Cranachstr. 15); the shop's own Impressum gives Grünewaldstraße 6, Herrenberg-Gültstein. Specialized flagship status not checked in the Specialized store finder (JS-only).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Specialized Stuttgart: Bikefitting mit Retül",
+        "url": "https://specialized-stuttgart.de/specialized-bikefitting/"
+      },
+      {
+        "name": "Specialized Stuttgart: Impressum",
+        "url": "https://specialized-stuttgart.de/specialized-impressum/"
+      },
+      {
+        "name": "Retül fitter search (Germany)",
+        "url": "https://scheduler.retul.com/search/?country=DE"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "neckar-bike-freiberg",
+    "name": "Neckar-Bike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Freiberg am Neckar",
+    "address": {
+      "street": "Bahnhofstraße 41",
+      "postalCode": "71691",
+      "source": "https://www.neckar-bike.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 48.92991,
+      "lon": 9.19534,
+      "precision": "address"
+    },
+    "website": "https://www.neckar-bike.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Storck",
+      "Basso",
+      "Bianchi",
+      "Lightweight"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Road and gravel shop in Freiberg am Neckar (Heutingsheim), north of Stuttgart. It states it is an authorised Colnago, Bianchi, Storck, Basso and Mavic dealer, sells Lightweight and ENVE wheels, links the Colnago configurator and offers its own component configurator for individual builds.",
+    "uncertain": "No bike-fitting service found on the site; custom build inferred from the online configurator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Neckar-Bike home page",
+        "url": "https://www.neckar-bike.de/"
+      },
+      {
+        "name": "Neckar-Bike: Marken",
+        "url": "https://www.neckar-bike.de/marken.asp"
+      },
+      {
+        "name": "Neckar-Bike: Impressum",
+        "url": "https://www.neckar-bike.de/impressum.asp"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "biwakschachtel-tuebingen",
+    "name": "Biwakschachtel Bikeladen",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Tübingen",
+    "address": {
+      "street": "Marktgasse 17",
+      "postalCode": "72070",
+      "source": "https://www.biwakschachtel-tuebingen.de/impressum/"
+    },
+    "geo": {
+      "lat": 48.521,
+      "lon": 9.05319,
+      "precision": "address"
+    },
+    "website": "https://www.biwakschachtel-tuebingen.de/bikeladen/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley",
+      "Eddy Merckx",
+      "Patria"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike branch of the Tübingen outdoor retailer Biwakschachtel, in the old town (Haaggasse 43). It sells Ridley and Eddy Merckx road and gravel bikes alongside Patria touring bikes, and offers bike sizing and bike fitting on a smartFIT measuring station, also for bikes bought elsewhere.",
+    "uncertain": "Address is the company's registered head office (Marktgasse 17); the bike shop itself is at Haaggasse 43 per the site footer.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Biwakschachtel: Bikeladen",
+        "url": "https://www.biwakschachtel-tuebingen.de/bikeladen/"
+      },
+      {
+        "name": "Biwakschachtel: Bikefitting",
+        "url": "https://www.biwakschachtel-tuebingen.de/bikefitting/"
+      },
+      {
+        "name": "Biwakschachtel: Ridley",
+        "url": "https://www.biwakschachtel-tuebingen.de/marken/ridley/"
+      },
+      {
+        "name": "Biwakschachtel: Impressum",
+        "url": "https://www.biwakschachtel-tuebingen.de/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "radsport-reichel-biberach",
+    "name": "Radsport Reichel",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Biberach an der Riß",
+    "address": {
+      "street": "Kolpingstraße 21",
+      "postalCode": "88400",
+      "source": "https://www.radsportreichel.de/impressum/"
+    },
+    "geo": {
+      "lat": 48.09495,
+      "lon": 9.7877,
+      "precision": "address"
+    },
+    "website": "https://www.radsportreichel.de/",
+    "founded": 1978,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Ridley",
+      "Pegoretti",
+      "Cinelli",
+      "Eddy Merckx",
+      "Patria"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Family-run bike shop in Biberach, founded in 1978. It sells road and gravel bikes from Pegoretti, Cinelli, Colnago, Daccordi, Eddy Merckx and Ridley, plus Patria touring bikes, and offers position consultations, a measurement on a Patria Velochecker and a guided position ride on the road bike.",
+    "uncertain": "Fitting uses a Velochecker measurement rather than one of the certified systems; authorised-dealer status for Colnago and Ridley is stated only as brands carried.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport Reichel home page",
+        "url": "https://www.radsportreichel.de/"
+      },
+      {
+        "name": "Radsport Reichel: Impressum",
+        "url": "https://www.radsportreichel.de/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "fahrradbar-laupheim",
+    "name": "Fahrradbar",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Laupheim",
+    "address": {
+      "street": "Zeppelinstraße 39",
+      "postalCode": "88471",
+      "source": "https://www.fahrradbar.de/impressum"
+    },
+    "geo": {
+      "lat": 48.22124,
+      "lon": 9.87302,
+      "precision": "address"
+    },
+    "website": "https://www.fahrradbar.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Specialized",
+      "Santa Cruz",
+      "Orbea",
+      "Focus"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Shop and workshop in Laupheim (district of Biberach), south-west of Ulm. Its online stock includes Cervélo, Specialized (including Tarmac SL9), Santa Cruz, Orbea and Focus bikes, and it offers static and dynamic bike fitting, ergonomics advice and cleat set-up.",
+    "uncertain": "Fitting system not named on the site; brands taken from current stock listings, dealer authorisation not confirmed in brand locators.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Fahrradbar home page",
+        "url": "https://www.fahrradbar.de/"
+      },
+      {
+        "name": "Fahrradbar: Bikefitting",
+        "url": "https://www.fahrradbar.de/bikefitting"
+      },
+      {
+        "name": "Fahrradbar: Impressum",
+        "url": "https://www.fahrradbar.de/impressum"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "freeride-mountain-schorndorf",
+    "name": "Freeride Mountain",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Schorndorf",
+    "address": {
+      "street": "Gottlob-Bauknecht-Straße 4",
+      "postalCode": "73614",
+      "source": "https://laden.freeride-mountain.com/rechtliches/impressum/"
+    },
+    "geo": {
+      "lat": 48.80969,
+      "lon": 9.5367,
+      "precision": "address"
+    },
+    "website": "https://laden.freeride-mountain.com/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Yeti",
+      "Pivot",
+      "Giant",
+      "Mondraker",
+      "Merida"
+    ],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike and snowboard shop in Schorndorf (Rems valley) with a mountain-bike focus. Its brand list includes Yeti and Pivot alongside Giant, Mondraker and Merida, and it offers body measurement and bike fitting using bikefitting.com software, with fitting packages for existing bikes.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Freeride Mountain: Marken",
+        "url": "https://laden.freeride-mountain.com/marken/"
+      },
+      {
+        "name": "Freeride Mountain: Ergonomie & Bikefitting",
+        "url": "https://laden.freeride-mountain.com/katalog/kategorie/ergonomie/"
+      },
+      {
+        "name": "Freeride Mountain: Impressum",
+        "url": "https://laden.freeride-mountain.com/rechtliches/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "extrabike-stuttgart",
+    "name": "extrabike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Stuttgart",
+    "address": {
+      "street": "Glemsgaustraße 24",
+      "postalCode": "70499",
+      "source": "https://www.extrabike.de/impressum"
+    },
+    "geo": {
+      "lat": 48.81586,
+      "lon": 9.11117,
+      "precision": "address"
+    },
+    "website": "https://www.extrabike.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Rotwild",
+      "Mondraker",
+      "NS Bikes",
+      "Stevens"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Stuttgart-Weilimdorf selling Colnago road bikes alongside Rotwild, Mondraker, NS Bikes and Stevens, with a workshop.",
+    "uncertain": "Colnago authorisation stated only as a brand carried.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "extrabike home page",
+        "url": "https://www.extrabike.de/"
+      },
+      {
+        "name": "extrabike: Impressum",
+        "url": "https://www.extrabike.de/impressum"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikesnboards-stuttgart",
+    "name": "Bikesnboards Stuttgart",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Stuttgart",
+    "address": {
+      "street": "Tübinger Straße 55",
+      "postalCode": "70178",
+      "source": "https://www.bikesnboards.de/stuttgart"
+    },
+    "geo": {
+      "lat": 48.76932,
+      "lon": 9.17207,
+      "precision": "address"
+    },
+    "website": "https://www.bikesnboards.de/stuttgart",
+    "founded": 2009,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Stuttgart branch (since 2009) of the regional Bikesnboards chain headquartered in Schorndorf. The branch offers bike fitting with the Smartfit system; the chain also sells Santa Cruz mountain bikes.",
+    "uncertain": "Santa Cruz is listed in the chain's online shop; not confirmed which branches stock it. Address from the branch page; the Impressum gives the company seat An der Mauer 1, 73614 Schorndorf.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikesnboards Stuttgart branch page",
+        "url": "https://www.bikesnboards.de/stuttgart"
+      },
+      {
+        "name": "Bikesnboards: Santa Cruz",
+        "url": "https://www.bikesnboards.de/fahrraeder/?brand=245"
+      },
+      {
+        "name": "Bikesnboards: Impressum",
+        "url": "https://www.bikesnboards.de/kundeninformationen/impressum/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikesnboards-ludwigsburg",
+    "name": "Bikesnboards Ludwigsburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Ludwigsburg",
+    "address": {
+      "street": "Schwieberdinger Straße 36",
+      "postalCode": "71636",
+      "source": "https://www.bikesnboards.de/ludwigsburg"
+    },
+    "geo": {
+      "lat": 48.89099,
+      "lon": 9.17981,
+      "precision": "address"
+    },
+    "website": "https://www.bikesnboards.de/ludwigsburg",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Ludwigsburg branch of the Bikesnboards chain. The chain names Ludwigsburg as one of three branches offering sizing and fitting with bikefitting.com, including cleat and saddle set-up.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikesnboards Ludwigsburg branch page",
+        "url": "https://www.bikesnboards.de/ludwigsburg"
+      },
+      {
+        "name": "Bikesnboards: Bikefitting",
+        "url": "https://www.bikesnboards.de/service/unsere-serviceleistungen/bikefitting/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikesnboards-boeblingen",
+    "name": "Bikesnboards Böblingen",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Böblingen",
+    "address": {
+      "street": "Hans-Klemm-Straße 50",
+      "postalCode": "71034",
+      "source": "https://www.bikesnboards.de/boeblingen"
+    },
+    "geo": {
+      "lat": 48.679042,
+      "lon": 8.975379,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house number normalised)."
+    },
+    "website": "https://www.bikesnboards.de/boeblingen",
+    "founded": 2025,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Böblingen branch of the Bikesnboards chain, open since March 2025 in the Hulb area. It is one of three branches offering sizing and fitting with bikefitting.com.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikesnboards Böblingen branch page",
+        "url": "https://www.bikesnboards.de/boeblingen"
+      },
+      {
+        "name": "Bikesnboards: Bikefitting",
+        "url": "https://www.bikesnboards.de/service/unsere-serviceleistungen/bikefitting/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikesnboards-waiblingen",
+    "name": "Bikesnboards Waiblingen",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Waiblingen",
+    "address": {
+      "street": "Eisentalstraße 13",
+      "postalCode": "71332",
+      "source": "https://www.bikesnboards.de/waiblingen"
+    },
+    "geo": {
+      "lat": 48.82044,
+      "lon": 9.32046,
+      "precision": "address"
+    },
+    "website": "https://www.bikesnboards.de/waiblingen",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Waiblingen branch of the Bikesnboards chain. It is one of three branches offering sizing and fitting with bikefitting.com.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikesnboards Waiblingen branch page",
+        "url": "https://www.bikesnboards.de/waiblingen"
+      },
+      {
+        "name": "Bikesnboards: Bikefitting",
+        "url": "https://www.bikesnboards.de/service/unsere-serviceleistungen/bikefitting/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "alf-cycling-stuttgart",
+    "name": "alf cycling",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Stuttgart",
+    "address": {
+      "street": "Villastraße 14",
+      "postalCode": "70190",
+      "source": "https://www.alfcycling.com/impressum"
+    },
+    "geo": {
+      "lat": 48.79417,
+      "lon": 9.20302,
+      "precision": "address"
+    },
+    "website": "https://www.alfcycling.com/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Canyon"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Stuttgart bike business (alleliebenfahrrad GmbH) combining a café, a Canyon showroom and Canyon service workshop, and a fitting studio. Bike fitting uses Smartfit laser measurement with video motion analysis; sizing and follow-up sessions are also offered.",
+    "uncertain": "Qualifies through Smartfit fitting only (Canyon does not count as a top-tier dealer brand). Fitting studio location given as Neckarstraße; Impressum address is the Villastraße showroom.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "alf cycling: Bikefitting",
+        "url": "https://www.alfcycling.com/bikefitting"
+      },
+      {
+        "name": "alf cycling: Impressum",
+        "url": "https://www.alfcycling.com/impressum"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "minis-radlwelt-aalen",
+    "name": "Mini's Radlwelt",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Aalen",
+    "address": {
+      "street": "Karlstraße 49",
+      "postalCode": "73433",
+      "source": "https://minis-radlwelt.de/impressum"
+    },
+    "geo": {
+      "lat": 48.86545,
+      "lon": 10.10512,
+      "precision": "address"
+    },
+    "website": "https://minis-radlwelt.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Independent bike workshop in Aalen-Wasseralfingen with a fitting room using the SmartFit Q5 system from Radlabor, supplemented by gebiomized saddle-pressure measurement.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Mini's Radlwelt: Bike Fitting",
+        "url": "https://minis-radlwelt.de/bikefitting"
+      },
+      {
+        "name": "Mini's Radlwelt: Impressum",
+        "url": "https://minis-radlwelt.de/impressum"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "trek-bicycle-ulm",
+    "name": "Trek Bicycle Ulm",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Ulm",
+    "address": {
+      "street": "Neue Straße 52",
+      "postalCode": "89073",
+      "source": "https://www.trekbikes.com/de/de_DE/retail/ulm/"
+    },
+    "geo": {
+      "lat": 48.3969,
+      "lon": 9.98823,
+      "precision": "address"
+    },
+    "website": "https://www.trekbikes.com/de/de_DE/retail/ulm/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek Project One",
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Trek-operated store in central Ulm selling Trek, Electra, Bontrager, Diamant and Rapha, with a workshop. Trek's store page offers Project One custom bikes, which are painted and assembled to order.",
+    "uncertain": "Address from Trek's own store page; no separate Impressum for the store. No fitting service found.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Trek Bicycle Ulm store page",
+        "url": "https://www.trekbikes.com/de/de_DE/retail/ulm/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "fahr-rad-heilbronn",
+    "name": "Fahr-Rad Heilbronn",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Heilbronn",
+    "address": {
+      "street": "Am Wollhaus 18",
+      "postalCode": "74072",
+      "source": "https://fahr-rad-hn.de/impressum/"
+    },
+    "geo": {
+      "lat": 49.13837,
+      "lon": 9.22002,
+      "precision": "address"
+    },
+    "website": "https://fahr-rad-hn.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "3T",
+      "Bianchi",
+      "Lapierre",
+      "Koga"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "City-centre bike shop in Heilbronn whose brand list includes 3T, Bianchi, Lapierre, Koga, Ruff Cycles and Schindelhauer.",
+    "uncertain": "3T appears only as a logo in the shop's brand list (the brands page returns 404); not confirmed in a 3T dealer locator. Weakest entry in this slice.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Fahr-Rad Heilbronn home page",
+        "url": "https://fahr-rad-hn.de/"
+      },
+      {
+        "name": "Fahr-Rad Heilbronn: Impressum",
+        "url": "https://fahr-rad-hn.de/impressum/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radonerd-regensburg",
+    "name": "Radonerd",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Regensburg",
+    "address": {
+      "street": "Fritz-Fend-Straße 4",
+      "postalCode": "93047",
+      "source": "https://www.radonerd.cc/impressum"
+    },
+    "geo": {
+      "lat": 49.01236,
+      "lon": 12.08979,
+      "precision": "address"
+    },
+    "website": "https://www.radonerd.cc/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Factor",
+      "3T",
+      "Basso",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Regensburg shop for road, gravel and bikepacking bikes. It sells Factor, 3T, Basso and Cannondale road bikes and builds bikes to customer specification. It has a master workshop and offers bike fitting (about 3 hours, €340) and a separate size determination.",
+    "uncertain": "Fitting system not named. Custom build refers to individual set-up of bikes sold, not custom frames.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radonerd website",
+        "url": "https://www.radonerd.cc/"
+      },
+      {
+        "name": "Radonerd: Bikefitting",
+        "url": "https://www.radonerd.cc/bikefitting"
+      },
+      {
+        "name": "Radonerd: Impressum",
+        "url": "https://www.radonerd.cc/impressum"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "road-and-gravel-augsburg",
+    "name": "Road & Gravel Augsburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Augsburg",
+    "address": {
+      "street": "Berliner Allee 40",
+      "postalCode": "86153",
+      "source": "https://roadandgravel.de/impressum/"
+    },
+    "geo": {
+      "lat": 48.37194,
+      "lon": 10.91927,
+      "precision": "address"
+    },
+    "website": "https://roadandgravel.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "3T",
+      "Megamo"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Augsburg shop specialising in road and gravel bikes, with a workshop, bike fitting (€349) and custom bike builds. Its road range includes 3T (Strada Italia) and Megamo. Opening hours are limited (Thursday to Saturday), with appointments outside them.",
+    "uncertain": "Fitting system not named. Full brand list not published; opening date not confirmed on the shop's own site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Road & Gravel website",
+        "url": "https://roadandgravel.de/"
+      },
+      {
+        "name": "Road & Gravel: Bike fitting",
+        "url": "https://roadandgravel.de/bike-fitting/"
+      },
+      {
+        "name": "Road & Gravel: Rennräder",
+        "url": "https://roadandgravel.de/raeder/rennraeder/"
+      },
+      {
+        "name": "Road & Gravel: Impressum",
+        "url": "https://roadandgravel.de/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "kl-bikes-pettendorf",
+    "name": "KL Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Pettendorf",
+    "address": {
+      "street": "Martin-Klob-Str. 3",
+      "postalCode": "93186",
+      "source": "https://www.klbikes.de/impressum"
+    },
+    "geo": {
+      "lat": 49.05876,
+      "lon": 12.00478,
+      "precision": "address"
+    },
+    "website": "https://www.klbikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pivot",
+      "Yeti",
+      "Cervélo",
+      "BMC",
+      "3T",
+      "Specialized"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Regional bike retailer near Regensburg (the former Regensburg branch is now at Pettendorf) with further stores in Kelheim and Hersbruck. Strong on mountain bikes; Pivot, Yeti, Cervélo, BMC and 3T appear among its brands. Offers custom builds, suspension service and bike fitting (Bike Fitting Pro, €219).",
+    "uncertain": "Brand list taken from the company-wide brand carousel and branch text; Smartfit appears only as a logo there. Santa Cruz and Pivot locators still list the old Regensburg address (Bajuwarenstraße 10).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "KL Bikes: Pettendorf/Regensburg branch",
+        "url": "https://www.klbikes.de/filiale-regensburg"
+      },
+      {
+        "name": "KL Bikes: Bikefitting & Ergonomie",
+        "url": "https://www.klbikes.de/bikefitting-ergonomie"
+      },
+      {
+        "name": "KL Bikes: Filialen",
+        "url": "https://www.klbikes.de/filialen"
+      },
+      {
+        "name": "KL Bikes: Impressum",
+        "url": "https://www.klbikes.de/impressum"
+      },
+      {
+        "name": "Pivot dealer locator (Locally)",
+        "url": "https://www.pivotcycles.com/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "kl-bikes-kelheim",
+    "name": "KL Bikes Kelheim",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Kelheim",
+    "address": {
+      "street": "Schäfflerstraße 14",
+      "postalCode": "93309",
+      "source": "https://www.klbikes.de/filiale-kelheim"
+    },
+    "geo": {
+      "lat": 48.92049,
+      "lon": 11.88449,
+      "precision": "address"
+    },
+    "website": "https://www.klbikes.de/filiale-kelheim",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Pivot",
+      "Yeti",
+      "Cervélo"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Kelheim branch of KL Bikes, listed as a Santa Cruz dealer; the company also sells Pivot, Yeti and Cervélo and offers bike fitting.",
+    "uncertain": "Brands are company-wide; stock at this branch not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "KL Bikes: Kelheim branch",
+        "url": "https://www.klbikes.de/filiale-kelheim"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "zweirad-wuerdinger",
+    "name": "Zweirad Würdinger",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Vilshofen an der Donau",
+    "address": {
+      "street": "Kapuzinerstraße 107",
+      "postalCode": "94474",
+      "source": "https://www.wuerdinger.de/impressum"
+    },
+    "geo": {
+      "lat": 48.64117,
+      "lon": 13.17202,
+      "precision": "address"
+    },
+    "website": "https://www.wuerdinger.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Santa Cruz"
+    ],
+    "fittingSystems": [
+      "Retül"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Family-run Lower Bavarian retailer in its fourth generation, with stores in Vilshofen, Passau, Plattling and Eggenfelden. Sells Cervélo road and gravel bikes and is listed as a Santa Cruz dealer. Describes itself as an official Retül partner in Lower Bavaria and offers 3D Retül bike fitting.",
+    "uncertain": "Which store hosts the Retül fitting is not stated. Founding year not given in the text reviewed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Würdinger: Bike-Fitting mit Retül",
+        "url": "https://www.wuerdinger.de/service/ergonomie/retuel"
+      },
+      {
+        "name": "Würdinger: Unsere Geschichte",
+        "url": "https://www.wuerdinger.de/ueber-uns/geschichte"
+      },
+      {
+        "name": "Würdinger shop: Cervélo",
+        "url": "https://shop.wuerdinger.de/cervelo"
+      },
+      {
+        "name": "Würdinger: Impressum",
+        "url": "https://www.wuerdinger.de/impressum"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "heiss-das-radcenter-memmingen",
+    "name": "Heiss – Das Radcenter",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Memmingen",
+    "address": {
+      "street": "Rudolf-Diesel-Straße 18",
+      "postalCode": "87700",
+      "source": "https://www.rad-heiss.de/impressum/"
+    },
+    "geo": {
+      "lat": 48.00218,
+      "lon": 10.16815,
+      "precision": "address"
+    },
+    "website": "https://www.rad-heiss.de/",
+    "founded": 1978,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": "Normalpreis: 299,- €",
+    "brands": [],
+    "fittingSystems": [
+      "Retül"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Large Memmingen bike store (about 3,000 m²), founded in 1978 by a former road racer. Offers Retül bike fitting (standard fit about 3 hours) alongside a certified workshop, rental and leasing.",
+    "uncertain": "Top-tier brand dealership not confirmed; included for certified Retül fitting.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Heiss: RETÜL Bikefitting",
+        "url": "https://www.rad-heiss.de/service/bikefitting/"
+      },
+      {
+        "name": "Heiss: Über uns",
+        "url": "https://www.rad-heiss.de/info/ueber-uns/"
+      },
+      {
+        "name": "Heiss: Impressum",
+        "url": "https://www.rad-heiss.de/impressum/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "velovita-weissenburg",
+    "name": "Velovita Rad Sport",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Weißenburg in Bayern",
+    "address": {
+      "street": "Augsburger Str. 74",
+      "postalCode": "91781",
+      "source": "https://velovita.de/Information/Impressum/"
+    },
+    "geo": {
+      "lat": 49.01972,
+      "lon": 10.96153,
+      "precision": "address"
+    },
+    "website": "https://velovita.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "BMC",
+      "Pivot",
+      "Basso",
+      "Scott",
+      "Specialized",
+      "Orbea"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Weißenburg (Middle Franconia) whose brands include Pinarello, BMC, Pivot, Basso, Scott and Specialized. An individual bike fitting is included with every new bike, covering position and contact points.",
+    "uncertain": "Fitting system not named.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Velovita: Bike Fitting",
+        "url": "https://velovita.de/Bike-Fitting/"
+      },
+      {
+        "name": "Velovita: Marken",
+        "url": "https://velovita.de/Marken/"
+      },
+      {
+        "name": "Velovita: Impressum",
+        "url": "https://velovita.de/Information/Impressum/"
+      },
+      {
+        "name": "Pivot dealer locator (Locally)",
+        "url": "https://www.pivotcycles.com/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bicicletta-perfetta-straubing",
+    "name": "Bicicletta Perfetta",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Straubing",
+    "address": {
+      "street": "Imhoffstr. 10",
+      "postalCode": "94315",
+      "source": "https://www.bicicletta-perfetta.de/impressum-1/"
+    },
+    "geo": {
+      "lat": 48.896009,
+      "lon": 12.623665,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (street level)."
+    },
+    "website": "https://www.bicicletta-perfetta.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Basso",
+      "Simplon"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "wheel-building",
+      "repair"
+    ],
+    "summary": "Straubing workshop and shop selling Pinarello, Basso, Simplon and Conway. Offers bike fitting (saddle, bar and cleat position), suspension tuning, chain hot-waxing and cut-to-length spokes.",
+    "uncertain": "Fitting system not named. Wheel-building inferred from its spoke-making service.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bicicletta Perfetta: Unsere Marken",
+        "url": "https://www.bicicletta-perfetta.de/unsere-marken/"
+      },
+      {
+        "name": "Bicicletta Perfetta: Bikefitting",
+        "url": "https://www.bicicletta-perfetta.de/unsere-leistungen/bikefitting/"
+      },
+      {
+        "name": "Bicicletta Perfetta: Impressum",
+        "url": "https://www.bicicletta-perfetta.de/impressum-1/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bikesports-holzer-kempten",
+    "name": "Bikesports Holzer",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Kempten (Allgäu)",
+    "address": {
+      "street": "Ludwigstr. 109",
+      "postalCode": "87437",
+      "source": "https://fahrrad-holzer.de/pages/kontakt"
+    },
+    "geo": {
+      "lat": 47.70227,
+      "lon": 10.32304,
+      "precision": "address"
+    },
+    "website": "https://fahrrad-holzer.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Kempten bike shop with a VSF all-ride certified workshop. Uses the Smartfit Q2 body-scan system for bike sizing and fitting.",
+    "uncertain": "Top-tier brands not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikesports Holzer website",
+        "url": "https://fahrrad-holzer.de/"
+      },
+      {
+        "name": "Bikesports Holzer: Werkstatt",
+        "url": "https://fahrrad-holzer.de/pages/werkstatt-service"
+      },
+      {
+        "name": "Bikesports Holzer: Kontakt",
+        "url": "https://fahrrad-holzer.de/pages/kontakt"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "alpsee-bikes-immenstadt",
+    "name": "Alpsee Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Immenstadt im Allgäu",
+    "address": {
+      "street": "Rothenfelsstr. 1",
+      "postalCode": "87509",
+      "source": "https://alpsee-bikes.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.5603,
+      "lon": 10.2168,
+      "precision": "address"
+    },
+    "website": "https://alpsee-bikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pivot",
+      "Orbea"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Allgäu bike shop focused on mountain bikes, selling Pivot and Orbea, with a workshop and an ergonomics and bike-fitting service. Moved to a new location in Immenstadt in 2026.",
+    "uncertain": "Fitting system not named. Pivot locator still shows the previous address (Im Engelfeld 4).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Alpsee Bikes website",
+        "url": "https://alpsee-bikes.de/"
+      },
+      {
+        "name": "Alpsee Bikes: Impressum",
+        "url": "https://alpsee-bikes.de/impressum/"
+      },
+      {
+        "name": "Pivot dealer locator (Locally)",
+        "url": "https://www.pivotcycles.com/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "cherry-bikes-nuernberg",
+    "name": "Cherry Bikes Nürnberg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Nürnberg",
+    "address": {
+      "street": "Schleifweg 47",
+      "postalCode": "90409",
+      "source": "https://cherry-bikes.de/Kontakt"
+    },
+    "geo": {
+      "lat": 49.47125,
+      "lon": 11.08722,
+      "precision": "address"
+    },
+    "website": "https://cherry-bikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Nuremberg Specialized store and S-Works partner, selling road, gravel and mountain bikes.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Cherry Bikes: Specialized Nürnberg",
+        "url": "https://cherry-bikes.de/nuernberg/specialized/"
+      },
+      {
+        "name": "Specialized store finder: Cherry Bikes Nürnberg",
+        "url": "https://www.specialized.com/de/de/store-finder/cherry-bikes-n%C3%BCrnberg/1843949"
+      },
+      {
+        "name": "Cherry Bikes: Kontakt",
+        "url": "https://cherry-bikes.de/Kontakt"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "hoyler-bike-bayreuth",
+    "name": "Hoyler Bike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Bayreuth",
+    "address": {
+      "street": "Rathenaustr. 3–5",
+      "postalCode": "95444",
+      "source": "https://www.hoyler.bike/impressum/"
+    },
+    "geo": {
+      "lat": 49.940406,
+      "lon": 11.56473,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (street level)."
+    },
+    "website": "https://www.hoyler.bike/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Santa Cruz"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bayreuth bike shop whose brands include Cervélo and Santa Cruz, with a workshop.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Hoyler Bike website",
+        "url": "https://www.hoyler.bike/"
+      },
+      {
+        "name": "Hoyler Bike: Impressum",
+        "url": "https://www.hoyler.bike/impressum/"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "luggis-radlereck-nuernberg",
+    "name": "Luggis Radlereck",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Nürnberg",
+    "address": {
+      "street": "Rennmühlstr. 2",
+      "postalCode": "90455",
+      "source": "https://www.luggis-radlereck.de/kontakt/impressum"
+    },
+    "geo": {
+      "lat": 49.35122,
+      "lon": 11.05573,
+      "precision": "address"
+    },
+    "website": "https://www.luggis-radlereck.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Pinarello",
+      "Wilier",
+      "Basso",
+      "Bianchi",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road-focused shop in Nuremberg-Katzwang whose brands include Colnago, Pinarello, Wilier, Basso, Bianchi and Scott.",
+    "uncertain": "Brands taken from the logos on the shop's homepage.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Luggis Radlereck website",
+        "url": "https://www.luggis-radlereck.de/"
+      },
+      {
+        "name": "Luggis Radlereck: Impressum",
+        "url": "https://www.luggis-radlereck.de/kontakt/impressum"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "2-rad-hofer-gersthofen",
+    "name": "2-Rad Hofer",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Gersthofen",
+    "address": {
+      "street": "Dieselstraße 8",
+      "postalCode": "86368",
+      "source": "https://www.2-rad-hofer.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 48.42664,
+      "lon": 10.86632,
+      "precision": "address"
+    },
+    "website": "https://www.2-rad-hofer.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Gersthofen near Augsburg, listed as a Santa Cruz dealer. Offers bike fitting and seat-position analysis with the Smartfit Q4 system.",
+    "uncertain": "Santa Cruz dealership from the brand locator only; the shop's brand page lists no bike brands in text.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "2-Rad Hofer website",
+        "url": "https://www.2-rad-hofer.de/"
+      },
+      {
+        "name": "2-Rad Hofer: Bike-Fitting",
+        "url": "https://www.2-rad-hofer.de/cms-bikefitting.asp"
+      },
+      {
+        "name": "2-Rad Hofer: Impressum",
+        "url": "https://www.2-rad-hofer.de/impressum.asp"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "stephans-radwelt",
+    "name": "Stephans Radwelt",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Dörfles-Esbach",
+    "address": {
+      "street": "Ziegelei 22",
+      "postalCode": "96487",
+      "source": "https://www.stephans-radwelt.de/impressum/"
+    },
+    "geo": {
+      "lat": 50.28596,
+      "lon": 11.00625,
+      "precision": "address"
+    },
+    "website": "https://www.stephans-radwelt.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop next to Coburg, listed as a Santa Cruz dealer. Offers bike fitting in three levels, from frame-size determination to a full professional fitting.",
+    "uncertain": "Santa Cruz dealership from the brand locator. Fitting system not named.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Stephans Radwelt: Bike-Fitting",
+        "url": "https://www.stephans-radwelt.de/service/bike-fitting/"
+      },
+      {
+        "name": "Stephans Radwelt: Impressum",
+        "url": "https://www.stephans-radwelt.de/impressum/"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "derwolf-bad-neustadt",
+    "name": "DERWOLF",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Bad Neustadt an der Saale",
+    "address": {
+      "street": "Saalestraße 24",
+      "postalCode": "97616",
+      "source": "https://www.derwolf-bikes.de/impressum/"
+    },
+    "geo": {
+      "lat": 50.31733,
+      "lon": 10.20093,
+      "precision": "address"
+    },
+    "website": "https://www.derwolf-bikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Long-established bike shop in Bad Neustadt (Lower Franconia), listed as a Santa Cruz dealer. Uses a 3D body scanner with pressure measurement for bike set-up.",
+    "uncertain": "Santa Cruz dealership from the brand locator. Body-scanner system name not published.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "DERWOLF website",
+        "url": "https://www.derwolf-bikes.de/"
+      },
+      {
+        "name": "DERWOLF: Bodyscanner",
+        "url": "https://www.derwolf-bikes.de/portfolio/bodyscanner/"
+      },
+      {
+        "name": "DERWOLF: Impressum",
+        "url": "https://www.derwolf-bikes.de/impressum/"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "herobikes-rednitzhembach",
+    "name": "Herobikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Rednitzhembach",
+    "address": {
+      "street": "Pfaffenhofener Str. 10",
+      "postalCode": "91126",
+      "source": "https://www.herobikes.de/"
+    },
+    "geo": {
+      "lat": 49.28852,
+      "lon": 11.0813,
+      "precision": "address"
+    },
+    "website": "https://www.herobikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Specialized",
+      "Scott",
+      "Trek",
+      "Giant"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Store of Zweirad Gruber GmbH south of Nuremberg with an integrated Specialized Elite shop; it also sells Santa Cruz, Trek, Giant and Scott.",
+    "uncertain": "Specialized Elite status is not the S-Works tier; inclusion rests on Santa Cruz.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Herobikes website",
+        "url": "https://www.herobikes.de/"
+      },
+      {
+        "name": "Herobikes: Impressum",
+        "url": "https://www.herobikes.de/impressum"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "just-cycles-amorbach",
+    "name": "Just Cycles",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Amorbach",
+    "address": {
+      "street": "Am Bahnhof 2",
+      "postalCode": "63916",
+      "source": "https://www.just-cycles.de/impressum.php"
+    },
+    "geo": {
+      "lat": 49.64512,
+      "lon": 9.22359,
+      "precision": "address"
+    },
+    "website": "https://www.just-cycles.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Cervélo",
+      "Trek",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Amorbach (Lower Franconia) with Santa Cruz, Trek and Scott brand shops; Cervélo is also listed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Just Cycles website",
+        "url": "https://www.just-cycles.de/"
+      },
+      {
+        "name": "Just Cycles: Impressum",
+        "url": "https://www.just-cycles.de/impressum.php"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "triathlon-de-augsburg",
+    "name": "triathlon.de Shop Augsburg",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Augsburg",
+    "address": {
+      "street": "Augsburger Str. 14",
+      "postalCode": "86157",
+      "source": "https://triathlon.de/products/bike-fitting-augsburg"
+    },
+    "geo": {
+      "lat": 48.3637,
+      "lon": 10.87331,
+      "precision": "address"
+    },
+    "website": "https://triathlon.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": "Regulärer Preis: €199,00",
+    "brands": [],
+    "fittingSystems": [
+      "IDmatch"
+    ],
+    "services": [
+      "bike-fitting"
+    ],
+    "summary": "Augsburg store of the triathlon retailer triathlon.de (with a running centre). Its bike fitting for road, gravel and triathlon bikes includes an idMatch cleat fit and optional idMatch saddle measurement.",
+    "uncertain": "Address taken from the fitting page (no Augsburg Impressum). Top-tier bikes stocked in the Augsburg store not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "triathlon.de: Bike Fitting Augsburg",
+        "url": "https://triathlon.de/products/bike-fitting-augsburg"
+      },
+      {
+        "name": "triathlon.de: Impressum",
+        "url": "https://triathlon.de/policies/legal-notice"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radsport-buchstaller-hilpoltstein",
+    "name": "Radsport Buchstaller",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Hilpoltstein",
+    "address": {
+      "street": "Allersberger Str. 24",
+      "postalCode": "91161",
+      "source": "https://radsport-buchstaller.de/impressum/"
+    },
+    "geo": {
+      "lat": 49.1971,
+      "lon": 11.18776,
+      "precision": "address"
+    },
+    "website": "https://radsport-buchstaller.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": "Rennrad klassisch: 250 €",
+    "brands": [
+      "Cervélo",
+      "Pinarello",
+      "3T",
+      "Argon 18",
+      "Bianchi",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Road and triathlon shop in Hilpoltstein, near the Challenge Roth course. Sells Cervélo, Pinarello, 3T, Argon 18, Bianchi and Scott; many bikes are sold with a fitting included. Separate fittings cost €250 (road) to €300 (TT).",
+    "uncertain": "Fitting system not named. Custom build refers to its '#CUSTOMIZED' build service as advertised.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport Buchstaller website",
+        "url": "https://radsport-buchstaller.de/"
+      },
+      {
+        "name": "Radsport Buchstaller: Bike-Fitting",
+        "url": "https://radsport-buchstaller.de/bike-fitting/"
+      },
+      {
+        "name": "Radsport Buchstaller: Impressum",
+        "url": "https://radsport-buchstaller.de/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "fahrrad-dresel-hoechstadt",
+    "name": "Fahrrad Dresel",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Höchstadt an der Aisch",
+    "address": {
+      "street": "Lappacher Weg 27",
+      "postalCode": "91315",
+      "source": "https://fahrrad-dresel.de/impressum/"
+    },
+    "geo": {
+      "lat": 49.69229,
+      "lon": 10.79791,
+      "precision": "address"
+    },
+    "website": "https://fahrrad-dresel.de/",
+    "founded": 1994,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": "Bikefitting Premium (249 €)",
+    "brands": [
+      "Cervélo",
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Höchstadt an der Aisch since 1994, with a second store in Hirschaid. Brands include Cervélo and Trek; it serves road and triathlon riders and offers Light and Premium bike fittings with saddle-pressure measurement.",
+    "uncertain": "Fitting system not named.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Fahrrad Dresel website",
+        "url": "https://fahrrad-dresel.de/"
+      },
+      {
+        "name": "Fahrrad Dresel: Bike-Fitting",
+        "url": "https://fahrrad-dresel.de/bike-fitting/"
+      },
+      {
+        "name": "Fahrrad Dresel: Impressum",
+        "url": "https://fahrrad-dresel.de/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "md-bikes-ebermannstadt",
+    "name": "MD-Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Ebermannstadt",
+    "address": {
+      "street": "Am Marktpl. 9",
+      "postalCode": "91320",
+      "source": "https://md-bikes.de/policies/legal-notice"
+    },
+    "geo": {
+      "lat": 49.78037,
+      "lon": 11.18726,
+      "precision": "address"
+    },
+    "website": "https://md-bikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Orbea",
+      "Lapierre"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Ebermannstadt (Franconian Switzerland) selling Santa Cruz, Orbea and Lapierre.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "MD-Bikes website",
+        "url": "https://md-bikes.de/"
+      },
+      {
+        "name": "MD-Bikes: Impressum",
+        "url": "https://md-bikes.de/policies/legal-notice"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikes-peak-kahl",
+    "name": "Bikes Peak",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Kahl am Main",
+    "address": {
+      "street": "Zur Sandmühle 2",
+      "postalCode": "63796",
+      "source": "https://bikes-peak.com/impressum"
+    },
+    "geo": {
+      "lat": 50.07816,
+      "lon": 9.01503,
+      "precision": "address"
+    },
+    "website": "https://bikes-peak.com/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pivot"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop and workshop in Kahl am Main near Aschaffenburg, run by a master mechanic; sells Pivot mountain bikes.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikes Peak website",
+        "url": "https://bikes-peak.com/"
+      },
+      {
+        "name": "Bikes Peak: Impressum",
+        "url": "https://bikes-peak.com/impressum"
+      },
+      {
+        "name": "Pivot dealer locator (Locally)",
+        "url": "https://www.pivotcycles.com/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "kaze-bikestore-karlstein",
+    "name": "Kaze Bikestore",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Karlstein am Main",
+    "address": {
+      "street": "Auwanne 24",
+      "postalCode": "63791",
+      "source": "https://www.kaze-bikestore.de/impressum/"
+    },
+    "geo": {
+      "lat": 50.044247,
+      "lon": 9.035852,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (street level)."
+    },
+    "website": "https://www.kaze-bikestore.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Small bike store in Karlstein am Main near Aschaffenburg, listed as a Santa Cruz dealer.",
+    "uncertain": "Santa Cruz dealership from the brand locator only.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Kaze Bikestore website",
+        "url": "https://www.kaze-bikestore.de/"
+      },
+      {
+        "name": "Kaze Bikestore: Impressum",
+        "url": "https://www.kaze-bikestore.de/impressum/"
+      },
+      {
+        "name": "Santa Cruz dealer locator",
+        "url": "https://www.santacruzbicycles.com/en-de/pages/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "rll-bikes-eltmann",
+    "name": "RLL-Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Eltmann",
+    "address": {
+      "street": "Industriestraße 2",
+      "postalCode": "97483",
+      "source": "https://rll-bikes.shop/policies/legal-notice"
+    },
+    "geo": {
+      "lat": 49.98239,
+      "lon": 10.66881,
+      "precision": "address"
+    },
+    "website": "https://rll-bikes.shop/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pivot"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Eltmann between Bamberg and Schweinfurt, listed as a Pivot dealer.",
+    "uncertain": "Pivot dealership from the brand locator only; locator lists Bamberger Str. 6, the shop's Impressum gives Industriestraße 2.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "RLL-Bikes website",
+        "url": "https://rll-bikes.shop/"
+      },
+      {
+        "name": "RLL-Bikes: Impressum",
+        "url": "https://rll-bikes.shop/policies/legal-notice"
+      },
+      {
+        "name": "Pivot dealer locator (Locally)",
+        "url": "https://www.pivotcycles.com/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bike-sport-hoehn-pforzheim",
+    "name": "Bike Sport Höhn",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Pforzheim",
+    "address": {
+      "street": "Büchenbronner Str. 28",
+      "postalCode": "75172",
+      "source": "https://www.bike-sport-hoehn.de/impressum"
+    },
+    "geo": {
+      "lat": 48.88815,
+      "lon": 8.66961,
+      "precision": "address"
+    },
+    "website": "https://www.bike-sport-hoehn.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Trek",
+      "Specialized"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop in Pforzheim-Brötzingen selling Trek and Specialized. It takes appointments for configuring Trek Project One bikes and offers bike fitting alongside its workshop service.",
+    "uncertain": "Fitting system not named on the website; Specialized dealer level (S-Works/flagship) not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bike Sport Höhn home page",
+        "url": "https://www.bike-sport-hoehn.de/"
+      },
+      {
+        "name": "Bike Sport Höhn Impressum",
+        "url": "https://www.bike-sport-hoehn.de/impressum"
+      },
+      {
+        "name": "Trek retailer finder (Germany)",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/retailer/DE/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bunnyhopshop-bruchsal",
+    "name": "BunnyHopShop Radstudio Bruchsal",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Bruchsal",
+    "address": {
+      "street": "Kinzigstraße 3",
+      "postalCode": "76646",
+      "source": "https://www.bunnyhopshop.de/impressum/"
+    },
+    "geo": {
+      "lat": 49.13557,
+      "lon": 8.59375,
+      "precision": "address"
+    },
+    "website": "https://www.bunnyhopshop.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Specialized",
+      "Amflow"
+    ],
+    "fittingSystems": [
+      "Retül"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop in Bruchsal carrying Cervélo, Specialized and Amflow. It offers a full Retül fit (pre-assessment, saddle choice, cleat setup, dynamic fitting with the Retül Vantage camera system; about 2.5 hours, 299 €) and a shorter speed fitting.",
+    "uncertain": "Specialized dealer level (S-Works/flagship) not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "BunnyHopShop home page",
+        "url": "https://www.bunnyhopshop.de/"
+      },
+      {
+        "name": "BunnyHopShop bike fitting",
+        "url": "https://www.bunnyhopshop.de/service/bike-fitting/"
+      },
+      {
+        "name": "BunnyHopShop Impressum",
+        "url": "https://www.bunnyhopshop.de/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "d-cycles-bruchsal",
+    "name": "D-Cycles",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Bruchsal",
+    "address": {
+      "street": "Kammerforststr. 22",
+      "postalCode": "76646",
+      "source": "https://www.d-cycles.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 49.138156,
+      "lon": 8.56421,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (street level)."
+    },
+    "website": "https://www.d-cycles.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "BMC",
+      "Ridley",
+      "Eddy Merckx",
+      "Giant",
+      "Orbea"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop in Bruchsal (Di-Cycles GmbH & Co. KG) listing BMC, Ridley, Eddy Merckx, Giant and Orbea. It offers road and triathlon bike fitting with 3D motion analysis (Basic 179 €, Pro with pedal analysis 249 €, Triathlon 299 €) and custom-built bikes.",
+    "uncertain": "Fitting system behind the 3D motion analysis not named.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "D-Cycles brands",
+        "url": "https://www.d-cycles.de/brands.asp"
+      },
+      {
+        "name": "D-Cycles services",
+        "url": "https://www.d-cycles.de/serviceleistungen.asp"
+      },
+      {
+        "name": "D-Cycles Impressum",
+        "url": "https://www.d-cycles.de/impressum.asp"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de/de/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "ruprecht-rides-heidelberg",
+    "name": "Ruprecht Rides",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Heidelberg",
+    "address": {
+      "street": "Langer Anger 40/42",
+      "postalCode": "69115",
+      "source": "https://ruprechtrides.de/impressum/"
+    },
+    "geo": {
+      "lat": 49.40065,
+      "lon": 8.66969,
+      "precision": "address"
+    },
+    "website": "https://ruprechtrides.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "urban",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley",
+      "Trek",
+      "Cannondale",
+      "Eddy Merckx",
+      "Surly",
+      "Marin"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop in Heidelberg-Bahnstadt focused on gravel, bikepacking and road riding, with a separate Coboc e-bike brand store. Ridley and Trek dealer; the workshop lists custom builds (Custom-Aufbau).",
+    "uncertain": "No certified fitting system documented; custom-build service is listed briefly without detail.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Ruprecht Rides home page",
+        "url": "https://ruprechtrides.de/"
+      },
+      {
+        "name": "Ruprecht Rides Impressum",
+        "url": "https://ruprechtrides.de/impressum/"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de/de/dealers"
+      },
+      {
+        "name": "Trek retailer finder (Germany)",
+        "url": "https://www.trekbikes.com/de/de_DE/store-finder/retailer/DE/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bike-aktiv-waldbronn",
+    "name": "bike aktiv Waldbronn",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Waldbronn",
+    "address": {
+      "street": "Pforzheimer Straße 37",
+      "postalCode": "76337",
+      "source": "https://www.bike-aktiv-waldbronn.de/impressum/"
+    },
+    "geo": {
+      "lat": 48.92271,
+      "lon": 8.47572,
+      "precision": "address"
+    },
+    "website": "https://www.bike-aktiv-waldbronn.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "BH",
+      "Rocky Mountain",
+      "Marin"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Small road, triathlon and gravel shop in Waldbronn near Karlsruhe. Brands include Cervélo and BH; it offers bike fitting with a triathlon focus, including for bikes bought elsewhere (100 € for other brands).",
+    "uncertain": "Fitting system not named.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "bike aktiv brands",
+        "url": "https://www.bike-aktiv-waldbronn.de/marken/"
+      },
+      {
+        "name": "bike aktiv consultation and fitting",
+        "url": "https://www.bike-aktiv-waldbronn.de/ueber-mich/beratung/"
+      },
+      {
+        "name": "bike aktiv Impressum",
+        "url": "https://www.bike-aktiv-waldbronn.de/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "fahrradhaus-thomas-kramer-karlsruhe",
+    "name": "Fahrradhaus Thomas Kramer",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Karlsruhe",
+    "address": {
+      "street": "Hardtstrasse 9",
+      "postalCode": "76185",
+      "source": "https://www.fahrradhaus-kramer.de/KONTAKT/"
+    },
+    "geo": {
+      "lat": 49.01107,
+      "lon": 8.35599,
+      "precision": "address"
+    },
+    "website": "https://www.fahrradhaus-kramer.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Cervélo",
+      "Ridley",
+      "Bianchi"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road and gravel shop in Karlsruhe-Mühlburg presenting Pinarello, Cervélo, Ridley and Bianchi; workshop next door.",
+    "uncertain": "Address from the contact page (no separate Impressum found).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Kramer Radsport products",
+        "url": "https://www.fahrradhaus-kramer.de/UNSERE-PRODUKTE/"
+      },
+      {
+        "name": "Kramer Radsport contact",
+        "url": "https://www.fahrradhaus-kramer.de/KONTAKT/"
+      },
+      {
+        "name": "Ridley dealer locator",
+        "url": "https://www.ridley-bikes.com/de/de/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "mister-bike-pforzheim",
+    "name": "Mister Bike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Pforzheim",
+    "address": {
+      "street": "Habermehlstr. 11",
+      "postalCode": "75172",
+      "source": "https://www.misterbike.com/impressum"
+    },
+    "geo": {
+      "lat": 48.89143,
+      "lon": 8.68908,
+      "precision": "address"
+    },
+    "website": "https://www.misterbike.com/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Yeti",
+      "Pivot",
+      "Colnago",
+      "Orbea",
+      "Rocky Mountain"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "MTB-oriented bike shop in Pforzheim, in business for more than 35 years. Yeti dealer; also shows Pivot and is listed in the Colnago store locator.",
+    "uncertain": "Colnago only from the Colnago locator; Pivot only from a logo on the shop site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Mister Bike home page",
+        "url": "https://www.misterbike.com/"
+      },
+      {
+        "name": "Mister Bike Impressum",
+        "url": "https://www.misterbike.com/impressum"
+      },
+      {
+        "name": "Yeti dealer locator",
+        "url": "https://www.yeticycles.com/en-us/dealers"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bike-n-style-heidelberg",
+    "name": "Bike'n Style",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Heidelberg",
+    "address": {
+      "street": "Steubenstraße 36",
+      "postalCode": "69121",
+      "source": "https://bikenstyle.de/impressum/"
+    },
+    "geo": {
+      "lat": 49.42429,
+      "lon": 8.68822,
+      "precision": "address"
+    },
+    "website": "https://bikenstyle.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Yeti",
+      "Transition",
+      "Mondraker",
+      "Orbea"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Mountain bike shop in Heidelberg-Handschuhsheim; Yeti dealer, also carrying Transition, Mondraker and Orbea.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bike'n Style home page",
+        "url": "https://bikenstyle.de/"
+      },
+      {
+        "name": "Bike'n Style Impressum",
+        "url": "https://bikenstyle.de/impressum/"
+      },
+      {
+        "name": "Yeti dealer locator",
+        "url": "https://www.yeticycles.com/en-us/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "guter-rad-shop-waghaeusel",
+    "name": "Guter Rad Shop",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Waghäusel",
+    "address": {
+      "street": "Oberer Hagweg 16",
+      "postalCode": "68753",
+      "source": "https://www.guter-rad-shop.de/kontakt/impressum"
+    },
+    "geo": {
+      "lat": 49.22129,
+      "lon": 8.52129,
+      "precision": "address"
+    },
+    "website": "https://www.guter-rad-shop.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Simplon"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "custom-paint",
+      "repair"
+    ],
+    "summary": "Bike shop in Waghäusel-Wiesental listed in the Colnago store locator; its own site highlights Simplon bikes, Simplon individual builds and special paint.",
+    "uncertain": "Colnago not mentioned on the shop's own pages; listed only in the Colnago locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Guter Rad Shop home page",
+        "url": "https://www.guter-rad-shop.de/"
+      },
+      {
+        "name": "Guter Rad Shop Impressum",
+        "url": "https://www.guter-rad-shop.de/kontakt/impressum"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radsport-haritz-leimen",
+    "name": "Günter Haritz Radsport",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Leimen",
+    "address": {
+      "street": "St. Ilgener Straße 47",
+      "postalCode": "69181",
+      "source": "https://www.radsport-haritz.de/impressum.asp"
+    },
+    "geo": {
+      "lat": 49.34714,
+      "lon": 8.68429,
+      "precision": "address"
+    },
+    "website": "https://www.radsport-haritz.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley",
+      "Colnago",
+      "Basso",
+      "Bianchi",
+      "Eddy Merckx"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Leimen south of Heidelberg whose brand list includes Ridley, Colnago, Basso, Bianchi and Eddy Merckx.",
+    "uncertain": "Not found in the Ridley locator queried for the Mannheim/Karlsruhe area; brands from the shop's own site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport Haritz home page",
+        "url": "https://www.radsport-haritz.de/"
+      },
+      {
+        "name": "Radsport Haritz Impressum",
+        "url": "https://www.radsport-haritz.de/impressum.asp"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "quadrad-heidelberg",
+    "name": "Quadrad Mountain Cycles",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Heidelberg",
+    "address": {
+      "street": "Kurfürsten-Anlage 62",
+      "postalCode": "69115",
+      "source": "https://www.quadrad.de/impressum"
+    },
+    "geo": {
+      "lat": 49.4054,
+      "lon": 8.676,
+      "precision": "address"
+    },
+    "website": "https://www.quadrad.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Cannondale",
+      "Amflow"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Mountain bike shop in central Heidelberg, operating for more than 30 years; Santa Cruz is among its listed brands.",
+    "uncertain": "Santa Cruz dealer locator could not be queried (blocked); brand from the shop's own site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Quadrad home page",
+        "url": "https://www.quadrad.de/"
+      },
+      {
+        "name": "Quadrad Impressum",
+        "url": "https://www.quadrad.de/impressum"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "kastner-bikes-kuppenheim",
+    "name": "Kastner Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Kuppenheim",
+    "address": {
+      "street": "Friedrichstraße 134",
+      "postalCode": "76456",
+      "source": "https://www.kastner-bikes.de/impressum/"
+    },
+    "geo": {
+      "lat": 48.8232,
+      "lon": 8.24999,
+      "precision": "address"
+    },
+    "website": "https://www.kastner-bikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Cervélo",
+      "Forbidden",
+      "Rocky Mountain"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Kuppenheim near Rastatt and Baden-Baden showing Santa Cruz, Cervélo, Forbidden and Rocky Mountain among its brands.",
+    "uncertain": "Brands only shown as logos on the home page; not confirmed in brand locators.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Kastner Bikes home page",
+        "url": "https://www.kastner-bikes.de/"
+      },
+      {
+        "name": "Kastner Bikes Impressum",
+        "url": "https://www.kastner-bikes.de/impressum/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "ridelust",
+    "name": "ridelust.",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Weyarn",
+    "address": {
+      "street": "Am Weiglfeld 28",
+      "postalCode": "83629",
+      "source": "https://www.ridelust.de/impressum"
+    },
+    "geo": {
+      "lat": 47.86582,
+      "lon": 11.79055,
+      "precision": "address"
+    },
+    "website": "https://www.ridelust.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Colnago",
+      "Factor",
+      "Trek Project One"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build"
+    ],
+    "summary": "Appointment-only road-bike studio near Holzkirchen without regular opening hours. It combines a consultation and bike fitting with configuring a new bike before purchase; its gallery shows builds such as a Pinarello Dogma F MyWay, a Factor Ostro VAM and a Trek Project One Émonda. Listed as a Pinarello and Colnago dealer.",
+    "uncertain": "Fitting system not named. Factor and Trek Project One appear only as gallery builds, not as stated dealerships.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "ridelust website",
+        "url": "https://www.ridelust.de/"
+      },
+      {
+        "name": "ridelust Impressum",
+        "url": "https://www.ridelust.de/impressum"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "energysource-muenchen",
+    "name": "Energysource",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": "Rosenheimer Straße 143B",
+      "postalCode": "81671",
+      "source": "https://www.energysource.de/pages/impressum"
+    },
+    "geo": {
+      "lat": 48.12277,
+      "lon": 11.60417,
+      "precision": "address"
+    },
+    "website": "https://www.energysource.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "BMC",
+      "Scott",
+      "Pinarello"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting"
+    ],
+    "summary": "Triathlon and road shop in Munich-Haidhausen run by a sports scientist. It sells Cervélo, BMC, Scott and Pinarello triathlon, aero, road and gravel bikes and offers a dynamic bike fitting based on a functional assessment of the rider.",
+    "uncertain": "Fitting system not named on the site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Energysource website",
+        "url": "https://www.energysource.de/"
+      },
+      {
+        "name": "Energysource: Bike Fitting",
+        "url": "https://www.energysource.de/pages/bike-fitting"
+      },
+      {
+        "name": "Energysource Impressum",
+        "url": "https://www.energysource.de/pages/impressum"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bikedress-muenchen",
+    "name": "Bikedress",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": "Ohlmüllerstr. 7",
+      "postalCode": "81541",
+      "source": "https://bikedress.de/impressum"
+    },
+    "geo": {
+      "lat": 48.12606,
+      "lon": 11.57895,
+      "precision": "address"
+    },
+    "website": "https://bikedress.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build"
+    ],
+    "summary": "Road-cycling store in Munich-Au with clothing, a café and the Monaco Velo Club. It sells Pinarello bikes, including frames built up with a groupset and wheels of the customer's choice, and offers seat-position measurement with KOM*SPORT (published price €320).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikedress website",
+        "url": "https://bikedress.de/"
+      },
+      {
+        "name": "Bikedress: Service",
+        "url": "https://bikedress.de/service/"
+      },
+      {
+        "name": "Bikedress Impressum",
+        "url": "https://bikedress.de/impressum"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bike-base-schliersee",
+    "name": "bike base Schliersee",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Schliersee",
+    "address": {
+      "street": "Neuhauserstraße 36",
+      "postalCode": "83727",
+      "source": "https://www.bikebase-schliersee.de/impressum.php"
+    },
+    "geo": {
+      "lat": 47.7046,
+      "lon": 11.87663,
+      "precision": "address"
+    },
+    "website": "https://www.bikebase-schliersee.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Cervélo",
+      "Argon 18"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop and workshop in Schliersee-Neuhaus. It sells Pinarello, Cervélo and Argon 18 among other brands, builds high-end bikes to customer specification and offers seat-position analysis with a focus on triathlon.",
+    "uncertain": "Fitting system not named. Cervélo locator lists the street as Rauhkopfstraße 11; the shop's Impressum gives Neuhauserstraße 36.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "bike base Schliersee website",
+        "url": "https://www.bikebase-schliersee.de/"
+      },
+      {
+        "name": "bike base Schliersee Impressum",
+        "url": "https://www.bikebase-schliersee.de/impressum.php"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "next-level-bikeshop",
+    "name": "Next Level Bikeshop",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Pfaffenhofen an der Ilm",
+    "address": {
+      "street": "Raiffeisenstraße 14",
+      "postalCode": "85276",
+      "source": "https://www.next-level-bikeshop.de/impressum"
+    },
+    "geo": {
+      "lat": 48.53679,
+      "lon": 11.51655,
+      "precision": "address"
+    },
+    "website": "https://www.next-level-bikeshop.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello"
+    ],
+    "fittingSystems": [
+      "Retül"
+    ],
+    "services": [
+      "bike-fitting",
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Road, gravel and mountain-bike shop in Pfaffenhofen an der Ilm, between Munich and Ingolstadt. It offers Retül bike fitting (including the Retül Müve fit bike) with STT motion capture, and custom builds. Listed as a Pinarello dealer.",
+    "uncertain": "Brand list on the shop site not readable; Pinarello is from the brand locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Next Level Bikeshop website",
+        "url": "https://www.next-level-bikeshop.de/"
+      },
+      {
+        "name": "Next Level Bikeshop: Bikefitting",
+        "url": "https://www.next-level-bikeshop.de/bikefitting"
+      },
+      {
+        "name": "Next Level Bikeshop Impressum",
+        "url": "https://www.next-level-bikeshop.de/impressum"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "radsport-veloass",
+    "name": "Radsport Veloass",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Hohenfurch",
+    "address": {
+      "street": "Hoheneggstraße 45",
+      "postalCode": "86978",
+      "source": "https://veloass.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.84837,
+      "lon": 10.88943,
+      "precision": "address"
+    },
+    "website": "https://veloass.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Wilier",
+      "Pinarello",
+      "Cervélo"
+    ],
+    "fittingSystems": [
+      "Bikefitting.com"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Road-bike shop in Hohenfurch near Schongau (Landkreis Weilheim-Schongau). It has sold Wilier since it opened and also carries Pinarello; it uses a Bikefitting.com measuring station to record body dimensions for bike sizing and setup.",
+    "uncertain": "Cervélo from the brand locator only. Postal code 86978 is in Oberbayern (Weilheim-Schongau).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Veloass website",
+        "url": "https://veloass.de/"
+      },
+      {
+        "name": "Veloass: Fahrradmarken",
+        "url": "https://veloass.de/fahrradmarken/"
+      },
+      {
+        "name": "Veloass: Bikefitting",
+        "url": "https://veloass.de/bikefitting/"
+      },
+      {
+        "name": "Veloass Impressum",
+        "url": "https://veloass.de/impressum/"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "mailis-bike-coffee",
+    "name": "MAILIS bike + coffee",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Inzell",
+    "address": {
+      "street": "Adlgasser Straße 14",
+      "postalCode": "83334",
+      "source": "https://www.mailis.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.76219,
+      "lon": 12.75083,
+      "precision": "address"
+    },
+    "website": "https://www.mailis.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello"
+    ],
+    "fittingSystems": [
+      "Retül"
+    ],
+    "services": [
+      "bike-fitting"
+    ],
+    "summary": "Bike shop with café in Inzell (Chiemgau, Landkreis Traunstein) that offers Retül Fit. Listed as a Pinarello dealer.",
+    "uncertain": "Website is under construction; disciplines and brand range not confirmed on the site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "MAILIS website",
+        "url": "https://www.mailis.de/"
+      },
+      {
+        "name": "MAILIS Impressum",
+        "url": "https://www.mailis.de/impressum/"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "radsport-lang",
+    "name": "Radsport LANG",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Ebersberg",
+    "address": {
+      "street": "Ulrichstr. 1a",
+      "postalCode": "85560",
+      "source": "https://www.radsportlang.de/kontakt/"
+    },
+    "geo": {
+      "lat": 48.07792,
+      "lon": 11.96784,
+      "precision": "address"
+    },
+    "website": "https://www.radsportlang.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Santa Cruz",
+      "Trek",
+      "Orbea",
+      "Forbidden"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Bike shop with locations in Ebersberg and Heimstetten. It sells Cervélo, Santa Cruz, Trek, Orbea and Forbidden and builds custom bikes to customer specification; it also offers SQlab-based ergonomic measurement.",
+    "uncertain": "Second location: Am Gangsteig 15, 85551 Heimstetten. Address taken from the contact page; no Impressum page found.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport LANG website",
+        "url": "https://www.radsportlang.de/"
+      },
+      {
+        "name": "Radsport LANG: Kontakt",
+        "url": "https://www.radsportlang.de/kontakt/"
+      },
+      {
+        "name": "Radsport LANG: Ergonomie",
+        "url": "https://www.radsportlang.de/ergonomie/"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "villa-velodrom-rosenheim",
+    "name": "Villa Velodrom",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Rosenheim",
+    "address": {
+      "street": "Ringstrasse 35",
+      "postalCode": "83026",
+      "source": "https://villa-velodrom.de/Impressum/"
+    },
+    "geo": {
+      "lat": 47.84087,
+      "lon": 12.09965,
+      "precision": "address"
+    },
+    "website": "https://villa-velodrom.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Colnago",
+      "Casati"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Road-cycling shop in Rosenheim (Radsport Velodrom Drescher). Its brand page lists Pinarello, Colnago and Casati.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Villa Velodrom: Marken Rad",
+        "url": "https://villa-velodrom.de/Marken-Rad/"
+      },
+      {
+        "name": "Villa Velodrom Impressum",
+        "url": "https://villa-velodrom.de/Impressum/"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bike-it-feldafing",
+    "name": "BIKE IT",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Feldafing",
+    "address": {
+      "street": "Bahnhofstraße 8",
+      "postalCode": "82340",
+      "source": "https://www.bikeit.de/impressum.html"
+    },
+    "geo": {
+      "lat": 47.95099,
+      "lon": 11.29627,
+      "precision": "address"
+    },
+    "website": "https://www.bikeit.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Bike and ski shop in Feldafing on Lake Starnberg. It sells Pinarello alongside Mondraker and Merida.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "BIKE IT website",
+        "url": "https://www.bikeit.de/"
+      },
+      {
+        "name": "BIKE IT Impressum",
+        "url": "https://www.bikeit.de/impressum.html"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radl-center-stoeckl",
+    "name": "Radl-Center Stöckl",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Taufkirchen (Vils)",
+    "address": {
+      "street": "Bauhofstrasse 6",
+      "postalCode": "84416",
+      "source": "https://www.radl-center-stoeckl.de/"
+    },
+    "geo": {
+      "lat": 48.35396,
+      "lon": 12.13358,
+      "precision": "address"
+    },
+    "website": "https://www.radl-center-stoeckl.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Wilier",
+      "Scott",
+      "Trek"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "General bike shop in Taufkirchen (Vils), Landkreis Erding, whose brand list includes Pinarello and Wilier alongside Scott, Trek and Cube.",
+    "uncertain": "Address taken from the shop's home page; Impressum not checked.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radl-Center Stöckl website",
+        "url": "https://www.radl-center-stoeckl.de/"
+      },
+      {
+        "name": "Radl-Center Stöckl: Marken",
+        "url": "https://www.radl-center-stoeckl.de/marken/"
+      },
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radsyndikat-rosenheim",
+    "name": "RADsyndikat",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Rosenheim",
+    "address": {
+      "street": "Kaiserstrasse 36",
+      "postalCode": "83022",
+      "source": "https://radsyndikat.de/index.php/impressum-datenschutz/"
+    },
+    "geo": {
+      "lat": 47.85983,
+      "lon": 12.1281,
+      "precision": "address"
+    },
+    "website": "https://radsyndikat.de/",
+    "founded": 2015,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized",
+      "Santa Cruz",
+      "Scott",
+      "Cervélo",
+      "Forbidden"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Rosenheim bike shop operating since 2015 whose partner brands include Specialized, Santa Cruz, Scott, Cervélo and Forbidden.",
+    "uncertain": "Specialized dealer level (S-Works or not) not confirmed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "RADsyndikat website",
+        "url": "https://radsyndikat.de/"
+      },
+      {
+        "name": "RADsyndikat Impressum",
+        "url": "https://radsyndikat.de/index.php/impressum-datenschutz/"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radsport-ullmann-muenchen",
+    "name": "Radsport Ullmann",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": "Donnersbergerstr. 20",
+      "postalCode": "80634",
+      "source": "https://www.radsport-ullmann.de/rennrad/impressum.html"
+    },
+    "geo": {
+      "lat": 48.15027,
+      "lon": 11.53394,
+      "precision": "address"
+    },
+    "website": "https://www.radsport-ullmann.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Koga",
+      "Alex Moulton"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Road-bike shop in Munich-Neuhausen that describes itself as a Colnago Stützpunkt dealer and wholesaler; it also sells Koga and Alex Moulton.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport Ullmann website",
+        "url": "https://www.radsport-ullmann.de/"
+      },
+      {
+        "name": "Radsport Ullmann Impressum",
+        "url": "https://www.radsport-ullmann.de/rennrad/impressum.html"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikecenter-garmisch-partenkirchen",
+    "name": "Bikecenter Garmisch-Partenkirchen",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Garmisch-Partenkirchen",
+    "address": {
+      "street": "Ludwigstr. 90",
+      "postalCode": "82467",
+      "source": "https://www.bikecenter.de/impressum.php"
+    },
+    "geo": {
+      "lat": 47.49478,
+      "lon": 11.10698,
+      "precision": "address"
+    },
+    "website": "https://www.bikecenter.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Colnago",
+      "Mondraker"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop, workshop and rental in Garmisch-Partenkirchen that calls itself a specialised Cervélo shop; it also runs Transalp tours. Listed as a Colnago dealer.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bikecenter website",
+        "url": "https://www.bikecenter.de/"
+      },
+      {
+        "name": "Bikecenter Impressum",
+        "url": "https://www.bikecenter.de/impressum.php"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radsport-derjung",
+    "name": "Radsport Derjung",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Bergen",
+    "address": {
+      "street": "Staudacherstrasse 47",
+      "postalCode": "83346",
+      "source": "https://www.radsport-derjung.de/about/"
+    },
+    "geo": {
+      "lat": 47.80118,
+      "lon": 12.57859,
+      "precision": "address"
+    },
+    "website": "https://www.radsport-derjung.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop and workshop in Bergen (Chiemgau, Landkreis Traunstein) with road, gravel and mountain bikes. Listed as a Colnago dealer (as D74 - Radsport Derjung).",
+    "uncertain": "Brands not named on the shop site; Colnago from the brand locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport Derjung website",
+        "url": "https://www.radsport-derjung.de/"
+      },
+      {
+        "name": "Radsport Derjung Impressum",
+        "url": "https://www.radsport-derjung.de/about/"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radl-land-bad-toelz",
+    "name": "Radl-Land (Zweirad Riedelsheimer)",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Bad Tölz",
+    "address": {
+      "street": "Sachsenkamer Straße 6",
+      "postalCode": "83646",
+      "source": "https://www.radl-land.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.75932,
+      "lon": 11.57046,
+      "precision": "address"
+    },
+    "website": "https://www.radl-land.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Family bike shop in Bad Tölz with a workshop, selling Scott among other brands. Listed as a Colnago dealer.",
+    "uncertain": "Colnago is from the brand locator only; the shop's partner list does not mention it.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radl-Land website",
+        "url": "https://www.radl-land.de/"
+      },
+      {
+        "name": "Radl-Land Impressum",
+        "url": "https://www.radl-land.de/impressum/"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radsport-kleinschroth",
+    "name": "Radsport Kleinschroth",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Schleching",
+    "address": {
+      "street": "Hauptstr. 9",
+      "postalCode": "83259",
+      "source": "https://radsport-kleinschroth.de/impressum"
+    },
+    "geo": {
+      "lat": 47.72093,
+      "lon": 12.39847,
+      "precision": "address"
+    },
+    "website": "https://radsport-kleinschroth.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Bike shop in Schleching with a second location in Reit im Winkl (Chiemgau, Landkreis Traunstein). Listed as a Colnago dealer.",
+    "uncertain": "Brand logos on the site are images and were not read; Colnago from the brand locator.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radsport Kleinschroth website",
+        "url": "https://radsport-kleinschroth.de/"
+      },
+      {
+        "name": "Radsport Kleinschroth Impressum",
+        "url": "https://radsport-kleinschroth.de/impressum"
+      },
+      {
+        "name": "Colnago store locator",
+        "url": "https://www.colnago.com/en-us/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "litewheelz",
+    "name": "Litewheelz",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Bernau am Chiemsee",
+    "address": {
+      "street": "Priener Str. 5",
+      "postalCode": "83233",
+      "source": "https://www.litewheelz.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.8123,
+      "lon": 12.37255,
+      "precision": "address"
+    },
+    "website": "https://www.litewheelz.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Yeti"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build"
+    ],
+    "summary": "Bike shop in Bernau am Chiemsee that describes itself as 'Custom Bikes and Parts'. Listed as a Yeti Cycles dealer.",
+    "uncertain": "Custom-build service is only named in the site title, not described.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Litewheelz website",
+        "url": "https://www.litewheelz.de/"
+      },
+      {
+        "name": "Litewheelz Impressum",
+        "url": "https://www.litewheelz.de/impressum/"
+      },
+      {
+        "name": "Yeti Cycles dealer locator",
+        "url": "https://www.yeticycles.com/de-de/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "fahrrad-riebold-muenchen",
+    "name": "Fahrrad Riebold",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 48.137,
+      "lon": 11.575,
+      "precision": "city"
+    },
+    "website": "https://riebold.bike/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "gravel",
+      "road",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Scott",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Long-established family bike shop in Munich-Solln with mountain, trekking, gravel, road and e-bikes. Listed as a Cervélo dealer; a related store operates in Grünwald.",
+    "uncertain": "Address not confirmed on the shop's own site (Impressum did not load); the Cervélo locator gives Wolfratshauser Straße 193, 81479 München. Cervélo is not mentioned on the shop site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Fahrrad Riebold website",
+        "url": "https://riebold.bike/"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "specialized-munich",
+    "name": "Specialized Munich",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": "Balanstraße 71A / Gebäude 27",
+      "postalCode": "81541",
+      "source": "https://www.specialized.com/de/de/munich"
+    },
+    "geo": {
+      "lat": 48.119081,
+      "lon": 11.601002,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house number normalised)."
+    },
+    "website": "https://www.specialized.com/de/de/munich",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Specialized"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Specialized's own store on the Neue Balan campus in Munich, with road, gravel, mountain and e-bikes and a workshop.",
+    "uncertain": "A Retül fitting station is reported by the press but not stated on the store page, so no fitting system is listed.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Specialized Munich store page",
+        "url": "https://www.specialized.com/de/de/munich"
+      },
+      {
+        "name": "in-muenchen.de: Specialized Munich",
+        "url": "https://www.in-muenchen.de/mhp/1378515.html"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "finest-bikes-starnberg",
+    "name": "Finest Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Starnberg",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 47.999,
+      "lon": 11.34,
+      "precision": "city"
+    },
+    "website": null,
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Yeti"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Bike shop in Starnberg listed as a Yeti Cycles dealer.",
+    "uncertain": "No own website found. Address only from the Yeti locator (Theresienstr. 5, 82319 Starnberg).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Yeti Cycles dealer locator",
+        "url": "https://www.yeticycles.com/de-de/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radl-eck-muenchen",
+    "name": "Radl-Eck",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 48.137,
+      "lon": 11.575,
+      "precision": "city"
+    },
+    "website": null,
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Yeti"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Bike shop in Munich-Schwabing listed as a Yeti Cycles dealer.",
+    "uncertain": "No own website found (locator links to an Instagram account). Address only from the Yeti locator (Wilhelmstrasse 43, 80801 München).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Yeti Cycles dealer locator",
+        "url": "https://www.yeticycles.com/de-de/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikeline-muenchen",
+    "name": "bikeline München",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "München",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 48.137,
+      "lon": 11.575,
+      "precision": "city"
+    },
+    "website": null,
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Cervélo"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Road and gravel bike shop in Munich-Forstenried listed as a Pinarello and Cervélo dealer.",
+    "uncertain": "No own website found. Address only from the brand locators (Forstenrieder Allee 168a, 81476 München; Cervélo lists it as Bikeline-Lindemaier).",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      },
+      {
+        "name": "Cervélo dealer locator",
+        "url": "https://www.cervelo.com/en-US/dealers"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikestore-oliver-blas-raubling",
+    "name": "Bikestore Oliver Blas",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Bayern",
+    "regionCode": "DE-BY",
+    "city": "Raubling",
+    "address": {
+      "street": null,
+      "postalCode": null,
+      "source": null
+    },
+    "geo": {
+      "lat": 47.788,
+      "lon": 12.11,
+      "precision": "city"
+    },
+    "website": null,
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello"
+    ],
+    "fittingSystems": [],
+    "services": [],
+    "summary": "Bike shop in Raubling near Rosenheim listed as a Pinarello dealer.",
+    "uncertain": "No live website found (rdr-bicycles.de shows a placeholder). Address only from the Pinarello locator (Rosenheimer Str. 32, 83064 Raubling). Directories also list the shop as RDR Bicycles.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Pinarello store locator",
+        "url": "https://pinarello.com/global/en/store-locator"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "mount7-freiburg",
+    "name": "Mount7",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Freiburg im Breisgau",
+    "address": {
+      "street": "Bötzinger Straße 64",
+      "postalCode": "79111",
+      "source": "https://www.mount7.com/impressum/"
+    },
+    "geo": {
+      "lat": 47.98642,
+      "lon": 7.78688,
+      "precision": "address"
+    },
+    "website": "https://www.mount7.com/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Santa Cruz",
+      "Pivot",
+      "Trek",
+      "Cannondale",
+      "Scott",
+      "Orbea",
+      "Giant"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop and online retailer with a 500 m² store in Freiburg-Haid and a second shop in Freiburg-Wiehre (Schützenallee 9). Sells road, gravel and mountain bikes; lists Cervélo and Santa Cruz among its brands and states it is an official Pivot dealer. Offers appointment-based consultations with Smartfit laser body measurement (Radlabor Freiburg) and an in-house workshop.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Mount7: Fahrradladen Freiburg (Smartfit, locations)",
+        "url": "https://www.mount7.com/fahrradladen-freiburg/"
+      },
+      {
+        "name": "Mount7: Pivot dealer page",
+        "url": "https://www.mount7.com/marken/pivot/"
+      },
+      {
+        "name": "Mount7 Impressum",
+        "url": "https://www.mount7.com/impressum/"
+      },
+      {
+        "name": "fahrradhaendler.de Cervélo dealer listing",
+        "url": "https://fahrradhaendler.de/marke/cervelo"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "2-cycle-freiburg",
+    "name": "2-Cycle Bike Shop",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Freiburg im Breisgau",
+    "address": {
+      "street": "Schwarzwaldstraße 5",
+      "postalCode": "79102",
+      "source": "https://2-cycle.de/pages/fahrradladen"
+    },
+    "geo": {
+      "lat": 47.99065,
+      "lon": 7.85533,
+      "precision": "address"
+    },
+    "website": "https://2-cycle.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Trek",
+      "Focus",
+      "Amflow",
+      "Forbidden"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Mountain bike and e-MTB shop in Freiburg with a second location at the Todtnau bike park. Sells Santa Cruz alongside Trek, Focus and Amflow, offers test rides in the terrain, and runs a customizing service in which bikes are built up with chosen components and upgrades in its own workshop. Opening is partly by appointment.",
+    "uncertain": "Address taken from the shop's own store page; a dealer directory lists Schwarzwaldstraße 21. Impressum page did not render in fetch.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "2-Cycle: Fahrradladen Freiburg (address, brands)",
+        "url": "https://2-cycle.de/pages/fahrradladen"
+      },
+      {
+        "name": "2-Cycle: Customizing",
+        "url": "https://2-cycle.de/pages/custom-bikes-tuning"
+      },
+      {
+        "name": "fahrradhaendler.de Santa Cruz dealer listing",
+        "url": "https://fahrradhaendler.de/marke/santa-cruz"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "extratour-freiburg",
+    "name": "extratour",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Freiburg im Breisgau",
+    "address": {
+      "street": "Schwabentorring 12",
+      "postalCode": "79098",
+      "source": "https://www.extratour-freiburg.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.99138,
+      "lon": 7.85415,
+      "precision": "address"
+    },
+    "website": "https://www.extratour-freiburg.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Ridley"
+    ],
+    "fittingSystems": [
+      "Serotta"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop at the Schwabentor in central Freiburg selling road, gravel, mountain, touring and e-bikes plus clothing. Shows Ridley among its brands and offers an appointment-based eight-step bike fit it labels Serotta Bikefit, plus a service workshop.",
+    "uncertain": "Ridley confirmed only as a logo on the home page and in a dealer directory; the fit is described with a value of 250 euros, but whether that is the price is unclear.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "extratour home page",
+        "url": "https://www.extratour-freiburg.de/"
+      },
+      {
+        "name": "extratour: Serotta Bikefit",
+        "url": "https://www.extratour-freiburg.de/service/serotta-bikefit"
+      },
+      {
+        "name": "extratour Impressum",
+        "url": "https://www.extratour-freiburg.de/impressum/"
+      },
+      {
+        "name": "fahrradhaendler.de Ridley dealer listing",
+        "url": "https://fahrradhaendler.de/marke/ridley"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bike-stuff-and-tours",
+    "name": "Bike Stuff & Tours",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Wutöschingen",
+    "address": {
+      "street": "Markwiesen 3",
+      "postalCode": "79793",
+      "source": "https://bike-stuff-tours.com/impressum/"
+    },
+    "geo": {
+      "lat": 47.63711,
+      "lon": 8.34186,
+      "precision": "address"
+    },
+    "website": "https://bike-stuff-tours.com/",
+    "founded": 2007,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "gravel",
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Wilier",
+      "Ridley",
+      "Santa Cruz",
+      "Pivot",
+      "Specialized",
+      "Scott",
+      "Mondraker"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop near Waldshut-Tiengen on the Swiss border, with a 1,200 m² concept store in Wutöschingen-Horheim and a branch in Jestetten. Lists Wilier, Ridley, Santa Cruz, Pivot and Specialized among its brands. Offers bike sizing and bike fitting with Smartfit laser body scans (Radlabor technology) at the Wutöschingen store, plus SQlab ergonomics measurements.",
+    "uncertain": "Founding year taken from 'Seit 2007' next to the workshop section.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Bike Stuff & Tours home page",
+        "url": "https://bike-stuff-tours.com/"
+      },
+      {
+        "name": "Bike Stuff & Tours: Bike Fitting & Bike Sizing",
+        "url": "https://bike-stuff-tours.com/bike-fitting-bike-sizing/"
+      },
+      {
+        "name": "Bike Stuff & Tours: brands",
+        "url": "https://bike-stuff-tours.com/marken/"
+      },
+      {
+        "name": "Bike Stuff & Tours Impressum",
+        "url": "https://bike-stuff-tours.com/impressum/"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "zweiradstadl",
+    "name": "Zweiradstadl",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Tettnang",
+    "address": {
+      "street": "Wiesertsweiler 39/1",
+      "postalCode": "88069",
+      "source": "https://zweiradstadl.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.64559,
+      "lon": 9.64406,
+      "precision": "address"
+    },
+    "website": "https://zweiradstadl.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "gravel",
+      "road"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Pivot",
+      "Yeti",
+      "Cervélo",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "custom-build",
+      "repair"
+    ],
+    "summary": "Small MTB, gravel and road shop near Tettnang, north of Lake Constance. Offers custom builds to the customer's specification, suspension service for Fox and RockShox and general workshop service. Its brand strip shows Santa Cruz, Pivot, Yeti and Cervélo.",
+    "uncertain": "Brands shown as logos only, without a written dealer statement; Cervélo and Santa Cruz also listed in a dealer directory. Limited opening hours.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Zweiradstadl home page (custom builds, brand logos)",
+        "url": "https://zweiradstadl.de/"
+      },
+      {
+        "name": "Zweiradstadl Impressum",
+        "url": "https://zweiradstadl.de/impressum/"
+      },
+      {
+        "name": "fahrradhaendler.de Cervélo dealer listing",
+        "url": "https://fahrradhaendler.de/marke/cervelo"
+      },
+      {
+        "name": "fahrradhaendler.de Santa Cruz dealer listing",
+        "url": "https://fahrradhaendler.de/marke/santa-cruz"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "zweirad-joos",
+    "name": "Zweirad Joos",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Radolfzell am Bodensee",
+    "address": {
+      "street": "Schützenstrasse 11 + 14",
+      "postalCode": "78315",
+      "source": "https://www.zweirad-joos.de/impressum/"
+    },
+    "geo": {
+      "lat": 47.742068,
+      "lon": 8.970449,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (street level)."
+    },
+    "website": "https://www.zweirad-joos.de/",
+    "founded": 1963,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "3T",
+      "Wilier",
+      "Santa Cruz",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Family-run bike retailer founded in Radolfzell in 1963, with branches in Konstanz, Gottmadingen, Immenstaad and Ravensburg. Carries more than 100 brands, including Cervélo, 3T, Wilier and Santa Cruz. Offers laser-based body scan, bike scan and bike fitting by appointment in Radolfzell and Konstanz, plus rentals, courses and guided tours.",
+    "uncertain": "The laser fitting system is not named on the site. Brands confirmed from the logo wall on the home page.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Zweirad Joos home page (brand logos)",
+        "url": "https://www.zweirad-joos.de/"
+      },
+      {
+        "name": "Zweirad Joos: Bikefit",
+        "url": "https://www.zweirad-joos.de/bikefit-2/"
+      },
+      {
+        "name": "Zweirad Joos: Über uns (history)",
+        "url": "https://www.zweirad-joos.de/ueber-uns/"
+      },
+      {
+        "name": "Zweirad Joos Impressum",
+        "url": "https://www.zweirad-joos.de/impressum/"
+      },
+      {
+        "name": "fahrradhaendler.de Wilier dealer listing",
+        "url": "https://fahrradhaendler.de/marke/wilier"
+      }
+    ],
+    "tier": "selection"
+  },
+  {
+    "id": "bikesportworld-freiburg",
+    "name": "BIKESportWorld",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Freiburg im Breisgau",
+    "address": {
+      "street": "Schwarzwaldstr. 63",
+      "postalCode": "79117",
+      "source": "https://www.bikesportworld.de/policies/legal-notice"
+    },
+    "geo": {
+      "lat": 47.9888,
+      "lon": 7.86234,
+      "precision": "address"
+    },
+    "website": "https://www.bikesportworld.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Wilier",
+      "Colnago",
+      "BMC",
+      "Specialized",
+      "Bianchi",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Road-focused shop and online retailer at the B31 tunnel exit in Freiburg. Has dedicated brand sections for Wilier, Colnago, Specialized and Bianchi and also sells BMC and Scott.",
+    "uncertain": "A fitting directory entry written by the shop mentions an included bike fitting; not confirmed on the shop site.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "BIKESportWorld home page",
+        "url": "https://www.bikesportworld.de/"
+      },
+      {
+        "name": "BIKESportWorld: Colnago",
+        "url": "https://bikesportworld.de/collections/colnago"
+      },
+      {
+        "name": "BIKESportWorld Impressum",
+        "url": "https://www.bikesportworld.de/policies/legal-notice"
+      },
+      {
+        "name": "bikefittingfinder.de entry",
+        "url": "https://bikefittingfinder.de/bikefitting/freiburg/bikesportworld"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "sport-tout-terrain",
+    "name": "Sport-Tout-Terrain",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Freiburg im Breisgau",
+    "address": {
+      "street": "Stadtstraße 47",
+      "postalCode": "79104",
+      "source": "https://www.t-2.de/impressum.html"
+    },
+    "geo": {
+      "lat": 48.00363,
+      "lon": 7.86269,
+      "precision": "address"
+    },
+    "website": "https://www.t-2.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Pivot",
+      "Cube"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Mountain bike and e-bike shop in central Freiburg, trading for more than 25 years. Sells Santa Cruz and Pivot alongside Cube and runs a workshop.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Sport-Tout-Terrain: Produkte",
+        "url": "https://www.t-2.de/produkte.html"
+      },
+      {
+        "name": "Sport-Tout-Terrain Impressum",
+        "url": "https://www.t-2.de/impressum.html"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "follow-me-loerrach",
+    "name": "follow me",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Lörrach",
+    "address": {
+      "street": "Bahnhofstraße 1",
+      "postalCode": "79539",
+      "source": "https://followmestore.de/impressum"
+    },
+    "geo": {
+      "lat": 47.615113,
+      "lon": 7.66591,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (house level)."
+    },
+    "website": "https://followmestore.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "3T",
+      "Open",
+      "Ridley",
+      "Pivot"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike and snowsports shop in central Lörrach near the Swiss and French borders. Its brand list includes Cervélo, 3T, Open, Ridley and Pivot; it has a workshop for road, mountain and e-bikes.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "follow me: brands A–Z",
+        "url": "https://followmestore.de/marken"
+      },
+      {
+        "name": "follow me Impressum",
+        "url": "https://followmestore.de/impressum"
+      },
+      {
+        "name": "fahrradhaendler.de Cervélo dealer listing",
+        "url": "https://fahrradhaendler.de/marke/cervelo"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bikebox-rottweil",
+    "name": "BIKEBOX",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Rottweil",
+    "address": {
+      "street": "Stuttgarter Str. 72",
+      "postalCode": "78628",
+      "source": "https://www.bikebox-shop.de/legal-disclosure/"
+    },
+    "geo": {
+      "lat": 48.13157,
+      "lon": 8.66653,
+      "precision": "address"
+    },
+    "website": "https://www.bikebox-shop.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Santa Cruz",
+      "Wilier",
+      "Orbea",
+      "Scott"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike store and online shop in Rottweil-Neufra with its own workshop. Names Santa Cruz among its main brands and sells Wilier road bikes; uses body measurement for frame sizing.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "BIKEBOX home page",
+        "url": "https://www.bikebox-shop.de/"
+      },
+      {
+        "name": "BIKEBOX: brand overview",
+        "url": "https://www.bikebox-shop.de/markenuebersicht/"
+      },
+      {
+        "name": "BIKEBOX Impressum",
+        "url": "https://www.bikebox-shop.de/legal-disclosure/"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "saikls-meckenbeuren",
+    "name": "saikls",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Meckenbeuren",
+    "address": {
+      "street": "Ravensburgerstraße 14 - 18",
+      "postalCode": "88074",
+      "source": "https://www.saikls.com/impressum"
+    },
+    "geo": {
+      "lat": 47.701771,
+      "lon": 9.5649,
+      "precision": "address",
+      "note": "Geocoded from the published address via OpenStreetMap Nominatim (street level)."
+    },
+    "website": "https://www.saikls.com/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pinarello",
+      "Colnago",
+      "Scott",
+      "Giant"
+    ],
+    "fittingSystems": [
+      "Smartfit"
+    ],
+    "services": [
+      "bike-fitting",
+      "repair"
+    ],
+    "summary": "Bike shop between Ravensburg and Friedrichshafen run by Fahrrad Dämpfle GmbH. Shows Pinarello and Colnago among its bike brands and uses a Smartfit Q2 system in store for bike sizing and fitting.",
+    "uncertain": "Pinarello and Colnago shown as logos on the range page; Smartfit is described mainly for sizing.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "saikls: Bikesizing | Bikefitting",
+        "url": "https://www.saikls.com/bikesizingbikefitting"
+      },
+      {
+        "name": "saikls: Sortiment (brand logos)",
+        "url": "https://www.saikls.com/sortiment"
+      },
+      {
+        "name": "saikls Impressum",
+        "url": "https://www.saikls.com/impressum"
+      },
+      {
+        "name": "fahrradhaendler.de Pinarello dealer listing",
+        "url": "https://fahrradhaendler.de/marke/pinarello"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "spacebike-engen",
+    "name": "Spacebike",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Engen",
+    "address": {
+      "street": "Vorstadt 1",
+      "postalCode": "78234",
+      "source": "https://www.space-bike.de/impressum"
+    },
+    "geo": {
+      "lat": 47.85331,
+      "lon": 8.7715,
+      "precision": "address"
+    },
+    "website": "https://www.space-bike.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Colnago",
+      "Merida"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop with a master workshop in Engen (Hegau). Sells Colnago road bikes, including a numbered C72 La Scala, alongside Merida and Raymon, and is a Propain service centre.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Spacebike: Colnago C72 La Scala",
+        "url": "https://www.space-bike.de/post/colnago-c72-la-scala-limited-edition"
+      },
+      {
+        "name": "Spacebike Impressum",
+        "url": "https://www.space-bike.de/impressum"
+      },
+      {
+        "name": "fahrradhaendler.de Colnago dealer listing",
+        "url": "https://fahrradhaendler.de/marke/colnago"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "faisst-bike-sport",
+    "name": "Faißt Bike Sport",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Hornberg",
+    "address": {
+      "street": "Hauptstraße 12",
+      "postalCode": "78132",
+      "source": "https://faisst-bike-sport.de/impressum"
+    },
+    "geo": {
+      "lat": 48.21761,
+      "lon": 8.22565,
+      "precision": "address"
+    },
+    "website": "https://faisst-bike-sport.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pivot",
+      "Specialized",
+      "BH"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Hornberg in the Gutach valley (Black Forest). Lists Pivot and Specialized among the brands it carries, with a workshop.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Faißt Bike Sport home page (brands)",
+        "url": "https://faisst-bike-sport.de/"
+      },
+      {
+        "name": "Faißt Bike Sport Impressum",
+        "url": "https://faisst-bike-sport.de/impressum"
+      },
+      {
+        "name": "fahrradhaendler.de Pivot dealer listing",
+        "url": "https://fahrradhaendler.de/marke/pivot"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "tillit-bikes",
+    "name": "TilliT Bikes",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Sasbach",
+    "address": {
+      "street": "Klammsbosch 10",
+      "postalCode": "77880",
+      "source": "https://www.tillit-bikes.de/e-vendo.php?a=templ&template=impressum"
+    },
+    "geo": {
+      "lat": 48.63197,
+      "lon": 8.10017,
+      "precision": "address"
+    },
+    "website": "https://www.tillit-bikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Pivot",
+      "Specialized",
+      "Orbea",
+      "Atherton",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "MTB, road and gravel shop in Sasbach (Ortenau) with a test fleet. Sells Pivot, Specialized, Atherton and Orbea. Sets saddle height, bar height and crank length with its fitting partner AthletesLab Offenburg before ordering.",
+    "uncertain": "Fitting is done by an external partner, not in-house.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "TilliT Bikes home page",
+        "url": "https://www.tillit-bikes.de/"
+      },
+      {
+        "name": "TilliT Bikes Impressum",
+        "url": "https://www.tillit-bikes.de/e-vendo.php?a=templ&template=impressum"
+      },
+      {
+        "name": "fahrradhaendler.de Pivot dealer listing",
+        "url": "https://fahrradhaendler.de/marke/pivot"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "statera-bikes",
+    "name": "STATERA",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Gengenbach",
+    "address": {
+      "street": "Eugen-Klaussner-Strasse 18",
+      "postalCode": "77723",
+      "source": "https://www.staterabikes.de/rechtliches/impressum/"
+    },
+    "geo": {
+      "lat": 48.39357,
+      "lon": 8.02407,
+      "precision": "address"
+    },
+    "website": "https://www.staterabikes.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "gravel",
+      "mtb",
+      "touring"
+    ],
+    "priceNote": null,
+    "brands": [
+      "BMC",
+      "Cervélo",
+      "Focus",
+      "Cube"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Large online retailer with a store and workshop in Gengenbach (Kinzig valley). Sells BMC, including shop-specific limited editions, and mentions Cervélo among the brands it pre-assembles in-house.",
+    "uncertain": "Mainly an online business; Cervélo appears only in a shipping FAQ and a dealer directory.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "STATERA home page",
+        "url": "https://www.staterabikes.de/"
+      },
+      {
+        "name": "STATERA Impressum",
+        "url": "https://www.staterabikes.de/rechtliches/impressum/"
+      },
+      {
+        "name": "fahrradhaendler.de BMC dealer listing",
+        "url": "https://fahrradhaendler.de/marke/bmc"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "radrezept-wangen",
+    "name": "Radrezept",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Wangen im Allgäu",
+    "address": {
+      "street": "Friedrich-Ebert-Str. 3",
+      "postalCode": "88239",
+      "source": "http://www.radrezept.com/impressum"
+    },
+    "geo": {
+      "lat": 47.68376,
+      "lon": 9.839,
+      "precision": "address"
+    },
+    "website": "https://www.radrezept.com/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "mtb",
+      "road",
+      "gravel",
+      "urban"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Yeti",
+      "Orbea",
+      "Victoria",
+      "QiO"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike and e-bike shop with a workshop in Wangen im Allgäu. Lists Yeti among its brands, alongside Orbea, Victoria and QiO, and offers bike consultation and ergonomics services.",
+    "uncertain": "The ergonomics page did not name a fitting system.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "Radrezept home page (brands)",
+        "url": "https://www.radrezept.com/"
+      },
+      {
+        "name": "Radrezept Impressum",
+        "url": "http://www.radrezept.com/impressum"
+      }
+    ],
+    "tier": "dealer"
+  },
+  {
+    "id": "bike-store-gottmadingen",
+    "name": "bike-store Gottmadingen",
+    "type": "shop",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Baden-Württemberg",
+    "regionCode": "DE-BW",
+    "city": "Gottmadingen",
+    "address": {
+      "street": "Hauptstr. 26",
+      "postalCode": "78244",
+      "source": "http://www.bikestore-gottmadingen.de/impressum"
+    },
+    "geo": {
+      "lat": 47.73507,
+      "lon": 8.77419,
+      "precision": "address"
+    },
+    "website": "https://www.bikestore-gottmadingen.de/",
+    "founded": null,
+    "materials": [],
+    "disciplines": [
+      "road",
+      "mtb",
+      "gravel"
+    ],
+    "priceNote": null,
+    "brands": [
+      "Cervélo",
+      "Cannondale"
+    ],
+    "fittingSystems": [],
+    "services": [
+      "repair"
+    ],
+    "summary": "Bike shop in Gottmadingen near Singen with a second store in Bodman-Ludwigshafen on Lake Constance. Sells Cannondale and shows Cervélo road bikes (S5, Caledonia) in its posts.",
+    "uncertain": "Cervélo evidenced only via the shop's embedded social posts and a dealer directory.",
+    "checked": "2026-10-18",
+    "sources": [
+      {
+        "name": "bike-store Gottmadingen home page",
+        "url": "https://www.bikestore-gottmadingen.de/"
+      },
+      {
+        "name": "bike-store Gottmadingen Impressum",
+        "url": "http://www.bikestore-gottmadingen.de/impressum"
+      },
+      {
+        "name": "fahrradhaendler.de Cervélo dealer listing",
+        "url": "https://fahrradhaendler.de/marke/cervelo"
+      }
+    ],
+    "tier": "dealer"
+  }
+]

@@ -1,0 +1,241 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroArt from '../../components/HeroArt.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getArticles, formatMoney, formatWeight, formatLaunch, bikeUrl, type Bike } from '../../lib/content';
+import { CATEGORIES, SITE } from '../../site.config';
+
+export async function getStaticPaths() {
+  const bikes = await getCollection('bikes');
+  return bikes.map((bike) => ({ params: { id: bike.id }, props: { bike } }));
+}
+
+const { bike } = Astro.props as { bike: Bike };
+const d = bike.data;
+const cat = CATEGORIES[d.category];
+const name = `${d.brand} ${d.model}`;
+const predecessor = d.predecessor ? await getEntry('bikes', d.predecessor) : undefined;
+const coverage = (await getArticles()).filter((a) => a.data.bike?.id === bike.id);
+const peers = (await getCollection('bikes', (b) => b.data.category === d.category && b.id !== bike.id))
+  .sort((a, b) => Math.abs((a.data.priceUSD ?? 0) - (d.priceUSD ?? 0)) - Math.abs((b.data.priceUSD ?? 0) - (d.priceUSD ?? 0)))
+  .slice(0, 4);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name,
+  brand: { '@type': 'Brand', name: d.brand },
+  category: `${cat.label} bike`,
+  description: `${name} (${d.year}) with ${d.groupset}.`,
+  url: `${SITE.url}${bikeUrl(bike)}`,
+  ...(d.weightKg && { weight: { '@type': 'QuantitativeValue', value: d.weightKg, unitCode: 'KGM' } }),
+  ...(d.priceUSD && {
+    offers: { '@type': 'Offer', price: d.priceUSD, priceCurrency: 'USD', url: d.url, availability: 'https://schema.org/InStock' },
+  }),
+};
+
+const rows: [string, string][] = [
+  ['Price (USD)', formatMoney(d.priceUSD, 'USD')],
+  ['Price (EUR)', formatMoney(d.priceEUR, 'EUR')],
+  ['Weight', `${formatWeight(d.weightKg)}${d.weightNote ? ` (${d.weightNote})` : ''}`],
+  ['Groupset', d.groupset],
+  ['Build', d.build],
+  ['Frame', d.frame],
+  ['Model year', String(d.year)],
+  ['Launched', formatLaunch(d.launchDate)],
+];
+---
+
+<BaseLayout
+  title={`${name} ${d.year}: price, weight and specs`}
+  description={`${name} costs ${formatMoney(d.priceUSD, 'USD')} and weighs ${formatWeight(d.weightKg)} with ${d.groupset}. Full specs and comparison.`}
+  schema={schema}
+  noindex={!d.verified}
+>
+  <div class="wrap bike">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/bikes/">Database</a> / <a href={cat.path}>{cat.label}</a>
+    </nav>
+    <div class="bike__grid">
+      <div>
+        <p class="kicker">{d.brand}</p>
+        <h1>{d.model}</h1>
+        <p class="bike__price">{formatMoney(d.priceUSD, 'USD')} <span>· {formatWeight(d.weightKg)}</span></p>
+        {
+          !d.verified && (
+            <p class="unverified">
+              <span class="sample-flag">Unverified</span> Figures not yet checked against the manufacturer.
+            </p>
+          )
+        }
+        {
+          d.sources.length > 0 && (
+            <p class="sources">
+              Sources:{' '}
+              {d.sources.map((src, j) => (
+                <>
+                  {j > 0 && ', '}
+                  <a href={src.url} rel="noopener" target="_blank">
+                    {src.name}
+                  </a>
+                </>
+              ))}
+            </p>
+          )
+        }
+        <dl class="sheet">
+          {
+            rows.map(([k, v]) => (
+              <div>
+                <dt>{k}</dt>
+                <dd>{v}</dd>
+              </div>
+            ))
+          }
+          {
+            predecessor && (
+              <div>
+                <dt>Predecessor</dt>
+                <dd>
+                  <a href={bikeUrl(predecessor)}>{predecessor.data.brand} {predecessor.data.model}</a>
+                </dd>
+              </div>
+            )
+          }
+        </dl>
+        {d.url && <a class="btn" href={d.url} rel="noopener" target="_blank">Manufacturer site ↗</a>}
+      </div>
+      <HeroArt category={d.category} alt={`${name} illustration`} eager />
+    </div>
+
+    {
+      coverage.length > 0 && (
+        <section class="block" aria-labelledby="coverage">
+          <div class="section-head"><h2 id="coverage">Our coverage</h2></div>
+          <div class="three">{coverage.map((a) => <ArticleCard article={a} variant="secondary" />)}</div>
+        </section>
+      )
+    }
+
+    {
+      peers.length > 0 && (
+        <section class="block" aria-labelledby="peers">
+          <div class="section-head">
+            <h2 id="peers">Closest rivals by price</h2>
+            <a href="/bikes/">All bikes →</a>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr><th>Bike</th><th>Groupset</th><th class="num">Price</th><th class="num">Weight</th></tr>
+              </thead>
+              <tbody>
+                <tr class="self">
+                  <td><strong>{d.brand}</strong> {d.model}</td>
+                  <td>{d.groupset}</td>
+                  <td class="num">{formatMoney(d.priceUSD, 'USD')}</td>
+                  <td class="num">{formatWeight(d.weightKg)}</td>
+                </tr>
+                {peers.map((p) => (
+                  <tr>
+                    <td><a href={bikeUrl(p)}><strong>{p.data.brand}</strong> {p.data.model}</a></td>
+                    <td>{p.data.groupset}</td>
+                    <td class="num">{formatMoney(p.data.priceUSD, 'USD')}</td>
+                    <td class="num">{formatWeight(p.data.weightKg)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .sources {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 16px;
+  }
+  .sources a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .bike {
+    padding-top: 32px;
+  }
+  .crumbs {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .bike__grid {
+    display: grid;
+    gap: 36px;
+  }
+  @media (min-width: 960px) {
+    .bike__grid {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+      gap: 56px;
+      align-items: start;
+    }
+  }
+  h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    margin: 4px 0 10px;
+  }
+  .bike__price {
+    font-family: var(--serif);
+    font-size: 28px;
+    margin: 0 0 16px;
+    font-variant-numeric: tabular-nums;
+  }
+  .bike__price span {
+    color: var(--muted);
+  }
+  .unverified {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin: 0 0 18px;
+  }
+  .sheet {
+    margin: 0 0 28px;
+    border-top: 2px solid var(--ink);
+  }
+  .sheet div {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 12px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 15px;
+  }
+  dt {
+    color: var(--muted);
+  }
+  dd {
+    margin: 0;
+    font-weight: 500;
+  }
+  dd a {
+    text-decoration: underline;
+  }
+  .block {
+    margin-top: 72px;
+  }
+  .three {
+    display: grid;
+    gap: 28px;
+  }
+  @media (min-width: 720px) {
+    .three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .self td {
+    background: var(--chip);
+  }
+</style>
