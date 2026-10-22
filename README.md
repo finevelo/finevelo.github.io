@@ -14,6 +14,13 @@ npm run build    # statische Seite in dist/
 
 Jeder Push auf `main` baut per GitHub Actions (`.github/workflows/pages.yml`) eine versteckte Vorschau unter https://www.finevelo.com/ (Domain bei united-domains, DNS: 4× A auf GitHub Pages, www als CNAME auf finevelo.github.io; MX/SPF von united-domains für E-Mail nicht anfassen). Dort gilt `STAGING=1` (noindex auf allen Seiten, robots.txt sperrt alle Crawler); zum Launch entfernen. `BASE_PATH` wird nur gebraucht, wenn die Seite in einem Unterordner liegt (z. B. `/finevelo`).
 
+## Backend und Agent
+
+- **https://www.finevelo.com/admin/**: Einstieg. Anmeldung mit einem Fine-grained-Token des GitHub-Kontos `finevelo`, nur für dieses Repo, mit den Rechten Contents, Secrets und Actions (Read and write).
+- **/admin/cms/** (Sveltia CMS): Artikel, Guides, Bike-Datenbank, Quellen & Firmen (`config/sources.json`), Zeitplan und Regeln des Agenten (`config/agent.json`). Speichern = Commit auf `main` = Neubau der Seite.
+- **/admin/agent/**: Claude-API-Schlüssel als verschlüsseltes GitHub-Secret `ANTHROPIC_API_KEY` speichern, Agent von Hand starten, letzte Läufe.
+- **Agent** (`scripts/agent/`, Workflow `.github/workflows/agent.yml`): stündlicher Trigger, läuft nur zu den Zeiten aus `config/agent.json`. Liest die RSS-Feeds aktiver Quellen, bewertet mit Claude nach den High-End-Schwellen, schreibt aus der Originalquelle und lässt jeden Artikel von einem zweiten Durchgang gegen die Quelle prüfen. Standard: Entwurf (`draft: true`), freigeben im CMS. Mit `autoPublish` gehen geprüfte Artikel direkt online. Redaktionsregeln: `scripts/agent/prompts.mjs`. Bereits bewertete Meldungen: `config/agent-state.json`.
+
 ## Struktur
 
 | Pfad | Inhalt |
