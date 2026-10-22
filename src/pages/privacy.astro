@@ -3,25 +3,89 @@ import PageLayout from '../layouts/PageLayout.astro';
 ---
 
 <PageLayout title="Privacy" kicker="Datenschutz" noindex>
-  <p class="todo"><strong>TODO before launch:</strong> have this text reviewed and complete the operator details.</p>
+  <p class="updated">Last updated: 22 October 2026</p>
+
+  <h2>Short version</h2>
+  <p>
+    Finevelo has no tracking, no analytics, no advertising, no cookies and no social media plugins. The public site loads no
+    fonts, scripts or images from third parties. The only personal data processed when you read it are the technical access
+    data our host needs to deliver the pages.
+  </p>
+
   <h2>Controller</h2>
-  <p>See the <a href="/impressum/">Impressum</a>.</p>
-  <h2>Hosting</h2>
-  <p>This site is served as static files via Cloudflare Pages. Cloudflare processes technical data such as IP addresses to deliver the site and protect it from attacks (Art. 6(1)(f) GDPR).</p>
-  <h2>Analytics</h2>
-  <p>We use a cookieless, privacy-friendly analytics tool (Plausible or Umami). It stores no personal data and sets no cookies.</p>
-  <h2>Fonts</h2>
-  <p>All fonts are self-hosted. No requests go to Google Fonts or other third parties.</p>
+  <p>
+    Vinati GmbH, Max-Eyth-Str. 7, 71364 Winnenden, Germany, represented by its managing director Manuel Walker. Contact
+    details are in the <a href="/impressum/">Impressum</a>.
+  </p>
+
+  <h2>Hosting and access data</h2>
+  <p>
+    The site is static and hosted on GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco,
+    CA 94107, USA. When you open a page, your browser sends technical data to GitHub's servers: IP address, date and time,
+    the page requested, referrer, browser and operating system. GitHub uses this data to deliver the site and to protect it
+    against attacks and abuse. We have no access to these logs.
+  </p>
+  <p>
+    Legal basis: Art. 6(1)(f) GDPR (our legitimate interest in a secure, working website). The data may be processed in the
+    USA. GitHub participates in the EU-U.S. Data Privacy Framework, on which the transfer is based (Art. 45 GDPR). Details:
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub
+    General Privacy Statement</a>.
+  </p>
+
+  <h2>Cookies and local storage</h2>
+  <p>
+    We set no cookies. If you switch between light and dark mode, your choice is saved in your browser's local storage so
+    the site remembers it. It never leaves your device, and you can delete it in your browser settings at any time. This is
+    strictly necessary for a function you asked for (§ 25(2) no. 2 TDDDG).
+  </p>
+
   <h2>Newsletter</h2>
-  <p>If you subscribe to The Edit, your email address is processed by our newsletter provider [Beehiiv/Buttondown] solely to send the newsletter. You can unsubscribe at any time via the link in every email.</p>
+  <p>
+    The Edit has not launched yet and we do not collect any email addresses. Before sign-up opens we will update this notice
+    with the provider and how your data is processed.
+  </p>
+
+  <h2>Contacting us</h2>
+  <p>
+    If you email us, we process your address and message to answer you (Art. 6(1)(b) GDPR for enquiries about a contract,
+    otherwise Art. 6(1)(f) GDPR). We delete them when the matter is settled, unless we are legally required to keep them.
+  </p>
+
+  <h2>Builders and shops directory</h2>
+  <p>
+    The <a href="/builders/">directory</a> lists businesses with the information they publish themselves: name, address,
+    website and services, with a link to the public source. Where a business is run by a sole trader, this can be personal
+    data. Legal basis: Art. 6(1)(f) GDPR (our interest in informing readers, and theirs in being found). Businesses can ask
+    us at any time to correct or remove their entry.
+  </p>
+
+  <h2>Links to other websites</h2>
+  <p>
+    Articles link to manufacturers, shops and sources. Those sites only receive data once you click a link, and their own
+    privacy notices apply.
+  </p>
+
+  <h2>Editorial tools</h2>
+  <p>
+    Our editors sign in to an internal editing tool. Their login data are processed by Supabase (servers in Frankfurt,
+    Germany) and GitHub. This concerns only our editorial team, not readers.
+  </p>
+
   <h2>Your rights</h2>
-  <p>You have the right to access, rectification, erasure, restriction of processing, data portability and objection, and the right to lodge a complaint with a supervisory authority.</p>
+  <p>
+    You have the right to access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing
+    (Art. 18) and data portability (Art. 20). <strong>You can object at any time to processing based on Art. 6(1)(f) GDPR
+    (Art. 21).</strong> To exercise these rights, contact us using the details in the <a href="/impressum/">Impressum</a>.
+  </p>
+  <p>
+    You can also complain to a data protection authority, for example the one responsible for us: Der Landesbeauftragte für
+    den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart, Germany.
+  </p>
 </PageLayout>
 
 <style>
-  .todo {
-    background: #f3d9a4;
-    color: #4a3410;
-    padding: 12px 14px;
+  .updated {
+    color: var(--muted);
+    font-size: 14px;
   }
 </style>

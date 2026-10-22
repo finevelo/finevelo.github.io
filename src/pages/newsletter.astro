@@ -9,20 +9,16 @@ import NewsletterForm from '../components/NewsletterForm.astro';
     <h1>The Edit</h1>
     <p class="lede">Five things that mattered in high-end cycling today, with prices, weights and why it matters. One email, every morning at 7.</p>
     <NewsletterForm />
-    <p class="meta" id="nl-status">Free. Unsubscribe with one click. See our <a href="/privacy/">privacy notice</a>.</p>
+    <p class="meta">Free, starting with our launch. We collect no addresses before then.</p>
   </section>
 </BaseLayout>
 
-<script>
-  // Until the newsletter provider is connected, confirm the address locally.
-  const email = new URLSearchParams(location.search).get('email');
-  const status = document.getElementById('nl-status');
-  if (email && status) status.textContent = 'Thanks. Sign-up goes live with our launch, we will confirm by email.';
-</script>
 
 <style>
   .nl {
     max-width: 620px;
+    display: grid;
+    justify-items: center;
     padding-top: 72px;
     text-align: center;
   }

@@ -1,32 +1,30 @@
 ---
-// Placeholder form: connect to Beehiiv/Buttondown by setting `action` to their embed endpoint.
+// The newsletter has no provider yet, so nothing is collected: no email field until sign-up is real.
+// When a provider is connected, replace this with its form (POST to the provider, never GET to our own pages).
 interface Props {
   compact?: boolean;
 }
 const { compact = false } = Astro.props;
 ---
 
-<form class:list={['nl', { 'nl--compact': compact }]} action="/newsletter/" method="get">
-  <label class="visually-hidden" for={compact ? 'nl-email-c' : 'nl-email'}>Email address</label>
-  <input
-    class="input"
-    id={compact ? 'nl-email-c' : 'nl-email'}
-    type="email"
-    name="email"
-    placeholder="you@example.com"
-    autocomplete="email"
-    required
-  />
-  <button class="btn" type="submit">Subscribe</button>
-</form>
+<div class:list={['nl', { 'nl--compact': compact }]}>
+  <p class="nl__note">Sign-up opens at launch.</p>
+  <a class="btn" href="/rss.xml">Follow via RSS</a>
+</div>
 
 <style>
   .nl {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
   }
   .nl--compact {
-    grid-template-columns: minmax(0, 1fr);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nl__note {
+    margin: 0;
+    color: var(--ink-2);
   }
 </style>
