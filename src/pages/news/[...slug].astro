@@ -113,6 +113,7 @@ if (d.faq.length) {
             </p>
           )
         }
+        {d.disclosure && <p class="disclosure"><strong>Disclosure:</strong> {d.disclosure}</p>}
         {d.specs && <SpecsBox specs={d.specs} bike={bike} />}
         <div class="prose">
           <Content />
@@ -256,6 +257,14 @@ if (d.faq.length) {
       top: 24px;
       align-self: start;
     }
+  }
+  .disclosure {
+    margin: 0;
+    padding: 14px 16px;
+    border-left: 3px solid var(--accent);
+    background: var(--chip);
+    font-size: 14.5px;
+    color: var(--ink-2);
   }
   .sample-note {
     margin: 0;

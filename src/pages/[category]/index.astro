@@ -103,6 +103,10 @@ const title = `High-end ${cat.label} news, launches and data`;
           <h2 id="hub-hubs">Lightest Centerlock hub sets</h2>
           <a href="/guides/lightest-centerlock-hub-sets/">Full ranking →</a>
         </div>
+        <p class="hub-disclosure">
+          <strong>Disclosure:</strong> Finevelo's publisher is run by the managing director of NonPlus Components, whose hubs
+          appear in this table. See <a href="/about/">ownership</a>.
+        </p>
         <div class="table-scroll">
           <table class="data-table">
             <thead>
@@ -171,6 +175,14 @@ const title = `High-end ${cat.label} news, launches and data`;
     .hub-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+  }
+  .hub-disclosure {
+    margin: -8px 0 16px;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .hub-disclosure a {
+    text-decoration: underline;
   }
   .hub-data {
     margin-top: 72px;

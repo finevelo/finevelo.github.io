@@ -45,6 +45,8 @@ const articles = defineCollection({
     tags: z.array(z.string()).default([]),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     featured: z.boolean().default(false),
+    // Conflict of interest, shown in a box at the top (e.g. ownership links to a featured brand)
+    disclosure: z.string().optional(),
     // Placeholder content: figures not verified, remove before launch
     sample: z.boolean().default(false),
     draft: z.boolean().default(false),
@@ -216,6 +218,8 @@ const guides = defineCollection({
     updatedDate: z.coerce.date(),
     // Built on figures not yet checked on the original pages: noindex and flagged
     sample: z.boolean().default(false),
+    // Conflict of interest, shown in a box at the top
+    disclosure: z.string().optional(),
     // Which database the ranking is built from
     dataset: z.enum(['bikes', 'hubs', 'wheels']).default('bikes'),
     // Guides are rendered from the database with this filter
