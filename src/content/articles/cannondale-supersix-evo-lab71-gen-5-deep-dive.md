@@ -1,34 +1,43 @@
 ---
 title: "Cannondale SuperSix Evo LAB71 Gen 5: a closer look at the two flagship builds"
-seoTitle: "Cannondale SuperSix Evo LAB71 Gen 5 (2026) Explained"
+seoTitle: Cannondale SuperSix Evo LAB71 Gen 5 (2026) Explained
 description: "Cannondale's SuperSix Evo LAB71 Gen 5: a claimed 755g frame, 10mm lower stack, SRAM Red or Dura-Ace builds. Pricing TBC."
 dek: "Cannondale's top Series 0 carbon race frame comes in two LAB71 builds: one for climbers counting grams, one for racers who want deeper wheels. Here is what the spec sheets say."
-pubDate: 2026-10-27T18:25:26.055Z
+pubDate: 2026-10-27T20:31:22.726Z
 category: road
 format: deep-dive
 author: editorial
+draft: false
 bike: cannondale/supersix-evo-lab71
-draft: true
 hero:
-  alt: "Neutral illustration of a lightweight carbon road race bike in side profile, with drop handlebars and mid-depth carbon wheels, on a plain background"
+  alt: Neutral illustration of a lightweight carbon road race bike in side profile, with drop handlebars and mid-depth carbon wheels, on a plain background
 specs:
-  price: "TBC"
-  weight: "Frame 755 g + fork 378 g (claimed, painted 56cm); complete bike TBC"
-  groupset: "SRAM RED AXS (LAB71 SL) or Shimano Dura-Ace Di2 R9200 (LAB71)"
-  availability: "TBC"
+  price: TBC
+  weight: Frame 755 g + fork 378 g (claimed, painted 56cm); complete bike TBC
+  groupset: SRAM RED AXS (LAB71 SL) or Shimano Dura-Ace Di2 R9200 (LAB71)
+  availability: TBC
 source:
-  name: "Cannondale"
-  url: "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-lab71-sl"
-tags: ["Cannondale", "SuperSix Evo", "LAB71", "Gen 5", "road race bike", "lightweight", "SRAM RED AXS", "Shimano Dura-Ace Di2", "EF Pro Cycling"]
+  name: Cannondale
+  url: https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-lab71-sl
+tags:
+  - Cannondale
+  - SuperSix Evo
+  - LAB71
+  - Gen 5
+  - road race bike
+  - lightweight
+  - SRAM RED AXS
+  - Shimano Dura-Ace Di2
+  - EF Pro Cycling
 faq:
-  - q: "How much does the SuperSix Evo LAB71 frame weigh?"
-    a: "Cannondale claims 755 g for a fully painted 56cm frame and 378 g for the fork. It has not published a complete-bike weight for either LAB71 build."
-  - q: "What is the maximum tyre size?"
-    a: "Cannondale quotes 32mm as the widest tyre it has measured in the frame, and says a tyre of that size still leaves a minimum of 4mm of room on both sides."
-  - q: "What changed in the geometry compared with Gen 4?"
-    a: "Cannondale says stack is 10mm lower across all sizes, and the previous size 51 has been replaced by 50 and 52 for smaller steps between small frames."
-  - q: "Which groupsets are offered on the LAB71 builds?"
-    a: "The LAB71 SL uses SRAM RED AXS 2x12 with an integrated power meter; the LAB71 uses Shimano Dura-Ace Di2 R9200 2x12 with a 4iiii Precision 3+ Pro power meter."
+  - q: How much does the SuperSix Evo LAB71 frame weigh?
+    a: Cannondale claims 755 g for a fully painted 56cm frame and 378 g for the fork. It has not published a complete-bike weight for either LAB71 build.
+  - q: What is the maximum tyre size?
+    a: Cannondale quotes 32mm as the widest tyre it has measured in the frame, and says a tyre of that size still leaves a minimum of 4mm of room on both sides.
+  - q: What changed in the geometry compared with Gen 4?
+    a: Cannondale says stack is 10mm lower across all sizes, and the previous size 51 has been replaced by 50 and 52 for smaller steps between small frames.
+  - q: Which groupsets are offered on the LAB71 builds?
+    a: The LAB71 SL uses SRAM RED AXS 2x12 with an integrated power meter; the LAB71 uses Shimano Dura-Ace Di2 R9200 2x12 with a 4iiii Precision 3+ Pro power meter.
 ---
 
 Cannondale's fifth-generation SuperSix Evo is offered in two LAB71 builds built around its Series 0 carbon frame. The headline figure is a claimed 755 g for a fully painted 56cm frame, paired with a claimed 378 g fork. Cannondale's US product pages do not list prices or complete-bike weights for either LAB71 build, so both remain TBC.
