@@ -688,6 +688,7 @@ async function viewAgent() {
       <p class="lead">Der Agent nimmt die Feeds der Magazine nur als Tipp, sucht dazu die Originalmeldung des Herstellers, schreibt daraus in eigenen Worten und lässt jede Zahl gegenprüfen. Seiten, die KI-Nutzung per robots.txt oder TDM-Vorbehalt ausschließen, liest er nicht. Jeder Artikel kommt als Entwurf zu dir.</p>
       <form id="settings" onsubmit="return false">
         <label class="adm-check"><input type="checkbox" name="enabled" ${s.enabled ? 'checked' : ''} /> <strong>Agent nach Zeitplan ausführen</strong></label>
+        <label class="adm-check"><input type="checkbox" name="backfill" ${s.backfill !== false ? 'checked' : ''} /> Ohne Neuheiten: Hintergrundartikel zu Produkten aus 2025–2026 schreiben <span style="color:var(--muted)">(nur Themen, zu denen es noch keinen Artikel gibt)</span></label>
         <div class="adm-field"><span>Wochentage</span><div class="adm-tabs" id="days">
           ${Object.entries(DAYS).map(([k, l]) => `<button type="button" data-day="${k}" aria-pressed="${s.days.includes(k)}">${l}</button>`).join('')}
         </div></div>
@@ -736,6 +737,7 @@ async function viewAgent() {
     const data = {
       ...rest,
       enabled: f.get('enabled') === 'on',
+      backfill: f.get('backfill') === 'on',
       days: [...document.querySelectorAll('#days [aria-pressed=true]')].map((b) => b.dataset.day),
       times,
       maxArticlesPerRun: +f.get('maxArticlesPerRun'),

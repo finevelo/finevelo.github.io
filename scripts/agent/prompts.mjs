@@ -55,3 +55,17 @@ and corrected frontmatter fields in fixed_fields; otherwise leave them empty.`;
 
 export const REWRITE_TASK = `The DRAFT below reuses word sequences from its sources (listed under COPIED PASSAGES).
 Rewrite those passages fully in your own words and sentence structure; keep every fact and figure. Return the whole article again.`;
+
+export const BACKFILL_TASK = `There is no fresh news today, so Finevelo writes background pieces on high-end products launched
+between January 2025 and today that we have not covered yet. Use web search to find candidates on the manufacturers' own sites.
+Rules:
+- Only products above the Finevelo price lines (see the editorial rules), launched or announced in 2025 or 2026.
+- Skip anything in the ALREADY COVERED list, including other builds, sizes or colours of the same model.
+- Each topic needs at least one official URL: the manufacturer's press release, news post or product page. No magazines, shops or social media.
+- key is lowercase brand/model, e.g. "trek/madone-slr-gen-8".
+Answer with only a JSON object in a \`\`\`json code block:
+{"topics": [{"key": "...", "brand": "...", "product": "...", "category": "road|gravel|mtb|e-bike|components|custom", "launch": "YYYY-MM", "urls": [{"url": "...", "publisher": "...", "kind": "press-release|product-page|official-news"}]}]}`;
+
+export const BACKGROUND_NOTE = `This is a BACKGROUND PIECE, not breaking news: the product launched earlier (date below).
+Do not write "new", "just launched" or "today". State the launch date, explain what the product is, what it costs, what is notable,
+and who it is for, all from the primary source. Format: a considered look, not a launch report.`;

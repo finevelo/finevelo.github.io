@@ -25,6 +25,7 @@ Jeder Push auf `main` baut per GitHub Actions (`.github/workflows/pages.yml`) ei
   4. Ruft diese Seiten selbst ab, nur wenn robots.txt (auch für ClaudeBot/anthropic-ai), Content-Signal, Lizenzhinweise, TDMRep und `noai`-Tags es erlauben (`scripts/agent/fetch.mjs`).
   5. Schreibt aus der Originalquelle in eigenen Worten, ein zweiter Durchgang prüft jede Zahl, ein mechanischer Kopier-Check (`scripts/agent/copycheck.mjs`) verwirft übernommene Wortfolgen.
   6. Speichert **immer als Entwurf**. Veröffentlichen geht nur durch einen Menschen im Backend.
+  7. **Nachhol-Modus** (`backfill` in `config/agent.json`): Kommt aus den Neuheiten kein Artikel zustande, schreibt der Agent Hintergrundartikel zu High-End-Produkten aus 2025–2026, erst aus der eigenen Bike-Datenbank (nur Herstellerseiten), dann per Websuche. Vorher prüft er, ob es schon einen Artikel gibt (Bike-Verknüpfung, Quell-URLs, Marke + Modell in Titel, Slug und Tags) und merkt sich erledigte Themen in `config/agent-state.json` unter `topics`.
   Redaktionsregeln: `scripts/agent/prompts.mjs`. Bereits bewertete Meldungen: `config/agent-state.json`.
 
 ## Struktur

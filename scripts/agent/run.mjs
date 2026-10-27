@@ -6,7 +6,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import { zodOutputFormat } from '@anthropic-ai/sdk/helpers/zod';
 import { z } from 'zod';
 import { existsSync, readdirSync, readFileSync, writeFileSync, appendFileSync } from 'node:fs';
-import { EDITORIAL, SCORE_TASK, SEARCH_TASK, WRITE_TASK, QA_TASK, REWRITE_TASK } from './prompts.mjs';
+import { EDITORIAL, SCORE_TASK, SEARCH_TASK, WRITE_TASK, QA_TASK, REWRITE_TASK, BACKFILL_TASK, BACKGROUND_NOTE } from './prompts.mjs';
 import { fetchText, robotsAllows, readAllowedPage, decode, tag } from './fetch.mjs';
 import { copyCheck } from './copycheck.mjs';
 
@@ -16,6 +16,8 @@ const settings = read('config/agent.json');
 const sources = read('config/sources.json');
 const STATE_FILE = 'config/agent-state.json';
 const state = existsSync(ROOT + STATE_FILE) ? read(STATE_FILE) : { processed: {}, runs: [] };
+state.topics ??= {}; // background topics already written or tried: key -> { at, slug | failed }
+const bikes = read('src/data/bikes.json');
 const FORCE = process.env.FORCE === '1' || process.env.FORCE === 'true';
 const DRY_RUN = process.env.DRY_RUN === '1';
 const ARTICLES = ROOT + 'src/content/articles/';
@@ -61,12 +63,34 @@ function existingArticles() {
     .filter((f) => f.endsWith('.md'))
     .map((f) => {
       const text = readFileSync(ARTICLES + f, 'utf8');
+      const front = (text.match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
       return {
         slug: f.replace(/\.md$/, ''),
-        title: (text.match(/^title:\s*"?(.*?)"?\s*$/m) || [])[1] || '',
-        urls: [...text.matchAll(/^\s+url:\s*"?(https?:[^"\s]+)"?/gm)].map((m) => m[1]),
+        title: (front.match(/^title:\s*"?(.*?)"?\s*$/m) || [])[1] || '',
+        bike: (front.match(/^bike:\s*"?([^"\s]+)"?/m) || [])[1] || '',
+        tags: (front.match(/^tags:\s*\[(.*)\]/m) || [])[1] || '',
+        urls: [...text.matchAll(/https?:\/\/[^\s)"']+/g)].map((m) => m[0]),
       };
     });
+}
+
+// Has Finevelo already written about this product? Checks the bike link, source URLs, and brand + model words in titles, slugs and tags.
+const norm = (x) => x.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+const STOP = new Set(['s', 'works', 'the', 'new', 'and', 'bike', 'bikes', 'pro', 'team', 'edition']);
+function alreadyCovered(topic, existing) {
+  if (state.topics[topic.key] && !(state.topics[topic.key].failed && Date.now() - Date.parse(state.topics[topic.key].at) > 14 * 86400e3)) return 'already handled';
+  if (topic.bike && existing.some((a) => a.bike === topic.bike)) return `article links ${topic.bike}`;
+  const urls = new Set(existing.flatMap((a) => a.urls.map((u) => u.replace(/[#?].*$/, '').replace(/\/$/, ''))));
+  if (topic.urls.some((u) => urls.has(u.url.replace(/[#?].*$/, '').replace(/\/$/, '')))) return 'source URL already used';
+  const brand = norm(topic.brand).split(' ')[0];
+  const model = norm(topic.product).split(' ').filter((w) => w.length > 1 && !STOP.has(w) && !norm(topic.brand).split(' ').includes(w));
+  if (!model.length) return null;
+  for (const a of existing) {
+    const hay = ` ${norm(`${a.title} ${a.slug} ${a.tags}`)} `;
+    // Two or more model words are specific enough on their own; a single one needs the brand too.
+    if (model.every((w) => hay.includes(` ${w} `)) && (model.length > 1 || hay.includes(` ${brand} `))) return `covered by ${a.slug}`;
+  }
+  return null;
 }
 
 // ---------- Claude ----------
@@ -186,7 +210,7 @@ async function readPrimary(found) {
 
 // ---------- writing files ----------
 const q = (s) => JSON.stringify(String(s)); // JSON strings are valid YAML scalars
-function toMarkdown(a, item, primary) {
+function toMarkdown(a, item, primary, { bike } = {}) {
   const lines = [
     '---',
     `title: ${q(a.title)}`,
@@ -197,6 +221,7 @@ function toMarkdown(a, item, primary) {
     `category: ${a.category}`,
     `format: ${a.format}`,
     'author: editorial',
+    ...(bike ? [`bike: ${bike}`] : []),
     // Always a draft: a person reviews and publishes in the backend.
     'draft: true',
     'hero:',
@@ -208,7 +233,7 @@ function toMarkdown(a, item, primary) {
     if (a.specs.availability) lines.push(`  availability: ${q(a.specs.availability)}`);
   }
   lines.push('source:', `  name: ${q(primary[0].publisher)}`, `  url: ${q(primary[0].url)}`);
-  lines.push('tip:', `  name: ${q(item.source)}`, `  url: ${q(item.url)}`);
+  if (item.source && item.url) lines.push('tip:', `  name: ${q(item.source)}`, `  url: ${q(item.url)}`);
   lines.push(`tags: [${a.tags.map(q).join(', ')}]`);
   if (a.faq.length) {
     lines.push('faq:');
@@ -220,7 +245,7 @@ function toMarkdown(a, item, primary) {
     '',
     a.body.trim(),
     '',
-    `*Sources: ${links}. First spotted via [${item.source}](${item.url}). Drafted with AI assistance from the manufacturer's information and reviewed by the Finevelo editors.*`,
+    `*Sources: ${links}.${item.source && item.url ? ` First spotted via [${item.source}](${item.url}).` : ''} Drafted with AI assistance from the manufacturer's information and reviewed by the Finevelo editors.*`,
     '',
   );
   return lines.join('\n');
@@ -236,6 +261,166 @@ function uniqueSlug(slug, taken) {
 }
 
 // ---------- main ----------
+// ---------- writing one article ----------
+// Shared by news and background pieces: primary pages in, checked draft out (or null with a log line).
+async function produce({ item, category, format, primary, background, bike }, existing, taken) {
+  const sourceText = primary.map((pg, i) => `[${i + 1}] ${pg.publisher} (${pg.kind}) ${pg.url}\n${pg.text}`).join('\n\n');
+  const context = background
+    ? `${BACKGROUND_NOTE}\nProduct: ${item.title}. Launched: ${background}.`
+    : `TIP: ${item.source} reported "${item.title}". Do not use the tip's wording or content.`;
+  const brief = `Category: ${category}. Format: ${format}.\n${context}\n\nPRIMARY SOURCE TEXT:\n${sourceText}`;
+  let article = await ask(ArticleSchema, `${EDITORIAL}\n\n${WRITE_TASK}`, brief, { effort: 'high' });
+  const qa = await ask(QaSchema, `${EDITORIAL}\n\n${QA_TASK}`, `PRIMARY SOURCE TEXT:\n${sourceText}\n\nDRAFT (JSON):\n${JSON.stringify(article)}`, { effort: 'high' });
+  if (!qa.pass && !qa.fixed_body) {
+    log(`  ✗ QA failed, skipped: ${item.title} — ${qa.issues.map((i) => i.problem).join('; ')}`);
+    return null;
+  }
+  if (!qa.pass) {
+    const f = qa.fixed_fields || {};
+    article = {
+      ...article,
+      body: qa.fixed_body,
+      title: f.title || article.title,
+      description: f.description || article.description,
+      dek: f.dek || article.dek,
+      specs: article.specs && { ...article.specs, price: f.price || article.specs.price, weight: f.weight || article.specs.weight },
+    };
+  }
+  // Compare against everything the model saw: primary pages and, for news, the tip's headline and teaser.
+  const compareWith = [...primary.map((pg) => pg.text), ...(background ? [] : [`${item.title}. ${item.summary}`])];
+  const fullText = (a) => [a.title, a.dek, a.description, a.body, ...a.faq.map((f) => `${f.q} ${f.a}`)].join('\n\n');
+  let copy = copyCheck(fullText(article), compareWith);
+  if (!copy.ok) {
+    log(`    · copy check: longest run ${copy.longestRun} words, ${copy.share}% shared — rewriting`);
+    article = await ask(
+      ArticleSchema,
+      `${EDITORIAL}\n\n${REWRITE_TASK}`,
+      `COPIED PASSAGES:\n${copy.passages.map((x) => `- ${x}`).join('\n')}\n\nDRAFT (JSON):\n${JSON.stringify(article)}`,
+      { effort: 'medium' },
+    );
+    copy = copyCheck(fullText(article), compareWith);
+  }
+  if (!copy.ok) {
+    log(`  ✗ copy check failed twice, skipped: ${item.title} (longest run ${copy.longestRun} words)`);
+    return null;
+  }
+  const slug = uniqueSlug(article.slug, taken);
+  writeFileSync(`${ARTICLES}${slug}.md`, toMarkdown(article, item, primary, { bike }));
+  existing.push({ slug, title: article.title, bike: bike || '', tags: article.tags.join(' '), urls: primary.map((pg) => pg.url) });
+  log(`  ✓ draft: ${slug} — sources: ${primary.map((pg) => hostOf(pg.url)).join(', ')}${qa.pass ? '' : ' (corrected by QA)'}`);
+  return slug;
+}
+
+// ---------- background topics (2025–2026) ----------
+const BackfillSchema = z.object({
+  topics: z
+    .array(
+      z.object({
+        key: z.string(),
+        brand: z.string(),
+        product: z.string(),
+        category: CATEGORY,
+        launch: z.string(),
+        urls: z.array(z.object({ url: z.string().url(), publisher: z.string(), kind: z.string() })),
+      }),
+    )
+    .default([]),
+});
+
+// Our own bike database first (checked data, manufacturer URL), then web search for more.
+function databaseTopics(existing) {
+  return bikes
+    .filter((b) => /^202[56]/.test(b.launchDate || '') && !b.discontinued && b.url && settings.categories.includes(b.category))
+    .map((b) => ({
+      key: b.id,
+      bike: b.id,
+      brand: b.brand,
+      product: b.model,
+      category: b.category,
+      launch: b.launchDate,
+      // Only pages on the manufacturer's own domain; shops and magazines in the database sources are not primary.
+      urls: [b.url, ...(b.sources || []).map((s) => s.url)]
+        .filter((u, i, all) => all.indexOf(u) === i && hostOf(u) === hostOf(b.url) && !isNotPrimary(u))
+        .map((url) => ({ url, publisher: b.brand, kind: 'product-page' })),
+    }))
+    .filter((t) => t.urls.length && !alreadyCovered(t, existing));
+}
+
+async function searchTopics(existing, need) {
+  const covered = [
+    ...existing.map((a) => `- ${a.title}`),
+    ...Object.keys(state.topics).map((k) => `- ${k}`),
+    ...bikes.map((b) => `- ${b.brand} ${b.model}`),
+  ].join('\n');
+  const messages = [{ role: 'user', content: `Find ${need + 3} topics.\n\nALREADY COVERED:\n${covered}\n\nKnown brand websites:\n${brandSites}\n\nCategories allowed: ${settings.categories.join(', ')}` }];
+  let response;
+  for (let i = 0; i < 4; i++) {
+    response = await client.messages.create({
+      model: MODEL,
+      max_tokens: 8000,
+      system: `${EDITORIAL}\n\n${BACKFILL_TASK}`,
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 8, blocked_domains: NOT_PRIMARY }],
+      messages,
+    });
+    if (response.stop_reason !== 'pause_turn') break;
+    messages.push({ role: 'assistant', content: response.content });
+  }
+  const text = response.content.filter((b) => b.type === 'text').map((b) => b.text).join('\n');
+  const json = (text.match(/```json\s*([\s\S]*?)```/) || text.match(/(\{[\s\S]*\})/) || [])[1];
+  if (!json) throw new Error('topic search gave no usable answer');
+  return BackfillSchema.parse(JSON.parse(json))
+    .topics.filter((t) => /^202[56]/.test(t.launch) && settings.categories.includes(t.category))
+    .map((t) => ({ ...t, key: norm(t.key).replace(/ /g, '-') || norm(`${t.brand} ${t.product}`).replace(/ /g, '-') }))
+    .filter((t) => {
+      const why = alreadyCovered(t, existing);
+      if (why) log(`    · ${t.brand} ${t.product}: skipped (${why})`);
+      return !why;
+    });
+}
+
+async function backfill(existing, taken, need) {
+  log(`No news above the bar — writing up to ${need} background piece(s) on 2025–2026 products.`);
+  let topics = databaseTopics(existing);
+  log(`  ${topics.length} uncovered product(s) in the bike database.`);
+  if (topics.length < need) {
+    try {
+      topics = [...topics, ...(await searchTopics(existing, need - topics.length))];
+    } catch (e) {
+      log(`  ✗ topic search: ${e.message}`);
+    }
+  }
+  const created = [];
+  for (const t of topics) {
+    if (created.length >= need) break;
+    const why = alreadyCovered(t, existing); // re-check: an earlier piece in this run may cover it
+    if (why) continue;
+    const title = `${t.brand} ${t.product}`;
+    if (DRY_RUN) {
+      log(`  · would write: ${title} (${t.launch}) from ${t.urls.map((u) => hostOf(u.url)).join(', ')}`);
+      created.push(t.key);
+      continue;
+    }
+    try {
+      const primary = await readPrimary(t);
+      if (!primary.length) {
+        state.topics[t.key] = { at: new Date().toISOString(), failed: 'primary source not readable' };
+        log(`  ✗ ${title}: primary source not readable`);
+        continue;
+      }
+      const item = { source: null, url: null, title, summary: '', date: new Date() };
+      const slug = await produce({ item, category: t.category, format: 'deep-dive', primary, background: t.launch, bike: t.bike }, existing, taken);
+      state.topics[t.key] = slug ? { at: new Date().toISOString(), slug } : { at: new Date().toISOString(), failed: 'checks failed' };
+      if (slug) created.push(slug);
+    } catch (e) {
+      state.topics[t.key] = { at: new Date().toISOString(), failed: e.message.slice(0, 120) };
+      log(`  ✗ ${title}: ${e.message}`);
+    }
+  }
+  if (!topics.length) log('  Nothing left to cover. Add products to the bike database or more brands to the sources.');
+  return created;
+}
+
+// ---------- main ----------
 async function main() {
   if (!FORCE && !settings.enabled) return log('Agent is switched off (config/agent.json → enabled: false).');
   if (!FORCE && !isRunSlot()) return console.log('Not a scheduled slot, nothing to do.');
@@ -244,7 +429,9 @@ async function main() {
   log(`## Finevelo agent run ${new Date().toISOString()} (model ${MODEL}${FORCE ? ', manual' : ''}${DRY_RUN ? ', dry run' : ''})`);
   const existing = existingArticles();
   const knownUrls = new Set(existing.flatMap((a) => a.urls));
+  const taken = new Set(existing.map((a) => a.slug));
   const since = Date.now() - settings.lookbackHours * 3600 * 1000;
+  const created = [];
 
   // 1. Scout
   const candidates = [];
@@ -258,41 +445,26 @@ async function main() {
       log(`- ${s.name}: feed failed (${e.message})`);
     }
   }
-  if (!candidates.length) return log('No new items.');
 
   // 2. Score
-  const list = candidates.map((c, i) => `${i}. [${c.source}] ${c.title} (${c.date.toISOString().slice(0, 10)})\n   ${c.summary}`).join('\n');
-  const recent = existing.slice(-60).map((a) => `- ${a.title}`).join('\n');
-  const scored = await ask(ScoreSchema, `${EDITORIAL}\n\n${SCORE_TASK}`, `Already published:\n${recent}\n\nCandidates:\n${list}`, { effort: 'low' });
-  for (const s of scored.items) {
-    const c = candidates[s.id];
-    if (c) state.processed[c.url] = { at: new Date().toISOString(), score: s.score };
-  }
-  const picks = scored.items
-    .filter((s) => candidates[s.id] && s.score >= settings.minScore && settings.categories.includes(s.category))
-    .sort((a, b) => b.score - a.score)
-    .slice(0, settings.maxArticlesPerRun);
-  log(`Scored ${scored.items.length} items, ${picks.length} at or above ${settings.minScore}.`);
-  for (const p of picks) log(`  - ${p.score} · ${candidates[p.id].title} — ${p.reason}`);
-  if (!picks.length) return;
-  // Dry run: also look for the primary sources, but write nothing.
-  if (DRY_RUN) {
-    for (const p of picks) {
-      const item = candidates[p.id];
-      try {
-        const found = await findPrimary(item);
-        const primary = found.found ? await readPrimary(found) : [];
-        log(`  ${primary.length ? '✓' : '✗'} ${item.title}: ${primary.length ? primary.map((pg) => pg.url).join(', ') : found.note || 'no readable primary source'}`);
-      } catch (e) {
-        log(`  ✗ ${item.title}: ${e.message}`);
-      }
+  let picks = [];
+  if (candidates.length) {
+    const list = candidates.map((c, i) => `${i}. [${c.source}] ${c.title} (${c.date.toISOString().slice(0, 10)})\n   ${c.summary}`).join('\n');
+    const recent = existing.slice(-80).map((a) => `- ${a.title}`).join('\n');
+    const scored = await ask(ScoreSchema, `${EDITORIAL}\n\n${SCORE_TASK}`, `Already published:\n${recent}\n\nCandidates:\n${list}`, { effort: 'low' });
+    for (const s of scored.items) {
+      const c = candidates[s.id];
+      if (c) state.processed[c.url] = { at: new Date().toISOString(), score: s.score };
     }
-    return;
-  }
+    picks = scored.items
+      .filter((s) => candidates[s.id] && s.score >= settings.minScore && settings.categories.includes(s.category))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, settings.maxArticlesPerRun);
+    log(`Scored ${scored.items.length} items, ${picks.length} at or above ${settings.minScore}.`);
+    for (const p of picks) log(`  - ${p.score} · ${candidates[p.id].title} — ${p.reason}`);
+  } else log('No new items.');
 
-  // 3. Primary source, 4. write, 5. fact check, 6. copy check
-  const taken = new Set(existing.map((a) => a.slug));
-  const created = [];
+  // 3. News: primary source, write, fact check, copy check
   for (const p of picks) {
     const item = candidates[p.id];
     try {
@@ -306,52 +478,23 @@ async function main() {
         log(`  ✗ primary source not readable, skipped: ${item.title}`);
         continue;
       }
-      const sourceText = primary.map((pg, i) => `[${i + 1}] ${pg.publisher} (${pg.kind}) ${pg.url}\n${pg.text}`).join('\n\n');
-      const tip = `TIP: ${item.source} reported "${item.title}". Do not use the tip's wording or content.`;
-      const brief = `Category: ${p.category}. Format: ${p.format}.\n${tip}\n\nPRIMARY SOURCE TEXT:\n${sourceText}`;
-      let article = await ask(ArticleSchema, `${EDITORIAL}\n\n${WRITE_TASK}`, brief, { effort: 'high' });
-      const qa = await ask(QaSchema, `${EDITORIAL}\n\n${QA_TASK}`, `PRIMARY SOURCE TEXT:\n${sourceText}\n\nDRAFT (JSON):\n${JSON.stringify(article)}`, { effort: 'high' });
-      if (!qa.pass && !qa.fixed_body) {
-        log(`  ✗ QA failed, skipped: ${item.title} — ${qa.issues.map((i) => i.problem).join('; ')}`);
+      if (DRY_RUN) {
+        log(`  ✓ ${item.title}: ${primary.map((pg) => pg.url).join(', ')}`);
         continue;
       }
-      if (!qa.pass) {
-        const f = qa.fixed_fields || {};
-        article = {
-          ...article,
-          body: qa.fixed_body,
-          title: f.title || article.title,
-          description: f.description || article.description,
-          dek: f.dek || article.dek,
-          specs: article.specs && { ...article.specs, price: f.price || article.specs.price, weight: f.weight || article.specs.weight },
-        };
-      }
-      // Compare against everything the model saw: primary pages and the tip's headline and teaser.
-      const compareWith = [...primary.map((pg) => pg.text), `${item.title}. ${item.summary}`];
-      const fullText = (a) => [a.title, a.dek, a.description, a.body, ...a.faq.map((f) => `${f.q} ${f.a}`)].join('\n\n');
-      let copy = copyCheck(fullText(article), compareWith);
-      if (!copy.ok) {
-        log(`    · copy check: longest run ${copy.longestRun} words, ${copy.share}% shared — rewriting`);
-        article = await ask(
-          ArticleSchema,
-          `${EDITORIAL}\n\n${REWRITE_TASK}`,
-          `COPIED PASSAGES:\n${copy.passages.map((x) => `- ${x}`).join('\n')}\n\nDRAFT (JSON):\n${JSON.stringify(article)}`,
-          { effort: 'medium' },
-        );
-        copy = copyCheck(fullText(article), compareWith);
-      }
-      if (!copy.ok) {
-        log(`  ✗ copy check failed twice, skipped: ${item.title} (longest run ${copy.longestRun} words)`);
-        continue;
-      }
-      const slug = uniqueSlug(article.slug, taken);
-      writeFileSync(`${ARTICLES}${slug}.md`, toMarkdown(article, item, primary));
-      created.push(slug);
-      log(`  ✓ draft: ${slug} — sources: ${primary.map((pg) => hostOf(pg.url)).join(', ')}${qa.pass ? '' : ' (corrected by QA)'}`);
+      const slug = await produce({ item, category: p.category, format: p.format, primary }, existing, taken);
+      if (slug) created.push(slug);
     } catch (e) {
       log(`  ✗ ${item.title}: ${e.message}`);
     }
   }
+
+  // 4. Nothing new written: background pieces on 2025–2026 products we have not covered.
+  if (!created.length && settings.backfill !== false && !(DRY_RUN && picks.length)) {
+    const done = await backfill(existing, taken, settings.maxArticlesPerRun);
+    if (!DRY_RUN) created.push(...done);
+  }
+
   state.runs = [...(state.runs || []), { at: new Date().toISOString(), created: created.length }].slice(-30);
   if (created.length) log(`${created.length} draft(s) waiting for review in the backend.`);
 }
