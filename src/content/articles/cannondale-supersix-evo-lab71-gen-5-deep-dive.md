@@ -4,6 +4,7 @@ seoTitle: Cannondale SuperSix Evo LAB71 Gen 5 (2026) Explained
 description: "Cannondale's SuperSix Evo LAB71 Gen 5: a claimed 755g frame, 10mm lower stack, SRAM Red or Dura-Ace builds. Pricing TBC."
 dek: "Cannondale's top Series 0 carbon race frame comes in two LAB71 builds: one for climbers counting grams, one for racers who want deeper wheels. Here is what the spec sheets say."
 pubDate: 2026-10-27T20:31:22.726Z
+updatedDate: 2026-10-27T20:31:53.243Z
 category: road
 format: deep-dive
 author: editorial
