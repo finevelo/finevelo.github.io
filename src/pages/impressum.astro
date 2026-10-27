@@ -3,8 +3,6 @@ import PageLayout from '../layouts/PageLayout.astro';
 ---
 
 <PageLayout title="Impressum" kicker="Legal notice" noindex>
-  <p class="todo"><strong>Noch offen:</strong> E-Mail, Handelsregister, USt-IdNr. und redaktionell Verantwortliche/r werden ergänzt.</p>
-
   <h2>Angaben gemäß § 5 DDG</h2>
   <p>
     Vinati GmbH<br />
@@ -17,16 +15,23 @@ import PageLayout from '../layouts/PageLayout.astro';
   <p>Manuel Walker (Geschäftsführer)</p>
 
   <h2>Kontakt</h2>
-  <p>E-Mail: [folgt]</p>
+  <p>
+    Telefon: <a href="tel:+4971955860740">+49 7195 58607 40</a><br />
+    Telefax: +49 7195 58607 41<br />
+    E-Mail: <a href="mailto:info@vinati.de">info@vinati.de</a>
+  </p>
 
   <h2>Registereintrag</h2>
-  <p>Registergericht: [folgt]<br />Registernummer: [folgt]</p>
+  <p>Registergericht: Amtsgericht Stuttgart<br />Registernummer: HRB 756986</p>
 
   <h2>Umsatzsteuer-ID</h2>
-  <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [folgt]</p>
+  <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE306869052</p>
 
   <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-  <p>[folgt], Anschrift wie oben</p>
+  <p>Manuel Walker, Anschrift wie oben</p>
+
+  <h2>Verbraucherstreitbeilegung</h2>
+  <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
   <h2>Interessenkonflikte</h2>
   <p>
@@ -40,11 +45,3 @@ import PageLayout from '../layouts/PageLayout.astro';
     Bearbeitungen stehen unter jedem Bild.
   </p>
 </PageLayout>
-
-<style>
-  .todo {
-    background: #f3d9a4;
-    color: #4a3410;
-    padding: 12px 14px;
-  }
-</style>
