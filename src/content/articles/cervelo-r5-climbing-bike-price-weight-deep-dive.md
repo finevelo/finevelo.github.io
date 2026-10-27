@@ -1,34 +1,42 @@
 ---
 title: "Cervélo R5: what the 5.97kg climbing bike costs and what it changes"
 seoTitle: "Cervélo R5 (2025): Price, Weight and Builds Explained"
-description: "Cervélo's R5 climbing bike claims 5.97kg in size 56. Complete builds run $10,100 to $14,400; the frameset is $6,500."
-dek: "Cervélo's climbing bike bets on low weight, a one-piece cockpit and S5 fit geometry. Here is what the numbers say."
-pubDate: 2026-10-27T18:22:51.604Z
+description: Cervélo's R5 climbing bike claims 5.97kg in size 56. Complete builds run $10,100 to $14,400; the frameset is $6,500.
+dek: Cervélo's climbing bike bets on low weight, a one-piece cockpit and S5 fit geometry. Here is what the numbers say.
+pubDate: 2026-10-27T20:32:01.696Z
 category: road
 format: deep-dive
 author: editorial
+draft: false
 bike: cervelo/r5
-draft: true
 hero:
-  alt: "Neutral illustration of a lightweight carbon road racing bike with a one-piece handlebar, shown side-on on a mountain road"
+  alt: Neutral illustration of a lightweight carbon road racing bike with a one-piece handlebar, shown side-on on a mountain road
 specs:
-  price: "$10,100–$14,400 complete; $6,500 frameset"
-  weight: "5.97kg claimed (size 56, Red and Dura-Ace builds)"
-  groupset: "SRAM Red AXS, Red XPLR AXS, Force AXS; Shimano Dura-Ace Di2, Ultegra Di2"
-  availability: "TBC"
+  price: $10,100–$14,400 complete; $6,500 frameset
+  weight: 5.97kg claimed (size 56, Red and Dura-Ace builds)
+  groupset: SRAM Red AXS, Red XPLR AXS, Force AXS; Shimano Dura-Ace Di2, Ultegra Di2
+  availability: TBC
 source:
-  name: "Cervélo"
-  url: "https://www.cervelo.com/en-US/bikes/r5"
-tags: ["Cervélo", "Cervélo R5", "climbing bike", "lightweight road bike", "SRAM Red AXS", "Shimano Dura-Ace Di2", "Reserve wheels", "Team Visma | Lease a Bike"]
+  name: Cervélo
+  url: https://www.cervelo.com/en-US/bikes/r5
+tags:
+  - Cervélo
+  - Cervélo R5
+  - climbing bike
+  - lightweight road bike
+  - SRAM Red AXS
+  - Shimano Dura-Ace Di2
+  - Reserve wheels
+  - Team Visma | Lease a Bike
 faq:
-  - q: "How much does the Cervélo R5 cost?"
-    a: "Cervélo lists complete bikes from $10,100 (Ultegra Di2) to $14,400 (Red AXS and Red XPLR AXS). The frameset, including the one-piece carbon cockpit and carbon seatpost, is $6,500."
-  - q: "How much does the Cervélo R5 weigh?"
-    a: "Cervélo claims 5.97kg for a size 56 in Red and Dura-Ace builds, with a 651g frame and a 298g fork. Its build listings range from 5.78kg to 6.43kg, and the brand notes final weights vary with size, spec and paint."
-  - q: "Can the R5 be built with a mechanical groupset?"
-    a: "No. Cervélo states the frameset is for electronic drivetrains only."
-  - q: "Is the one-piece handlebar UCI-legal?"
-    a: "Cervélo says all HB18 bar sizes are UCI-legal, including under the most recent regulation change."
+  - q: How much does the Cervélo R5 cost?
+    a: Cervélo lists complete bikes from $10,100 (Ultegra Di2) to $14,400 (Red AXS and Red XPLR AXS). The frameset, including the one-piece carbon cockpit and carbon seatpost, is $6,500.
+  - q: How much does the Cervélo R5 weigh?
+    a: Cervélo claims 5.97kg for a size 56 in Red and Dura-Ace builds, with a 651g frame and a 298g fork. Its build listings range from 5.78kg to 6.43kg, and the brand notes final weights vary with size, spec and paint.
+  - q: Can the R5 be built with a mechanical groupset?
+    a: No. Cervélo states the frameset is for electronic drivetrains only.
+  - q: Is the one-piece handlebar UCI-legal?
+    a: Cervélo says all HB18 bar sizes are UCI-legal, including under the most recent regulation change.
 ---
 
 Cervélo's R5 is the brand's climbing bike, and its headline figure is a claimed 5.97kg for a size 56 in SRAM Red and Shimano Dura-Ace builds. Complete bikes run from $10,100 to $14,400, and the frameset costs $6,500.
