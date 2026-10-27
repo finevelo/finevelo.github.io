@@ -67,5 +67,6 @@ Answer with only a JSON object in a \`\`\`json code block:
 {"topics": [{"key": "...", "brand": "...", "product": "...", "category": "road|gravel|mtb|e-bike|components|custom", "launch": "YYYY-MM", "urls": [{"url": "...", "publisher": "...", "kind": "press-release|product-page|official-news"}]}]}`;
 
 export const BACKGROUND_NOTE = `This is a BACKGROUND PIECE, not breaking news: the product launched earlier (date below).
-Do not write "new", "just launched" or "today". State the launch date, explain what the product is, what it costs, what is notable,
+Do not write "new", "just launched" or "today". Mention the launch date only if the primary source states it; never write
+"launch date: TBC". Explain what the product is, what it costs, what is notable,
 and who it is for, all from the primary source. Format: a considered look, not a launch report.`;

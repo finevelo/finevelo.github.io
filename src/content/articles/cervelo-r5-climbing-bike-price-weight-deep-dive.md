@@ -31,7 +31,7 @@ faq:
     a: "Cervélo says all HB18 bar sizes are UCI-legal, including under the most recent regulation change."
 ---
 
-Cervélo's R5 is the brand's climbing bike, and its headline figure is a claimed 5.97kg for a size 56 in SRAM Red and Shimano Dura-Ace builds. Complete bikes run from $10,100 to $14,400, and the frameset costs $6,500. Launch date: TBC.
+Cervélo's R5 is the brand's climbing bike, and its headline figure is a claimed 5.97kg for a size 56 in SRAM Red and Shimano Dura-Ace builds. Complete bikes run from $10,100 to $14,400, and the frameset costs $6,500.
 
 That is 900g under the UCI's 6.8kg minimum, so pros cannot race it at that weight. Cervélo's point is that riders outside the pro peloton can benefit from what it calls "the lightest road bike on the market". Treat that as the manufacturer's claim, not a measured ranking.
 
