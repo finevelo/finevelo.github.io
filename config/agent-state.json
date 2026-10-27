@@ -175,7 +175,42 @@
     "https://escapecollective.com/spin-cycle-pepernoten-for-the-people/": {
       "at": "2026-10-27T16:21:59.244Z",
       "score": 3
+    },
+    "https://www.cyclingnews.com/bikes/pro-bikes/more-chinese-brands-in-the-pro-peloton-for-2027-as-totalenergies-swaps-cube-for-pardus/": {
+      "at": "2026-10-27T18:21:41.983Z",
+      "score": 38
+    },
+    "https://www.cyclingweekly.com/deals/need-new-wheels-now-dont-hesitate-as-hunt-guarantees-they-will-refund-the-difference-if-your-wheels-get-cheaper-before-black-friday": {
+      "at": "2026-10-27T18:21:41.983Z",
+      "score": 5
+    },
+    "https://escapecollective.com/schachmann-out-at-soudal-no-new-team-announced/": {
+      "at": "2026-10-27T18:21:41.983Z",
+      "score": 3
+    },
+    "https://escapecollective.com/wheel-talk-newsletter-changing-seasons/": {
+      "at": "2026-10-27T18:21:41.983Z",
+      "score": 2
     }
   },
-  "runs": []
+  "runs": [
+    {
+      "at": "2026-10-27T18:25:26.055Z",
+      "created": 2
+    }
+  ],
+  "topics": {
+    "cervelo/r5": {
+      "at": "2026-10-27T18:22:51.605Z",
+      "slug": "cervelo-r5-climbing-bike-price-weight-deep-dive"
+    },
+    "colnago/v5rs": {
+      "at": "2026-10-27T18:23:42.033Z",
+      "failed": "checks failed"
+    },
+    "cannondale/supersix-evo-lab71": {
+      "at": "2026-10-27T18:25:26.055Z",
+      "slug": "cannondale-supersix-evo-lab71-gen-5-deep-dive"
+    }
+  }
 }
