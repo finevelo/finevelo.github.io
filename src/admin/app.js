@@ -681,7 +681,7 @@ async function viewAgent() {
 
   shell('#/agent', `
     <div class="adm-head"><div><h1>Agent</h1>
-      <p>${s.enabled ? `Eingeschaltet · nächster Lauf ${next ? fmtDate(next) : 'nicht im Zeitplan'}` : 'Ausgeschaltet: läuft nur, wenn du ihn von Hand startest.'}</p></div>
+      <p>${s.enabled ? (s.days.length ? `Eingeschaltet · nächster Lauf ${next ? fmtDate(next) : 'nicht im Zeitplan'}` : '<span class="adm-warn">Eingeschaltet, aber kein Wochentag gewählt: der Agent läuft nie.</span>') : 'Ausgeschaltet: läuft nur, wenn du ihn von Hand startest.'}</p></div>
       <div class="adm-actions"><button class="adm-btn ghost" id="dry" type="button">Probelauf (speichert nichts)</button><button class="adm-btn" id="run" type="button">Jetzt ausführen</button></div></div>
 
     <section class="adm-panel"><h2>Zeitplan &amp; Regeln</h2>
@@ -730,6 +730,8 @@ async function viewAgent() {
     const f = new FormData(document.getElementById('settings'));
     const times = String(f.get('times')).split(',').map((x) => x.trim()).filter(Boolean);
     if (!times.every((x) => /^([01]\d|2[0-3]):00$/.test(x))) return toast('Uhrzeiten bitte als volle Stunden, z. B. 06:00, 14:00.', true);
+    const pickedDays = document.querySelectorAll('#days [aria-pressed=true]').length;
+    if (f.get('enabled') === 'on' && !pickedDays) return toast('Bitte mindestens einen Wochentag wählen, sonst läuft der Agent nie.', true);
     const { autoPublish, ...rest } = s;
     const data = {
       ...rest,
