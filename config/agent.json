@@ -1,6 +1,14 @@
 {
   "enabled": true,
-  "days": [],
+  "days": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "sun"
+  ],
   "times": [
     "06:00"
   ],
