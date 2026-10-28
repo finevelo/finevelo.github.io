@@ -153,6 +153,7 @@ const NAV = [
   ['#/articles', 'Artikel'],
   ['#/sources', 'Quellen & Firmen'],
   ['#/agent', 'Agent'],
+  ['#/analytics', 'Analytics'],
 ];
 function shell(active, content, drafts = null) {
   root.className = 'admin';
@@ -790,6 +791,128 @@ async function viewAgent() {
   document.getElementById('dry').addEventListener('click', (e) => start(e.target, true));
 }
 
+// ---------- analytics ----------
+const fmtNum = (n) => Number(n || 0).toLocaleString('de-DE');
+const delta = (now, before) => {
+  if (!before) return now ? '<span class="adm-muted">neu</span>' : '<span class="adm-muted">–</span>';
+  const d = Math.round(((now - before) / before) * 100);
+  return `<span class="${d >= 0 ? 'adm-up' : 'adm-down'}">${d >= 0 ? '▲' : '▼'} ${Math.abs(d)} %</span> <span class="adm-muted">zum Zeitraum davor</span>`;
+};
+const REF_LABEL = { '': 'Direkt / unbekannt' };
+const DEVICE_LABEL = { mobile: 'Smartphone', tablet: 'Tablet', desktop: 'Computer', '': 'Unbekannt' };
+
+function barList(rows, label, value, total) {
+  if (!rows.length) return '<p class="adm-empty">Noch keine Daten.</p>';
+  const max = Math.max(...rows.map(value), 1);
+  return `<ul class="adm-bars">${rows
+    .map((r) => `<li><span class="adm-bar" style="width:${(value(r) / max) * 100}%"></span><span class="adm-bar-label">${label(r)}</span><span class="adm-bar-value">${fmtNum(value(r))}${total ? ` <small>${Math.round((value(r) / total) * 100)} %</small>` : ''}</span></li>`)
+    .join('')}</ul>`;
+}
+
+function dailyChart(daily) {
+  const W = 760, H = 220, top = 12, bottom = 26, left = 36, right = 4;
+  const max = Math.max(...daily.map((d) => d.visitors), 1);
+  const nice = (m) => { const p = 10 ** Math.floor(Math.log10(m)); return Math.ceil(m / p) * p; };
+  const ymax = nice(max);
+  const step = (W - left - right) / daily.length;
+  const bw = Math.max(2, Math.min(28, step - 2));
+  const y = (v) => top + (H - top - bottom) * (1 - v / ymax);
+  const ticks = [0, ymax / 2, ymax];
+  const every = Math.ceil(daily.length / 7);
+  const day = (d) => new Date(d.day).toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
+  return `<svg viewBox="0 0 ${W} ${H}" class="adm-chart-svg" role="img" aria-label="Besucher pro Tag">
+    ${ticks.map((t) => `<line x1="${left}" x2="${W - right}" y1="${y(t)}" y2="${y(t)}" class="grid"/><text x="${left - 8}" y="${y(t) + 4}" class="tick" text-anchor="end">${fmtNum(t)}</text>`).join('')}
+    ${daily
+      .map((d, i) => {
+        const x = left + i * step + (step - bw) / 2;
+        const h = Math.max(0, y(0) - y(d.visitors));
+        const r = Math.min(4, bw / 2, h);
+        const path = h ? `M${x},${y(0)} V${y(0) - h + r} Q${x},${y(0) - h} ${x + r},${y(0) - h} H${x + bw - r} Q${x + bw},${y(0) - h} ${x + bw},${y(0) - h + r} V${y(0)} Z` : '';
+        return `<g class="col" data-i="${i}">
+          <rect x="${left + i * step}" y="${top}" width="${step}" height="${H - top - bottom}" class="hit"/>
+          ${path ? `<path d="${path}" class="bar"/>` : ''}
+          ${i % every === 0 ? `<text x="${x + bw / 2}" y="${H - 8}" class="tick" text-anchor="middle">${day(d)}</text>` : ''}
+        </g>`;
+      })
+      .join('')}
+    <line x1="${left}" x2="${W - right}" y1="${y(0)}" y2="${y(0)}" class="base"/>
+  </svg>`;
+}
+
+async function viewAnalytics(params) {
+  const days = [7, 30, 90].includes(+params.get('d')) ? +params.get('d') : 30;
+  const view = loading('#/analytics');
+  if (!auth.signedIn() || gh.hasToken()) {
+    view.innerHTML = `<div class="adm-head"><div><h1>Analytics</h1></div></div><p class="adm-empty">Analytics gibt es nur mit der Anmeldung per E-Mail, nicht mit dem GitHub-Notfall-Token.</p>`;
+    return;
+  }
+  let st, articles;
+  try {
+    [st, articles] = await Promise.all([
+      auth.supabase.rpc('fv_stats', { days }).then(({ data, error }) => {
+        if (error) throw new Error(/not allowed/.test(error.message) ? 'Dieses Konto ist für Analytics nicht freigeschaltet.' : /fv_stats|function/.test(error.message) ? 'Analytics ist in Supabase noch nicht eingerichtet.' : error.message);
+        return data;
+      }),
+      loadArticles().catch(() => []),
+    ]);
+  } catch (err) {
+    return failed(view, err);
+  }
+  const titles = Object.fromEntries(articles.map((a) => [`/news/${a.slug}/`, a.data.title]));
+  const pageLabel = (p) => (p === '/' ? 'Startseite' : titles[p] ? esc(titles[p]) : `<code>${esc(p)}</code>`);
+  const t = st.totals, pv = st.previous;
+  const perVisit = t.visitors ? (t.views / t.visitors).toLocaleString('de-DE', { maximumFractionDigits: 1 }) : '–';
+  const daySum = (k) => st.daily.reduce((n, d) => n + d[k], 0);
+
+  view.innerHTML = `
+    <div class="adm-head"><div><h1>Analytics</h1><p>Ohne Cookies erfasst · Besucher werden pro Tag gezählt</p></div>
+      <div class="adm-tabs" role="group" aria-label="Zeitraum">${[7, 30, 90].map((d) => `<a href="#/analytics?d=${d}" aria-pressed="${d === days}" class="adm-tab">${d} Tage</a>`).join('')}</div></div>
+    <div class="adm-cards">
+      <div class="adm-card"><div class="k">Besucher</div><div class="v">${fmtNum(t.visitors)}</div><div class="s">${delta(t.visitors, pv.visitors)}</div></div>
+      <div class="adm-card"><div class="k">Seitenaufrufe</div><div class="v">${fmtNum(t.views)}</div><div class="s">${delta(t.views, pv.views)}</div></div>
+      <div class="adm-card"><div class="k">Seiten pro Besuch</div><div class="v">${perVisit}</div><div class="s">Durchschnitt</div></div>
+      <div class="adm-card"><div class="k">Gerade aktiv</div><div class="v">${fmtNum(st.live)}</div><div class="s">letzte 5 Minuten</div></div>
+    </div>
+
+    <section class="adm-panel adm-chart">
+      <h2>Besucher pro Tag</h2>
+      <div class="adm-chart-wrap">${dailyChart(st.daily)}<div class="adm-tip" hidden></div></div>
+      <details class="adm-details"><summary>Als Tabelle</summary>
+        <table class="adm-table"><thead><tr><th>Tag</th><th>Besucher</th><th>Seitenaufrufe</th></tr></thead>
+        <tbody>${st.daily.slice().reverse().map((d) => `<tr><td>${fmtDay(d.day)}</td><td>${fmtNum(d.visitors)}</td><td>${fmtNum(d.views)}</td></tr>`).join('')}</tbody>
+        <tfoot><tr><td>Summe</td><td>${fmtNum(daySum('visitors'))}</td><td>${fmtNum(daySum('views'))}</td></tr></tfoot></table>
+      </details>
+    </section>
+
+    <div class="adm-grid2">
+      <section class="adm-panel"><h2>Meistgelesene Seiten</h2><p class="lead">Seitenaufrufe</p>${barList(st.pages, (r) => pageLabel(r.path), (r) => r.views)}</section>
+      <section class="adm-panel"><h2>Woher die Besucher kommen</h2><p class="lead">Besucher</p>${barList(st.refs, (r) => esc(REF_LABEL[r.ref] ?? r.ref), (r) => r.visitors, t.visitors)}</section>
+      <section class="adm-panel"><h2>Geräte</h2><p class="lead">Besucher</p>${barList(st.devices, (r) => DEVICE_LABEL[r.device] ?? esc(r.device), (r) => r.visitors, t.visitors)}</section>
+      <section class="adm-panel"><h2>Browsersprache</h2><p class="lead">Besucher</p>${barList(st.langs, (r) => (r.lang ? esc(r.lang.toUpperCase()) : 'Unbekannt'), (r) => r.visitors, t.visitors)}</section>
+    </div>
+    <p class="adm-muted adm-note">Nicht gezählt werden Bots, das Backend und Besucher mit „Do Not Track“ oder Global Privacy Control. Die Zahlen sind daher eher eine Untergrenze.</p>`;
+
+  // Hover: tooltip per day column.
+  const wrap = view.querySelector('.adm-chart-wrap');
+  const tip = wrap.querySelector('.adm-tip');
+  wrap.querySelectorAll('.col').forEach((g) => {
+    g.addEventListener('mouseenter', () => {
+      const d = st.daily[+g.dataset.i];
+      g.classList.add('on');
+      tip.innerHTML = `<strong>${new Date(d.day).toLocaleDateString('de-DE', { weekday: 'short', day: 'numeric', month: 'long' })}</strong><br>${fmtNum(d.visitors)} Besucher · ${fmtNum(d.views)} Aufrufe`;
+      tip.hidden = false;
+      const box = g.querySelector('.hit').getBoundingClientRect();
+      const host = wrap.getBoundingClientRect();
+      const x = Math.min(Math.max(box.left - host.left + box.width / 2, 70), host.width - 70);
+      tip.style.left = `${x}px`;
+    });
+    g.addEventListener('mouseleave', () => {
+      g.classList.remove('on');
+      tip.hidden = true;
+    });
+  });
+}
+
 // ---------- router ----------
 function route() {
   const [path, query = ''] = location.hash.replace(/^#/, '').split('?');
@@ -803,6 +926,7 @@ function route() {
   if (path === '/articles') return viewArticles(params);
   if (path === '/sources') return viewSources();
   if (path === '/agent') return viewAgent();
+  if (path === '/analytics') return viewAnalytics(params);
   return viewDashboard();
 }
 window.addEventListener('hashchange', route);

@@ -3,6 +3,10 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../site.config';
+import { SUPABASE_URL } from '../admin/supabase.config.js';
+
+// Own cookieless analytics (see /privacy/): one request per page view, nothing stored in the browser.
+const trackUrl = `${SUPABASE_URL}/functions/v1/track`;
 
 interface Props {
   title: string;
@@ -77,5 +81,13 @@ const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
       <slot />
     </main>
     <Footer />
+    <script is:inline define:vars={{ trackUrl }}>
+      (() => {
+        const n = navigator;
+        if (!/(^|\.)finevelo\.com$/.test(location.hostname) || n.doNotTrack === '1' || n.globalPrivacyControl) return;
+        const body = JSON.stringify({ p: location.pathname + location.search, r: document.referrer, w: innerWidth });
+        fetch(trackUrl, { method: 'POST', body, keepalive: true, headers: { 'Content-Type': 'text/plain' } }).catch(() => {});
+      })();
+    </script>
   </body>
 </html>

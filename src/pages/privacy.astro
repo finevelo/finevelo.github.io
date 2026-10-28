@@ -3,13 +3,14 @@ import PageLayout from '../layouts/PageLayout.astro';
 ---
 
 <PageLayout title="Privacy" kicker="Datenschutz" noindex>
-  <p class="updated">Last updated: 22 October 2026</p>
+  <p class="updated">Last updated: 28 October 2026</p>
 
   <h2>Short version</h2>
   <p>
-    Finevelo has no tracking, no analytics, no advertising, no cookies and no social media plugins. The public site loads no
-    fonts, scripts or images from third parties. The only personal data processed when you read it are the technical access
-    data our host needs to deliver the pages.
+    Finevelo has no advertising, no cookies, no cross-site tracking and no social media plugins. The public site loads no
+    fonts, scripts or images from third parties. We count page views with our own cookieless analytics, which stores no IP
+    addresses and cannot recognise you from one day to the next. Our host processes the technical access data needed to
+    deliver the pages.
   </p>
 
   <h2>Controller</h2>
@@ -37,6 +38,28 @@ import PageLayout from '../layouts/PageLayout.astro';
     We set no cookies. If you switch between light and dark mode, your choice is saved in your browser's local storage so
     the site remembers it. It never leaves your device, and you can delete it in your browser settings at any time. This is
     strictly necessary for a function you asked for (§ 25(2) no. 2 TDDDG).
+  </p>
+
+  <h2>Page view statistics</h2>
+  <p>
+    To see which articles are read, each page view sends one request to our own statistics service. It records the page,
+    the referring website (domain only), a rough device class based on screen width (phone, tablet, computer), the browser
+    language and the time. No cookies are set and nothing is stored on or read from your device.
+  </p>
+  <p>
+    To count unique visitors, a short code is computed from your IP address, your browser identifier and a random value that
+    changes every day. Only this code is stored, never the IP address. The daily random value is deleted after two days, so
+    the code cannot be traced back to you and you cannot be recognised across days. Statistics are kept for 13 months.
+  </p>
+  <p>
+    If your browser sends a "Do Not Track" or Global Privacy Control signal, no request is sent at all. Legal basis: Art.
+    6(1)(f) GDPR (our legitimate interest in knowing which content is read, using as little data as possible). You can object
+    at any time (see below).
+  </p>
+  <p>
+    The service runs on Supabase (Supabase, Inc.) on servers in Frankfurt, Germany, as our processor under a data processing
+    agreement (Art. 28 GDPR). As Supabase is a US company, access from the USA cannot be completely ruled out; such transfers
+    are covered by the EU Standard Contractual Clauses (Art. 46 GDPR).
   </p>
 
   <h2>Contacting us</h2>
