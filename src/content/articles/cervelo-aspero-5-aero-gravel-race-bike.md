@@ -2,33 +2,41 @@
 title: "Cervélo Áspero-5: a closer look at the aero gravel race bike"
 seoTitle: "Cervélo Áspero-5 Aero Gravel Race Bike: Builds and Claims"
 description: "Cervélo's Áspero-5 gravel race bike: complete builds from $8,850 to $12,650, frameset $5,500, 45mm tire clearance and a claimed 37 W aero saving."
-dek: "Cervélo built its gravel racer around aerodynamics, a split-tire geometry and in-frame storage. Here is what the figures say, and who the bike is meant for."
-pubDate: 2026-10-28T05:45:30.376Z
+dek: Cervélo built its gravel racer around aerodynamics, a split-tire geometry and in-frame storage. Here is what the figures say, and who the bike is meant for.
+pubDate: 2026-10-28T07:21:41.681Z
 category: gravel
 format: deep-dive
 author: editorial
+draft: false
 bike: cervelo/aspero-5
-draft: true
 hero:
-  alt: "Neutral illustration of a drop-bar carbon gravel race bike with deep-section wheels and mid-width gravel tires, shown side-on against a plain background"
+  alt: Neutral illustration of a drop-bar carbon gravel race bike with deep-section wheels and mid-width gravel tires, shown side-on against a plain background
 specs:
-  price: "$12,650 (SRAM Red AXS 1 build); from $8,850; frameset $5,500"
-  weight: "TBC (claimed 66 g lighter than predecessor)"
-  groupset: "SRAM Red AXS 1x 12-speed (top build); also Force AXS 1x and Shimano GRX RX827 Di2 1x"
-  availability: "TBC"
+  price: $12,650 (SRAM Red AXS 1 build); from $8,850; frameset $5,500
+  weight: TBC (claimed 66 g lighter than predecessor)
+  groupset: SRAM Red AXS 1x 12-speed (top build); also Force AXS 1x and Shimano GRX RX827 Di2 1x
+  availability: TBC
 source:
-  name: "Cervélo"
-  url: "https://www.cervelo.com/en-US/bikes/aspero-5"
-tags: ["Cervélo", "Áspero-5", "gravel race bike", "aero gravel", "SRAM Red AXS", "Shimano GRX Di2", "Reserve wheels", "Marianne Vos"]
+  name: Cervélo
+  url: https://www.cervelo.com/en-US/bikes/aspero-5
+tags:
+  - Cervélo
+  - Áspero-5
+  - gravel race bike
+  - aero gravel
+  - SRAM Red AXS
+  - Shimano GRX Di2
+  - Reserve wheels
+  - Marianne Vos
 faq:
-  - q: "How much does the Cervélo Áspero-5 cost?"
+  - q: How much does the Cervélo Áspero-5 cost?
     a: "Cervélo lists three complete builds: GRX RX827 Di2 1x at $8,850, Force AXS 1x at $9,000 and Red AXS 1x at $12,650. The frameset, which includes the carbon handlebar, stem and seatpost, costs $5,500. Cervélo notes that prices are subject to change."
-  - q: "What is the maximum tire width?"
-    a: "Cervélo states clearance for tires up to 45mm. The geometry is optimized for a 4mm front-to-rear difference, for example a 40mm front and 44mm rear tire."
-  - q: "How much faster than the previous Áspero is it?"
-    a: "By Cervélo's own numbers, the new bike saves 37 watts compared with the outgoing Áspero and 34 watts compared with the closest rival, and close to 6 watts of that total comes from the aero bar and stem."
-  - q: "Does the Áspero-5 have in-frame storage?"
-    a: "Yes. Cervélo says it uses the downtube storage door first seen on its P-Series triathlon bike, with room for a tube, tools and a flat kit."
+  - q: What is the maximum tire width?
+    a: Cervélo states clearance for tires up to 45mm. The geometry is optimized for a 4mm front-to-rear difference, for example a 40mm front and 44mm rear tire.
+  - q: How much faster than the previous Áspero is it?
+    a: By Cervélo's own numbers, the new bike saves 37 watts compared with the outgoing Áspero and 34 watts compared with the closest rival, and close to 6 watts of that total comes from the aero bar and stem.
+  - q: Does the Áspero-5 have in-frame storage?
+    a: Yes. Cervélo says it uses the downtube storage door first seen on its P-Series triathlon bike, with room for a tube, tools and a flat kit.
 ---
 
 Cervélo's Áspero-5 is the brand's gravel race bike, and its case rests on aerodynamics. The top build with SRAM Red AXS costs $12,650, complete bikes start at $8,850, and a frameset is $5,500. Cervélo does not publish a complete-bike or frame weight, so that figure is TBC. The company says only that the new Áspero-5 is a claimed 66 grams lighter than its predecessor.
