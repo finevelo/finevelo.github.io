@@ -311,6 +311,14 @@
     "https://escapecollective.com/lidl-trek-launches-a-womens-development-team-for-2027/": {
       "at": "2026-10-29T05:44:57.256Z",
       "score": 2
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/will-van-der-poel-and-van-aert-race-brands-dominance-and-van-empels-return-the-storylines-to-follow-this-cyclo-cross-season/": {
+      "at": "2026-10-29T10:27:43.224Z",
+      "score": 8
+    },
+    "https://www.cyclingweekly.com/news/turning-my-head-made-me-feel-dizzy-but-i-could-still-race-indoors-how-virtual-racing-helped-a-tt-record-holder-after-an-unusual-diagnosis": {
+      "at": "2026-10-29T10:27:43.224Z",
+      "score": 5
     }
   },
   "runs": [
@@ -324,6 +332,10 @@
     },
     {
       "at": "2026-10-29T05:47:41.385Z",
+      "created": 2
+    },
+    {
+      "at": "2026-10-29T10:30:21.867Z",
       "created": 2
     }
   ],
@@ -359,6 +371,26 @@
     "factor/elara": {
       "at": "2026-10-29T05:47:41.385Z",
       "slug": "factor-elara-gravel-race-bike-deep-dive"
+    },
+    "pinarello/grevil-f9": {
+      "at": "2026-10-29T10:27:44.147Z",
+      "failed": "primary source not readable"
+    },
+    "look/g85-cezal-rs": {
+      "at": "2026-10-29T10:27:45.431Z",
+      "failed": "primary source not readable"
+    },
+    "3t/racemax2-italia": {
+      "at": "2026-10-29T10:28:55.815Z",
+      "slug": "3t-racemax2-italia-made-in-italy-gravel"
+    },
+    "scott/spark-rc-sl": {
+      "at": "2026-10-29T10:28:57.128Z",
+      "failed": "primary source not readable"
+    },
+    "santa-cruz/blur-5": {
+      "at": "2026-10-29T10:30:21.867Z",
+      "slug": "santa-cruz-blur-xx-axs-race-fa-rsv-deep-dive"
     }
   }
 }
