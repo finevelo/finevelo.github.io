@@ -817,7 +817,8 @@ function dailyChart(daily) {
   const step = (W - left - right) / daily.length;
   const bw = Math.max(2, Math.min(28, step - 2));
   const y = (v) => top + (H - top - bottom) * (1 - v / ymax);
-  const ticks = [0, ymax / 2, ymax];
+  // Visitors are whole numbers: no 0,5 gridline when the scale is tiny.
+  const ticks = Number.isInteger(ymax / 2) ? [0, ymax / 2, ymax] : [0, ymax];
   const every = Math.ceil(daily.length / 7);
   const day = (d) => new Date(d.day).toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
   return `<svg viewBox="0 0 ${W} ${H}" class="adm-chart-svg" role="img" aria-label="Besucher pro Tag">
