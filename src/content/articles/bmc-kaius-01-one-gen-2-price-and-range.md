@@ -2,31 +2,38 @@
 title: "BMC Kaius 01 ONE: what CHF 10,999 buys, and what BMC has yet to say"
 seoTitle: "BMC Kaius 01 ONE Gen 2: Price and Range Position"
 description: "A considered look at the BMC Kaius 01 ONE: CHF 10,999, and where it sits among the six 01 ONE models BMC lists."
-dek: "BMC lists the Kaius 01 ONE at CHF 10,999. Here is where it sits among the brand's 01 ONE models and what buyers should confirm before ordering."
-pubDate: 2026-10-29T05:46:08.632Z
+dek: BMC lists the Kaius 01 ONE at CHF 10,999. Here is where it sits among the brand's 01 ONE models and what buyers should confirm before ordering.
+pubDate: 2026-10-29T12:37:40.211Z
 category: gravel
 format: deep-dive
 author: editorial
+draft: false
 bike: bmc/kaius-01-one
-draft: true
 hero:
-  alt: "Neutral illustration of a drop-bar gravel race bike in side profile on a plain background, with wide tyres and no branding"
+  alt: Neutral illustration of a drop-bar gravel race bike in side profile on a plain background, with wide tyres and no branding
 specs:
-  price: "CHF 10,999"
-  weight: "TBC"
-  groupset: "TBC"
-  availability: "TBC"
+  price: CHF 10,999
+  weight: TBC
+  groupset: TBC
+  availability: TBC
 source:
-  name: "BMC"
-  url: "https://www.bmc-switzerland.com"
-tags: ["BMC", "Kaius", "Kaius 01 ONE", "gravel", "gravel race bike", "Swiss brands", "high-end gravel"]
+  name: BMC
+  url: https://www.bmc-switzerland.com
+tags:
+  - BMC
+  - Kaius
+  - Kaius 01 ONE
+  - gravel
+  - gravel race bike
+  - Swiss brands
+  - high-end gravel
 faq:
-  - q: "How much does the BMC Kaius 01 ONE cost?"
-    a: "BMC lists the Kaius 01 ONE at CHF 10,999.00 on its website."
-  - q: "Is the Kaius 01 ONE BMC's most expensive 01 ONE model?"
-    a: "No. Of the 01 ONE builds BMC lists, it is the lowest priced. The Speedmachine 01 ONE is listed at CHF 15,999.00, and the Teammachine SLR, Teammachine R, Fourstroke R and Roadmachine 01 ONE builds at CHF 12,999.00 each."
-  - q: "What does the Kaius 01 ONE weigh?"
-    a: "The BMC page we used as our source does not state a weight, so it is TBC. Ask a BMC dealer for the claimed figure for your frame size."
+  - q: How much does the BMC Kaius 01 ONE cost?
+    a: BMC lists the Kaius 01 ONE at CHF 10,999.00 on its website.
+  - q: Is the Kaius 01 ONE BMC's most expensive 01 ONE model?
+    a: No. Of the 01 ONE builds BMC lists, it is the lowest priced. The Speedmachine 01 ONE is listed at CHF 15,999.00, and the Teammachine SLR, Teammachine R, Fourstroke R and Roadmachine 01 ONE builds at CHF 12,999.00 each.
+  - q: What does the Kaius 01 ONE weigh?
+    a: The BMC page we used as our source does not state a weight, so it is TBC. Ask a BMC dealer for the claimed figure for your frame size.
 ---
 
 The BMC Kaius 01 ONE is listed by BMC at **CHF 10,999.00**. The BMC page we worked from does not give a weight, so that figure is **TBC**. The page also does not say what kind of riding the Kaius is designed for, so its intended discipline is TBC as well.
