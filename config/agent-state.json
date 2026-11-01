@@ -519,6 +519,66 @@
     "https://escapecollective.com/bahrain-victorious-to-ride-factor-bikes-from-2027/": {
       "at": "2026-10-31T05:40:55.333Z",
       "score": 30
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/from-breakaway-to-bikepacking-adventure-baptiste-veistroffer-takes-on-2-500km-charity-ride/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/canadian-cyclo-cross-national-championships-sidney-mcgill-wins-elite-womens-title/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/tadej-pogacar-reveals-three-fractured-vertebrae-after-vuelta-crash-im-just-happy-to-be-alive/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/theyve-destroyed-cycling-bardiani-csf-7-saber-boss-gives-scathing-assessment-of-the-uci-after-italian-team-unable-to-race-giro-ditalia-in-2027/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-really-feels-like-a-victory-belgian-cyclo-cross-champion-returns-to-training-following-surgery-for-cardiac-arrhythmias/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/i-still-need-some-time-to-analyse-what-i-really-want-tadej-pogacar-to-return-to-the-uae-tour-but-2027-race-calendar-still-undecided-with-tour-de-france-the-main-target/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/i-think-things-could-have-been-done-better-visma-lease-a-bike-departee-regrets-slow-development-on-dutch-team-as-he-drops-to-continental-level-for-2027/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 2
+    },
+    "https://www.cyclingnews.com/cycling-culture/training/wahoo-ceo-talks-finances-artificial-intelligence-and-the-companys-next-big-opportunity/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 12
+    },
+    "https://www.cyclingweekly.com/racing/british-racing/for-the-love-of-the-game-how-britains-top-male-riders-juggle-training-full-time-work-and-increasing-costs": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 3
+    },
+    "https://escapecollective.com/10-of-the-most-successful-transfers-of-2026/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 2
+    },
+    "https://escapecollective.com/ef-parts-ways-with-head-sports-director-charly-wegelius/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 2
+    },
+    "https://escapecollective.com/agent-to-the-stars-alex-carera-has-plans-for-a-new-greek-italian-cycling-team/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 3
+    },
+    "https://escapecollective.com/cycling-has-no-future-bardiani-boss-damns-uci-points-system-that-may-herald-teams-demise/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 2
+    },
+    "https://escapecollective.com/im-just-happy-to-be-alive-pogacar-opens-up-about-difficult-recovery/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 2
+    },
+    "https://escapecollective.com/uae-tour-classics-then-tour-pogacar-lays-out-likely-early-2027-plans/": {
+      "at": "2026-11-01T05:46:52.088Z",
+      "score": 2
     }
   },
   "runs": [
@@ -545,6 +605,10 @@
     {
       "at": "2026-10-31T05:41:36.821Z",
       "created": 0
+    },
+    {
+      "at": "2026-11-01T05:49:38.937Z",
+      "created": 1
     }
   ],
   "topics": {
@@ -606,6 +670,26 @@
     },
     "specialized-s-works-turbo-levo-4": {
       "at": "2026-10-31T05:41:36.821Z",
+      "failed": "primary source not readable"
+    },
+    "specialized-s-works-aethos-2": {
+      "at": "2026-11-01T05:48:09.059Z",
+      "failed": "primary source not readable"
+    },
+    "trek-domane-slr-9-gen-5": {
+      "at": "2026-11-01T05:48:10.747Z",
+      "failed": "primary source not readable"
+    },
+    "cervelo-s5-2026": {
+      "at": "2026-11-01T05:49:38.779Z",
+      "slug": "cervelo-s5-2026-aero-race-bike-deep-dive"
+    },
+    "shimano-xtr-m9200-di2": {
+      "at": "2026-11-01T05:49:38.826Z",
+      "failed": "primary source not readable"
+    },
+    "specialized-s-works-aethos-2-frameset": {
+      "at": "2026-11-01T05:49:38.937Z",
       "failed": "primary source not readable"
     }
   }
