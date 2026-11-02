@@ -579,6 +579,58 @@
     "https://escapecollective.com/uae-tour-classics-then-tour-pogacar-lays-out-likely-early-2027-plans/": {
       "at": "2026-11-01T05:46:52.088Z",
       "score": 2
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/gravel-burn-matt-beers-defends-title-as-nele-laing-led-from-start-to-finish-across-south-africas-great-karoo/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 12
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/south-africas-lisa-bone-makes-the-leap-to-the-worldtour-with-ef-education-oatly/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/canadian-cyclo-cross-national-championships-tyler-clark-claims-back-to-back-elite-mens-title/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/x2o-trofee-oudenaarde-thibau-nys-wins-koppenbergcross-after-heated-battle-with-michael-vanthourenhout/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/category/womens-cycling/x20-trofee-oudenaarde-lucinda-brand-ascends-the-koppenberg-to-take-her-fourth-win-of-the-season/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-is-a-big-goal-femke-de-vries-targets-grand-tour-podium-after-breakthrough-season/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/anything-is-possible-paul-seixas-open-to-racing-giro-ditalia-in-2027/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/i-would-like-to-continue-at-43-domenico-pozzovivo-is-eyeing-a-return-to-the-giro-ditalia-in-2027/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 4
+    },
+    "https://www.cyclingweekly.com/news/pogacar-cracking-will-define-the-2020s-or-maybe-the-2030s-or-2040s": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 2
+    },
+    "https://escapecollective.com/nedbank-gravel-burn-stage-7-beers-and-laing-conquer-the-great-karoo/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 10
+    },
+    "https://escapecollective.com/harder-than-hard-brand-and-nys-take-team-sweep-at-koppenbergcross/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 7
+    },
+    "https://escapecollective.com/i-was-really-depressed-pogacar-opens-up-about-difficult-recovery/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 4
+    },
+    "https://escapecollective.com/lafay-has-no-contract-for-2027-but-is-not-yet-done-with-cycling/": {
+      "at": "2026-11-02T05:00:22.029Z",
+      "score": 3
     }
   },
   "runs": [
@@ -609,6 +661,10 @@
     {
       "at": "2026-11-01T05:49:38.937Z",
       "created": 1
+    },
+    {
+      "at": "2026-11-02T05:04:51.375Z",
+      "created": 2
     }
   ],
   "topics": {
@@ -691,6 +747,18 @@
     "specialized-s-works-aethos-2-frameset": {
       "at": "2026-11-01T05:49:38.937Z",
       "failed": "primary source not readable"
+    },
+    "santa-cruz-vala-xx-axs-rsv": {
+      "at": "2026-11-02T05:03:18.093Z",
+      "slug": "santa-cruz-vala-xx-axs-rsv-full-power-emtb"
+    },
+    "roval-alpinist-clx-iii": {
+      "at": "2026-11-02T05:03:18.578Z",
+      "failed": "primary source not readable"
+    },
+    "enve-ses-4-5-tdf-2025": {
+      "at": "2026-11-02T05:04:51.375Z",
+      "slug": "enve-ses-4-5-tdf-2025-wheelset-deep-dive"
     }
   }
 }
