@@ -915,6 +915,78 @@
     "https://www.cyclingweekly.com/routes/river-wye-source-to-sea": {
       "at": "2026-11-06T05:59:05.101Z",
       "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/transfers/belgian-champion-leaves-uae-team-emirates-xrg-for-three-year-deal-with-movistar/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/world-champion-brandon-mcnulty-to-debut-rainbow-jersey-on-home-soil-at-el-tour-de-tucson-north-american-roundup/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/totalenergies-team-survives-as-new-three-year-sponsor-announcement-imminent/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/if-you-like-it-then-why-would-you-stop-approaching-his-40s-wout-poels-continues-into-19th-and-final-pro-season-with-unibet-rose-rockets-in-2027/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/i-think-she-has-grown-a-lot-mentally-lars-boom-highlights-reason-for-demi-vollerings-stunning-season-outlines-2027-goals/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/miraculous-tadej-pogacars-heart-rate-data-and-sleep-scores-revealed-in-new-documentary/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/pro-cycling/transfers/ef-education-easypost-continue-post-carapaz-rebuild-for-2027-with-two-more-development-team-graduates/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/michael-vanthourenhout-fined-for-post-race-clash-with-cameron-mason-at-middelkerke-cyclo-cross/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/cycling-tech-components/smart-trainers/trainerroad-vs-trainingpeaks-which-is-the-best-app-to-support-your-structured-training/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 10
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/toms-pace-is-pretty-mind-blowing-tom-pidcock-swaps-two-wheels-for-four-to-tackle-fearsome-nurburgring-nordschleife-race-track-in-porsche-911/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/cycling-culture/training/how-to-turn-an-ai-into-your-personal-coach-discipline-specific-prompts-and-setup-instructions/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/i-felt-quite-lost-and-desperate-how-ashleigh-moolman-pasio-re-wrote-the-ending-of-her-17-year-career-and-how-shes-re-writing-the-future-for-african-cyclists/": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 5
+    },
+    "https://www.cyclingweekly.com/news/bmc-announce-long-overdue-presence-in-the-womens-pro-peloton": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 22
+    },
+    "https://www.cyclingweekly.com/deals/dont-wait-for-black-friday-says-balfes-bikes-their-price-promise-sees-our-top-rated-gravel-bike-discounted-by-31-percent-its-a-guaranteed-lowest-price": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/news/we-cant-legislate-for-idiots-new-laws-to-curb-dodgy-and-dangerous-e-bike-activity-to-be-introduced-in-britain": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 8
+    },
+    "https://www.cyclingweekly.com/gravel/a-big-rig-for-a-big-dog-matt-beers-fully-tricked-out-specialized-s-works-crux-5-from-gravel-burn": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 18
+    },
+    "https://www.cyclingweekly.com/news/i-raced-my-first-cyclo-cross-race-at-40-and-now-im-a-convert": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 2
+    },
+    "https://www.cyclingweekly.com/racing/belgian-rider-fined-after-argy-bargy-with-british-champ-at-cyclo-cross-race": {
+      "at": "2026-11-07T05:48:48.749Z",
+      "score": 2
     }
   },
   "runs": [
@@ -961,6 +1033,10 @@
     {
       "at": "2026-11-06T06:01:27.511Z",
       "created": 1
+    },
+    {
+      "at": "2026-11-07T05:49:32.413Z",
+      "created": 0
     }
   ],
   "topics": {
