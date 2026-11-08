@@ -987,6 +987,42 @@
     "https://www.cyclingweekly.com/racing/belgian-rider-fined-after-argy-bargy-with-british-champ-at-cyclo-cross-race": {
       "at": "2026-11-07T05:48:48.749Z",
       "score": 2
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/this-one-feels-different-lucinda-brand-on-winning-european-cyclo-cross-title-after-rival-was-relegated/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/pan-am-cyclo-cross-championships-eric-brunner-solos-to-fifth-elite-mens-title-in-washington-dc/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/pan-am-cyclo-cross-championships-alyssa-sarkisov-powers-away-on-penultimate-lap-to-win-elite-womens-title/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/pan-am-cyclo-cross-championships-miles-mattern-and-ada-watson-win-u23-men-and-women-titles-in-washington-dc/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/european-cyclo-cross-championships-elite-women-marie-schreiber-surges-to-stunning-victory-to-deny-dutch-on-home-soil/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 6
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/european-cyclo-cross-championships-aubin-sparfel-outsprints-belgian-pair-to-seal-under-23-mens-title-for-france/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/european-cyclo-cross-championships-lentel-huys-takes-glory-for-belgium-in-junior-womens-race/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/a-one-sided-story-has-been-told-picnic-postnl-team-owner-ivan-spekenbrink-responds-to-allegations-of-culture-of-fear-within-team/": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 2
+    },
+    "https://www.cyclingweekly.com/news/my-earliest-cycling-memory-is-crashing-my-bike-and-ending-up-in-hospital-alex-dowsett-on-his-life-on-two-wheels": {
+      "at": "2026-11-08T05:50:40.044Z",
+      "score": 3
     }
   },
   "runs": [
@@ -1036,6 +1072,10 @@
     },
     {
       "at": "2026-11-07T05:49:32.413Z",
+      "created": 0
+    },
+    {
+      "at": "2026-11-08T05:51:20.365Z",
       "created": 0
     }
   ],
