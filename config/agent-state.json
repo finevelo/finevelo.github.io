@@ -1023,6 +1023,38 @@
     "https://www.cyclingweekly.com/news/my-earliest-cycling-memory-is-crashing-my-bike-and-ending-up-in-hospital-alex-dowsett-on-his-life-on-two-wheels": {
       "at": "2026-11-08T05:50:40.044Z",
       "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/fastest-lap-is-not-enough-to-overcome-a-slow-start-for-cameron-mason-sixth-at-uec-european-cyclo-cross-championships/": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/why-not-isaac-del-toro-on-a-mexican-rider-winning-tour-de-france-in-the-future/": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/commissaire-who-relegated-marie-schreiber-at-the-european-cyclo-cross-championships-has-a-history-with-her-sd-worx-protime-team/": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/european-cyclo-cross-championships-thibau-nys-wins-second-elite-title-as-belgium-sweeps-the-podium/": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 10
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/singapore-criterium-isaac-del-toro-takes-surprise-solo-win-as-the-sprinters-miss-out/": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/its-disrespectful-to-steal-the-biggest-moment-of-my-career-marie-schreiber-condemns-euro-cyclocross-relegation/": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/pan-am-cyclo-cross-championships-usas-noah-scholnick-and-lilliana-odonnell-win-junior-titles-in-washington-dc/": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/news/most-friends-would-rather-die-than-tell-me-the-price-they-paid-for-a-bike": {
+      "at": "2026-11-09T05:05:28.624Z",
+      "score": 2
     }
   },
   "runs": [
@@ -1076,6 +1108,10 @@
     },
     {
       "at": "2026-11-08T05:51:20.365Z",
+      "created": 0
+    },
+    {
+      "at": "2026-11-09T05:06:03.241Z",
       "created": 0
     }
   ],
