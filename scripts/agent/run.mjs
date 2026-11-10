@@ -346,36 +346,80 @@ function databaseTopics(existing) {
     .filter((t) => t.urls.length && !alreadyCovered(t, existing));
 }
 
+// Rotate the search focus by day so the agent does not keep finding (and skipping) the same road bikes.
+const FOCUS = ['road', 'gravel', 'mtb', 'e-bike', 'components', 'custom'];
+const cleanUrl = (u) => u.replace(/[#?].*$/, '').replace(/\/$/, '');
+
 async function searchTopics(existing, need) {
   const covered = [
     ...existing.map((a) => `- ${a.title}`),
     ...Object.keys(state.topics).map((k) => `- ${k}`),
     ...bikes.map((b) => `- ${b.brand} ${b.model}`),
   ].join('\n');
-  const messages = [{ role: 'user', content: `Find ${need + 3} topics.\n\nALREADY COVERED:\n${covered}\n\nKnown brand websites:\n${brandSites}\n\nCategories allowed: ${settings.categories.join(', ')}` }];
+  const allowed = FOCUS.filter((c) => settings.categories.includes(c));
+  const dayIndex = Math.floor(Date.now() / 86400e3);
+  const focus = allowed.length ? allowed[dayIndex % allowed.length] : 'road';
+  const messages = [
+    {
+      role: 'user',
+      content: `Find ${need + 6} topics. Focus today on the category "${focus}"; use other allowed categories only if "${focus}" runs dry.
+Copy every URL exactly as it appears in your search results; never build or guess a URL.
+
+ALREADY COVERED:
+${covered}
+
+Known brand websites:
+${brandSites}
+
+Categories allowed: ${allowed.join(', ')}`,
+    },
+  ];
+  const parts = [];
   let response;
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     response = await client.messages.create({
       model: MODEL,
-      max_tokens: 8000,
+      max_tokens: 12000,
       system: `${EDITORIAL}\n\n${BACKFILL_TASK}`,
-      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 8, blocked_domains: NOT_PRIMARY }],
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 12, blocked_domains: NOT_PRIMARY }],
       messages,
     });
+    parts.push(response.content);
     if (response.stop_reason !== 'pause_turn') break;
     messages.push({ role: 'assistant', content: response.content });
   }
+  // Every URL the search actually returned (results, citations); topic URLs not among them were made up.
+  const seen = new Set((JSON.stringify(parts).match(/https?:\/\/[^\s"\\)]+/g) || []).map(cleanUrl));
   const text = response.content.filter((b) => b.type === 'text').map((b) => b.text).join('\n');
   const json = (text.match(/```json\s*([\s\S]*?)```/) || text.match(/(\{[\s\S]*\})/) || [])[1];
-  if (!json) throw new Error('topic search gave no usable answer');
-  return BackfillSchema.parse(JSON.parse(json))
-    .topics.filter((t) => /^202[56]/.test(t.launch) && settings.categories.includes(t.category))
-    .map((t) => ({ ...t, key: norm(t.key).replace(/ /g, '-') || norm(`${t.brand} ${t.product}`).replace(/ /g, '-') }))
-    .filter((t) => {
-      const why = alreadyCovered(t, existing);
-      if (why) log(`    · ${t.brand} ${t.product}: skipped (${why})`);
-      return !why;
-    });
+  if (!json) throw new Error(`topic search gave no usable answer (stop: ${response.stop_reason})`);
+  const raw = BackfillSchema.parse(JSON.parse(json)).topics;
+  log(`  Topic search (focus ${focus}): ${raw.length} suggestion(s).`);
+  const out = [];
+  for (const t of raw) {
+    const name = `${t.brand} ${t.product}`;
+    if (!/202[56]/.test(t.launch)) {
+      log(`    · ${name}: skipped (launch ${t.launch} not in 2025–2026)`);
+      continue;
+    }
+    if (!allowed.includes(t.category)) {
+      log(`    · ${name}: skipped (category ${t.category} switched off)`);
+      continue;
+    }
+    const urls = t.urls.filter((u) => seen.has(cleanUrl(u.url)) && !isNotPrimary(u.url));
+    if (!urls.length) {
+      log(`    · ${name}: skipped (no official URL from the search results)`);
+      continue;
+    }
+    const topic = { ...t, urls, key: norm(t.key).replace(/ /g, '-') || norm(name).replace(/ /g, '-') };
+    const why = alreadyCovered(topic, existing);
+    if (why) {
+      log(`    · ${name}: skipped (${why})`);
+      continue;
+    }
+    out.push(topic);
+  }
+  return out;
 }
 
 async function backfill(existing, taken, need) {
@@ -416,7 +460,7 @@ async function backfill(existing, taken, need) {
       log(`  ✗ ${title}: ${e.message}`);
     }
   }
-  if (!topics.length) log('  Nothing left to cover. Add products to the bike database or more brands to the sources.');
+  if (!topics.length) log('  No usable topic today. The search focus changes tomorrow; more brands in the sources also help.');
   return created;
 }
 
