@@ -1165,6 +1165,10 @@
     {
       "at": "2026-11-10T05:55:38.076Z",
       "created": 0
+    },
+    {
+      "at": "2026-11-10T08:27:34.511Z",
+      "created": 1
     }
   ],
   "topics": {
@@ -1274,6 +1278,14 @@
     },
     "specialized-s-works-diverge-4": {
       "at": "2026-11-06T06:01:27.511Z",
+      "failed": "primary source not readable"
+    },
+    "cannondale-superx-lab71": {
+      "at": "2026-11-10T08:27:33.298Z",
+      "slug": "cannondale-superx-lab71-gravel-race-bike"
+    },
+    "ridley-kanzo-fast-2-0": {
+      "at": "2026-11-10T08:27:34.511Z",
       "failed": "primary source not readable"
     }
   }
