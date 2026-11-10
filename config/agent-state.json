@@ -1055,6 +1055,54 @@
     "https://www.cyclingweekly.com/news/most-friends-would-rather-die-than-tell-me-the-price-they-paid-for-a-bike": {
       "at": "2026-11-09T05:05:28.624Z",
       "score": 2
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/my-life-long-dream-has-come-true-rising-gravel-stars-carve-close-victories-at-iceman-cometh-against-former-winners-alexey-vermeulen-deanna-mayles/": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/pro-cycling/inside-a-worldtour-pros-off-season-watching-nba-with-remco-much-needed-days-on-the-couch-and-exhausting-wind-tunnel-tests-luke-tuckwells-column/": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/if-i-start-discussing-contracts-here-i-think-ill-go-crazy-paul-seixas-not-thinking-about-future-deal-as-off-season-rolls-on/": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/relaxed-primoz-roglic-gets-back-on-the-bike-for-taiwan-masters-ride-despite-time-and-options-for-finding-new-team-in-2027-running-low/": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/marianne-vos-lotte-kopecky-mathieu-van-der-poel-and-maddy-nutt-among-stars-set-to-headline-rouleur-live-in-london/": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 18
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/luxembourg-federation-lodges-official-complaint-over-marie-schreibers-lost-european-title-but-how-can-they-hope-to-overturn-the-decision/": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/give-mathieu-those-five-seconds-and-you-wont-see-him-again-thibau-nys-chasing-van-der-poels-level-of-cyclo-cross-dominance/": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 4
+    },
+    "https://www.cyclingweekly.com/racing/i-think-its-just-disrespectful-controversy-at-european-cyclo-cross-championships-as-luxembourg-files-complaint-over-relegation": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/reviews/road-bikes/how-much-bike-can-you-buy-for-3k-state-bicycle-companys-carbon-road-bike-puts-in-a-good-showing": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 5
+    },
+    "https://www.cyclingweekly.com/news/cyclist-killed-over-20-injured-after-driver-crashes-into-club-ride": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 2
+    },
+    "https://www.cyclingweekly.com/racing/i-threw-it-all-away-today-hurts-so-much-british-cyclo-cross-champion-bitterly-disappointed-with-sixth-at-european-championships": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/news/i-have-no-regrets-whatsoever-how-a-double-leg-amputation-opened-up-this-cyclists-horizons": {
+      "at": "2026-11-10T05:55:00.431Z",
+      "score": 4
     }
   },
   "runs": [
@@ -1112,6 +1160,10 @@
     },
     {
       "at": "2026-11-09T05:06:03.241Z",
+      "created": 0
+    },
+    {
+      "at": "2026-11-10T05:55:38.076Z",
       "created": 0
     }
   ],
