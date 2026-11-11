@@ -1103,6 +1103,54 @@
     "https://www.cyclingweekly.com/news/i-have-no-regrets-whatsoever-how-a-double-leg-amputation-opened-up-this-cyclists-horizons": {
       "at": "2026-11-10T05:55:00.431Z",
       "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/past-results-and-wildcard-invitations-now-define-pro-categories-at-the-traka-world-series-events-the-rift-keeps-a-limited-number-of-entries-open-for-women-gravel-bits/": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/canyon-sram-delve-into-world-of-ai-with-new-training-and-development-partnership-ahead-of-2027-season/": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/cycling-culture/you-asked-we-answered-our-labs-experts-on-wind-tunnel-testing-reverse-mullet-wheels-our-ultimate-roubaix-setups-and-more-askcn/": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/hand-injury-from-crash-on-way-to-euros-bronze-forces-ceylin-del-carmen-alvarado-out-of-upcoming-cyclo-cross-races/": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/tour-down-under-announces-former-giro-winner-jai-hindley-as-first-headline-starter-for-2027/": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/totalenergies-becomes-xefi-as-new-title-sponsor-steps-in-to-save-french-team/": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 7
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/from-lorena-wiebes-to-paul-magnier-who-were-the-best-sprinters-of-2026/": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/racing/the-2027-tours-de-france-routes-are-a-british-fans-dream-how-to-watch-the-french-grand-tour": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 4
+    },
+    "https://www.cyclingweekly.com/racing/french-proteam-saved-goodbye-totalenergies-hello-xefi": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 5
+    },
+    "https://www.cyclingweekly.com/news/as-cyclists-we-should-welcome-proposed-new-laws-on-dangerous-e-bike-use": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/reviews/wheels/enve-ses-4-5-pro-wheelset-review-an-incredible-set-of-wheels-with-an-equally-incredible-price": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 6
+    },
+    "https://www.cyclingweekly.com/news/i-know-this-is-disappointing-news-award-winning-british-bike-brand-set-to-close": {
+      "at": "2026-11-11T05:59:28.815Z",
+      "score": 12
     }
   },
   "runs": [
@@ -1169,6 +1217,10 @@
     {
       "at": "2026-11-10T08:27:34.511Z",
       "created": 1
+    },
+    {
+      "at": "2026-11-11T06:02:54.389Z",
+      "created": 0
     }
   ],
   "topics": {
@@ -1177,7 +1229,7 @@
       "slug": "cervelo-r5-climbing-bike-price-weight-deep-dive"
     },
     "colnago/v5rs": {
-      "at": "2026-10-27T18:23:42.033Z",
+      "at": "2026-11-11T06:02:54.389Z",
       "failed": "checks failed"
     },
     "cannondale/supersix-evo-lab71": {
