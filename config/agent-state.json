@@ -1151,6 +1151,66 @@
     "https://www.cyclingweekly.com/news/i-know-this-is-disappointing-news-award-winning-british-bike-brand-set-to-close": {
       "at": "2026-11-11T05:59:28.815Z",
       "score": 12
+    },
+    "https://www.cyclingnews.com/bikes/classic-british-steel-bike-maker-temple-cycles-set-to-close-after-12-years-in-business/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 22
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/if-she-has-tears-in-her-eyes-that-is-not-a-good-sign-fears-for-lucinda-brands-cyclo-cross-season-as-world-champion-injures-ankle-in-opening-lap-crash/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/superprestige-niel-cameron-mason-soloes-to-first-win-of-the-season-and-biggest-victory-of-his-career/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/who-had-the-biggest-breakout-performances-in-the-world-of-gravel-in-2026-here-are-six-riders-with-top-form-through-clouds-of-dust-and-mires-of-mud/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/superprestige-niel-manon-bakker-masters-the-mud-to-take-the-win/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/cycling-tech-components/garmin-partners-with-navigation-app-waze-to-increase-rider-safety-with-real-time-alerts/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 25
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/i-continued-even-after-i-thought-it-was-fun-former-u23-world-champion-retires-aged-27/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/we-are-certainly-not-doomed-thibau-nys-and-lucinda-brands-cyclo-cross-team-in-mid-season-sponsor-search-after-co-title-sponsor-pulls-out/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/i-dont-think-i-could-do-just-one-discipline-how-a-mantra-about-circles-childhood-friends-and-an-unruly-chicken-help-puck-pieterse-to-do-it-all/": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 6
+    },
+    "https://www.cyclingweekly.com/racing/team-vies-to-become-first-brish-mens-continental-squad-for-three-years": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/news/giving-drivers-a-helpful-heads-up-garmin-collabs-with-waze-to-alert-motorists-to-nearby-cyclists-heres-what-we-think": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 18
+    },
+    "https://www.cyclingweekly.com/products/did-i-ruin-a-perfectly-good-mountain-bike-or-have-i-built-the-ultimate-gravel-bike-for-less-than-gbp500": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 2
+    },
+    "https://www.cyclingweekly.com/news/127-brands-across-two-floors-rouleur-live-2026-has-more-exhibitors-on-display-than-ever": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 30
+    },
+    "https://www.cyclingweekly.com/news/cw-cc-sign-up-to-a-free-cycling-weekly-membership-account-for-exclusive-access": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 0
+    },
+    "https://www.cyclingweekly.com/reviews/road-bikes/elves-falath-exp-sport-review-an-aero-bike-that-brings-performance-and-value-to-the-people": {
+      "at": "2026-11-12T05:00:17.367Z",
+      "score": 8
     }
   },
   "runs": [
@@ -1220,6 +1280,10 @@
     },
     {
       "at": "2026-11-11T06:02:54.389Z",
+      "created": 0
+    },
+    {
+      "at": "2026-11-12T05:01:02.082Z",
       "created": 0
     }
   ],
