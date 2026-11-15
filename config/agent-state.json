@@ -1291,6 +1291,38 @@
     "https://www.cyclingweekly.com/racing/huge-usd800k-prize-pot-for-life-time-grand-prix-in-2027-is-biggest-ever": {
       "at": "2026-11-14T05:51:29.856Z",
       "score": 6
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/reports-suggest-xds-may-withdraw-sponsorship-of-the-xds-astana-team-before-the-scheduled-2029-date/": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 15
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/michael-vanthourenhout-back-on-rollers-after-crashing-out-of-superprestige-merksplas/": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/im-excited-to-be-part-of-that-story-florian-senechal-joins-unibet-rose-rockets/": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/superprestige-merksplas-niels-vandeputte-outsprints-joran-wyseure-to-take-first-win-of-season/": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/superprestige-merksplas-lucinda-brand-returns-to-take-brilliant-win-after-a-race-long-fight/": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/i-prefer-having-two-lively-riders-pinarello-q36-5-sports-director-plays-down-potential-clash-between-tom-pidcock-and-giulio-ciccone/": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 5
+    },
+    "https://www.cyclingweekly.com/fitness/training/how-to-hold-onto-your-vo2-max-and-peak-fitness-even-when-a-busy-life-gets-in-the-way": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 2
+    },
+    "https://www.cyclingweekly.com/news/from-the-campag-pista-groupset-to-the-weinmann-rims-this-bike-remains-unchanged-from-the-1968-olympic-games": {
+      "at": "2026-11-15T05:54:53.112Z",
+      "score": 18
     }
   },
   "runs": [
@@ -1369,6 +1401,10 @@
     {
       "at": "2026-11-14T05:51:36.820Z",
       "created": 0
+    },
+    {
+      "at": "2026-11-15T05:59:04.949Z",
+      "created": 2
     }
   ],
   "topics": {
@@ -1487,6 +1523,14 @@
     "ridley-kanzo-fast-2-0": {
       "at": "2026-11-10T08:27:34.511Z",
       "failed": "primary source not readable"
+    },
+    "factor-one": {
+      "at": "2026-11-15T05:58:00.570Z",
+      "slug": "factor-one-aero-road-bike-bayonet-fork-explained"
+    },
+    "bmc-teammachine-slr-01-gen-5": {
+      "at": "2026-11-15T05:59:04.949Z",
+      "slug": "bmc-teammachine-slr-01-prices-builds-guide"
     }
   }
 }
