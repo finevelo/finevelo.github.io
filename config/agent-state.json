@@ -1399,6 +1399,74 @@
     "https://www.cyclingweekly.com/racing/it-should-allow-us-to-confirm-our-status-among-the-world-elite-demi-vollerings-fdj-united-suez-bring-totalenergies-onboard-as-title-sponsor": {
       "at": "2026-11-18T05:02:04.086Z",
       "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/24-teams-come-together-to-form-collective-cycling-group-the-latest-venture-aiming-to-unlock-the-value-of-pro-cycling/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/primoz-roglic-will-continue-racing-into-2027-as-new-team-for-final-chapter-is-finally-revealed/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/broken-frame-no-problem-for-lukas-malezsewski-who-wins-uci-gravel-race-after-being-hit-by-a-car/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 10
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/tour-de-france-femmes-goal-for-2029-theres-a-new-us-team-on-the-scene-and-they-have-big-ambitions/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/netcompany-ineos-lose-significant-sponsor-as-totalenergies-confirm-they-will-not-continue-in-2027/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/cycling-tech-components/wheels-tyres/hunt-limitless-40-gravel-wheelset/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 15
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/tour-de-france-breakaway-star-heads-to-southeast-asia-for-2-500km-charity-solo-bike-trip-video/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/cycling-kit-accessories/helmets/id-say-its-costing-peoples-lives-safer-technology-is-here-so-why-hasnt-the-cycling-industry-implemented-tougher-helmet-testing-yet/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 18
+    },
+    "https://www.cyclingnews.com/cycling-kit-accessories/clothing-shoes/castelli-alpha-150-winter-jacket-review/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/significant-for-cycling-in-the-country-british-cycling-ventures-adds-backing-to-city-of-london-nocturne-in-a-bid-to-expand-across-britain/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/one-inspired-transfer-and-one-glaring-miss-we-analysed-the-data-to-see-who-won-and-lost-in-the-womens-2025-2026-transfer-market/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/gent-six-opening-night-drawn-to-a-close-early-after-heavy-crash-involving-jasper-de-buyst/": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 4
+    },
+    "https://www.cyclingweekly.com/fitness/nutrition/ultra-high-carb-loading-is-the-norm-for-pros-just-how-far-can-ordinary-cyclists-push-it": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 5
+    },
+    "https://www.cyclingweekly.com/racing/its-had-a-star-next-to-it-in-my-calendar-cameron-mason-tops-the-start-list-for-glasgow-cyclo-cross-world-cup": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 5
+    },
+    "https://www.cyclingweekly.com/products/aero-gravel-tyres-real-steel-and-hand-graffitied-frames-all-the-good-things-from-rouleur-live-2026": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 28
+    },
+    "https://www.cyclingweekly.com/racing/time-to-get-serious-tadej-pogacar-begins-training-in-earnest-for-2027s-targets": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 6
+    },
+    "https://www.cyclingweekly.com/deals/early-garmin-black-friday-deals-2026-the-20-best-discounts-including-20-percent-off-the-edge-550-and-usd200-off-tacx-trainers": {
+      "at": "2026-11-19T05:07:43.125Z",
+      "score": 3
     }
   },
   "runs": [
@@ -1485,6 +1553,10 @@
     {
       "at": "2026-11-18T05:04:35.934Z",
       "created": 1
+    },
+    {
+      "at": "2026-11-19T05:12:29.361Z",
+      "created": 2
     }
   ],
   "topics": {
@@ -1619,6 +1691,14 @@
     "trek-fuel-plus": {
       "at": "2026-11-18T05:04:35.934Z",
       "failed": "primary source not readable"
+    },
+    "princeton-carbonworks-wake-6560-evolution-ii": {
+      "at": "2026-11-19T05:10:43.914Z",
+      "slug": "princeton-carbonworks-wake-6560-evolution-ii-wheels"
+    },
+    "princeton-carbonworks-peak-4550-evolution-ii": {
+      "at": "2026-11-19T05:12:29.361Z",
+      "slug": "princeton-carbonworks-peak-4550-evolution-ii-wheelset"
     }
   }
 }
