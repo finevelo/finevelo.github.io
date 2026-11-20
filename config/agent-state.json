@@ -1467,6 +1467,70 @@
     "https://www.cyclingweekly.com/deals/early-garmin-black-friday-deals-2026-the-20-best-discounts-including-20-percent-off-the-edge-550-and-usd200-off-tacx-trainers": {
       "at": "2026-11-19T05:07:43.125Z",
       "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/demi-vollering-eddy-merckx-and-paul-seixas-among-cycling-stars-set-for-audience-with-pope-leo-xiv/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/cycling-tech-components/black-friday-garmin-deals-2026/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/who-is-influencing-whom-and-why-some-of-cyclings-biggest-backers-are-spinning-a-sponsorship-spiderweb-but-what-are-the-risks/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 8
+    },
+    "https://www.cyclingnews.com/bikes/pro-bikes/nsn-cycling-team-change-bikes-for-the-third-time-in-three-seasons-as-cube-return-to-the-worldtour/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 45
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/passion-has-no-age-class-is-timeless-solution-tech-nippo-rali-confirm-domenico-pozzovivo-will-continue-racing-at-the-age-of-44/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/tour-de-romandie-saved-as-primeo-energie-steps-in-as-sponsor-for-both-womens-and-mens-races/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/racing/tour-colombia-returns-for-2027-after-two-year-break-with-multiple-worldtour-teams-expected-to-race/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/a-bold-new-visual-era-for-the-maglia-rosa-as-maap-strikes-deal-to-produce-giro-d-italia-leaders-jerseys/": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 22
+    },
+    "https://www.cyclingweekly.com/products/carbon-construction-55mm-tyre-clearance-and-in-frame-storage-polygons-tambora-gravel-bike-gets-all-the-modcons-without-the-high-price": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 12
+    },
+    "https://www.cyclingweekly.com/racing/cars-on-the-course-isnt-acceptable-ben-healy-stresses-rider-safety-must-be-number-one-priority-after-string-of-incidents": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/racing/totalenergies-ends-netcompany-ineos-sponsorship-after-18-months": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 4
+    },
+    "https://www.cyclingweekly.com/racing/what-the-launch-of-collective-cycling-group-means-for-pro-cycling": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 6
+    },
+    "https://www.cyclingweekly.com/deals/watch-cameron-mason-and-every-cyclo-cross-race-live-from-anywhere-with-nordvpns-black-friday-bargain": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 2
+    },
+    "https://www.cyclingweekly.com/racing/a-significant-milestone-in-the-long-and-proud-history-of-the-sport-pro-cycling-teams-form-new-body-aiming-to-create-a-sustainable-economic-model": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 5
+    },
+    "https://www.cyclingweekly.com/racing/primoz-roglic-signs-one-year-contract-with-nsn-cycling": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 8
+    },
+    "https://www.cyclingweekly.com/racing/a-defining-milestone-and-a-privilege-maap-to-make-giro-d-italia-pink-jersey-from-2027": {
+      "at": "2026-11-20T05:02:19.585Z",
+      "score": 12
     }
   },
   "runs": [
@@ -1556,6 +1620,10 @@
     },
     {
       "at": "2026-11-19T05:12:29.361Z",
+      "created": 2
+    },
+    {
+      "at": "2026-11-20T05:06:41.822Z",
       "created": 2
     }
   ],
@@ -1699,6 +1767,18 @@
     "princeton-carbonworks-peak-4550-evolution-ii": {
       "at": "2026-11-19T05:12:29.361Z",
       "slug": "princeton-carbonworks-peak-4550-evolution-ii-wheelset"
+    },
+    "baum-dbm-32": {
+      "at": "2026-11-20T05:04:23.107Z",
+      "slug": "baum-dbm-32-titanium-adventure-gravel-bike"
+    },
+    "mosaic-rt-zero": {
+      "at": "2026-11-20T05:05:16.578Z",
+      "failed": "checks failed"
+    },
+    "parlee-z-zero-gt": {
+      "at": "2026-11-20T05:06:41.822Z",
+      "slug": "parlee-z-zero-gt-custom-road-bike"
     }
   }
 }
