@@ -1531,6 +1531,66 @@
     "https://www.cyclingweekly.com/racing/a-defining-milestone-and-a-privilege-maap-to-make-giro-d-italia-pink-jersey-from-2027": {
       "at": "2026-11-20T05:02:19.585Z",
       "score": 12
+    },
+    "https://www.cyclingnews.com/pro-cycling/safety/i-just-have-to-reiterate-the-power-that-we-have-as-riders-lombardia-protest-ringleader-ben-healy-emboldened-as-he-calls-for-change-on-rider-safety/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 3
+    },
+    "https://www.cyclingnews.com/pro-cycling/womens-cycling/shirin-van-anrooij-to-make-cyclo-cross-debut-with-canyon-sram-alongside-zoe-backstedt-next-week/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/from-plumbing-to-picnic-postnl-the-dutch-teams-newest-recruit-with-dreams-of-amstel-gold-race-and-riding-with-wout-van-aert/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 2
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/worldtour-team-ignored-by-new-collective-cycling-group-reform-project/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 2
+    },
+    "https://www.cyclingnews.com/cycling-tech-components/wahoo-fitness-black-friday-2026/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 5
+    },
+    "https://www.cyclingnews.com/cycling-kit-accessories/clothing-shoes/from-aero-pockets-made-on-a-dining-table-to-skinsuits-worn-by-mark-cavendish-how-one-rider-took-nopinz-from-devon-to-a-world-leading-everyday-aero-brand/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 12
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/there-is-certainly-no-bitterness-case-against-truck-driver-who-struck-and-killed-davide-rebellin-wont-continue-due-to-his-ill-health/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 1
+    },
+    "https://www.cyclingnews.com/cycling-kit-accessories/clothing-shoes/the-le-col-extra-20-percent-off-weekend-is-live-here-are-18-of-the-biggest-reductions-but-youll-have-to-be-quick-as-it-ends-sunday/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 4
+    },
+    "https://www.cyclingnews.com/pro-cycling/teams-riders/why-a-37-year-old-primoz-roglic-is-still-a-great-signing-and-how-more-freedom-at-nsn-can-unlock-his-five-time-grand-tour-winning-best/": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/deals/best-gifts-for-cyclists": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 3
+    },
+    "https://www.cyclingweekly.com/reviews/tyres/michelin-pro-5-tlr-40mm-reviewed": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 12
+    },
+    "https://www.cyclingweekly.com/news/why-arent-councils-acting-londons-most-perilous-junctions-revealed": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 1
+    },
+    "https://www.cyclingweekly.com/products/our-feet-arent-changing-shape-so-why-are-cycling-shoes-getting-wider": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 15
+    },
+    "https://www.cyclingweekly.com/gravel/an-all-out-aero-gravel-affair-hayley-preens-factor-elara-from-gravel-burn": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 18
+    },
+    "https://www.cyclingweekly.com/news/a-one-off-bike-made-for-an-injured-war-veteran-who-made-a-heroic-and-successful-return-to-racing": {
+      "at": "2026-11-21T05:57:15.559Z",
+      "score": 10
     }
   },
   "runs": [
@@ -1624,6 +1684,10 @@
     },
     {
       "at": "2026-11-20T05:06:41.822Z",
+      "created": 2
+    },
+    {
+      "at": "2026-11-21T06:02:29.810Z",
       "created": 2
     }
   ],
@@ -1779,6 +1843,14 @@
     "parlee-z-zero-gt": {
       "at": "2026-11-20T05:06:41.822Z",
       "slug": "parlee-z-zero-gt-custom-road-bike"
+    },
+    "giant-propel-advanced-sl-2026": {
+      "at": "2026-11-21T06:01:12.817Z",
+      "slug": "giant-propel-advanced-sl-2026-frameset"
+    },
+    "merida-reacto-team": {
+      "at": "2026-11-21T06:02:29.810Z",
+      "slug": "merida-reacto-team-gen-v-lightweight-aero"
     }
   }
 }
